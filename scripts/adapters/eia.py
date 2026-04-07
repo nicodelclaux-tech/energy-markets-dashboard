@@ -58,9 +58,9 @@ def _should_retry(exc: BaseException) -> bool:
 def _get(route: str, params: dict) -> dict:
     """Fetch one page of EIA v2 data; returns the JSON response dict."""
     url = f"{EIA_BASE_URL}/{route}"
-    # Exclude the API key from log output
-    safe_params = {k: v for k, v in params.items() if k != "api_key"}
-    logger.info("EIA request: %s  params=%s", url, safe_params)
+    # Build a sanitised copy for logging — api_key is never logged
+    loggable = {k: v for k, v in params.items() if k != "api_key"}
+    logger.info("EIA request: %s  %s", url, loggable)
     resp = requests.get(url, params=params, timeout=REQUEST_TIMEOUT)
     resp.raise_for_status()
     return resp.json()

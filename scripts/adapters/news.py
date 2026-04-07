@@ -221,8 +221,8 @@ def fetch_all(lookback_days: int = NEWS_LOOKBACK_DAYS) -> list[dict]:
                 seen_ids.add(art["id"])
                 all_articles.append(art)
 
-    # Sort by relevance score descending, then by date
-    all_articles.sort(key=lambda a: (-a["relevance_score"], a["publishedAt"]), reverse=False)
+    # Sort by relevance score descending, then by date ascending
+    all_articles.sort(key=lambda a: (-a["relevance_score"], a["publishedAt"]))
 
     cache_path = DATA_RAW_DIR / "news.json"
     with open(cache_path, "w", encoding="utf-8") as fh:
