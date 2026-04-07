@@ -1,0 +1,69 @@
+{
+  "updatedAt": "2026-04-07T23:39:37.160124+00:00",
+  "sources": {
+    "entsoe": {
+      "status": "ok",
+      "total_rows": 9135,
+      "coverage": {
+        "ES": 1827,
+        "DE": 1827,
+        "FR": 1827,
+        "IT": 1827,
+        "GB": 0,
+        "NL": 1827
+      },
+      "elapsed_s": 500.4
+    },
+    "ember": {
+      "status": "ok",
+      "total_rows": 0,
+      "coverage": {
+        "ES": 0,
+        "DE": 0,
+        "FR": 0,
+        "IT": 0,
+        "GB": 0,
+        "NL": 0
+      },
+      "elapsed_s": 1.9
+    },
+    "fmp": {
+      "status": "ok",
+      "total_rows": 0,
+      "coverage": {
+        "OUSX": 0,
+        "OJSX": 0,
+        "NGAS": 0,
+        "EURUSD": 0,
+        "GBPUSD": 0
+      },
+      "elapsed_s": 1.7
+    },
+    "ecb": {
+      "status": "ok",
+      "total_rows": 2562,
+      "coverage": {
+        "eurusd": 1281,
+        "gbpeur": 1281
+      },
+      "elapsed_s": 11.2
+    },
+    "eia": {
+      "status": "ok",
+      "total_rows": 2755,
+      "coverage": {
+        "brent": 1255,
+        "wti": 1240,
+        "henry_hub": 260,
+        "ng_storage": 0
+      },
+      "elapsed_s": 1.8
+    },
+    "news": {
+      "status": "ok",
+      "total_items": 222,
+      "elapsed_s": 99.3
+    }
+  },
+  "warnings": []
+}
