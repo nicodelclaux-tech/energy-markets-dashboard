@@ -1,0 +1,56 @@
+name: Refresh Market Data
+
+on:
+  schedule:
+    # 06:00 UTC every morning — well after most European midnight price publications
+    - cron: '0 6 * * *'
+  workflow_dispatch:  # Allow manual trigger from the Actions tab
+
+permissions:
+  contents: write   # Required to commit the updated data files back to the repo
+
+jobs:
+  refresh:
+    name: Fetch and build energy market data
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    env:
+      ENTSOE_API_KEY:   ${{ secrets.ENTSOE_API_KEY }}
+      FMP_API_KEY:      ${{ secrets.FMP_API_KEY }}
+      EIA_API_KEY:      ${{ secrets.EIA_API_KEY }}
+      GUARDIAN_API_KEY: ${{ secrets.GUARDIAN_API_KEY }}
+      EMBER_API_KEY:    ${{ secrets.EMBER_API_KEY }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch market data from all sources
+        run: python scripts/fetch_all.py
+        # Individual adapter failures are caught internally.
+        # The script always exits 0 and surfaces errors in data/raw/fetch_meta.json.
+
+      - name: Build public/data.js
+        run: python scripts/build_data_js.py
+
+      - name: Commit and push refreshed data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data.js data/raw/ data/processed/
+          # Only commit if something actually changed
+          git diff --staged --quiet || git commit -m "chore: refresh market data $(date -u +'%Y-%m-%dT%H:%M:%SZ') [skip ci]"
+          git push
