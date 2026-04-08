@@ -4,6 +4,41 @@ var APP = (function () {
 
   var _data = null;
 
+  function _subtractMonths(dateStr, months) {
+    var d = new Date(dateStr + 'T00:00:00Z');
+    d.setMonth(d.getMonth() - months);
+    return d.toISOString().slice(0, 10);
+  }
+
+  function _activateTab(tabName) {
+    document.querySelectorAll('.tab-btn').forEach(function (b) {
+      b.classList.toggle('active', b.dataset.tab === tabName);
+    });
+    document.querySelectorAll('.page').forEach(function (p) {
+      p.classList.toggle('active', p.id === 'page-' + tabName);
+    });
+
+    setTimeout(function () { Charts.resizeAll(); }, 50);
+
+    if (tabName === 'power') {
+      var s = AppState.getState();
+      UI.renderMainChart(s, _data);
+      UI.renderRanking(s, _data);
+      UI.renderSpread(s, _data);
+      UI.renderDistribution(s, _data);
+      UI.renderMonthlySummary(s, _data);
+    }
+
+    if (tabName === 'commodities') {
+      var cs = AppState.getCommodityState();
+      CommodityUI.renderMainChart(cs, _data);
+      CommodityUI.renderRanking(cs, _data);
+      CommodityUI.renderSpread(cs, _data);
+      CommodityUI.renderDistribution(cs, _data);
+      CommodityUI.renderMonthlySummary(cs, _data);
+    }
+  }
+
   function _applyTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
     document.body.setAttribute('data-theme', theme);
@@ -41,17 +76,29 @@ var APP = (function () {
   }
 
   function renderApp() {
-    var state = AppState.getState();
-    // Only render the active tab's charts to avoid hidden-canvas sizing issues
-    var analysisVisible = document.getElementById('page-analysis').classList.contains('active');
-    UI.syncControls(state);
-    UI.renderKPIs(state, _data);
-    if (analysisVisible) {
-      UI.renderMainChart(state, _data);
-      UI.renderRanking(state, _data);
-      UI.renderSpread(state, _data);
-      UI.renderDistribution(state, _data);
-      UI.renderMonthlySummary(state, _data);
+    var powerState = AppState.getState();
+    var commodityState = AppState.getCommodityState();
+    var powerVisible = document.getElementById('page-power').classList.contains('active');
+    var commodityVisible = document.getElementById('page-commodities').classList.contains('active');
+
+    UI.syncControls(powerState);
+    UI.renderKPIs(powerState, _data);
+    if (powerVisible) {
+      UI.renderMainChart(powerState, _data);
+      UI.renderRanking(powerState, _data);
+      UI.renderSpread(powerState, _data);
+      UI.renderDistribution(powerState, _data);
+      UI.renderMonthlySummary(powerState, _data);
+    }
+
+    CommodityUI.syncControls(commodityState);
+    CommodityUI.renderKPIs(commodityState, _data);
+    if (commodityVisible) {
+      CommodityUI.renderMainChart(commodityState, _data);
+      CommodityUI.renderRanking(commodityState, _data);
+      CommodityUI.renderSpread(commodityState, _data);
+      CommodityUI.renderDistribution(commodityState, _data);
+      CommodityUI.renderMonthlySummary(commodityState, _data);
     }
   }
 
@@ -61,11 +108,17 @@ var APP = (function () {
 
     // Seed state directly (no render yet)
     var state = AppState.getState();
-    state.dateRange = { start: _data.earliestDate, end: _data.latestDate };
-    state.periodPreset = 0;
+    var end = _data.latestDate;
+    var start = end ? _subtractMonths(end, 12) : _data.earliestDate;
+    state.dateRange = { start: start || _data.earliestDate, end: end };
+    state.periodPreset = 12;
+
+    // Seed commodity state
+    AppState.resetCommodityState(_data);
 
     // Build controls DOM + attach listeners
     UI.initControls(_data);
+    CommodityUI.initControls(_data);
 
     // Render overview (static, no ECharts)
     Overview.render(_data);
@@ -80,27 +133,17 @@ var APP = (function () {
     // Tab switching
     document.querySelectorAll('.tab-btn').forEach(function (btn) {
       btn.addEventListener('click', function () {
-        document.querySelectorAll('.tab-btn').forEach(function (b) { b.classList.remove('active'); });
-        document.querySelectorAll('.page').forEach(function (p) { p.classList.remove('active'); });
-        btn.classList.add('active');
-        document.getElementById('page-' + btn.dataset.tab).classList.add('active');
-        // ECharts needs a resize call after becoming visible
-        setTimeout(function () { Charts.resizeAll(); }, 50);
-        // Also ensure analysis charts are rendered if switching to analysis
-        if (btn.dataset.tab === 'analysis') {
-          var s = AppState.getState();
-          UI.renderMainChart(s, _data);
-          UI.renderRanking(s, _data);
-          UI.renderSpread(s, _data);
-          UI.renderDistribution(s, _data);
-          UI.renderMonthlySummary(s, _data);
-        }
+        _activateTab(btn.dataset.tab);
       });
     });
 
     // Reset button
     document.getElementById('btn-reset').addEventListener('click', function () {
-      AppState.resetState(_data);
+      if (document.getElementById('page-commodities').classList.contains('active')) {
+        AppState.resetCommodityState(_data);
+      } else {
+        AppState.resetState(_data);
+      }
     });
 
     // Window resize → ECharts resize
@@ -113,7 +156,10 @@ var APP = (function () {
     renderApp();
   }
 
-  return { init: init };
+  return {
+    init: init,
+    activateTab: _activateTab
+  };
 }());
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -123,5 +169,6 @@ document.addEventListener('DOMContentLoaded', function () {
       + 'Please check your connection and reload the page.</div>';
     return;
   }
+  window.APP = APP;
   APP.init();
 });

@@ -102,10 +102,13 @@ var Analytics = (function () {
 
   // --- Rankings -----------------------------------------------------------------
 
-  function rankCountriesByDate(data, dateString) {
+  function rankCountriesByDate(data, dateString, allowedIsos) {
     if (!dateString) return [];
     var result = [];
-    Object.keys(data.seriesByIso).forEach(function (iso) {
+    var universe = Array.isArray(allowedIsos) && allowedIsos.length > 0
+      ? allowedIsos
+      : Object.keys(data.seriesByIso);
+    universe.forEach(function (iso) {
       var series = data.seriesByIso[iso];
       if (!series || series.length === 0) return;
       // Find the closest record on or before the target date

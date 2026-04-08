@@ -18,7 +18,8 @@
     </div>
     <nav class="tab-nav">
       <button class="tab-btn active" data-tab="overview">Overview</button>
-      <button class="tab-btn" data-tab="analysis">Data &amp; Analysis</button>
+      <button class="tab-btn" data-tab="power">Power Markets</button>
+      <button class="tab-btn" data-tab="commodities">Commodity Markets</button>
     </nav>
     <div class="header-right">
       <button id="btn-theme" class="btn-secondary" aria-label="Toggle theme">Light</button>
@@ -36,7 +37,7 @@
   <!-- ================================================================== -->
   <!-- ANALYSIS PAGE                                                        -->
   <!-- ================================================================== -->
-  <div id="page-analysis" class="page">
+  <div id="page-power" class="page">
 
     <!-- Controls -->
     <div id="controls-panel"></div>
@@ -67,6 +68,35 @@
 
   </div>
 
+  <!-- ================================================================== -->
+  <!-- COMMODITY MARKETS PAGE                                              -->
+  <!-- ================================================================== -->
+  <div id="page-commodities" class="page">
+
+    <div id="controls-panel-commodity"></div>
+
+    <div id="kpi-row-commodity"></div>
+
+    <div class="chart-panel">
+      <div id="chart-main-commodity" class="chart-canvas chart-main"></div>
+    </div>
+
+    <div class="secondary-row">
+      <div class="secondary-panel" id="ranking-container-commodity"></div>
+      <div class="secondary-panel chart-panel-sm">
+        <div id="chart-spread-commodity" class="chart-canvas chart-sm"></div>
+      </div>
+      <div class="secondary-panel chart-panel-sm">
+        <div id="chart-dist-commodity" class="chart-canvas chart-sm"></div>
+      </div>
+    </div>
+
+    <div class="chart-panel chart-panel--monthly">
+      <div id="chart-monthly-commodity" class="chart-canvas chart-monthly"></div>
+    </div>
+
+  </div>
+
   <footer id="app-footer">
     <span id="footer-coverage" class="coverage-text"></span>
   </footer>
@@ -83,6 +113,7 @@
   <script src="js/charts.js"></script>
   <script src="js/overview.js"></script>
   <script src="js/ui.js"></script>
+  <script src="js/commodity-ui.js"></script>
   <script src="app.js"></script>
 
 </body>

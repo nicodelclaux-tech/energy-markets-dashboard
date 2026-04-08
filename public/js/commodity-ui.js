@@ -1,12 +1,6 @@
-// Renders the Data & Analysis tab. All functions read from AppState and the
-// normalised data object. Called by renderApp() in app.js on every state change.
-var UI = (function () {
-
-  var _data = null; // set once during initControls
-
-  // --------------------------------------------------------------------------
-  // Helpers
-  // --------------------------------------------------------------------------
+// Renders the Commodity Markets tab. Mirrors Power Markets layout with
+// commodity-only controls and analytics.
+var CommodityUI = (function () {
 
   function fmt(n) {
     if (n == null || isNaN(n)) return '—';
@@ -16,56 +10,49 @@ var UI = (function () {
 
   function fmtDate(ds) {
     if (!ds) return '—';
-    return ds; // YYYY-MM-DD is already readable
+    return ds;
   }
 
-  // Subtract months from a date string YYYY-MM-DD
   function subtractMonths(dateStr, months) {
     var d = new Date(dateStr + 'T00:00:00Z');
     d.setMonth(d.getMonth() - months);
     return d.toISOString().slice(0, 10);
   }
 
-  // --------------------------------------------------------------------------
-  // Controls — built once, synced on each render
-  // --------------------------------------------------------------------------
-
   function initControls(data) {
-    _data = data;
-    var panel = document.getElementById('controls-panel');
+    var panel = document.getElementById('controls-panel-commodity');
     if (!panel) return;
 
-    var countryOptions = data.countryOrder.map(function (iso) {
+    var commodityOrder = data.commodityOrder || [];
+    var commodityOptions = commodityOrder.map(function (iso) {
       var name = (data.countriesByIso[iso] || {}).name || iso;
       return '<option value="' + iso + '">' + name + '</option>';
     }).join('');
 
-    var benchmarkOptions = '<option value="EU_AVG">EU Average</option>' + countryOptions;
-
-    var compareButtons = data.countryOrder.map(function (iso) {
+    var compareButtons = commodityOrder.map(function (iso) {
       var name = (data.countriesByIso[iso] || {}).name || iso;
-      return '<button class="btn-pill btn-pill--country" data-compare-iso="' + iso + '">' + name + '</button>';
+      return '<button class="btn-pill btn-pill--country" data-compare-commodity="' + iso + '">' + name + '</button>';
     }).join('');
 
     panel.innerHTML = '<div class="controls-inner">'
       + '<div class="ctrl-group">'
       + '<label class="ctrl-label">Primary</label>'
-      + '<select id="ctrl-primary">' + countryOptions + '</select>'
+      + '<select id="ctrl-primary-commodity">' + commodityOptions + '</select>'
       + '</div>'
 
       + '<div class="ctrl-group">'
       + '<label class="ctrl-label">Compare</label>'
-      + '<div class="btn-group btn-group-wrap" id="ctrl-compare-wrap">' + compareButtons + '</div>'
+      + '<div class="btn-group btn-group-wrap" id="ctrl-compare-wrap-commodity">' + compareButtons + '</div>'
       + '</div>'
 
       + '<div class="ctrl-group">'
       + '<label class="ctrl-label">Benchmark</label>'
-      + '<select id="ctrl-benchmark">' + benchmarkOptions + '</select>'
+      + '<select id="ctrl-benchmark-commodity">' + commodityOptions + '</select>'
       + '</div>'
 
       + '<div class="ctrl-group ctrl-group--wide">'
       + '<label class="ctrl-label">Period</label>'
-      + '<div class="btn-group" id="ctrl-presets">'
+      + '<div class="btn-group" id="ctrl-presets-commodity">'
       + '<button class="btn-pill" data-months="1">1M</button>'
       + '<button class="btn-pill" data-months="3">3M</button>'
       + '<button class="btn-pill" data-months="6">6M</button>'
@@ -78,61 +65,57 @@ var UI = (function () {
       + '<div class="ctrl-group">'
       + '<label class="ctrl-label">Aggregation</label>'
       + '<div class="btn-group">'
-      + '<button class="btn-pill btn-pill--active" data-agg="daily">Daily</button>'
-      + '<button class="btn-pill" data-agg="monthly">Monthly</button>'
-      + '<button class="btn-pill" data-agg="yearly">Yearly</button>'
+      + '<button class="btn-pill btn-pill--active" data-agg-commodity="daily">Daily</button>'
+      + '<button class="btn-pill" data-agg-commodity="monthly">Monthly</button>'
+      + '<button class="btn-pill" data-agg-commodity="yearly">Yearly</button>'
       + '</div>'
       + '</div>'
 
       + '<div class="ctrl-group">'
       + '<label class="ctrl-label">Smooth</label>'
       + '<div class="btn-group">'
-      + '<button class="btn-pill" data-smooth="0">None</button>'
-      + '<button class="btn-pill btn-pill--active" data-smooth="7">7d</button>'
-      + '<button class="btn-pill" data-smooth="30">30d</button>'
+      + '<button class="btn-pill" data-smooth-commodity="0">None</button>'
+      + '<button class="btn-pill btn-pill--active" data-smooth-commodity="7">7d</button>'
+      + '<button class="btn-pill" data-smooth-commodity="30">30d</button>'
       + '</div>'
       + '</div>'
       + '</div>';
 
-    _attachControlListeners(data);
+    attachControlListeners(data);
   }
 
-  function _attachControlListeners(data) {
-    // Primary country
-    var selPrimary = document.getElementById('ctrl-primary');
+  function attachControlListeners(data) {
+    var selPrimary = document.getElementById('ctrl-primary-commodity');
     if (selPrimary) {
       selPrimary.addEventListener('change', function () {
-        AppState.setState({ primaryCountry: this.value });
+        AppState.setCommodityState({ primaryCountry: this.value });
       });
     }
 
-    // Benchmark
-    var selBench = document.getElementById('ctrl-benchmark');
+    var selBench = document.getElementById('ctrl-benchmark-commodity');
     if (selBench) {
       selBench.addEventListener('change', function () {
-        AppState.setState({ benchmarkCountry: this.value });
+        AppState.setCommodityState({ benchmarkCountry: this.value });
       });
     }
 
-    // Comparison toggle buttons
-    var compareWrap = document.getElementById('ctrl-compare-wrap');
+    var compareWrap = document.getElementById('ctrl-compare-wrap-commodity');
     if (compareWrap) {
       compareWrap.addEventListener('click', function (e) {
-        var btn = e.target.closest('[data-compare-iso]');
+        var btn = e.target.closest('[data-compare-commodity]');
         if (!btn) return;
-        var iso = btn.getAttribute('data-compare-iso');
-        var state = AppState.getState();
+        var iso = btn.getAttribute('data-compare-commodity');
+        var state = AppState.getCommodityState();
         if (iso === state.primaryCountry) return;
         var next = state.comparisonCountries.slice();
         var idx = next.indexOf(iso);
         if (idx >= 0) next.splice(idx, 1);
         else next.push(iso);
-        AppState.setState({ comparisonCountries: next });
+        AppState.setCommodityState({ comparisonCountries: next });
       });
     }
 
-    // Date presets
-    var presets = document.getElementById('ctrl-presets');
+    var presets = document.getElementById('ctrl-presets-commodity');
     if (presets) {
       presets.addEventListener('click', function (e) {
         var btn = e.target.closest('[data-months]');
@@ -140,69 +123,56 @@ var UI = (function () {
         var months = parseInt(btn.getAttribute('data-months'), 10);
         var end = data.latestDate;
         var start = months === 0 ? data.earliestDate : subtractMonths(end, months);
-        AppState.setState({ dateRange: { start: start, end: end }, periodPreset: months });
+        AppState.setCommodityState({ dateRange: { start: start, end: end }, periodPreset: months });
       });
     }
 
-    // Aggregation
-    var aggGroup = document.querySelector('[data-agg]');
-    if (aggGroup) {
-      document.querySelectorAll('[data-agg]').forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          AppState.setState({ aggregation: btn.getAttribute('data-agg') });
-        });
-      });
-    }
-
-    // Smoothing
-    document.querySelectorAll('[data-smooth]').forEach(function (btn) {
+    document.querySelectorAll('[data-agg-commodity]').forEach(function (btn) {
       btn.addEventListener('click', function () {
-        AppState.setState({ smoothingWindow: parseInt(btn.getAttribute('data-smooth'), 10) });
+        AppState.setCommodityState({ aggregation: btn.getAttribute('data-agg-commodity') });
+      });
+    });
+
+    document.querySelectorAll('[data-smooth-commodity]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        AppState.setCommodityState({ smoothingWindow: parseInt(btn.getAttribute('data-smooth-commodity'), 10) });
       });
     });
   }
 
-  // Sync control visual state (active buttons, select values, date inputs) after re-render
   function syncControls(state) {
-    var selPrimary = document.getElementById('ctrl-primary');
+    var selPrimary = document.getElementById('ctrl-primary-commodity');
     if (selPrimary && selPrimary.value !== state.primaryCountry) selPrimary.value = state.primaryCountry;
 
-    var selBench = document.getElementById('ctrl-benchmark');
+    var selBench = document.getElementById('ctrl-benchmark-commodity');
     if (selBench && selBench.value !== state.benchmarkCountry) selBench.value = state.benchmarkCountry;
 
-    // Uncheck primary from comparison, update checkboxes
-    var compareWrap = document.getElementById('ctrl-compare-wrap');
+    var compareWrap = document.getElementById('ctrl-compare-wrap-commodity');
     if (compareWrap) {
-      compareWrap.querySelectorAll('[data-compare-iso]').forEach(function (el) {
-        var iso = el.getAttribute('data-compare-iso');
+      compareWrap.querySelectorAll('[data-compare-commodity]').forEach(function (el) {
+        var iso = el.getAttribute('data-compare-commodity');
         var selected = state.comparisonCountries.indexOf(iso) !== -1 && iso !== state.primaryCountry;
         el.classList.toggle('btn-pill--active', selected);
         el.disabled = iso === state.primaryCountry;
       });
     }
 
-    document.querySelectorAll('#ctrl-presets [data-months]').forEach(function (btn) {
+    document.querySelectorAll('#ctrl-presets-commodity [data-months]').forEach(function (btn) {
       btn.classList.toggle('btn-pill--active', parseInt(btn.getAttribute('data-months'), 10) === state.periodPreset);
     });
 
-    // Active states for button groups
-    document.querySelectorAll('[data-agg]').forEach(function (btn) {
-      btn.classList.toggle('btn-pill--active', btn.getAttribute('data-agg') === state.aggregation);
+    document.querySelectorAll('[data-agg-commodity]').forEach(function (btn) {
+      btn.classList.toggle('btn-pill--active', btn.getAttribute('data-agg-commodity') === state.aggregation);
     });
-    document.querySelectorAll('[data-smooth]').forEach(function (btn) {
-      btn.classList.toggle('btn-pill--active', btn.getAttribute('data-smooth') === String(state.smoothingWindow));
+    document.querySelectorAll('[data-smooth-commodity]').forEach(function (btn) {
+      btn.classList.toggle('btn-pill--active', btn.getAttribute('data-smooth-commodity') === String(state.smoothingWindow));
     });
   }
 
-  // --------------------------------------------------------------------------
-  // KPI row
-  // --------------------------------------------------------------------------
-
   function renderKPIs(state, data) {
-    var el = document.getElementById('kpi-row');
+    var el = document.getElementById('kpi-row-commodity');
     if (!el) return;
 
-    var isCountryPrimary = data.countryOrder.indexOf(state.primaryCountry) !== -1;
     var unitLabel = data.unitsByIso[state.primaryCountry] || 'EUR/MWh';
     var series = Analytics.getSeriesForCountry(data, state.primaryCountry, state.dateRange);
     var stats = Analytics.computeStats(series);
@@ -210,16 +180,13 @@ var UI = (function () {
     var pt = Analytics.findPeakTrough(series);
     var regimeClass = regime === 'low' ? 'regime-low' : regime === 'high' ? 'regime-high' : 'regime-normal';
 
-    // Spread vs benchmark (latest value)
     var spread = null;
-    if (isCountryPrimary && state.primaryCountry !== state.benchmarkCountry) {
+    if (state.primaryCountry !== state.benchmarkCountry) {
       var spreadSeries = Analytics.spreadToBenchmark(data, state.primaryCountry, state.benchmarkCountry, state.dateRange);
       if (spreadSeries.length > 0) spread = spreadSeries[spreadSeries.length - 1].price;
     }
 
-    var benchName = state.benchmarkCountry === 'EU_AVG'
-      ? 'EU Average'
-      : ((data.countriesByIso[state.benchmarkCountry] || {}).name || state.benchmarkCountry);
+    var benchName = (data.countriesByIso[state.benchmarkCountry] || {}).name || state.benchmarkCountry;
     var spreadLabel = 'Spread vs ' + benchName;
     var spreadVal = spread != null ? fmt(spread) : '—';
     var spreadClass = spread == null ? '' : spread > 0 ? 'kpi-positive' : 'kpi-negative';
@@ -239,41 +206,24 @@ var UI = (function () {
       + card('Min', fmt(stats.min) + '<span class="kpi-unit"> ' + unitLabel + '</span>', fmtDate(pt.troughDate))
       + card('Max', fmt(stats.max) + '<span class="kpi-unit"> ' + unitLabel + '</span>', fmtDate(pt.peakDate))
       + card('Volatility (σ)', fmt(stats.stdDev) + '<span class="kpi-unit"> ' + unitLabel + '</span>', 'std dev, period')
-      + card(spreadLabel, '<span class="' + spreadClass + '">' + spreadVal + '</span><span class="kpi-unit"> ' + unitLabel + '</span>', isCountryPrimary ? 'current vs benchmark' : 'benchmark N/A for commodity')
+      + card(spreadLabel, '<span class="' + spreadClass + '">' + spreadVal + '</span><span class="kpi-unit"> ' + unitLabel + '</span>', 'current vs benchmark')
       + '</div>';
   }
 
-  // --------------------------------------------------------------------------
-  // Main chart
-  // --------------------------------------------------------------------------
-
   function renderMainChart(state, data) {
-    var isCountryPrimary = data.countryOrder.indexOf(state.primaryCountry) !== -1;
     var series = Analytics.getSeriesForCountry(data, state.primaryCountry, state.dateRange);
     var agg = Analytics.applyAggregation(series, state.aggregation);
-    var percentileBandSeries = isCountryPrimary
-      ? Analytics.computePercentileBand(data, state.dateRange, state.aggregation, data.countryOrder)
-      : [];
-
-    var euAvgSeries = [];
-    if (isCountryPrimary) {
-      euAvgSeries = Analytics.getBenchmarkSeries(data, 'EU_AVG', state.dateRange);
-      euAvgSeries = Analytics.applyAggregation(euAvgSeries, state.aggregation);
-    }
 
     var smoothed = [];
     if (state.smoothingWindow > 0 && state.aggregation === 'daily') {
       smoothed = Analytics.rollingAverage(series, state.smoothingWindow);
     }
 
-    var compIsos = isCountryPrimary
-      ? state.comparisonCountries.filter(function (iso) { return iso !== state.primaryCountry; })
-      : [];
+    var compIsos = state.comparisonCountries.filter(function (iso) { return iso !== state.primaryCountry; });
     var compMap = compIsos.length > 0
       ? Analytics.getAlignedComparison(data, compIsos, state.dateRange)
       : null;
 
-    // Aggregate comparison series too
     if (compMap) {
       var aggMap = {};
       Object.keys(compMap).forEach(function (iso) {
@@ -284,14 +234,14 @@ var UI = (function () {
 
     var name = (data.countriesByIso[state.primaryCountry] || {}).name || state.primaryCountry;
 
-    Charts.renderTimeSeries('chart-main', {
+    Charts.renderTimeSeries('chart-main-commodity', {
       primarySeries: agg,
       primaryName: name,
       primaryIso: state.primaryCountry,
       unitLabel: data.unitsByIso[state.primaryCountry] || 'EUR/MWh',
       comparisonMap: compMap,
-      euAvgSeries: euAvgSeries,
-      percentileBandSeries: percentileBandSeries,
+      euAvgSeries: [],
+      percentileBandSeries: [],
       smoothedSeries: smoothed,
       smoothingWindow: state.smoothingWindow,
       nonCoreLineType: 'dotted',
@@ -299,18 +249,14 @@ var UI = (function () {
     });
   }
 
-  // --------------------------------------------------------------------------
-  // Ranking table
-  // --------------------------------------------------------------------------
-
   function renderRanking(state, data) {
-    var el = document.getElementById('ranking-container');
+    var el = document.getElementById('ranking-container-commodity');
     if (!el) return;
 
     var rankingDate = state.dateRange.end || data.latestDate;
-    var rankings = Analytics.rankCountriesByDate(data, rankingDate, data.countryOrder);
+    var rankings = Analytics.rankCountriesByDate(data, rankingDate, data.commodityOrder || []);
     if (rankings.length === 0) {
-      el.innerHTML = '<div class="panel-title">Country Ranking</div><p class="muted small">No data</p>';
+      el.innerHTML = '<div class="panel-title">Commodity Ranking</div><p class="muted small">No data</p>';
       return;
     }
 
@@ -332,46 +278,27 @@ var UI = (function () {
         + '</tr>';
     }).join('');
 
-    el.innerHTML = '<div class="panel-title">Country Ranking</div>'
+    el.innerHTML = '<div class="panel-title">Commodity Ranking</div>'
       + '<table class="ranking-table"><tbody>' + rows + '</tbody></table>';
   }
 
-  // --------------------------------------------------------------------------
-  // Spread chart
-  // --------------------------------------------------------------------------
-
   function renderSpread(state, data) {
-    var isCountryPrimary = data.countryOrder.indexOf(state.primaryCountry) !== -1;
-    if (!isCountryPrimary) {
-      Charts.renderSpreadChart('chart-spread', [], 'Benchmark');
-      return;
-    }
-    var benchName = state.benchmarkCountry === 'EU_AVG'
-      ? 'EU Average'
-      : ((data.countriesByIso[state.benchmarkCountry] || {}).name || state.benchmarkCountry);
+    var benchName = (data.countriesByIso[state.benchmarkCountry] || {}).name || state.benchmarkCountry;
     var spread = Analytics.spreadToBenchmark(data, state.primaryCountry, state.benchmarkCountry, state.dateRange);
-    Charts.renderSpreadChart('chart-spread', spread, benchName);
+    Charts.renderSpreadChart('chart-spread-commodity', spread, benchName);
   }
-
-  // --------------------------------------------------------------------------
-  // Distribution chart
-  // --------------------------------------------------------------------------
 
   function renderDistribution(state, data) {
     var series = Analytics.getSeriesForCountry(data, state.primaryCountry, state.dateRange);
     var stats = Analytics.computeStats(series);
     var bins = Analytics.computeDistribution(series, 20);
-    Charts.renderHistogram('chart-dist', bins, stats.latest, data.unitsByIso[state.primaryCountry] || 'EUR/MWh');
+    Charts.renderHistogram('chart-dist-commodity', bins, stats.latest, data.unitsByIso[state.primaryCountry] || 'EUR/MWh');
   }
-
-  // --------------------------------------------------------------------------
-  // Monthly summary chart
-  // --------------------------------------------------------------------------
 
   function renderMonthlySummary(state, data) {
     var series = Analytics.getSeriesForCountry(data, state.primaryCountry, state.dateRange);
     var monthly = Analytics.aggregateMonthly(series);
-    Charts.renderMonthlyBar('chart-monthly', monthly, state.primaryCountry, data.unitsByIso[state.primaryCountry] || 'EUR/MWh');
+    Charts.renderMonthlyBar('chart-monthly-commodity', monthly, state.primaryCountry, data.unitsByIso[state.primaryCountry] || 'EUR/MWh');
   }
 
   return {

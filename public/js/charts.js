@@ -15,7 +15,12 @@ var Charts = (function () {
     NO: '#6f92b5',
     SE: '#1c2a4a',
     FI: '#a3cbb0',
-    DK: '#c23a38'
+    DK: '#c23a38',
+    WTI: '#006daa',
+    Brent: '#3e90bf',
+    TTF: '#4f7f5e',
+    HENRY_HUB: '#6f92b5',
+    GOLD: '#b9890d'
   };
   var FALLBACK_COLORS = ['#4f759b', '#4f7f5e', '#83b692', '#006daa', '#3a4a6a', '#3e90bf'];
 
@@ -88,12 +93,14 @@ var Charts = (function () {
     var chart = _get(containerId);
     if (!chart) return;
     var t = _theme();
+    var unitLabel = opts.unitLabel || 'EUR/MWh';
 
     var series = [];
     var legendData = [];
     var colorIdx = 0;
 
     var primaryColor = COUNTRY_COLORS[opts.primaryIso] || FALLBACK_COLORS[0];
+    var nonCoreLineType = opts.nonCoreLineType || 'dotted';
 
     if (opts.percentileBandSeries && opts.percentileBandSeries.length > 0) {
       series.push({
@@ -161,7 +168,7 @@ var Charts = (function () {
           return [x, Math.round(r.price)];
         }),
         symbol: 'none',
-        lineStyle: { width: 1.4, color: t.muted, type: 'solid', opacity: 0.9 },
+        lineStyle: { width: 1.4, color: t.muted, type: nonCoreLineType, opacity: 0.9 },
         itemStyle: { color: t.muted },
         z: 2
       });
@@ -175,7 +182,7 @@ var Charts = (function () {
         type: 'line',
         data: opts.smoothedSeries.map(function (r) { return [r.dateString, Math.round(r.price)]; }),
         symbol: 'none',
-        lineStyle: { width: 1.5, color: t.text, opacity: 0.35, type: 'dashed' },
+        lineStyle: { width: 1.5, color: t.text, opacity: 0.45, type: nonCoreLineType },
         itemStyle: { color: t.text },
         z: 2
       });
@@ -196,7 +203,7 @@ var Charts = (function () {
             return [x, Math.round(r.price)];
           }),
           symbol: 'none',
-          lineStyle: { width: 1.5, color: c },
+          lineStyle: { width: 1.5, color: c, type: nonCoreLineType },
           itemStyle: { color: c },
           barMaxWidth: 40,
           z: 2
@@ -214,7 +221,7 @@ var Charts = (function () {
     chart.setOption({
       backgroundColor: 'transparent',
       animation: false,
-      title: { text: 'Price Trend (EUR/MWh)', textStyle: { color: t.muted, fontSize: 11, fontWeight: 'normal' }, top: 6, left: 10 },
+      title: { text: 'Price Trend (' + unitLabel + ')', textStyle: { color: t.muted, fontSize: 11, fontWeight: 'normal' }, top: 6, left: 10 },
       grid: { left: 62, right: 20, top: 36, bottom: 56 },
       tooltip: Object.assign({
         trigger: 'axis',
@@ -231,7 +238,7 @@ var Charts = (function () {
       legend: {
         show: legendData.length > 1,
         data: legendData,
-        icon: 'circle',
+        icon: 'path://M2 7 L14 7',
         top: 4,
         right: 20,
         textStyle: { color: t.muted, fontSize: 11 },
@@ -282,7 +289,7 @@ var Charts = (function () {
       backgroundColor: 'transparent',
       animation: false,
       title: { text: 'Spread vs ' + (benchmarkName || 'Benchmark') + ' (EUR/MWh)', textStyle: { color: t.muted, fontSize: 11, fontWeight: 'normal' }, top: 6, left: 10 },
-      grid: { left: 54, right: 10, top: 34, bottom: 34 },
+      grid: { left: 54, right: 10, top: 34, bottom: 56 },
       tooltip: Object.assign({
         trigger: 'axis',
         formatter: function (params) {
@@ -304,6 +311,10 @@ var Charts = (function () {
         axisTick: { show: false },
         splitLine: t.splitLine
       },
+      dataZoom: [
+        { type: 'inside', xAxisIndex: 0, filterMode: 'none' },
+        { type: 'slider', xAxisIndex: 0, height: 18, bottom: 10, borderColor: t.border, fillerColor: t.accentFill, handleSize: 10 }
+      ],
       series: [{
         type: 'line',
         data: spreadSeries.map(function (r) { return [r.dateString, Math.round(r.price)]; }),
@@ -317,10 +328,11 @@ var Charts = (function () {
 
   // --- Distribution histogram ---------------------------------------------------
 
-  function renderHistogram(containerId, bins, currentPrice) {
+  function renderHistogram(containerId, bins, currentPrice, unitLabel) {
     var chart = _get(containerId);
     if (!chart) return;
     var t = _theme();
+    var unit = unitLabel || 'EUR/MWh';
 
     if (!bins || bins.length === 0) {
       chart.setOption({ backgroundColor: 'transparent', series: [], xAxis: { type: 'category', data: [] }, yAxis: { type: 'value' } }, true);
@@ -340,11 +352,11 @@ var Charts = (function () {
     chart.setOption({
       backgroundColor: 'transparent',
       animation: false,
-      title: { text: 'Price Distribution (EUR/MWh)', textStyle: { color: t.muted, fontSize: 11, fontWeight: 'normal' }, top: 6, left: 10 },
-      grid: { left: 36, right: 10, top: 34, bottom: 34 },
+      title: { text: 'Price Distribution (' + unit + ')', textStyle: { color: t.muted, fontSize: 11, fontWeight: 'normal' }, top: 6, left: 10 },
+      grid: { left: 36, right: 10, top: 34, bottom: 56 },
       tooltip: Object.assign({
         trigger: 'axis',
-        formatter: function (params) { return _fmtVal(bins[params[0].dataIndex].lo) + '–' + _fmtVal(bins[params[0].dataIndex].hi) + ' EUR/MWh<br/>Days: ' + params[0].value; }
+        formatter: function (params) { return _fmtVal(bins[params[0].dataIndex].lo) + '–' + _fmtVal(bins[params[0].dataIndex].hi) + ' ' + unit + '<br/>Days: ' + params[0].value; }
       }, t.tooltip),
       xAxis: {
         type: 'category',
@@ -360,16 +372,21 @@ var Charts = (function () {
         axisLine: { show: false },
         axisTick: { show: false }
       },
+      dataZoom: [
+        { type: 'inside', xAxisIndex: 0, filterMode: 'none' },
+        { type: 'slider', xAxisIndex: 0, height: 18, bottom: 10, borderColor: t.border, fillerColor: t.accentFill, handleSize: 10 }
+      ],
       series: [{ type: 'bar', data: data, barCategoryGap: '2%' }]
     }, true);
   }
 
   // --- Monthly summary bar chart ------------------------------------------------
 
-  function renderMonthlyBar(containerId, series, iso) {
+  function renderMonthlyBar(containerId, series, iso, unitLabel) {
     var chart = _get(containerId);
     if (!chart) return;
     var t = _theme();
+    var unit = unitLabel || 'EUR/MWh';
 
     if (!series || series.length === 0) {
       chart.setOption({ backgroundColor: 'transparent', series: [] }, true);
@@ -377,26 +394,24 @@ var Charts = (function () {
     }
 
     var color = COUNTRY_COLORS[iso] || '#4f759b';
-    var labels = series.map(function (r) { return r.dateString.slice(0, 7); });
-    var values = series.map(function (r) { return Math.round(r.price); });
+    var values = series.map(function (r) { return [r.dateString, Math.round(r.price)]; });
 
     chart.setOption({
       backgroundColor: 'transparent',
       animation: false,
-      title: { text: 'Monthly Average (EUR/MWh)', textStyle: { color: t.muted, fontSize: 11, fontWeight: 'normal' }, top: 4, left: 10 },
-      grid: { left: 54, right: 16, top: 30, bottom: 36 },
+      title: { text: 'Monthly Average (' + unit + ')', textStyle: { color: t.muted, fontSize: 11, fontWeight: 'normal' }, top: 4, left: 10 },
+      grid: { left: 54, right: 16, top: 30, bottom: 56 },
       tooltip: Object.assign({
         trigger: 'axis',
         formatter: function (params) {
           if (!params || !params.length) return '';
           var p = params[0];
-          return (p.axisValueLabel || p.axisValue || '') + '<br/>' + p.marker + ' Avg: ' + _fmtVal(p.value) + ' EUR/MWh';
+          return (p.axisValueLabel || p.axisValue || '') + '<br/>' + p.marker + ' Avg: ' + _fmtVal(p.value[1]) + ' ' + unit;
         }
       }, t.tooltip),
       xAxis: {
-        type: 'category',
-        data: labels,
-        axisLabel: Object.assign({}, t.axisLabel, { fontSize: 10, rotate: 30 }),
+        type: 'time',
+        axisLabel: Object.assign({}, t.axisLabel, { fontSize: 10 }),
         axisLine: { lineStyle: { color: t.border } },
         axisTick: { show: false }
       },
@@ -407,6 +422,10 @@ var Charts = (function () {
         axisLine: { show: false },
         axisTick: { show: false }
       },
+      dataZoom: [
+        { type: 'inside', xAxisIndex: 0, filterMode: 'none' },
+        { type: 'slider', xAxisIndex: 0, height: 18, bottom: 10, borderColor: t.border, fillerColor: t.accentFill, handleSize: 10 }
+      ],
       series: [{
         type: 'bar',
         data: values.map(function (v) { return { value: v, itemStyle: { color: color, opacity: 0.75 } }; }),

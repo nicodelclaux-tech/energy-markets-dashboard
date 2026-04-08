@@ -223,6 +223,7 @@ select,
 .market-table {
   width: 100%;
   border-collapse: collapse;
+  font: inherit;
 }
 
 .market-table th,
@@ -248,7 +249,7 @@ select,
 .section-header-row td {
   padding: 6px 12px;
   font-size: 10px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.07em;
   text-transform: uppercase;
   color: var(--muted);
@@ -257,8 +258,22 @@ select,
 }
 
 .row-name {
-  font-weight: 500;
+  font-weight: 400;
   min-width: 130px;
+}
+
+.row-link {
+  font: inherit;
+  font-weight: inherit;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.row-link:hover {
+  color: var(--blue);
 }
 
 .muted { color: var(--muted); }

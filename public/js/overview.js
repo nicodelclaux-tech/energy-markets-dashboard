@@ -14,6 +14,15 @@ var Overview = (function () {
     return r < 0 ? '(' + Math.abs(r) + ')' : String(r);
   }
 
+  function esc(text) {
+    return String(text)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
   // Build SVG sparkline from a series array (last `count` points).
   function sparkline(series, count, color) {
     var subset = series.slice(-count);
@@ -78,6 +87,21 @@ var Overview = (function () {
     return '<td class="num' + cls + '">' + fmt(value) + '</td>';
   }
 
+  function normalizeCommodityId(v) {
+    return String(v || '').trim().toUpperCase().replace(/\s+/g, '_');
+  }
+
+  function findCommodityFuturesEntry(commodityId, data) {
+    var map = (data.futures && data.futures.commodities) || {};
+    var keys = Object.keys(map);
+    for (var i = 0; i < keys.length; i++) {
+      if (normalizeCommodityId(keys[i]) === normalizeCommodityId(commodityId)) {
+        return map[keys[i]];
+      }
+    }
+    return null;
+  }
+
   // --------------------------------------------------------------------------
   // Row builders
   // --------------------------------------------------------------------------
@@ -100,7 +124,7 @@ var Overview = (function () {
     var spark = series.length > 0 ? sparkline(series, 90, color) : '<svg width="80" height="24"></svg>';
 
     return '<tr>'
-      + '<td class="row-name">' + name + '</td>'
+      + '<td class="row-name"><button type="button" class="row-link" data-country-iso="' + esc(iso) + '">' + esc(name) + '</button></td>'
       + '<td class="muted small">EUR/MWh</td>'
       + latestCell
       + '<td class="range-cell">' + rangebar(stats, color) + '</td>'
@@ -110,26 +134,29 @@ var Overview = (function () {
   }
 
   function commodityRow(key, data) {
-    var comm = data.futures.commodities[key];
-    if (!comm) return '';
-    var spot = comm.spot != null ? comm.spot : null;
+    var name = (data.countriesByIso[key] || {}).name || key;
+    var series = data.seriesByIso[key] || [];
+    var color = Charts.COUNTRY_COLORS[key] || '#4f759b';
+    var stats = rangeStats(series, data.latestDate);
+    var futures = findCommodityFuturesEntry(key, data);
+    var spot = futures && futures.spot != null ? futures.spot : (stats ? stats.current : null);
     var latestCell = spot != null
       ? '<td class="num latest">' + fmt(spot) + '</td>'
       : '<td class="num muted">—</td>';
 
-    // No historical data for commodities currently — show no range bar
-    var rangeCell = '<td class="range-cell"><div class="range-bar-wrap range-na"><span class="range-na-text">No hist.</span></div></td>';
+    var rangeCell = '<td class="range-cell">' + rangebar(stats, color) + '</td>';
 
     var futureCells = data.futures.months.map(function (m) {
-      return futureCell(comm[m] != null ? comm[m] : null, spot);
+      if (!futures) return futureCell(null, spot);
+      return futureCell(futures[m] != null ? futures[m] : null, spot);
     }).join('');
 
-    // No sparkline for commodities (series empty)
-    var spark = '<svg width="80" height="24"></svg>';
+    var spark = series.length > 0 ? sparkline(series, 90, color) : '<svg width="80" height="24"></svg>';
+    var unit = (futures && futures.unit) || data.unitsByIso[key] || '';
 
     return '<tr>'
-      + '<td class="row-name">' + key + '</td>'
-      + '<td class="muted small">' + (comm.unit || '') + '</td>'
+      + '<td class="row-name"><button type="button" class="row-link" data-commodity-key="' + esc(key) + '">' + esc(name) + '</button></td>'
+      + '<td class="muted small">' + esc(unit) + '</td>'
       + latestCell
       + rangeCell
       + futureCells
@@ -149,7 +176,10 @@ var Overview = (function () {
     var monthHeaders = months.map(function (m) { return '<th class="num futures-hdr">' + m + '</th>'; }).join('');
 
     var powerRows = data.countryOrder.map(function (iso) { return powerRow(iso, data); }).join('');
-    var commodityRows = ['WTI', 'Brent', 'TTF'].map(function (k) { return commodityRow(k, data); }).join('');
+    var commodityList = (data.commodityOrder && data.commodityOrder.length > 0)
+      ? data.commodityOrder
+      : ['WTI', 'Brent', 'TTF'];
+    var commodityRows = commodityList.map(function (k) { return commodityRow(k, data); }).join('');
 
     el.innerHTML = '<div class="section-block">'
       + '<div class="section-label">Market Overview</div>'
@@ -172,6 +202,25 @@ var Overview = (function () {
       + '</table>'
       + '</div>'
       + '</div>';
+
+    el.onclick = function (event) {
+      var btn = event.target.closest('[data-country-iso]');
+      if (btn) {
+        var iso = btn.getAttribute('data-country-iso');
+        if (iso) AppState.setState({ primaryCountry: iso });
+        if (window.APP && typeof window.APP.activateTab === 'function') {
+          window.APP.activateTab('power');
+        }
+      } else {
+        var commodityBtn = event.target.closest('[data-commodity-key]');
+        if (!commodityBtn) return;
+        var commodityKey = commodityBtn.getAttribute('data-commodity-key');
+        if (commodityKey) AppState.setCommodityState({ primaryCountry: commodityKey });
+        if (window.APP && typeof window.APP.activateTab === 'function') {
+          window.APP.activateTab('commodities');
+        }
+      }
+    };
   }
 
   return { render: render };
