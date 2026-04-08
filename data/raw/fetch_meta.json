@@ -1,62 +1,30 @@
 {
-  "updatedAt": "2026-04-08T06:29:48.509818+00:00",
+  "updatedAt": "2026-04-08T09:51:14.301574+00:00",
   "sources": {
     "entsoe": {
-      "status": "ok",
-      "total_rows": 9135,
-      "coverage": {
-        "ES": 1827,
-        "DE": 1827,
-        "FR": 1827,
-        "IT": 1827,
-        "GB": 0,
-        "NL": 1827
-      },
-      "elapsed_s": 119.8
+      "status": "skipped",
+      "message": "dry-run"
     },
     "ember": {
-      "status": "ok",
-      "total_rows": 0,
-      "coverage": {
-        "ES": 0,
-        "DE": 0,
-        "FR": 0,
-        "IT": 0,
-        "GB": 0,
-        "NL": 0
-      },
-      "elapsed_s": 1.4
+      "status": "skipped",
+      "message": "dry-run"
     },
     "fmp": {
-      "status": "ok",
-      "total_rows": 0,
-      "coverage": {
-        "OUSX": 0,
-        "OJSX": 0,
-        "NGAS": 0,
-        "EURUSD": 0,
-        "GBPUSD": 0
-      },
-      "elapsed_s": 0.3
+      "status": "skipped",
+      "message": "dry-run"
     },
     "ecb": {
-      "status": "error",
-      "message": "TypeError: '<' not supported between instances of 'str' and 'Timestamp'",
-      "elapsed_s": 0.8
+      "status": "skipped",
+      "message": "dry-run"
     },
     "eia": {
-      "status": "error",
-      "message": "TypeError: '<' not supported between instances of 'str' and 'Timestamp'",
-      "elapsed_s": 0.8
+      "status": "skipped",
+      "message": "dry-run"
     },
     "news": {
-      "status": "ok",
-      "total_items": 198,
-      "elapsed_s": 104.2
+      "status": "skipped",
+      "message": "dry-run"
     }
   },
-  "warnings": [
-    "[ecb] TypeError: '<' not supported between instances of 'str' and 'Timestamp'",
-    "[eia] TypeError: '<' not supported between instances of 'str' and 'Timestamp'"
-  ]
+  "warnings": []
 }
