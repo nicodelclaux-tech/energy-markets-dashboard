@@ -35,6 +35,7 @@ var APP = (function () {
     if (tabName === 'power') {
       var s = AppState.getState();
       UI.renderMainChart(s, _data);
+      UI.renderRanking(s, _data);
       UI.renderSpread(s, _data);
       UI.renderDistribution(s, _data);
       UI.renderMonthlySummary(s, _data);
@@ -62,7 +63,7 @@ var APP = (function () {
     var iconFile = theme === 'dark' ? 'light-mode.svg' : 'dark-mode.svg';
     var ariaLabel = 'Switch to ' + (theme === 'dark' ? 'light' : 'dark') + ' theme';
     document.querySelectorAll('[data-action="toggle-theme"]').forEach(function (btn) {
-      btn.innerHTML = '<img src="../assets/Icons/' + iconFile + '" alt="' + ariaLabel + '" class="theme-toggle-icon">';
+      btn.innerHTML = '<img src="assets/icons/' + iconFile + '" alt="' + ariaLabel + '" class="theme-toggle-icon">';
       btn.setAttribute('aria-label', ariaLabel);
     });
   }
@@ -97,6 +98,7 @@ var APP = (function () {
     UI.renderKPIs(powerState, _data);
     if (powerVisible) {
       UI.renderMainChart(powerState, _data);
+      UI.renderRanking(powerState, _data);
       UI.renderSpread(powerState, _data);
       UI.renderDistribution(powerState, _data);
       UI.renderMonthlySummary(powerState, _data);

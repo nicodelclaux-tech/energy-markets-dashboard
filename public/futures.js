@@ -55,11 +55,6 @@ window.FUTURES_DATA = {
     TTF:        { unit: 'EUR/MWh', spot: 50,  'May-26': 53,  'Jun-26': 53,  'Jul-26': 53,  'Aug-26': 53,  'Sep-26': 53,  'Oct-26': 53  },
     Gold:       { unit: 'USD/troy oz', spot: 2320, 'May-26': 2350, 'Jun-26': 2370, 'Jul-26': 2390, 'Aug-26': 2400, 'Sep-26': 2410, 'Oct-26': 2420 },
     Diesel:     { unit: 'USD/bbl', spot: 98,  'May-26': 99,  'Jun-26': 97,  'Jul-26': 95,  'Aug-26': 93,  'Sep-26': 91,  'Oct-26': 90  }
-    WTI:       { unit: 'USD/bbl',   spot: 62,   'May-26': 62,   'Jun-26': 61,   'Jul-26': 60,   'Aug-26': 60,   'Sep-26': 59,   'Oct-26': 59   },
-    Brent:     { unit: 'USD/bbl',   spot: 65,   'May-26': 65,   'Jun-26': 64,   'Jul-26': 63,   'Aug-26': 63,   'Sep-26': 62,   'Oct-26': 62   },
-    HENRY_HUB: { unit: 'USD/MMBtu', spot: 2.8,  'May-26': 2.80, 'Jun-26': 2.90, 'Jul-26': 3.10, 'Aug-26': 3.00, 'Sep-26': 2.90, 'Oct-26': 2.85 },
-    TTF:       { unit: 'EUR/MWh',   spot: 35,   'May-26': 35,   'Jun-26': 34,   'Jul-26': 33,   'Aug-26': 34,   'Sep-26': 36,   'Oct-26': 38   },
-    Diesel:    { unit: 'USD/gal',   spot: 3.25, 'May-26': 3.25, 'Jun-26': 3.20, 'Jul-26': 3.18, 'Aug-26': 3.15, 'Sep-26': 3.12, 'Oct-26': 3.10 }
   },
 
   // ── Commodity curves 1 week ago ────────────────────────────────────────────

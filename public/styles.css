@@ -169,6 +169,123 @@ select:focus-visible {
 .page.active { display: block; }
 
 /* =========================================================
+   Overview — two-column layout
+   ========================================================= */
+.overview-outer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  padding: 16px 20px;
+}
+
+.overview-block-spot,
+.overview-block-futures {
+  min-width: 0;
+}
+
+.overview-block-spot {
+  margin-right: -1px; /* merge borders */
+}
+
+/* =========================================================
+   Secondary row — multi-panel grid below main chart
+   ========================================================= */
+.secondary-row {
+  display: grid;
+  gap: 0;
+  margin: 0;
+}
+
+.secondary-row--two {
+  grid-template-columns: 1fr 1fr;
+}
+
+.secondary-row--three {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.secondary-panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: none;
+  min-height: 280px;
+  overflow: hidden;
+}
+
+.secondary-panel + .secondary-panel {
+  border-left: none;
+}
+
+/* =========================================================
+   Chart toolbar — controls strip above the main chart
+   ========================================================= */
+.chart-toolbar-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+  padding: 0 12px;
+  min-height: 44px;
+}
+
+.chart-toolbar-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px 12px 8px 0;
+  border-right: 1px solid var(--border);
+  min-width: 180px;
+  max-width: 240px;
+  flex-shrink: 0;
+}
+
+.chart-toolbar-title {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 0.03em;
+}
+
+.chart-toolbar-subtitle {
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 2px;
+  line-height: 1.35;
+}
+
+.chart-toolbar-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex: 1;
+  gap: 0;
+}
+
+.chart-toolbar-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-right: 1px solid var(--border);
+}
+
+.chart-toolbar-group--wide {
+  flex-wrap: wrap;
+  max-width: 400px;
+}
+
+.chart-toolbar-fixed {
+  margin-left: auto;
+  padding: 8px 12px;
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+/* =========================================================
    Overview — section block & table
    ========================================================= */
 .section-block {

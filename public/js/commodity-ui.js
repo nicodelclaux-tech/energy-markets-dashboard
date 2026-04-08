@@ -35,22 +35,25 @@ var CommodityUI = (function () {
   function flagEmoji(iso) {
     var code = String(iso || '').toLowerCase().slice(0, 2);
     if (code.length !== 2 || !/^[a-z]{2}$/.test(code)) return '';
-    return '<img src="../assets/Flags/' + code + '.svg" alt="' + code.toUpperCase() + '" class="market-primary-flag-img">';
+    return '<img src="assets/flags/' + code + '.svg" alt="' + code.toUpperCase() + '" class="market-primary-flag-img">';
   }
 
   var _COMMODITY_ICONS = {
-    'OUSX':   'oil.svg',
-    'OJSX':   'oil.svg',
-    'NGAS':   'gas.svg',
-    'TTF':    'gas.svg',
-    'GOLD':   'gold.svg',
-    'DIESEL': 'diesel.png'
+    'WTI':        'wti.svg',
+    'BRENT':      'brent.svg',
+    'HENRY_HUB':  'henry-hub.svg',
+    'TTF':        'ttf.svg',
+    'GOLD':       'gold.svg',
+    'DIESEL':     'diesel.svg',
+    'OUSX':       'wti.svg',
+    'OJSX':       'brent.svg',
+    'NGAS':       'henry-hub.svg'
   };
 
   function commodityIcon(iso) {
     var file = _COMMODITY_ICONS[String(iso || '').toUpperCase()];
     if (!file) return '';
-    return '<img src="../assets/Icons/' + file + '" alt="' + iso + '" class="market-primary-flag-img">';
+    return '<img src="assets/icons/' + file + '" alt="' + iso + '" class="market-primary-flag-img">';
   }
 
   function qualityBadge(label, tone) {
@@ -78,7 +81,7 @@ var CommodityUI = (function () {
 
     var _currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
     var _themeIconFile = _currentTheme === 'dark' ? 'light-mode.svg' : 'dark-mode.svg';
-    var _themeToggleBtn = '<button class="btn-icon" data-action="toggle-theme" aria-label="Toggle theme"><img src="../assets/Icons/' + _themeIconFile + '" alt="Toggle theme" class="theme-toggle-icon"></button>';
+    var _themeToggleBtn = '<button class="btn-icon" data-action="toggle-theme" aria-label="Toggle theme"><img src="assets/icons/' + _themeIconFile + '" alt="Toggle theme" class="theme-toggle-icon"></button>';
 
     var commodityOrder = data.commodityOrder || [];
     var commodityOptions = commodityOrder.map(function (iso) {
