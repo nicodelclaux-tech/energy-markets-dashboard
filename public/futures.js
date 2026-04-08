@@ -49,6 +49,12 @@ window.FUTURES_DATA = {
 
   // ── Current commodity forward curves ──────────────────────────────────────
   commodities: {
+    WTI:        { unit: 'USD/bbl', spot: 113, 'May-26': 113, 'Jun-26': 99,  'Jul-26': 91,  'Aug-26': 85,  'Sep-26': 81,  'Oct-26': 78  },
+    Brent:      { unit: 'USD/bbl', spot: 109, 'May-26': 109, 'Jun-26': 100, 'Jul-26': 93,  'Aug-26': 88,  'Sep-26': 85,  'Oct-26': 83  },
+    'Henry Hub':{ unit: 'USD/MMBtu', spot: 3.8, 'May-26': 3.9, 'Jun-26': 4.0, 'Jul-26': 4.1, 'Aug-26': 4.1, 'Sep-26': 3.9, 'Oct-26': 3.8 },
+    TTF:        { unit: 'EUR/MWh', spot: 50,  'May-26': 53,  'Jun-26': 53,  'Jul-26': 53,  'Aug-26': 53,  'Sep-26': 53,  'Oct-26': 53  },
+    Gold:       { unit: 'USD/troy oz', spot: 2320, 'May-26': 2350, 'Jun-26': 2370, 'Jul-26': 2390, 'Aug-26': 2400, 'Sep-26': 2410, 'Oct-26': 2420 },
+    Diesel:     { unit: 'USD/bbl', spot: 98,  'May-26': 99,  'Jun-26': 97,  'Jul-26': 95,  'Aug-26': 93,  'Sep-26': 91,  'Oct-26': 90  }
     WTI:       { unit: 'USD/bbl',   spot: 62,   'May-26': 62,   'Jun-26': 61,   'Jul-26': 60,   'Aug-26': 60,   'Sep-26': 59,   'Oct-26': 59   },
     Brent:     { unit: 'USD/bbl',   spot: 65,   'May-26': 65,   'Jun-26': 64,   'Jul-26': 63,   'Aug-26': 63,   'Sep-26': 62,   'Oct-26': 62   },
     HENRY_HUB: { unit: 'USD/MMBtu', spot: 2.8,  'May-26': 2.80, 'Jun-26': 2.90, 'Jul-26': 3.10, 'Aug-26': 3.00, 'Sep-26': 2.90, 'Oct-26': 2.85 },

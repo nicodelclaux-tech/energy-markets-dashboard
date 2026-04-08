@@ -4,6 +4,16 @@ var Overview = (function () {
 
   var MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
+  // Commodity icon paths and accent colours
+  var COMMODITY_META = {
+    'WTI':        { icon: 'assets/icons/wti.svg',       color: '#d4a017' },
+    'Brent':      { icon: 'assets/icons/brent.svg',     color: '#4a9ebb' },
+    'Henry Hub':  { icon: 'assets/icons/henry-hub.svg', color: '#f0883e' },
+    'TTF':        { icon: 'assets/icons/ttf.svg',       color: '#2f9cb2' },
+    'Gold':       { icon: 'assets/icons/gold.svg',      color: '#e0b84a' },
+    'Diesel':     { icon: 'assets/icons/diesel.svg',    color: '#cf4444' }
+  };
+
   // --------------------------------------------------------------------------
   // Helpers
   // --------------------------------------------------------------------------
@@ -14,13 +24,11 @@ var Overview = (function () {
     return r < 0 ? '(' + Math.abs(r) + ')' : String(r);
   }
 
-  function esc(text) {
-    return String(text)
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;')
-      .replace(/'/g, '&#39;');
+  function fmtNum(n) {
+    if (n == null || isNaN(n)) return '—';
+    // Show decimals for small values (gas, gold spot)
+    if (Math.abs(n) < 10) return n.toFixed(2);
+    return String(Math.round(n));
   }
 
   // Build SVG sparkline from a series array (last `count` points).
@@ -84,7 +92,14 @@ var Overview = (function () {
       if (diff < -2) cls = ' future-down';
       else if (diff > 2) cls = ' future-up';
     }
-    return '<td class="num' + cls + '">' + fmt(value) + '</td>';
+    return '<td class="num' + cls + '">' + fmtNum(value) + '</td>';
+  }
+
+  // Build an icon <img> tag for a commodity, or empty string if no icon.
+  function commIconImg(key, color) {
+    var meta = COMMODITY_META[key];
+    if (!meta) return '';
+    return '<img src="' + meta.icon + '" alt="" class="comm-icon-img" style="color:' + color + '" width="16" height="16">';
   }
 
   function normalizeCommodityId(v) {
@@ -134,14 +149,13 @@ var Overview = (function () {
   }
 
   function commodityRow(key, data) {
-    var name = (data.countriesByIso[key] || {}).name || key;
-    var series = data.seriesByIso[key] || [];
-    var color = Charts.COUNTRY_COLORS[key] || '#4f759b';
-    var stats = rangeStats(series, data.latestDate);
-    var futures = findCommodityFuturesEntry(key, data);
-    var spot = futures && futures.spot != null ? futures.spot : (stats ? stats.current : null);
+    var comm = data.futures.commodities[key];
+    if (!comm) return '';
+    var meta = COMMODITY_META[key] || {};
+    var color = meta.color || '#4a9ebb';
+    var spot = comm.spot != null ? comm.spot : null;
     var latestCell = spot != null
-      ? '<td class="num latest">' + fmt(spot) + '</td>'
+      ? '<td class="num latest">' + fmtNum(spot) + '</td>'
       : '<td class="num muted">—</td>';
 
     var rangeCell = '<td class="range-cell">' + rangebar(stats, color) + '</td>';
@@ -154,9 +168,11 @@ var Overview = (function () {
     var spark = series.length > 0 ? sparkline(series, 90, color) : '<svg width="80" height="24"></svg>';
     var unit = (futures && futures.unit) || data.unitsByIso[key] || '';
 
+    var iconHtml = commIconImg(key, color);
+
     return '<tr>'
-      + '<td class="row-name"><button type="button" class="row-link" data-commodity-key="' + esc(key) + '">' + esc(name) + '</button></td>'
-      + '<td class="muted small">' + esc(unit) + '</td>'
+      + '<td class="row-name"><span class="comm-icon">' + iconHtml + '<span>' + key + '</span></span></td>'
+      + '<td class="muted small">' + (comm.unit || '') + '</td>'
       + latestCell
       + rangeCell
       + futureCells
@@ -252,14 +268,8 @@ var Overview = (function () {
     var monthHeaders = months.map(function (m) { return '<th class="futures-hdr">' + m + '</th>'; }).join('');
 
     var powerRows = data.countryOrder.map(function (iso) { return powerRow(iso, data); }).join('');
-    var powerRowsSpot = data.countryOrder.map(function (iso) { return powerRowSpot(iso, data); }).join('');
-    var powerRowsFutures = data.countryOrder.map(function (iso) { return powerRowFutures(iso, data); }).join('');
-    var commodityList = (data.commodityOrder && data.commodityOrder.length > 0)
-      ? data.commodityOrder.filter(function (k) { return String(k).toUpperCase() !== 'DIESEL'; })
-      : ['WTI', 'Brent', 'TTF'];
-    var commodityRows = commodityList.map(function (k) { return commodityRow(k, data); }).join('');
-    var commodityRowsSpot = commodityList.map(function (k) { return commodityRowSpot(k, data); }).join('');
-    var commodityRowsFutures = commodityList.map(function (k) { return commodityRowFutures(k, data); }).join('');
+    var commodityKeys = ['WTI', 'Brent', 'Henry Hub', 'TTF', 'Gold', 'Diesel'];
+    var commodityRows = commodityKeys.map(function (k) { return commodityRow(k, data); }).join('');
 
     // Spot Market table
     var spotTable = '<table class="market-table">'
@@ -284,8 +294,8 @@ var Overview = (function () {
       + monthHeaders
       + '</tr></thead>'
       + '<tbody>'
-      + '<tr class="section-header-row"><td colspan="' + (1 + months.length) + '">Oil &amp; Gas</td></tr>'
-      + commodityRowsFutures
+      + '<tr class="section-header-row"><td colspan="' + (5 + months.length) + '">Commodities</td></tr>'
+      + commodityRows
       + '</tbody>'
       + '<tbody>'
       + '<tr class="section-header-row"><td colspan="' + (1 + months.length) + '">Power Prices</td></tr>'

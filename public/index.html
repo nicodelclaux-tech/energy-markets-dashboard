@@ -4,13 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>European Energy Markets</title>
+  <!-- Tailwind CSS (pre-built bundle — regenerate with: npx tailwindcss -i tailwind-input.css -o tailwind.css) -->
+  <link rel="stylesheet" href="tailwind.css">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="bg-app-bg text-app-text font-sans text-[13px] leading-snug min-h-screen flex flex-col">
 
   <!-- ================================================================== -->
   <!-- HEADER                                                               -->
   <!-- ================================================================== -->
+  <header id="app-header" class="sticky top-0 z-50 flex items-center gap-5 px-5 bg-app-surface border-b border-app-border" style="height:52px">
+    <div class="flex flex-col flex-1 min-w-0">
+      <span class="text-[14px] font-semibold tracking-[0.02em] whitespace-nowrap">European Energy Markets</span>
+      <span class="text-[11px] text-app-muted whitespace-nowrap -mt-px">Wholesale Electricity &amp; Commodity Analytics</span>
   <header id="app-header">
     <div class="header-left">
       <img class="header-logo" src="https://higinfrastructure.com/wp-content/uploads/sites/3/2023/02/HIG-Infrastructure-logo.png" alt="HIG Infrastructure" crossorigin="anonymous">
@@ -19,11 +25,15 @@
         <span class="app-sub">Wholesale Electricity &amp; Commodity Analytics</span>
       </div>
     </div>
-    <nav class="tab-nav">
+    <nav class="tab-nav flex gap-0.5">
       <button class="tab-btn active" data-tab="overview">Overview</button>
       <button class="tab-btn" data-tab="power">Power Markets</button>
       <button class="tab-btn" data-tab="commodities">Commodity Markets</button>
     </nav>
+    <div class="flex items-center gap-3">
+      <button id="btn-theme" class="btn-secondary" aria-label="Toggle theme">Light</button>
+      <button id="btn-reset" class="btn-secondary">Reset</button>
+    </div>
 
   </header>
 
@@ -34,6 +44,7 @@
 
   <!-- ================================================================== -->
   <div id="page-overview" class="page active">
+    <div id="market-table-container" class="p-5"></div>
     <div id="market-table-container"></div>
     <div id="forward-curve-container"></div>
   </div>
@@ -46,6 +57,18 @@
 
     <div id="kpi-row"></div>
 
+    <!-- Main chart -->
+    <div class="chart-panel mx-5 my-4">
+      <div id="chart-main" class="chart-canvas chart-main"></div>
+    </div>
+
+    <!-- Secondary row: Ranking + Spread + Distribution -->
+    <div class="grid grid-cols-3 gap-4 mx-5">
+      <div class="bg-app-surface border border-app-border" id="ranking-container"></div>
+      <div class="bg-app-surface border border-app-border">
+        <div id="chart-spread" class="chart-canvas chart-sm"></div>
+      </div>
+      <div class="bg-app-surface border border-app-border">
     <div class="chart-panel">
       <div id="chart-main-toolbar"></div>
       <div id="chart-main" class="chart-canvas chart-main"></div>
@@ -62,6 +85,9 @@
       </div>
     </div>
 
+    <!-- Monthly summary -->
+    <div class="chart-panel mx-5 mt-4 mb-6">
+      <div id="chart-monthly" class="chart-canvas chart-monthly"></div>
     <div class="secondary-row secondary-row--three">
       <div class="secondary-panel chart-panel-sm">
         <div id="chart-title-monthly-power" class="panel-title chart-title"></div>
@@ -106,8 +132,8 @@
 
   </div>
 
-  <footer id="app-footer">
-    <span id="footer-coverage" class="coverage-text"></span>
+  <footer id="app-footer" class="mt-auto border-t border-app-border bg-app-surface min-h-[32px] flex items-center justify-center px-3 py-1.5">
+    <span id="footer-coverage" class="text-[11px] text-app-muted tabular-nums"></span>
   </footer>
 
   <!-- ================================================================== -->
@@ -115,6 +141,9 @@
   <!-- ================================================================== -->
   <script src="data.js"></script>
   <script src="futures.js"></script>
+  <!-- ECharts from CDN. For offline dev, place echarts.min.js in public/ and
+       change this src attribute to "echarts.min.js" (file is git-ignored). -->
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
   <script src="vendor/echarts-map/echarts.min.js"></script>
   <script src="js/europe-geo.js"></script>
   <script src="js/state.js"></script>
