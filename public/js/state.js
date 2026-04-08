@@ -9,7 +9,8 @@ var AppState = (function () {
     aggregation: 'daily',     // 'daily' | 'monthly' | 'yearly'
     smoothingWindow: 7,       // 0 = none
     rankingDate: null,        // ISO date string, set to latest on load
-    periodPreset: 0
+    periodPreset: 0,
+    mapWindow: 'CURRENT'
   };
 
   var _commodityState = {
@@ -70,6 +71,7 @@ var AppState = (function () {
     _state.smoothingWindow = 7;
     _state.rankingDate = data.latestDate;
     _state.periodPreset = 12;
+    _state.mapWindow = 'CURRENT';
     if (typeof window.renderApp === 'function') {
       window.renderApp();
     }

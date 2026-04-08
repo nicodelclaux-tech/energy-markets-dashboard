@@ -53,10 +53,25 @@ var DataLoader = (function () {
     return out;
   }
 
+  function _normalizeFuturesData(rawFutures) {
+    var src = rawFutures || {};
+    var months = Array.isArray(src.months) ? src.months : [];
+    return {
+      months: months,
+      power: src.power || {},
+      power_1w: src.power_1w || {},
+      power_1m: src.power_1m || {},
+      commodities: src.commodities || {},
+      commodities_1w: src.commodities_1w || {},
+      commodities_1m: src.commodities_1m || {}
+    };
+  }
+
   function loadData() {
     var raw = window.APP_DATA || {};
     var rawSeries = raw.series || {};
     var entsoe = (raw.series && raw.series.entsoe_prices) || {};
+    var futuresData = _normalizeFuturesData(window.FUTURES_DATA);
 
     var rows = [];
     var seriesByIso = {};
@@ -112,7 +127,7 @@ var DataLoader = (function () {
     });
 
     // Ensure futures commodities are represented (TTF, Gold, etc.) even without historical series
-    var futuresCommodities = ((window.FUTURES_DATA || {}).commodities || {});
+    var futuresCommodities = futuresData.commodities || {};
     Object.keys(futuresCommodities).forEach(function (name) {
       var key = String(name || '').toLowerCase().replace(/\s+/g, '_');
       var meta = COMMODITY_KEY_META[key] || { id: name.toUpperCase().replace(/\s+/g, '_'), name: name, unit: futuresCommodities[name].unit || '' };
@@ -163,7 +178,7 @@ var DataLoader = (function () {
       dataCoverage: dataCoverage,
       latestDate: latestDate,
       earliestDate: earliestDate,
-      futures: window.FUTURES_DATA || { months: [], power: {}, commodities: {} },
+      futures: futuresData,
       meta: raw.meta || {},
       news: raw.news || []
     };

@@ -53,11 +53,16 @@ from scripts.transforms.news_ranker import rank_news
 
 def _read_csv(path: Path) -> pd.DataFrame:
     """Read CSV if it exists; return empty DataFrame otherwise."""
-    if path.exists() and path.stat().st_size > 0:
-        try:
-            return pd.read_csv(path, parse_dates=["date"])
-        except Exception as exc:
-            logger.warning("Could not read %s: %s", path, exc)
+    if not path.exists():
+        logger.warning("Cache file missing: %s", path)
+        return pd.DataFrame()
+    if path.stat().st_size == 0:
+        logger.warning("Cache file empty: %s", path)
+        return pd.DataFrame()
+    try:
+        return pd.read_csv(path, parse_dates=["date"])
+    except Exception as exc:
+        logger.warning("Could not read %s: %s", path, exc)
     return pd.DataFrame()
 
 
@@ -191,6 +196,10 @@ def build(output_path: Path) -> None:
     raw_news = load_news()
     fetch_meta = load_fetch_meta()
 
+    def _add_warning(warnings_list: list[str], message: str) -> None:
+        if message not in warnings_list:
+            warnings_list.append(message)
+
     # ---- Series section ----
     def _best_commodity(primary_key: str, fallback_key: str, value_col: str = "value") -> list[dict]:
         """Return records from primary key; fall back to secondary if empty."""
@@ -300,6 +309,18 @@ def build(output_path: Path) -> None:
     # ---- Meta section ----
     warnings = list(fetch_meta.get("warnings", []))
     sources_meta = fetch_meta.get("sources", {})
+
+    for cc in COUNTRIES:
+        if len(series_out["entsoe_prices"].get(cc, [])) == 0:
+            _add_warning(warnings, f"[build] no ENTSO-E records for {cc}")
+
+    commodity_keys = ["brent", "wti", "henry_hub"]
+    missing_commodity_keys = [k for k in commodity_keys if len(series_out.get(k, [])) == 0]
+    if missing_commodity_keys:
+        _add_warning(warnings, "[build] missing commodity series: " + ", ".join(missing_commodity_keys))
+
+    if not any(bool(countries_out[cc].get("generation_mix")) for cc in COUNTRIES):
+        _add_warning(warnings, "[build] no Ember generation mix records for configured countries")
 
     app_data = {
         "meta": {

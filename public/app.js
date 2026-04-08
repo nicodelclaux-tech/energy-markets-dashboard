@@ -10,6 +10,18 @@ var APP = (function () {
     return d.toISOString().slice(0, 10);
   }
 
+  function _scheduleChartResize() {
+    if (typeof requestAnimationFrame !== 'function') {
+      Charts.resizeAll();
+      return;
+    }
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        Charts.resizeAll();
+      });
+    });
+  }
+
   function _activateTab(tabName) {
     document.querySelectorAll('.tab-btn').forEach(function (b) {
       b.classList.toggle('active', b.dataset.tab === tabName);
@@ -18,15 +30,16 @@ var APP = (function () {
       p.classList.toggle('active', p.id === 'page-' + tabName);
     });
 
-    setTimeout(function () { Charts.resizeAll(); }, 50);
+    _scheduleChartResize();
 
     if (tabName === 'power') {
       var s = AppState.getState();
       UI.renderMainChart(s, _data);
-      UI.renderRanking(s, _data);
       UI.renderSpread(s, _data);
       UI.renderDistribution(s, _data);
       UI.renderMonthlySummary(s, _data);
+      UI.renderHeatmap(s, _data);
+      UI.renderNews(s, _data);
     }
 
     if (tabName === 'commodities') {
@@ -41,17 +54,17 @@ var APP = (function () {
 
   function _applyTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
-    document.body.setAttribute('data-theme', theme);
     try {
       localStorage.setItem('energy_theme', theme);
     } catch (e) {
       // Ignore storage errors in locked-down environments
     }
-    var btn = document.getElementById('btn-theme');
-    if (btn) {
-      btn.textContent = theme === 'dark' ? 'Light' : 'Dark';
-      btn.setAttribute('aria-label', 'Switch to ' + (theme === 'dark' ? 'light' : 'dark') + ' theme');
-    }
+    var iconFile = theme === 'dark' ? 'light-mode.svg' : 'dark-mode.svg';
+    var ariaLabel = 'Switch to ' + (theme === 'dark' ? 'light' : 'dark') + ' theme';
+    document.querySelectorAll('[data-action="toggle-theme"]').forEach(function (btn) {
+      btn.innerHTML = '<img src="../assets/Icons/' + iconFile + '" alt="' + ariaLabel + '" class="theme-toggle-icon">';
+      btn.setAttribute('aria-label', ariaLabel);
+    });
   }
 
   function _initTheme() {
@@ -64,15 +77,14 @@ var APP = (function () {
     var initial = (saved === 'light' || saved === 'dark') ? saved : 'dark';
     _applyTheme(initial);
 
-    var btn = document.getElementById('btn-theme');
-    if (btn) {
-      btn.addEventListener('click', function () {
-        var current = document.body.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
-        _applyTheme(current === 'light' ? 'dark' : 'light');
-        renderApp();
-        Charts.resizeAll();
-      });
-    }
+    document.addEventListener('click', function (e) {
+      var btn = e.target.closest('[data-action="toggle-theme"]');
+      if (!btn) return;
+      var current = document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+      _applyTheme(current === 'light' ? 'dark' : 'light');
+      renderApp();
+      _scheduleChartResize();
+    });
   }
 
   function renderApp() {
@@ -85,10 +97,11 @@ var APP = (function () {
     UI.renderKPIs(powerState, _data);
     if (powerVisible) {
       UI.renderMainChart(powerState, _data);
-      UI.renderRanking(powerState, _data);
       UI.renderSpread(powerState, _data);
       UI.renderDistribution(powerState, _data);
       UI.renderMonthlySummary(powerState, _data);
+      UI.renderHeatmap(powerState, _data);
+      UI.renderNews(powerState, _data);
     }
 
     CommodityUI.syncControls(commodityState);
@@ -105,6 +118,9 @@ var APP = (function () {
   function init() {
     _initTheme();
     _data = DataLoader.loadData();
+
+    // Render data quality warnings (if any)
+    UI.renderWarningsBanner(_data);
 
     // Seed state directly (no render yet)
     var state = AppState.getState();
@@ -137,17 +153,8 @@ var APP = (function () {
       });
     });
 
-    // Reset button
-    document.getElementById('btn-reset').addEventListener('click', function () {
-      if (document.getElementById('page-commodities').classList.contains('active')) {
-        AppState.resetCommodityState(_data);
-      } else {
-        AppState.resetState(_data);
-      }
-    });
-
     // Window resize → ECharts resize
-    window.addEventListener('resize', function () { Charts.resizeAll(); });
+    window.addEventListener('resize', function () { _scheduleChartResize(); });
 
     // Expose renderApp globally so AppState.setState() can call it
     window.renderApp = renderApp;
@@ -165,8 +172,8 @@ var APP = (function () {
 document.addEventListener('DOMContentLoaded', function () {
   if (typeof echarts === 'undefined') {
     document.body.innerHTML = '<div style="color:#e05252;padding:48px 32px;font-family:monospace;background:#0d1117;min-height:100vh">'
-      + '<strong>ECharts failed to load.</strong><br>An internet connection is required to load the charting library. '
-      + 'Please check your connection and reload the page.</div>';
+      + '<strong>ECharts failed to load.</strong><br>The local charting assets could not be loaded. '
+      + 'Please verify the files under public/vendor/echarts-map and reload the page.</div>';
     return;
   }
   window.APP = APP;

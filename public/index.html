@@ -13,57 +13,62 @@
   <!-- ================================================================== -->
   <header id="app-header">
     <div class="header-left">
-      <span class="app-title">European Energy Markets</span>
-      <span class="app-sub">Wholesale Electricity &amp; Commodity Analytics</span>
+      <img class="header-logo" src="https://higinfrastructure.com/wp-content/uploads/sites/3/2023/02/HIG-Infrastructure-logo.png" alt="HIG Infrastructure" crossorigin="anonymous">
+      <div class="header-brand">
+        <span class="app-title">European Energy Markets</span>
+        <span class="app-sub">Wholesale Electricity &amp; Commodity Analytics</span>
+      </div>
     </div>
     <nav class="tab-nav">
       <button class="tab-btn active" data-tab="overview">Overview</button>
       <button class="tab-btn" data-tab="power">Power Markets</button>
       <button class="tab-btn" data-tab="commodities">Commodity Markets</button>
     </nav>
-    <div class="header-right">
-      <button id="btn-theme" class="btn-secondary" aria-label="Toggle theme">Light</button>
-      <button id="btn-reset" class="btn-secondary">Reset</button>
-    </div>
+
   </header>
 
   <!-- ================================================================== -->
-  <!-- OVERVIEW PAGE                                                        -->
+  <!-- DATA QUALITY WARNINGS BANNER                                         -->
+  <!-- ================================================================== -->
+  <div id="app-warnings" style="display: none;"></div>
+
   <!-- ================================================================== -->
   <div id="page-overview" class="page active">
     <div id="market-table-container"></div>
+    <div id="forward-curve-container"></div>
   </div>
 
   <!-- ================================================================== -->
   <!-- ANALYSIS PAGE                                                        -->
   <!-- ================================================================== -->
   <div id="page-power" class="page">
-
-    <!-- Controls -->
     <div id="controls-panel"></div>
 
-    <!-- KPI row -->
     <div id="kpi-row"></div>
 
-    <!-- Main chart -->
     <div class="chart-panel">
+      <div id="chart-main-toolbar"></div>
       <div id="chart-main" class="chart-canvas chart-main"></div>
     </div>
 
-    <!-- Secondary row: Ranking + Spread + Distribution -->
-    <div class="secondary-row">
-      <div class="secondary-panel" id="ranking-container"></div>
+    <div class="secondary-row secondary-row--two">
       <div class="secondary-panel chart-panel-sm">
+        <div id="chart-title-spread-power" class="panel-title chart-title"></div>
         <div id="chart-spread" class="chart-canvas chart-sm"></div>
       </div>
       <div class="secondary-panel chart-panel-sm">
+        <div id="chart-title-dist-power" class="panel-title chart-title"></div>
         <div id="chart-dist" class="chart-canvas chart-sm"></div>
       </div>
     </div>
 
-    <!-- Monthly summary -->
-    <div class="chart-panel chart-panel--monthly">
-      <div id="chart-monthly" class="chart-canvas chart-monthly"></div>
+    <div class="secondary-row secondary-row--three">
+      <div class="secondary-panel chart-panel-sm">
+        <div id="chart-title-monthly-power" class="panel-title chart-title"></div>
+        <div id="chart-monthly" class="chart-canvas chart-sm"></div>
+      </div>
+      <div class="secondary-panel" id="heatmap-container"></div>
+      <div class="secondary-panel" id="news-container"></div>
     </div>
 
   </div>
@@ -72,26 +77,30 @@
   <!-- COMMODITY MARKETS PAGE                                              -->
   <!-- ================================================================== -->
   <div id="page-commodities" class="page">
-
     <div id="controls-panel-commodity"></div>
 
     <div id="kpi-row-commodity"></div>
 
     <div class="chart-panel">
+      <div id="chart-title-main-commodity" class="panel-title chart-title"></div>
+      <div id="chart-main-toolbar-commodity"></div>
       <div id="chart-main-commodity" class="chart-canvas chart-main"></div>
     </div>
 
     <div class="secondary-row">
       <div class="secondary-panel" id="ranking-container-commodity"></div>
       <div class="secondary-panel chart-panel-sm">
+        <div id="chart-title-spread-commodity" class="panel-title chart-title"></div>
         <div id="chart-spread-commodity" class="chart-canvas chart-sm"></div>
       </div>
       <div class="secondary-panel chart-panel-sm">
+        <div id="chart-title-dist-commodity" class="panel-title chart-title"></div>
         <div id="chart-dist-commodity" class="chart-canvas chart-sm"></div>
       </div>
     </div>
 
     <div class="chart-panel chart-panel--monthly">
+      <div id="chart-title-monthly-commodity" class="panel-title chart-title"></div>
       <div id="chart-monthly-commodity" class="chart-canvas chart-monthly"></div>
     </div>
 
@@ -106,10 +115,12 @@
   <!-- ================================================================== -->
   <script src="data.js"></script>
   <script src="futures.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+  <script src="vendor/echarts-map/echarts.min.js"></script>
+  <script src="js/europe-geo.js"></script>
   <script src="js/state.js"></script>
   <script src="js/data-loader.js"></script>
   <script src="js/analytics.js"></script>
+  <script src="js/map.js"></script>
   <script src="js/charts.js"></script>
   <script src="js/overview.js"></script>
   <script src="js/ui.js"></script>
