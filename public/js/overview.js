@@ -4,6 +4,16 @@ var Overview = (function () {
 
   var MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
+  // Commodity icon paths and accent colours
+  var COMMODITY_META = {
+    'WTI':        { icon: 'assets/icons/wti.svg',       color: '#d4a017' },
+    'Brent':      { icon: 'assets/icons/brent.svg',     color: '#4a9ebb' },
+    'Henry Hub':  { icon: 'assets/icons/henry-hub.svg', color: '#f0883e' },
+    'TTF':        { icon: 'assets/icons/ttf.svg',       color: '#2f9cb2' },
+    'Gold':       { icon: 'assets/icons/gold.svg',      color: '#e0b84a' },
+    'Diesel':     { icon: 'assets/icons/diesel.svg',    color: '#cf4444' }
+  };
+
   // --------------------------------------------------------------------------
   // Helpers
   // --------------------------------------------------------------------------
@@ -12,6 +22,13 @@ var Overview = (function () {
     if (n == null || isNaN(n)) return '—';
     var r = Math.round(n);
     return r < 0 ? '(' + Math.abs(r) + ')' : String(r);
+  }
+
+  function fmtNum(n) {
+    if (n == null || isNaN(n)) return '—';
+    // Show decimals for small values (gas, gold spot)
+    if (Math.abs(n) < 10) return n.toFixed(2);
+    return String(Math.round(n));
   }
 
   // Build SVG sparkline from a series array (last `count` points).
@@ -75,7 +92,14 @@ var Overview = (function () {
       if (diff < -2) cls = ' future-down';
       else if (diff > 2) cls = ' future-up';
     }
-    return '<td class="num' + cls + '">' + fmt(value) + '</td>';
+    return '<td class="num' + cls + '">' + fmtNum(value) + '</td>';
+  }
+
+  // Build an icon <img> tag for a commodity, or empty string if no icon.
+  function commIconImg(key, color) {
+    var meta = COMMODITY_META[key];
+    if (!meta) return '';
+    return '<img src="' + meta.icon + '" alt="" class="comm-icon-img" style="color:' + color + '" width="16" height="16">';
   }
 
   // --------------------------------------------------------------------------
@@ -112,9 +136,11 @@ var Overview = (function () {
   function commodityRow(key, data) {
     var comm = data.futures.commodities[key];
     if (!comm) return '';
+    var meta = COMMODITY_META[key] || {};
+    var color = meta.color || '#4a9ebb';
     var spot = comm.spot != null ? comm.spot : null;
     var latestCell = spot != null
-      ? '<td class="num latest">' + fmt(spot) + '</td>'
+      ? '<td class="num latest">' + fmtNum(spot) + '</td>'
       : '<td class="num muted">—</td>';
 
     // No historical data for commodities currently — show no range bar
@@ -127,8 +153,10 @@ var Overview = (function () {
     // No sparkline for commodities (series empty)
     var spark = '<svg width="80" height="24"></svg>';
 
+    var iconHtml = commIconImg(key, color);
+
     return '<tr>'
-      + '<td class="row-name">' + key + '</td>'
+      + '<td class="row-name"><span class="comm-icon">' + iconHtml + '<span>' + key + '</span></span></td>'
       + '<td class="muted small">' + (comm.unit || '') + '</td>'
       + latestCell
       + rangeCell
@@ -149,7 +177,8 @@ var Overview = (function () {
     var monthHeaders = months.map(function (m) { return '<th class="num futures-hdr">' + m + '</th>'; }).join('');
 
     var powerRows = data.countryOrder.map(function (iso) { return powerRow(iso, data); }).join('');
-    var commodityRows = ['WTI', 'Brent', 'TTF'].map(function (k) { return commodityRow(k, data); }).join('');
+    var commodityKeys = ['WTI', 'Brent', 'Henry Hub', 'TTF', 'Gold', 'Diesel'];
+    var commodityRows = commodityKeys.map(function (k) { return commodityRow(k, data); }).join('');
 
     el.innerHTML = '<div class="section-block">'
       + '<div class="section-label">Market Overview</div>'
@@ -162,7 +191,7 @@ var Overview = (function () {
       + '<th>Trend (90d)</th>'
       + '</tr></thead>'
       + '<tbody>'
-      + '<tr class="section-header-row"><td colspan="' + (5 + months.length) + '">Oil &amp; Gas</td></tr>'
+      + '<tr class="section-header-row"><td colspan="' + (5 + months.length) + '">Commodities</td></tr>'
       + commodityRows
       + '</tbody>'
       + '<tbody>'

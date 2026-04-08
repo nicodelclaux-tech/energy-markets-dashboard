@@ -1,5 +1,5 @@
 /* =========================================================
-   Root variables
+   Root variables — theme tokens
    ========================================================= */
 :root {
   --bg:        #0d1117;
@@ -36,24 +36,12 @@ body[data-theme="light"] {
 }
 
 /* =========================================================
-   Reset / base
+   Theme transition — applies to key surfaces
    ========================================================= */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-html, body {
-  height: 100%;
-  background: var(--bg);
-  color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 13px;
-  line-height: 1.5;
-}
-
 body,
 #app-header,
 .section-block,
 .chart-panel,
-.secondary-panel,
 .kpi-card,
 #controls-panel,
 .btn-secondary,
@@ -64,49 +52,8 @@ select,
 }
 
 /* =========================================================
-   Header
+   Tab nav / buttons
    ========================================================= */
-#app-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  height: var(--header-h);
-  padding: 0 20px;
-  background: var(--surface);
-  border-bottom: 1px solid var(--border);
-}
-
-.header-left {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0;
-  flex: 1;
-  min-width: 0;
-}
-
-.app-title {
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  white-space: nowrap;
-}
-
-.app-sub {
-  font-size: 11px;
-  color: var(--muted);
-  white-space: nowrap;
-  margin-top: -1px;
-}
-
-.tab-nav {
-  display: flex;
-  gap: 2px;
-}
-
 .tab-btn {
   padding: 5px 14px;
   background: transparent;
@@ -125,28 +72,6 @@ select,
   color: var(--text);
   border-color: var(--border);
   background: var(--surface-2);
-}
-
-.header-right {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.coverage-text {
-  font-size: 11px;
-  color: var(--muted);
-  font-variant-numeric: tabular-nums;
-}
-
-#app-footer {
-  border-top: 1px solid var(--border);
-  background: var(--surface);
-  min-height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 6px 12px;
 }
 
 .btn-secondary {
@@ -172,12 +97,8 @@ select,
 .page.active { display: block; }
 
 /* =========================================================
-   Overview page
+   Overview — section block & table
    ========================================================= */
-#market-table-container {
-  padding: 20px;
-}
-
 .section-block {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -193,9 +114,7 @@ select,
   border-bottom: 1px solid var(--border);
 }
 
-.table-scroll {
-  overflow-x: auto;
-}
+.table-scroll { overflow-x: auto; }
 
 .market-table {
   width: 100%;
@@ -219,7 +138,6 @@ select,
 }
 
 .market-table tbody tr:last-child td { border-bottom: none; }
-
 .market-table tbody tr:hover { background: var(--surface-2); }
 
 .section-header-row td {
@@ -236,6 +154,20 @@ select,
 .row-name {
   font-weight: 500;
   min-width: 130px;
+}
+
+/* Commodity icon cell */
+.comm-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.comm-icon-img {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  opacity: 0.85;
 }
 
 .muted { color: var(--muted); }
@@ -317,7 +249,7 @@ select,
 .sparkline-cell svg { display: block; }
 
 /* =========================================================
-   Analysis page — Controls
+   Analysis page — Controls panel
    ========================================================= */
 #controls-panel {
   background: var(--surface);
@@ -345,7 +277,6 @@ select,
 }
 
 .ctrl-group:last-child { border-right: none; }
-
 .ctrl-group--wide { flex-wrap: wrap; }
 
 .ctrl-label {
@@ -370,40 +301,8 @@ select {
 
 select:focus { border-color: var(--blue); }
 
-.multi-check {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px 10px;
-}
-
-.check-label {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 11px;
-  cursor: pointer;
-}
-
-.check-label input { cursor: pointer; accent-color: var(--blue); }
-
-.btn-group {
-  display: flex;
-  gap: 2px;
-}
-
-.btn-group-wrap {
-  flex-wrap: wrap;
-  max-width: 380px;
-}
-
-.btn-pill--country {
-  padding: 2px 8px;
-}
-
-.btn-pill--country:disabled {
-  opacity: 0.45;
-  cursor: not-allowed;
-}
+.btn-group { display: flex; gap: 2px; }
+.btn-group-wrap { flex-wrap: wrap; max-width: 380px; }
 
 .btn-pill {
   padding: 3px 10px;
@@ -425,6 +324,13 @@ select:focus { border-color: var(--blue); }
   background: var(--surface-2);
   color: var(--text);
   border-color: var(--blue);
+}
+
+.btn-pill--country { padding: 2px 8px; }
+
+.btn-pill--country:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
 }
 
 .date-input {
@@ -514,32 +420,15 @@ input[type="date"], input[type="date"]::-webkit-calendar-picker-indicator {
    Chart panels
    ========================================================= */
 .chart-panel {
-  margin: 16px 20px;
   background: var(--surface);
   border: 1px solid var(--border);
 }
 
-.chart-main  { height: 380px; }
-.chart-sm    { height: 260px; }
+.chart-main    { height: 380px; }
+.chart-sm      { height: 260px; }
 .chart-monthly { height: 200px; }
 
-.chart-canvas {
-  background: var(--surface);
-}
-
-.chart-panel--monthly { margin-bottom: 24px; }
-
-.secondary-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 0 16px;
-  margin: 0 20px 0;
-}
-
-.secondary-panel {
-  background: var(--surface);
-  border: 1px solid var(--border);
-}
+.chart-canvas { background: var(--surface); }
 
 /* =========================================================
    Ranking table
@@ -594,3 +483,4 @@ input[type="date"], input[type="date"]::-webkit-calendar-picker-indicator {
   height: 100%;
   transition: width 0.3s ease;
 }
+

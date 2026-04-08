@@ -1,0 +1,66 @@
+/* ================================================================
+   Tailwind CSS input file for the Energy Markets Dashboard.
+
+   To regenerate tailwind.css after changing HTML/JS class usage:
+     npx @tailwindcss/cli -i tailwind-input.css -o tailwind.css
+
+   Requires Node.js / npm. Run from the /tmp or any directory with
+   @tailwindcss/cli installed, passing the correct --content paths.
+   ================================================================ */
+
+@import "tailwindcss";
+
+/* ================================================================
+   THEME TOKENS — mapped to runtime CSS variables so dark/light
+   switching works without a build step.
+
+   Using @theme inline means Tailwind generates `var(--color-*)` 
+   references rather than inlining literal values, which lets our
+   existing data-theme="light|dark" toggle work at runtime.
+   ================================================================ */
+@theme inline {
+  /* Color tokens → our CSS variable system */
+  --color-app-bg:       var(--bg);
+  --color-app-surface:  var(--surface);
+  --color-app-surface2: var(--surface-2);
+  --color-app-border:   var(--border);
+  --color-app-text:     var(--text);
+  --color-app-muted:    var(--muted);
+  --color-app-blue:     var(--blue);
+  --color-app-green:    var(--green);
+  --color-app-red:      var(--red);
+  --color-app-amber:    var(--amber);
+  --color-app-orange:   var(--orange);
+  --color-app-purple:   var(--purple);
+
+  /* Corporate aesthetic — no rounded corners */
+  --radius:    0px;
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+}
+
+/* ================================================================
+   Custom color utilities — ensure bg-app-* / text-app-* /
+   border-app-* classes resolve to our runtime CSS variables.
+   ================================================================ */
+@layer utilities {
+  .bg-app-bg       { background-color: var(--bg); }
+  .bg-app-surface  { background-color: var(--surface); }
+  .bg-app-surface2 { background-color: var(--surface-2); }
+
+  .text-app-text   { color: var(--text); }
+  .text-app-muted  { color: var(--muted); }
+  .text-app-blue   { color: var(--blue); }
+  .text-app-green  { color: var(--green); }
+  .text-app-red    { color: var(--red); }
+  .text-app-amber  { color: var(--amber); }
+  .text-app-orange { color: var(--orange); }
+  .text-app-purple { color: var(--purple); }
+
+  .border-app-border  { border-color: var(--border); }
+  .border-app-surface { border-color: var(--surface); }
+  .border-app-blue    { border-color: var(--blue); }
+}
+
