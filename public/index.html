@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>European Energy Markets</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ================================================================== -->
+  <!-- HEADER                                                               -->
+  <!-- ================================================================== -->
+  <header id="app-header">
+    <div class="header-left">
+      <span class="app-title">European Energy Markets</span>
+      <span class="app-sub">Wholesale Electricity &amp; Commodity Analytics</span>
+    </div>
+    <nav class="tab-nav">
+      <button class="tab-btn active" data-tab="overview">Overview</button>
+      <button class="tab-btn" data-tab="analysis">Data &amp; Analysis</button>
+    </nav>
+    <div class="header-right">
+      <span id="header-coverage" class="coverage-text"></span>
+      <button id="btn-reset" class="btn-secondary">Reset</button>
+    </div>
+  </header>
+
+  <!-- ================================================================== -->
+  <!-- OVERVIEW PAGE                                                        -->
+  <!-- ================================================================== -->
+  <div id="page-overview" class="page active">
+    <div id="market-table-container"></div>
+  </div>
+
+  <!-- ================================================================== -->
+  <!-- ANALYSIS PAGE                                                        -->
+  <!-- ================================================================== -->
+  <div id="page-analysis" class="page">
+
+    <!-- Controls -->
+    <div id="controls-panel"></div>
+
+    <!-- KPI row -->
+    <div id="kpi-row"></div>
+
+    <!-- Main chart -->
+    <div class="chart-panel">
+      <div id="chart-main" class="chart-canvas chart-main"></div>
+    </div>
+
+    <!-- Secondary row: Ranking + Spread + Distribution -->
+    <div class="secondary-row">
+      <div class="secondary-panel" id="ranking-container"></div>
+      <div class="secondary-panel chart-panel-sm">
+        <div id="chart-spread" class="chart-canvas chart-sm"></div>
+      </div>
+      <div class="secondary-panel chart-panel-sm">
+        <div id="chart-dist" class="chart-canvas chart-sm"></div>
+      </div>
+    </div>
+
+    <!-- Monthly summary -->
+    <div class="chart-panel chart-panel--monthly">
+      <div id="chart-monthly" class="chart-canvas chart-monthly"></div>
+    </div>
+
+  </div>
+
+  <!-- ================================================================== -->
+  <!-- SCRIPTS — order matters                                              -->
+  <!-- ================================================================== -->
+  <script src="data.js"></script>
+  <script src="futures.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/data-loader.js"></script>
+  <script src="js/analytics.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/overview.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
