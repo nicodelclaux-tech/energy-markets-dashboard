@@ -1,12 +1,9 @@
-# Product Strategist
+# product-strategist
 
-Defines product scope, page hierarchy, KPI selection and UX flows for the European energy dashboard.
+Role:
+Responsible for product-strategist responsibilities within the energy markets dashboard.
 
-Responsibilities:
-- Overview page
-- Country compare
-- Commodity drivers
-- News intelligence
-
-Goal:
-Professional institutional-grade dashboard
+Focus:
+- Professional institutional dashboard
+- Modular architecture
+- Clean implementation

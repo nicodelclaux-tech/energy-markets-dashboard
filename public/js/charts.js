@@ -6,18 +6,18 @@ var Charts = (function () {
 
   // Country-consistent colour palette
   var COUNTRY_COLORS = {
-    ES: '#d4a017',
-    DE: '#4a9ebb',
-    FR: '#3ea669',
-    IT: '#e05252',
-    GB: '#a371f7',
-    NL: '#f0883e',
-    NO: '#2f9cb2',
-    SE: '#3187d4',
-    FI: '#5871d6',
-    DK: '#cc6d4a'
+    ES: '#4f7f5e',
+    DE: '#4f759b',
+    FR: '#83b692',
+    IT: '#006daa',
+    GB: '#3a4a6a',
+    NL: '#3e90bf',
+    NO: '#6f92b5',
+    SE: '#1c2a4a',
+    FI: '#a3cbb0',
+    DK: '#c23a38'
   };
-  var FALLBACK_COLORS = ['#4a9ebb', '#d4a017', '#3ea669', '#e05252', '#a371f7', '#f0883e'];
+  var FALLBACK_COLORS = ['#4f759b', '#4f7f5e', '#83b692', '#006daa', '#3a4a6a', '#3e90bf'];
 
   // --- Instance management ------------------------------------------------------
 
@@ -45,11 +45,23 @@ var Charts = (function () {
     var muted = css.getPropertyValue('--muted').trim() || '#7d8590';
     var text = css.getPropertyValue('--text').trim() || '#c9d1d9';
     var surface = css.getPropertyValue('--surface').trim() || '#161b22';
+    var accent = css.getPropertyValue('--accent').trim() || '#4a9ebb';
+    var accentSoft = css.getPropertyValue('--accent-soft').trim() || 'rgba(74, 158, 187, 0.06)';
+    var accentFill = css.getPropertyValue('--accent-fill').trim() || 'rgba(74, 158, 187, 0.14)';
+    var accentStrong = css.getPropertyValue('--accent-strong').trim() || 'rgba(74, 158, 187, 0.55)';
+    var highlight = css.getPropertyValue('--highlight').trim() || '#d4a017';
+    var highlightSoft = css.getPropertyValue('--highlight-soft').trim() || 'rgba(212, 160, 23, 0.08)';
     return {
       border: border,
       muted: muted,
       text: text,
       surface: surface,
+      accent: accent,
+      accentSoft: accentSoft,
+      accentFill: accentFill,
+      accentStrong: accentStrong,
+      highlight: highlight,
+      highlightSoft: highlightSoft,
       splitLine: { lineStyle: { color: border } },
       axisLabel: { color: muted, fontSize: 11, fontFamily: 'inherit' },
       tooltip: {
@@ -78,23 +90,52 @@ var Charts = (function () {
     var t = _theme();
 
     var series = [];
+    var legendData = [];
     var colorIdx = 0;
 
     var primaryColor = COUNTRY_COLORS[opts.primaryIso] || FALLBACK_COLORS[0];
 
-    if (opts.primarySeries && opts.primarySeries.length > 0) {
-      var markAreaConfig = null;
-      if (opts.percentileBand && opts.percentileBand.p25 != null && opts.percentileBand.p75 != null) {
-        markAreaConfig = {
-          silent: true,
-          itemStyle: { color: 'rgba(128, 128, 128, 0.16)' },
-          label: { show: false },
-          data: [[{ yAxis: Math.round(opts.percentileBand.p25) }, { yAxis: Math.round(opts.percentileBand.p75) }]]
-        };
-      }
-
+    if (opts.percentileBandSeries && opts.percentileBandSeries.length > 0) {
       series.push({
-        name: opts.primaryName || opts.primaryIso || 'Primary',
+        name: '__iqr_base__',
+        type: 'line',
+        stack: 'iqr-band',
+        data: opts.percentileBandSeries.map(function (r) {
+          var x = opts.aggregation === 'yearly' ? r.dateString.slice(0, 4) : r.dateString;
+          return [x, Math.round(r.p25)];
+        }),
+        symbol: 'none',
+        silent: true,
+        tooltip: { show: false },
+        emphasis: { disabled: true },
+        lineStyle: { width: 0, opacity: 0 },
+        itemStyle: { opacity: 0 },
+        areaStyle: { opacity: 0 },
+        z: 0
+      });
+      series.push({
+        name: '__iqr_fill__',
+        type: 'line',
+        stack: 'iqr-band',
+        data: opts.percentileBandSeries.map(function (r) {
+          var x = opts.aggregation === 'yearly' ? r.dateString.slice(0, 4) : r.dateString;
+          return [x, Math.max(0, Math.round(r.p75) - Math.round(r.p25))];
+        }),
+        symbol: 'none',
+        silent: true,
+        tooltip: { show: false },
+        emphasis: { disabled: true },
+        lineStyle: { width: 0, opacity: 0 },
+        itemStyle: { opacity: 0 },
+        areaStyle: { color: t.accentSoft },
+        z: 0
+      });
+    }
+
+    if (opts.primarySeries && opts.primarySeries.length > 0) {
+      var primaryName = opts.primaryName || opts.primaryIso || 'Primary';
+      series.push({
+        name: primaryName,
         type: opts.aggregation === 'yearly' ? 'bar' : 'line',
         data: opts.primarySeries.map(function (r) {
           var x = opts.aggregation === 'yearly' ? (r.label || r.dateString.slice(0, 4)) : r.dateString;
@@ -104,8 +145,9 @@ var Charts = (function () {
         lineStyle: { width: 2, color: primaryColor },
         itemStyle: { color: primaryColor },
         barMaxWidth: 40,
-        markArea: markAreaConfig
+        z: 3
       });
+      legendData.push(primaryName);
       colorIdx++;
     }
 
@@ -120,8 +162,10 @@ var Charts = (function () {
         }),
         symbol: 'none',
         lineStyle: { width: 1.4, color: t.muted, type: 'solid', opacity: 0.9 },
-        itemStyle: { color: t.muted }
+        itemStyle: { color: t.muted },
+        z: 2
       });
+      legendData.push('EU Avg');
     }
 
     // Smoothing overlay (only for daily aggregation)
@@ -132,8 +176,10 @@ var Charts = (function () {
         data: opts.smoothedSeries.map(function (r) { return [r.dateString, Math.round(r.price)]; }),
         symbol: 'none',
         lineStyle: { width: 1.5, color: t.text, opacity: 0.35, type: 'dashed' },
-        itemStyle: { color: t.text }
+        itemStyle: { color: t.text },
+        z: 2
       });
+      legendData.push(opts.smoothingWindow + 'd avg');
     }
 
     // Comparison countries
@@ -152,8 +198,10 @@ var Charts = (function () {
           symbol: 'none',
           lineStyle: { width: 1.5, color: c },
           itemStyle: { color: c },
-          barMaxWidth: 40
+          barMaxWidth: 40,
+          z: 2
         });
+        legendData.push(iso);
         colorIdx++;
       });
     }
@@ -173,13 +221,16 @@ var Charts = (function () {
         axisPointer: { type: 'cross', lineStyle: { type: 'dashed', color: t.border } },
         formatter: function (params) {
           if (!params || !params.length) return '';
-          var header = params[0].axisValueLabel || params[0].axisValue || '';
-          var lines = params.map(function (p) { return p.marker + ' ' + p.seriesName + ': ' + _fmtVal(p.value[1]); });
+          var visibleParams = params.filter(function (p) { return p.seriesName && p.seriesName.indexOf('__') !== 0; });
+          var headerSource = visibleParams[0] || params[0];
+          var header = headerSource.axisValueLabel || headerSource.axisValue || '';
+          var lines = visibleParams.map(function (p) { return p.marker + ' ' + p.seriesName + ': ' + _fmtVal(p.value[1]); });
           return [header].concat(lines).join('<br/>');
         }
       }, t.tooltip),
       legend: {
-        show: series.length > 1,
+        show: legendData.length > 1,
+        data: legendData,
         icon: 'circle',
         top: 4,
         right: 20,
@@ -203,7 +254,7 @@ var Charts = (function () {
       },
       dataZoom: [
         { type: 'inside', xAxisIndex: 0, filterMode: 'none' },
-        { type: 'slider', xAxisIndex: 0, height: 18, bottom: 10, borderColor: t.border, fillerColor: 'rgba(74, 158, 187, 0.14)', handleSize: 10 }
+        { type: 'slider', xAxisIndex: 0, height: 18, bottom: 10, borderColor: t.border, fillerColor: t.accentFill, handleSize: 10 }
       ],
       series: series
     }, true);
@@ -257,8 +308,8 @@ var Charts = (function () {
         type: 'line',
         data: spreadSeries.map(function (r) { return [r.dateString, Math.round(r.price)]; }),
         symbol: 'none',
-        lineStyle: { width: 1.5, color: '#d4a017' },
-        areaStyle: { color: 'rgba(212, 160, 23, 0.08)' },
+        lineStyle: { width: 1.5, color: t.highlight },
+        areaStyle: { color: t.highlightSoft },
         markLine: { silent: true, symbol: 'none', data: [{ yAxis: 0 }], lineStyle: { color: t.border, type: 'dashed' } }
       }]
     }, true);
@@ -282,7 +333,7 @@ var Charts = (function () {
       var highlight = currentPrice != null && currentPrice >= b.lo && currentPrice < b.hi;
       return {
         value: b.count,
-        itemStyle: { color: highlight ? '#d4a017' : 'rgba(74, 158, 187, 0.55)' }
+        itemStyle: { color: highlight ? t.highlight : t.accentStrong }
       };
     });
 
@@ -325,7 +376,7 @@ var Charts = (function () {
       return;
     }
 
-    var color = COUNTRY_COLORS[iso] || '#4a9ebb';
+    var color = COUNTRY_COLORS[iso] || '#4f759b';
     var labels = series.map(function (r) { return r.dateString.slice(0, 7); });
     var values = series.map(function (r) { return Math.round(r.price); });
 

@@ -30,7 +30,7 @@ var Overview = (function () {
       return x.toFixed(1) + ',' + y.toFixed(1);
     }).join(' ');
     return '<svg width="' + W + '" height="' + H + '" viewBox="0 0 ' + W + ' ' + H + '" xmlns="http://www.w3.org/2000/svg">'
-      + '<polyline points="' + pts + '" stroke="' + (color || '#4a9ebb') + '" stroke-width="1.5" fill="none" stroke-linejoin="round"/>'
+      + '<polyline points="' + pts + '" stroke="' + (color || '#4f759b') + '" stroke-width="1.5" fill="none" stroke-linejoin="round"/>'
       + '</svg>';
   }
 
@@ -62,7 +62,7 @@ var Overview = (function () {
     return '<div class="range-bar-wrap" title="' + tip + '">'
       + '<div class="range-track"></div>'
       + '<div class="range-avg-tick" style="left:' + avgPct + '%"></div>'
-      + '<div class="range-current-dot" style="left:' + dotPct + '%;background:' + (color || '#4a9ebb') + '"></div>'
+      + '<div class="range-current-dot" style="left:' + dotPct + '%;background:' + (color || '#4f759b') + '"></div>'
       + '</div>';
   }
 
@@ -85,7 +85,7 @@ var Overview = (function () {
   function powerRow(iso, data) {
     var series = data.seriesByIso[iso] || [];
     var name = (data.countriesByIso[iso] || {}).name || iso;
-    var color = Charts.COUNTRY_COLORS[iso] || '#4a9ebb';
+    var color = Charts.COUNTRY_COLORS[iso] || '#4f759b';
     var stats = rangeStats(series, data.latestDate);
     var spot = stats ? stats.current : null;
     var latestCell = spot != null

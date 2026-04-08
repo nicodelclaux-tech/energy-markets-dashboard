@@ -248,21 +248,7 @@ var UI = (function () {
   function renderMainChart(state, data) {
     var series = Analytics.getSeriesForCountry(data, state.primaryCountry, state.dateRange);
     var agg = Analytics.applyAggregation(series, state.aggregation);
-
-    function percentile(values, p) {
-      if (!values.length) return null;
-      var sorted = values.slice().sort(function (a, b) { return a - b; });
-      var idx = (p / 100) * (sorted.length - 1);
-      var lo = Math.floor(idx), hi = Math.ceil(idx);
-      if (lo === hi) return sorted[lo];
-      return sorted[lo] + (idx - lo) * (sorted[hi] - sorted[lo]);
-    }
-
-    var prices = agg.map(function (r) { return r.price; });
-    var percentileBand = {
-      p25: percentile(prices, 25),
-      p75: percentile(prices, 75)
-    };
+    var percentileBandSeries = Analytics.computePercentileBand(data, state.dateRange, state.aggregation, data.countryOrder);
 
     var euAvgSeries = Analytics.getBenchmarkSeries(data, 'EU_AVG', state.dateRange);
     euAvgSeries = Analytics.applyAggregation(euAvgSeries, state.aggregation);
@@ -294,7 +280,7 @@ var UI = (function () {
       primaryIso: state.primaryCountry,
       comparisonMap: compMap,
       euAvgSeries: euAvgSeries,
-      percentileBand: percentileBand,
+      percentileBandSeries: percentileBandSeries,
       smoothedSeries: smoothed,
       smoothingWindow: state.smoothingWindow,
       aggregation: state.aggregation
@@ -320,7 +306,7 @@ var UI = (function () {
 
     var rows = rankings.map(function (r, i) {
       var barW = maxPrice > 0 ? (r.price / maxPrice * 100).toFixed(1) : 0;
-      var color = Charts.COUNTRY_COLORS[r.iso] || '#4a9ebb';
+      var color = Charts.COUNTRY_COLORS[r.iso] || '#4f759b';
       var isPrimary = r.iso === state.primaryCountry;
       return '<tr class="' + (isPrimary ? 'ranking-primary' : '') + '">'
         + '<td class="rank-pos">' + (i + 1) + '</td>'

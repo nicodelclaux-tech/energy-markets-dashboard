@@ -183,6 +183,34 @@ var Analytics = (function () {
     return buckets;
   }
 
+  function computePercentileBand(data, dateRange, aggregation, isos) {
+    var dateBuckets = {};
+    var countries = (isos && isos.length ? isos : data.countryOrder || []).slice();
+
+    countries.forEach(function (iso) {
+      var series = getSeriesForCountry(data, iso, dateRange);
+      var aggregated = applyAggregation(series, aggregation);
+      aggregated.forEach(function (r) {
+        if (r.price == null || isNaN(r.price)) return;
+        if (!dateBuckets[r.dateString]) dateBuckets[r.dateString] = [];
+        dateBuckets[r.dateString].push(r.price);
+      });
+    });
+
+    return Object.keys(dateBuckets)
+      .sort()
+      .map(function (dateString) {
+        var values = dateBuckets[dateString].slice().sort(function (a, b) { return a - b; });
+        if (values.length === 0) return null;
+        return {
+          dateString: dateString,
+          p25: percentileValue(values, 25),
+          p75: percentileValue(values, 75)
+        };
+      })
+      .filter(function (row) { return row && row.p25 != null && row.p75 != null; });
+  }
+
   // --- Percentile / Regime ------------------------------------------------------
 
   function percentileValue(sortedPrices, p) {
@@ -228,6 +256,7 @@ var Analytics = (function () {
     aggregateYearly: aggregateYearly,
     applyAggregation: applyAggregation,
     computeDistribution: computeDistribution,
+    computePercentileBand: computePercentileBand,
     classifyRegime: classifyRegime,
     findPeakTrough: findPeakTrough
   };

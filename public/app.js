@@ -5,6 +5,7 @@ var APP = (function () {
   var _data = null;
 
   function _applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
     document.body.setAttribute('data-theme', theme);
     try {
       localStorage.setItem('energy_theme', theme);
