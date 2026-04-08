@@ -80,7 +80,7 @@ var UI = (function () {
   function flagEmoji(iso) {
     var code = String(iso || '').toLowerCase().slice(0, 2);
     if (code.length !== 2 || !/^[a-z]{2}$/.test(code)) return '';
-    return '<img src="../assets/Flags/' + code + '.svg" alt="' + code.toUpperCase() + '" class="market-primary-flag-img">';
+    return '<img src="assets/flags/' + code + '.svg" alt="' + code.toUpperCase() + '" class="market-primary-flag-img">';
   }
 
   function qualityBadge(label, tone) {
@@ -131,7 +131,7 @@ var UI = (function () {
 
     var _currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
     var _themeIconFile = _currentTheme === 'dark' ? 'light-mode.svg' : 'dark-mode.svg';
-    var _themeToggleBtn = '<button class="btn-icon" data-action="toggle-theme" aria-label="Toggle theme"><img src="../assets/Icons/' + _themeIconFile + '" alt="Toggle theme" class="theme-toggle-icon"></button>';
+    var _themeToggleBtn = '<button class="btn-icon" data-action="toggle-theme" aria-label="Toggle theme"><img src="assets/icons/' + _themeIconFile + '" alt="Toggle theme" class="theme-toggle-icon"></button>';
 
     panel.innerHTML = '<div class="market-header-bar">'
       + '<span id="market-primary-flag" class="market-primary-flag"></span>'
