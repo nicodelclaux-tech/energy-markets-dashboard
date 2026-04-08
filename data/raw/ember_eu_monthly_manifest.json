@@ -1,5 +1,5 @@
 {
-  "pulled_at": "2026-04-08T10:53:44.470189+00:00",
+  "pulled_at": "2026-04-08T12:29:20.182688+00:00",
   "api_base": "https://api.ember-energy.org",
   "latest_available_month_by_dataset": {},
   "countries_requested": [
@@ -45,5 +45,6 @@
     "carbon-intensity": [],
     "installed-capacity": []
   },
-  "attribution": "Source: Ember, CC BY 4.0"
+  "attribution": "Source: Ember, CC BY 4.0",
+  "csv_rows_by_country": {}
 }
