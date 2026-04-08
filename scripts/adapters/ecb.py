@@ -126,8 +126,13 @@ def fetch(
         return cached if not cached.empty else pd.DataFrame()
 
     all_data = pd.concat([cached, df], ignore_index=True)
+    # Normalize date column to datetime before sorting/deduplication to avoid
+    # TypeError when cached CSV timestamps are mixed with freshly fetched strings.
+    all_data["date"] = pd.to_datetime(all_data["date"], errors="coerce")
+    all_data.dropna(subset=["date"], inplace=True)
     all_data.sort_values("date", inplace=True)
     all_data.drop_duplicates(subset=["date", "series_id"], inplace=True)
+    all_data["date"] = all_data["date"].dt.strftime("%Y-%m-%d")
     all_data.to_csv(cache_path, index=False)
     logger.info("ECB %s: %d rows cached", series_id, len(all_data))
     return all_data

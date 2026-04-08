@@ -1,26 +1,43 @@
 """
 scripts/adapters/ember.py
 -------------------------
-Fetches European electricity generation-mix data from Ember Climate.
+Fetches EU-27 monthly electricity data from Ember Climate's v1 API using a
+discovery-first approach.
 
-Primary source: Ember's public API (https://api.ember-energy.org)
-Fallback:       Ember's published yearly CSV data file
+Datasets fetched:
+  - electricity-generation/monthly
+  - electricity-demand/monthly
+  - power-sector-emissions/monthly
+  - carbon-intensity/monthly
+  - installed-capacity/monthly  (wind/solar capacity, covers ~25 EU countries)
 
-The adapter tries the API first.  If that fails (missing key, rate-limit,
-network error) it attempts to download the free CSV.  If both fail it
-returns an empty DataFrame and logs a warning.
+API key is read from the EMBER_API_KEY env var and passed as the ``api_key``
+query parameter (not as an Authorization header).
 
-Output columns: date, country_code, source_type, value_twh, share_pct, unit
+For each dataset the adapter first calls Ember's options endpoints to discover
+which EU-27 countries are supported and what the latest available month is,
+then fetches data in batched requests using comma-separated entity filters.
+
+Output files written to data/raw/:
+  ember_eu_monthly_generation.json
+  ember_eu_monthly_demand.json
+  ember_eu_monthly_emissions.json
+  ember_eu_monthly_carbon_intensity.json
+  ember_eu_monthly_capacity.json
+  ember_eu_monthly_manifest.json
+
+The existing pipeline (fetch_all.py → build_data_js.py) is unaffected:
+``fetch_all()`` returns a dict compatible with the orchestrator, and
+build_data_js.py does not (yet) read these new JSON files.
 """
 
+import json
 import logging
 import sys
-from datetime import datetime
-from io import StringIO
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
 
-import pandas as pd
 import requests
 from tenacity import (
     retry,
@@ -30,11 +47,9 @@ from tenacity import (
 )
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
-from config.series_map import COUNTRIES
 from config.settings import (
     DATA_RAW_DIR,
     EMBER_API_KEY,
-    LOOKBACK_YEARS,
     MAX_RETRIES,
     REQUEST_TIMEOUT,
     RETRY_BACKOFF,
@@ -42,12 +57,74 @@ from config.settings import (
 
 logger = logging.getLogger(__name__)
 
-EMBER_API_BASE = "https://api.ember-energy.org/v1"
-# Public CSV with European monthly generation by source
-EMBER_CSV_URL = (
-    "https://ember-energy.org/app/uploads/European-Electricity-Review-2024.csv"
-)
+EMBER_API_BASE = "https://api.ember-energy.org"
 
+# Fixed start month for all datasets (YYYY-MM format expected by Ember API).
+EMBER_START_MONTH = "2021-01"
+
+# Number of countries to include in a single batched request.
+BATCH_SIZE = 10
+
+# EU-27 member states by their Ember entity display name.
+# Used to intersect against the list returned by the options endpoint so we
+# never assume a spelling that Ember might not recognise.
+EU_27: list[str] = [
+    "Austria", "Belgium", "Bulgaria", "Croatia", "Cyprus", "Czechia",
+    "Denmark", "Estonia", "Finland", "France", "Germany", "Greece",
+    "Hungary", "Ireland", "Italy", "Latvia", "Lithuania", "Luxembourg",
+    "Malta", "Netherlands", "Poland", "Portugal", "Romania", "Slovakia",
+    "Slovenia", "Spain", "Sweden",
+]
+
+# ---------------------------------------------------------------------------
+# Dataset configuration
+# ---------------------------------------------------------------------------
+# Key: Ember base-dataset path (used in /v1/{key}/monthly and
+#      /v1/options/{key}/monthly/{field}).
+# has_series:  whether to fetch series options and pass is_aggregate_series.
+# output_file: filename under data/raw/.
+# fields:      columns to preserve in the output JSON.
+DATASET_CONFIG: dict[str, dict] = {
+    "electricity-generation": {
+        "output_file": "ember_eu_monthly_generation.json",
+        "has_series": True,
+        "fields": [
+            "entity", "entity_code", "date", "series",
+            "generation_twh", "share_of_generation_pct",
+        ],
+    },
+    "electricity-demand": {
+        "output_file": "ember_eu_monthly_demand.json",
+        "has_series": False,
+        "fields": ["entity", "entity_code", "date", "demand_twh"],
+    },
+    "power-sector-emissions": {
+        "output_file": "ember_eu_monthly_emissions.json",
+        "has_series": True,
+        "fields": [
+            "entity", "entity_code", "date", "series",
+            "emissions_mtco2", "share_of_emissions_pct",
+        ],
+    },
+    "carbon-intensity": {
+        "output_file": "ember_eu_monthly_carbon_intensity.json",
+        "has_series": False,
+        "fields": ["entity", "entity_code", "date", "emissions_intensity_gco2_per_kwh"],
+    },
+    "installed-capacity": {
+        "output_file": "ember_eu_monthly_capacity.json",
+        "has_series": True,
+        "fields": [
+            "entity", "entity_code", "date", "series",
+            "capacity_gw", "capacity_w_per_capita",
+        ],
+    },
+}
+
+
+# ---------------------------------------------------------------------------
+# HTTP helpers
+# ---------------------------------------------------------------------------
 
 def _should_retry(exc: BaseException) -> bool:
     if isinstance(exc, requests.HTTPError):
@@ -61,126 +138,206 @@ def _should_retry(exc: BaseException) -> bool:
     wait=wait_exponential(multiplier=RETRY_BACKOFF, min=2, max=60),
     reraise=True,
 )
-def _get(url: str, params: Optional[dict] = None, headers: Optional[dict] = None) -> requests.Response:
-    resp = requests.get(url, params=params or {}, headers=headers or {}, timeout=REQUEST_TIMEOUT)
+def _get(url: str, params: Optional[dict] = None) -> requests.Response:
+    resp = requests.get(url, params=params or {}, timeout=REQUEST_TIMEOUT)
     resp.raise_for_status()
     return resp
 
 
-def _fetch_via_api(country_code: str) -> pd.DataFrame:
+# ---------------------------------------------------------------------------
+# Discovery helpers
+# ---------------------------------------------------------------------------
+
+def _get_options(dataset_key: str, field: str) -> list:
     """
-    Attempt to fetch generation mix from the Ember v1 API.
-    Returns empty DataFrame if API is unavailable or data is missing.
+    Call Ember's options endpoint for *dataset_key* / *field* and return the
+    list of valid values.  Returns an empty list on any error.
+
+    URL pattern: /v1/options/{dataset_key}/monthly/{field}
     """
-    headers: dict = {}
+    url = f"{EMBER_API_BASE}/v1/options/{dataset_key}/monthly/{field}"
+    params: dict = {}
     if EMBER_API_KEY:
-        headers["Authorization"] = f"Bearer {EMBER_API_KEY}"
-
-    start_year = datetime.now().year - LOOKBACK_YEARS
-    params = {
-        "entity_code": country_code,
-        "frequency": "monthly",
-        "is_aggregate_entity": "false",
-        "start_date": f"{start_year}-01",
-        "series": "generation",
-    }
+        params["api_key"] = EMBER_API_KEY
     try:
-        resp = _get(f"{EMBER_API_BASE}/electricity-generation/monthly", params=params, headers=headers)
+        resp = _get(url, params)
         data = resp.json()
-        rows = data.get("data", [])
-        if not rows:
-            return pd.DataFrame()
-        df = pd.DataFrame(rows)
-        df["country_code"] = country_code
-        df["date"] = pd.to_datetime(df.get("date", df.get("month", ""))).dt.strftime("%Y-%m-%d")
-        return df[["date", "country_code", "series", "generation_twh", "share_of_generation_pct"]].rename(
-            columns={
-                "series": "source_type",
-                "generation_twh": "value_twh",
-                "share_of_generation_pct": "share_pct",
-            }
+        return data.get("data", [])
+    except Exception as exc:
+        logger.warning("Ember options fetch failed (%s / %s): %s", dataset_key, field, exc)
+        return []
+
+
+# ---------------------------------------------------------------------------
+# Data fetching
+# ---------------------------------------------------------------------------
+
+def _fetch_dataset_batched(
+    dataset_key: str,
+    entities: list[str],
+    start_month: str,
+    end_month: str,
+    series_list: Optional[list[str]],
+    has_series: bool,
+) -> list[dict]:
+    """
+    Fetch all data for *entities* from *dataset_key* between *start_month* and
+    *end_month*, splitting *entities* into batches of ``BATCH_SIZE``.
+
+    Returns a flat list of raw record dicts from the Ember API response.
+    """
+    records: list[dict] = []
+    n_batches = (len(entities) + BATCH_SIZE - 1) // BATCH_SIZE
+
+    for batch_idx in range(n_batches):
+        batch = entities[batch_idx * BATCH_SIZE:(batch_idx + 1) * BATCH_SIZE]
+        params: dict = {
+            "entity": ",".join(batch),
+            "start_date": start_month,
+            "end_date": end_month,
+        }
+        if EMBER_API_KEY:
+            params["api_key"] = EMBER_API_KEY
+        if has_series:
+            params["is_aggregate_series"] = "false"
+            if series_list:
+                params["series"] = ",".join(series_list)
+
+        url = f"{EMBER_API_BASE}/v1/{dataset_key}/monthly"
+        try:
+            resp = _get(url, params)
+            batch_records = resp.json().get("data", [])
+            records.extend(batch_records)
+            logger.info(
+                "Ember %s: batch %d/%d — %d records",
+                dataset_key, batch_idx + 1, n_batches, len(batch_records),
+            )
+        except Exception as exc:
+            logger.warning(
+                "Ember %s: batch %d/%d failed (entities=%s…): %s",
+                dataset_key, batch_idx + 1, n_batches, batch[:3], exc,
+            )
+
+    return records
+
+
+# ---------------------------------------------------------------------------
+# Main fetch logic
+# ---------------------------------------------------------------------------
+
+def fetch_eu_monthly() -> dict[str, list]:
+    """
+    Fetch all EU-27 monthly Ember datasets using discovery-first approach.
+
+    For each dataset:
+    1. Query ``/v1/options/{dataset}/monthly/entity`` to find which EU-27
+       countries Ember actually supports.
+    2. Query ``/v1/options/{dataset}/monthly/date`` to find the latest
+       available month.
+    3. If the dataset has series (generation / emissions / capacity), query
+       ``/v1/options/{dataset}/monthly/series`` for valid series names.
+    4. Fetch data in batched requests, preserving nulls.
+    5. Write a normalized JSON file to ``data/raw/``.
+
+    Returns a dict mapping dataset key → list of records (compatible with the
+    ``fetch_all.py`` orchestrator which only needs a dict with ``__len__``
+    values).
+    """
+    if not EMBER_API_KEY:
+        logger.warning("EMBER_API_KEY not set — skipping Ember EU monthly fetch")
+        return {}
+
+    DATA_RAW_DIR.mkdir(parents=True, exist_ok=True)
+
+    results: dict[str, list] = {}
+    manifest: dict = {
+        "pulled_at": datetime.now(timezone.utc).isoformat(),
+        "api_base": EMBER_API_BASE,
+        "latest_available_month_by_dataset": {},
+        "countries_requested": EU_27,
+        "countries_returned_by_dataset": {},
+        "series_returned_by_dataset": {},
+        "attribution": "Source: Ember, CC BY 4.0",
+    }
+
+    for dataset_key, config in DATASET_CONFIG.items():
+        logger.info("=" * 50)
+        logger.info("Ember: processing dataset %s", dataset_key)
+
+        # --- 1. Discover supported EU-27 entities ---
+        valid_entities = _get_options(dataset_key, "entity")
+        valid_entities_set = set(valid_entities)
+        supported = [c for c in EU_27 if c in valid_entities_set]
+        unsupported = [c for c in EU_27 if c not in valid_entities_set]
+
+        if unsupported:
+            logger.info(
+                "Ember %s: %d EU-27 countries not in options (skipping): %s",
+                dataset_key, len(unsupported), unsupported,
+            )
+
+        if not supported:
+            logger.warning(
+                "Ember %s: no EU-27 countries found in options endpoint — skipping",
+                dataset_key,
+            )
+            results[dataset_key] = []
+            manifest["countries_returned_by_dataset"][dataset_key] = []
+            manifest["series_returned_by_dataset"][dataset_key] = []
+            continue
+
+        # --- 2. Discover latest available month ---
+        available_dates = _get_options(dataset_key, "date")
+        end_month = max(available_dates) if available_dates else datetime.now(timezone.utc).strftime("%Y-%m")
+        manifest["latest_available_month_by_dataset"][dataset_key] = end_month
+        logger.info("Ember %s: date range %s → %s", dataset_key, EMBER_START_MONTH, end_month)
+
+        # --- 3. Discover valid series (only for datasets that support it) ---
+        series_list: Optional[list[str]] = None
+        if config["has_series"]:
+            series_list = _get_options(dataset_key, "series")
+            manifest["series_returned_by_dataset"][dataset_key] = series_list
+            logger.info("Ember %s: %d series available", dataset_key, len(series_list or []))
+        else:
+            manifest["series_returned_by_dataset"][dataset_key] = []
+
+        # --- 4. Fetch data in batches ---
+        raw_records = _fetch_dataset_batched(
+            dataset_key,
+            supported,
+            EMBER_START_MONTH,
+            end_month,
+            series_list=series_list,
+            has_series=config["has_series"],
         )
-    except Exception as exc:
-        logger.debug("Ember API attempt failed for %s: %s", country_code, exc)
-        return pd.DataFrame()
 
+        # --- 5. Normalize: keep only requested fields, preserve nulls ---
+        fields = config["fields"]
+        filtered_records = [{f: rec.get(f) for f in fields} for rec in raw_records]
 
-def _fetch_via_csv() -> pd.DataFrame:
-    """
-    Download and parse Ember's public European Electricity Review CSV.
-    Returns tidy DataFrame or empty on failure.
-    """
-    logger.info("Ember: attempting public CSV download")
-    try:
-        resp = _get(EMBER_CSV_URL)
-        df = pd.read_csv(StringIO(resp.text))
-        # Normalise column names
-        df.columns = [c.strip().lower().replace(" ", "_") for c in df.columns]
-        needed = {"country_code", "date", "source_type", "value_twh"}
-        # Try to map common column name variants
-        rename_map = {}
-        for col in df.columns:
-            if "country" in col and "country_code" not in df.columns:
-                rename_map[col] = "country_code"
-            if col in ("area", "region") and "country_code" not in df.columns:
-                rename_map[col] = "country_code"
-            if col in ("fuel", "source", "technology") and "source_type" not in df.columns:
-                rename_map[col] = "source_type"
-            if col in ("generation_twh", "value", "twh") and "value_twh" not in df.columns:
-                rename_map[col] = "value_twh"
-        df.rename(columns=rename_map, inplace=True)
+        returned_countries = sorted({r.get("entity") for r in raw_records if r.get("entity")})
+        manifest["countries_returned_by_dataset"][dataset_key] = returned_countries
 
-        if not needed.issubset(df.columns):
-            logger.warning("Ember CSV missing expected columns: %s", needed - set(df.columns))
-            return pd.DataFrame()
+        results[dataset_key] = filtered_records
 
-        # Filter to configured countries
-        country_names = set(COUNTRIES.values())
-        iso_codes = set(COUNTRIES.keys())
-        mask = df["country_code"].isin(country_names | iso_codes)
-        df = df[mask].copy()
+        # Write dataset JSON file
+        output_path = DATA_RAW_DIR / config["output_file"]
+        with open(output_path, "w", encoding="utf-8") as fh:
+            json.dump(filtered_records, fh, ensure_ascii=False)
+        logger.info(
+            "Ember %s: wrote %d records → %s",
+            dataset_key, len(filtered_records), output_path,
+        )
 
-        df["date"] = pd.to_datetime(df["date"], errors="coerce").dt.strftime("%Y-%m-%d")
-        df.dropna(subset=["date"], inplace=True)
-        df["share_pct"] = df.get("share_pct", pd.Series(dtype=float))
-        df["unit"] = "TWh"
-        return df[["date", "country_code", "source_type", "value_twh", "share_pct", "unit"]]
-    except Exception as exc:
-        logger.warning("Ember CSV download failed: %s", exc)
-        return pd.DataFrame()
+    # Write manifest
+    manifest_path = DATA_RAW_DIR / "ember_eu_monthly_manifest.json"
+    with open(manifest_path, "w", encoding="utf-8") as fh:
+        json.dump(manifest, fh, indent=2, ensure_ascii=False)
+    logger.info("Ember manifest written → %s", manifest_path)
 
-
-def fetch(country_code: str) -> pd.DataFrame:
-    """
-    Fetch Ember generation-mix data for *country_code*.
-
-    Tries the API first, falls back to the public CSV, caches the result.
-    """
-    cache_path = DATA_RAW_DIR / f"ember_{country_code}.csv"
-
-    df = _fetch_via_api(country_code)
-    if df.empty:
-        logger.info("Ember API returned no data for %s — trying CSV", country_code)
-        df = _fetch_via_csv()
-        if not df.empty:
-            # Filter to just this country
-            name = COUNTRIES.get(country_code, country_code)
-            df = df[df["country_code"].isin([country_code, name])].copy()
-            df["country_code"] = country_code
-
-    if df.empty:
-        logger.warning("Ember: no data obtained for %s", country_code)
-        return pd.DataFrame()
-
-    df.sort_values("date", inplace=True)
-    df.to_csv(cache_path, index=False)
-    logger.info("Ember %s: %d rows cached", country_code, len(df))
-    return df
-
-
-def fetch_all() -> dict[str, pd.DataFrame]:
-    """Fetch Ember data for every configured country."""
-    results: dict[str, pd.DataFrame] = {}
-    for cc in COUNTRIES:
-        results[cc] = fetch(cc)
     return results
+
+
+def fetch_all() -> dict[str, list]:
+    """Fetch EU-27 monthly Ember data and write JSON files to data/raw/."""
+    return fetch_eu_monthly()
