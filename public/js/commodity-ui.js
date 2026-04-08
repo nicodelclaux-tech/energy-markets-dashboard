@@ -42,6 +42,7 @@ var CommodityUI = (function () {
     'WTI':        'wti.svg',
     'BRENT':      'brent.svg',
     'HENRY_HUB':  'henry-hub.svg',
+    'HENRY HUB':  'henry-hub.svg',
     'TTF':        'ttf.svg',
     'GOLD':       'gold.svg',
     'DIESEL':     'diesel.svg',
