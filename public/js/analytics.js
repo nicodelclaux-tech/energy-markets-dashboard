@@ -67,13 +67,36 @@ var Analytics = (function () {
   function spreadToBenchmark(data, iso, benchmarkIso, dateRange) {
     if (iso === benchmarkIso) return [];
     var series = getSeriesForCountry(data, iso, dateRange);
-    var bench = getSeriesForCountry(data, benchmarkIso, dateRange);
+    var bench = getBenchmarkSeries(data, benchmarkIso, dateRange);
     var benchMap = {};
     bench.forEach(function (r) { benchMap[r.dateString] = r.price; });
     return series
       .filter(function (r) { return benchMap[r.dateString] != null; })
       .map(function (r) {
         return { date: r.date, dateString: r.dateString, price: r.price - benchMap[r.dateString] };
+      });
+  }
+
+  function getBenchmarkSeries(data, benchmarkIso, dateRange) {
+    if (benchmarkIso !== 'EU_AVG') {
+      return getSeriesForCountry(data, benchmarkIso, dateRange);
+    }
+
+    var map = {};
+    data.countryOrder.forEach(function (iso) {
+      var series = getSeriesForCountry(data, iso, dateRange);
+      series.forEach(function (r) {
+        if (!map[r.dateString]) map[r.dateString] = { sum: 0, n: 0, date: r.date };
+        map[r.dateString].sum += r.price;
+        map[r.dateString].n += 1;
+      });
+    });
+
+    return Object.keys(map)
+      .sort()
+      .filter(function (d) { return map[d].n > 0; })
+      .map(function (d) {
+        return { date: map[d].date, dateString: d, price: map[d].sum / map[d].n };
       });
   }
 
@@ -198,6 +221,7 @@ var Analytics = (function () {
     computeStats: computeStats,
     rollingAverage: rollingAverage,
     rollingVolatility: rollingVolatility,
+    getBenchmarkSeries: getBenchmarkSeries,
     spreadToBenchmark: spreadToBenchmark,
     rankCountriesByDate: rankCountriesByDate,
     aggregateMonthly: aggregateMonthly,

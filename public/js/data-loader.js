@@ -9,11 +9,15 @@ var DataLoader = (function () {
     FR: 'France',
     IT: 'Italy',
     GB: 'United Kingdom',
-    NL: 'Netherlands'
+    NL: 'Netherlands',
+    NO: 'Norway',
+    SE: 'Sweden',
+    FI: 'Finland',
+    DK: 'Denmark'
   };
 
   // Desired display order in the UI.
-  var COUNTRY_ORDER = ['ES', 'DE', 'FR', 'IT', 'GB', 'NL'];
+  var COUNTRY_ORDER = ['ES', 'DE', 'FR', 'IT', 'GB', 'NL', 'NO', 'SE', 'FI', 'DK'];
 
   function loadData() {
     var raw = window.APP_DATA || {};

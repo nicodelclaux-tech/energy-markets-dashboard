@@ -8,9 +8,10 @@ var UI = (function () {
   // Helpers
   // --------------------------------------------------------------------------
 
-  function fmt(n, dp) {
+  function fmt(n) {
     if (n == null || isNaN(n)) return '—';
-    return n.toFixed(dp != null ? dp : 1);
+    var r = Math.round(n);
+    return r < 0 ? '(' + Math.abs(r) + ')' : String(r);
   }
 
   function fmtDate(ds) {
@@ -23,12 +24,6 @@ var UI = (function () {
     var d = new Date(dateStr + 'T00:00:00Z');
     d.setMonth(d.getMonth() - months);
     return d.toISOString().slice(0, 10);
-  }
-
-  function setActive(container, selector, activeClass, targetAttr, targetValue) {
-    container.querySelectorAll(selector).forEach(function (el) {
-      el.classList.toggle(activeClass, el.getAttribute(targetAttr) === targetValue);
-    });
   }
 
   // --------------------------------------------------------------------------
@@ -45,11 +40,11 @@ var UI = (function () {
       return '<option value="' + iso + '">' + name + '</option>';
     }).join('');
 
-    var compareChecks = data.countryOrder.map(function (iso) {
+    var benchmarkOptions = '<option value="EU_AVG">EU Average</option>' + countryOptions;
+
+    var compareButtons = data.countryOrder.map(function (iso) {
       var name = (data.countriesByIso[iso] || {}).name || iso;
-      return '<label class="check-label">'
-        + '<input type="checkbox" class="ctrl-compare" value="' + iso + '"> ' + name
-        + '</label>';
+      return '<button class="btn-pill btn-pill--country" data-compare-iso="' + iso + '">' + name + '</button>';
     }).join('');
 
     panel.innerHTML = '<div class="controls-inner">'
@@ -60,12 +55,12 @@ var UI = (function () {
 
       + '<div class="ctrl-group">'
       + '<label class="ctrl-label">Compare</label>'
-      + '<div class="multi-check" id="ctrl-compare-wrap">' + compareChecks + '</div>'
+      + '<div class="btn-group btn-group-wrap" id="ctrl-compare-wrap">' + compareButtons + '</div>'
       + '</div>'
 
       + '<div class="ctrl-group">'
       + '<label class="ctrl-label">Benchmark</label>'
-      + '<select id="ctrl-benchmark">' + countryOptions + '</select>'
+      + '<select id="ctrl-benchmark">' + benchmarkOptions + '</select>'
       + '</div>'
 
       + '<div class="ctrl-group ctrl-group--wide">'
@@ -78,9 +73,6 @@ var UI = (function () {
       + '<button class="btn-pill" data-months="24">2Y</button>'
       + '<button class="btn-pill btn-pill--active" data-months="0">All</button>'
       + '</div>'
-      + '<input type="date" id="ctrl-date-start" class="date-input">'
-      + '<span class="date-sep">–</span>'
-      + '<input type="date" id="ctrl-date-end" class="date-input">'
       + '</div>'
 
       + '<div class="ctrl-group">'
@@ -122,20 +114,20 @@ var UI = (function () {
       });
     }
 
-    // Comparison checkboxes
+    // Comparison toggle buttons
     var compareWrap = document.getElementById('ctrl-compare-wrap');
     if (compareWrap) {
-      compareWrap.addEventListener('change', function (e) {
-        if (e.target.classList.contains('ctrl-compare')) {
-          var checked = [];
-          compareWrap.querySelectorAll('.ctrl-compare:checked').forEach(function (el) {
-            checked.push(el.value);
-          });
-          // Prevent comparing with primary
-          var state = AppState.getState();
-          checked = checked.filter(function (iso) { return iso !== state.primaryCountry; });
-          AppState.setState({ comparisonCountries: checked });
-        }
+      compareWrap.addEventListener('click', function (e) {
+        var btn = e.target.closest('[data-compare-iso]');
+        if (!btn) return;
+        var iso = btn.getAttribute('data-compare-iso');
+        var state = AppState.getState();
+        if (iso === state.primaryCountry) return;
+        var next = state.comparisonCountries.slice();
+        var idx = next.indexOf(iso);
+        if (idx >= 0) next.splice(idx, 1);
+        else next.push(iso);
+        AppState.setState({ comparisonCountries: next });
       });
     }
 
@@ -148,21 +140,7 @@ var UI = (function () {
         var months = parseInt(btn.getAttribute('data-months'), 10);
         var end = data.latestDate;
         var start = months === 0 ? data.earliestDate : subtractMonths(end, months);
-        AppState.setState({ dateRange: { start: start, end: end } });
-      });
-    }
-
-    // Manual date inputs
-    var startInput = document.getElementById('ctrl-date-start');
-    var endInput = document.getElementById('ctrl-date-end');
-    if (startInput) {
-      startInput.addEventListener('change', function () {
-        AppState.setState({ dateRange: { start: this.value } });
-      });
-    }
-    if (endInput) {
-      endInput.addEventListener('change', function () {
-        AppState.setState({ dateRange: { end: this.value } });
+        AppState.setState({ dateRange: { start: start, end: end }, periodPreset: months });
       });
     }
 
@@ -195,16 +173,17 @@ var UI = (function () {
     // Uncheck primary from comparison, update checkboxes
     var compareWrap = document.getElementById('ctrl-compare-wrap');
     if (compareWrap) {
-      compareWrap.querySelectorAll('.ctrl-compare').forEach(function (el) {
-        el.checked = state.comparisonCountries.indexOf(el.value) !== -1 && el.value !== state.primaryCountry;
-        el.disabled = el.value === state.primaryCountry;
+      compareWrap.querySelectorAll('[data-compare-iso]').forEach(function (el) {
+        var iso = el.getAttribute('data-compare-iso');
+        var selected = state.comparisonCountries.indexOf(iso) !== -1 && iso !== state.primaryCountry;
+        el.classList.toggle('btn-pill--active', selected);
+        el.disabled = iso === state.primaryCountry;
       });
     }
 
-    var startInput = document.getElementById('ctrl-date-start');
-    var endInput = document.getElementById('ctrl-date-end');
-    if (startInput && state.dateRange.start) startInput.value = state.dateRange.start;
-    if (endInput && state.dateRange.end) endInput.value = state.dateRange.end;
+    document.querySelectorAll('#ctrl-presets [data-months]').forEach(function (btn) {
+      btn.classList.toggle('btn-pill--active', parseInt(btn.getAttribute('data-months'), 10) === state.periodPreset);
+    });
 
     // Active states for button groups
     document.querySelectorAll('[data-agg]').forEach(function (btn) {
@@ -225,7 +204,6 @@ var UI = (function () {
 
     var series = Analytics.getSeriesForCountry(data, state.primaryCountry, state.dateRange);
     var stats = Analytics.computeStats(series);
-    var allStats = Analytics.computeStats(data.seriesByIso[state.primaryCountry] || []);
     var regime = Analytics.classifyRegime(stats.latest, data.seriesByIso[state.primaryCountry]);
     var pt = Analytics.findPeakTrough(series);
     var regimeClass = regime === 'low' ? 'regime-low' : regime === 'high' ? 'regime-high' : 'regime-normal';
@@ -237,9 +215,11 @@ var UI = (function () {
       if (spreadSeries.length > 0) spread = spreadSeries[spreadSeries.length - 1].price;
     }
 
-    var benchName = (data.countriesByIso[state.benchmarkCountry] || {}).name || state.benchmarkCountry;
+    var benchName = state.benchmarkCountry === 'EU_AVG'
+      ? 'EU Average'
+      : ((data.countriesByIso[state.benchmarkCountry] || {}).name || state.benchmarkCountry);
     var spreadLabel = 'Spread vs ' + benchName;
-    var spreadVal = spread != null ? (spread >= 0 ? '+' : '') + fmt(spread) : '—';
+    var spreadVal = spread != null ? fmt(spread) : '—';
     var spreadClass = spread == null ? '' : spread > 0 ? 'kpi-positive' : 'kpi-negative';
 
     function card(label, value, sub, extraClass) {
@@ -269,6 +249,24 @@ var UI = (function () {
     var series = Analytics.getSeriesForCountry(data, state.primaryCountry, state.dateRange);
     var agg = Analytics.applyAggregation(series, state.aggregation);
 
+    function percentile(values, p) {
+      if (!values.length) return null;
+      var sorted = values.slice().sort(function (a, b) { return a - b; });
+      var idx = (p / 100) * (sorted.length - 1);
+      var lo = Math.floor(idx), hi = Math.ceil(idx);
+      if (lo === hi) return sorted[lo];
+      return sorted[lo] + (idx - lo) * (sorted[hi] - sorted[lo]);
+    }
+
+    var prices = agg.map(function (r) { return r.price; });
+    var percentileBand = {
+      p25: percentile(prices, 25),
+      p75: percentile(prices, 75)
+    };
+
+    var euAvgSeries = Analytics.getBenchmarkSeries(data, 'EU_AVG', state.dateRange);
+    euAvgSeries = Analytics.applyAggregation(euAvgSeries, state.aggregation);
+
     var smoothed = [];
     if (state.smoothingWindow > 0 && state.aggregation === 'daily') {
       smoothed = Analytics.rollingAverage(series, state.smoothingWindow);
@@ -295,6 +293,8 @@ var UI = (function () {
       primaryName: name,
       primaryIso: state.primaryCountry,
       comparisonMap: compMap,
+      euAvgSeries: euAvgSeries,
+      percentileBand: percentileBand,
       smoothedSeries: smoothed,
       smoothingWindow: state.smoothingWindow,
       aggregation: state.aggregation
@@ -309,7 +309,8 @@ var UI = (function () {
     var el = document.getElementById('ranking-container');
     if (!el) return;
 
-    var rankings = Analytics.rankCountriesByDate(data, state.rankingDate || data.latestDate);
+    var rankingDate = state.dateRange.end || data.latestDate;
+    var rankings = Analytics.rankCountriesByDate(data, rankingDate);
     if (rankings.length === 0) {
       el.innerHTML = '<div class="panel-title">Country Ranking</div><p class="muted small">No data</p>';
       return;
@@ -333,21 +334,8 @@ var UI = (function () {
         + '</tr>';
     }).join('');
 
-    // Ranking date selector
-    var dateLabel = state.rankingDate || data.latestDate || '';
-
-    el.innerHTML = '<div class="panel-title">Country Ranking'
-      + '<input type="date" id="ctrl-ranking-date" class="date-input date-input--inline" value="' + dateLabel + '">'
-      + '</div>'
+    el.innerHTML = '<div class="panel-title">Country Ranking</div>'
       + '<table class="ranking-table"><tbody>' + rows + '</tbody></table>';
-
-    // Attach listener
-    var rankInput = document.getElementById('ctrl-ranking-date');
-    if (rankInput) {
-      rankInput.addEventListener('change', function () {
-        AppState.setState({ rankingDate: this.value });
-      });
-    }
   }
 
   // --------------------------------------------------------------------------
@@ -355,7 +343,9 @@ var UI = (function () {
   // --------------------------------------------------------------------------
 
   function renderSpread(state, data) {
-    var benchName = (data.countriesByIso[state.benchmarkCountry] || {}).name || state.benchmarkCountry;
+    var benchName = state.benchmarkCountry === 'EU_AVG'
+      ? 'EU Average'
+      : ((data.countriesByIso[state.benchmarkCountry] || {}).name || state.benchmarkCountry);
     var spread = Analytics.spreadToBenchmark(data, state.primaryCountry, state.benchmarkCountry, state.dateRange);
     Charts.renderSpreadChart('chart-spread', spread, benchName);
   }

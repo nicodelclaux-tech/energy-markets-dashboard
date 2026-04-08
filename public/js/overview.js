@@ -8,9 +8,10 @@ var Overview = (function () {
   // Helpers
   // --------------------------------------------------------------------------
 
-  function fmt(n, dp) {
+  function fmt(n) {
     if (n == null || isNaN(n)) return '—';
-    return n.toFixed(dp != null ? dp : 1);
+    var r = Math.round(n);
+    return r < 0 ? '(' + Math.abs(r) + ')' : String(r);
   }
 
   // Build SVG sparkline from a series array (last `count` points).
@@ -74,7 +75,7 @@ var Overview = (function () {
       if (diff < -2) cls = ' future-down';
       else if (diff > 2) cls = ' future-up';
     }
-    return '<td class="num' + cls + '">' + value + '</td>';
+    return '<td class="num' + cls + '">' + fmt(value) + '</td>';
   }
 
   // --------------------------------------------------------------------------

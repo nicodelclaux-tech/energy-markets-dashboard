@@ -4,11 +4,12 @@ var AppState = (function () {
   var _state = {
     primaryCountry: 'ES',
     comparisonCountries: [],
-    benchmarkCountry: 'DE',
+    benchmarkCountry: 'EU_AVG',
     dateRange: { start: null, end: null },
     aggregation: 'daily',     // 'daily' | 'monthly' | 'yearly'
     smoothingWindow: 7,       // 0 = none
-    rankingDate: null         // ISO date string, set to latest on load
+    rankingDate: null,        // ISO date string, set to latest on load
+    periodPreset: 0
   };
 
   function getState() {
@@ -29,11 +30,12 @@ var AppState = (function () {
   function resetState(data) {
     _state.primaryCountry = 'ES';
     _state.comparisonCountries = [];
-    _state.benchmarkCountry = 'DE';
+    _state.benchmarkCountry = 'EU_AVG';
     _state.dateRange = { start: data.earliestDate, end: data.latestDate };
     _state.aggregation = 'daily';
     _state.smoothingWindow = 7;
     _state.rankingDate = data.latestDate;
+    _state.periodPreset = 0;
     if (typeof window.renderApp === 'function') {
       window.renderApp();
     }

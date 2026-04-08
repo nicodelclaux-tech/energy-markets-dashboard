@@ -4,6 +4,41 @@ var APP = (function () {
 
   var _data = null;
 
+  function _applyTheme(theme) {
+    document.body.setAttribute('data-theme', theme);
+    try {
+      localStorage.setItem('energy_theme', theme);
+    } catch (e) {
+      // Ignore storage errors in locked-down environments
+    }
+    var btn = document.getElementById('btn-theme');
+    if (btn) {
+      btn.textContent = theme === 'dark' ? 'Light' : 'Dark';
+      btn.setAttribute('aria-label', 'Switch to ' + (theme === 'dark' ? 'light' : 'dark') + ' theme');
+    }
+  }
+
+  function _initTheme() {
+    var saved = null;
+    try {
+      saved = localStorage.getItem('energy_theme');
+    } catch (e) {
+      saved = null;
+    }
+    var initial = (saved === 'light' || saved === 'dark') ? saved : 'dark';
+    _applyTheme(initial);
+
+    var btn = document.getElementById('btn-theme');
+    if (btn) {
+      btn.addEventListener('click', function () {
+        var current = document.body.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+        _applyTheme(current === 'light' ? 'dark' : 'light');
+        renderApp();
+        Charts.resizeAll();
+      });
+    }
+  }
+
   function renderApp() {
     var state = AppState.getState();
     // Only render the active tab's charts to avoid hidden-canvas sizing issues
@@ -20,12 +55,13 @@ var APP = (function () {
   }
 
   function init() {
+    _initTheme();
     _data = DataLoader.loadData();
 
     // Seed state directly (no render yet)
     var state = AppState.getState();
     state.dateRange = { start: _data.earliestDate, end: _data.latestDate };
-    state.rankingDate = _data.latestDate;
+    state.periodPreset = 0;
 
     // Build controls DOM + attach listeners
     UI.initControls(_data);
@@ -33,8 +69,8 @@ var APP = (function () {
     // Render overview (static, no ECharts)
     Overview.render(_data);
 
-    // Header coverage text
-    var covEl = document.getElementById('header-coverage');
+    // Footer coverage text
+    var covEl = document.getElementById('footer-coverage');
     if (covEl && _data.earliestDate && _data.latestDate) {
       var populated = Object.keys(_data.dataCoverage).filter(function (iso) { return _data.dataCoverage[iso] > 0; });
       covEl.textContent = _data.earliestDate + ' — ' + _data.latestDate + ' · ' + populated.length + ' markets';
