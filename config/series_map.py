@@ -19,6 +19,11 @@ COUNTRIES: dict[str, str] = {
     "IT": "Italy",
     "GB": "United Kingdom",
     "NL": "Netherlands",
+    "NO": "Norway",
+    "SE": "Sweden",
+    "FI": "Finland",
+    "DK": "Denmark",
+    "IE": "Ireland",
 }
 
 # ENTSO-E bidding-zone EIC codes (used as both in_Domain and out_Domain for
@@ -30,6 +35,11 @@ ENTSOE_BIDDING_ZONES: dict[str, str] = {
     "IT": "10Y1001A1001A70O",   # IT-North
     "GB": "10YGB----------A",
     "NL": "10YNL----------L",
+    "NO": "10YNO-2--------T",   # NO2 (southern Norway) — most liquid EU-connected zone
+    "SE": "10Y1001A1001A46L",   # SE3 (central/Stockholm)
+    "FI": "10YFI-1--------U",   # Finland (single zone)
+    "DK": "10YDK-1--------W",   # DK1 (western Denmark, Continental-connected)
+    "IE": "10Y1001A1001A59C",   # SEM (all-island single electricity market)
 }
 
 # ---------------------------------------------------------------------------

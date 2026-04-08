@@ -25,12 +25,11 @@ Output files written to data/raw/:
   ember_eu_monthly_carbon_intensity.json
   ember_eu_monthly_capacity.json
   ember_eu_monthly_manifest.json
-
-The existing pipeline (fetch_all.py → build_data_js.py) is unaffected:
-``fetch_all()`` returns a dict compatible with the orchestrator, and
-build_data_js.py does not (yet) read these new JSON files.
+  ember_{cc}.csv  (per-country generation-mix CSVs for each country in
+                   COUNTRIES that Ember covers; consumed by build_data_js.py)
 """
 
+import csv
 import json
 import logging
 import sys
@@ -54,6 +53,7 @@ from config.settings import (
     REQUEST_TIMEOUT,
     RETRY_BACKOFF,
 )
+from config.series_map import COUNTRIES
 
 logger = logging.getLogger(__name__)
 
@@ -75,6 +75,23 @@ EU_27: list[str] = [
     "Malta", "Netherlands", "Poland", "Portugal", "Romania", "Slovakia",
     "Slovenia", "Spain", "Sweden",
 ]
+
+# ---------------------------------------------------------------------------
+# Entity name → ISO-3166-1 alpha-2 mapping
+# ---------------------------------------------------------------------------
+# Maps the Ember "entity" display name to the two-letter country code used
+# in COUNTRIES (config/series_map.py) and in per-country CSV filenames.
+# Only countries present in COUNTRIES need an entry here; the rest are
+# silently skipped when writing per-country CSVs.
+_EMBER_ENTITY_TO_CC: dict[str, str] = {
+    entity_name: cc
+    for cc, entity_name in COUNTRIES.items()
+}
+# Ember uses "United Kingdom" for GB but COUNTRIES maps GB → "United Kingdom"
+# so the dict comprehension above already handles it.  Add any manual
+# overrides here if Ember ever uses a different spelling:
+# _EMBER_ENTITY_TO_CC["Czechia"] = "CZ"  # example
+
 
 # ---------------------------------------------------------------------------
 # Dataset configuration
@@ -222,6 +239,80 @@ def _fetch_dataset_batched(
 
 
 # ---------------------------------------------------------------------------
+# Per-country CSV generation
+# ---------------------------------------------------------------------------
+
+# Columns expected by build_data_js.py → load_ember_mixes() → gen_mix logic.
+_CSV_COLUMNS = ("date", "source_type", "value_twh")
+
+
+def _write_country_csvs(generation_records: list[dict]) -> dict[str, int]:
+    """
+    Generate ``data/raw/ember_{cc}.csv`` files from the flat list of
+    generation records returned by the Ember API.
+
+    Each CSV has three columns: ``date``, ``source_type``, ``value_twh``,
+    matching what ``build_data_js.py`` (``load_ember_mixes``) expects.
+
+    Parameters
+    ----------
+    generation_records:
+        Filtered records from the ``electricity-generation`` dataset (fields:
+        entity, entity_code, date, series, generation_twh, …).
+
+    Returns
+    -------
+    dict mapping country-code → number of rows written.
+    """
+    # Group records by country code
+    by_cc: dict[str, list[dict]] = {}
+    for rec in generation_records:
+        entity = rec.get("entity")
+        if entity is None:
+            continue
+        cc = _EMBER_ENTITY_TO_CC.get(entity)
+        if cc is None:
+            continue
+        # Ember API returns YYYY-MM-DD or YYYY-MM formatted dates; slice to 10
+        # chars to normalise both to YYYY-MM-DD (day part may be absent).
+        date_val = rec.get("date")
+        series_val = rec.get("series")
+        twh_val = rec.get("generation_twh")
+        if date_val is None or series_val is None or twh_val is None:
+            continue
+        by_cc.setdefault(cc, []).append({
+            "date": str(date_val)[:10],
+            "source_type": series_val,
+            "value_twh": twh_val,
+        })
+
+    rows_written: dict[str, int] = {}
+    for cc, rows in sorted(by_cc.items()):
+        # Stable ordering: date then source_type
+        rows_sorted = sorted(rows, key=lambda r: (r["date"], r["source_type"]))
+        out_path = DATA_RAW_DIR / f"ember_{cc}.csv"
+        with open(out_path, "w", newline="", encoding="utf-8") as fh:
+            writer = csv.DictWriter(fh, fieldnames=_CSV_COLUMNS)
+            writer.writeheader()
+            writer.writerows(rows_sorted)
+        rows_written[cc] = len(rows_sorted)
+        logger.info(
+            "Ember CSV: wrote %d rows → %s", len(rows_sorted), out_path
+        )
+
+    # Log countries in COUNTRIES that had no Ember data
+    missing = [cc for cc in COUNTRIES if cc not in rows_written]
+    if missing:
+        logger.info(
+            "Ember CSV: no generation data for country codes %s "
+            "(will remain absent from dashboard generation mix)",
+            missing,
+        )
+
+    return rows_written
+
+
+# ---------------------------------------------------------------------------
 # Main fetch logic
 # ---------------------------------------------------------------------------
 
@@ -329,15 +420,23 @@ def fetch_eu_monthly() -> dict[str, list]:
             dataset_key, len(filtered_records), output_path,
         )
 
+    # --- 6. Generate per-country CSV files from generation data ---
+    generation_records = results.get("electricity-generation", [])
+    csv_rows_by_cc = _write_country_csvs(generation_records)
+    manifest["csv_rows_by_country"] = csv_rows_by_cc
+
     # Write manifest
     manifest_path = DATA_RAW_DIR / "ember_eu_monthly_manifest.json"
     with open(manifest_path, "w", encoding="utf-8") as fh:
         json.dump(manifest, fh, indent=2, ensure_ascii=False)
     logger.info("Ember manifest written → %s", manifest_path)
 
+    # Return dataset-level results so the fetch_all.py orchestrator can
+    # compute total_rows / coverage from list lengths (int values in
+    # csv_rows_by_cc don't have __len__ and would appear as zero).
     return results
 
 
 def fetch_all() -> dict[str, list]:
-    """Fetch EU-27 monthly Ember data and write JSON files to data/raw/."""
+    """Fetch EU-27 monthly Ember data and write JSON + per-country CSV files."""
     return fetch_eu_monthly()
