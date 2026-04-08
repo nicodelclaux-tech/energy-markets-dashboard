@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-07T23:39:37.160124+00:00",
+  "updatedAt": "2026-04-08T06:29:48.509818+00:00",
   "sources": {
     "entsoe": {
       "status": "ok",
@@ -12,7 +12,7 @@
         "GB": 0,
         "NL": 1827
       },
-      "elapsed_s": 500.4
+      "elapsed_s": 119.8
     },
     "ember": {
       "status": "ok",
@@ -25,7 +25,7 @@
         "GB": 0,
         "NL": 0
       },
-      "elapsed_s": 1.9
+      "elapsed_s": 1.4
     },
     "fmp": {
       "status": "ok",
@@ -37,33 +37,26 @@
         "EURUSD": 0,
         "GBPUSD": 0
       },
-      "elapsed_s": 1.7
+      "elapsed_s": 0.3
     },
     "ecb": {
-      "status": "ok",
-      "total_rows": 2562,
-      "coverage": {
-        "eurusd": 1281,
-        "gbpeur": 1281
-      },
-      "elapsed_s": 11.2
+      "status": "error",
+      "message": "TypeError: '<' not supported between instances of 'str' and 'Timestamp'",
+      "elapsed_s": 0.8
     },
     "eia": {
-      "status": "ok",
-      "total_rows": 2755,
-      "coverage": {
-        "brent": 1255,
-        "wti": 1240,
-        "henry_hub": 260,
-        "ng_storage": 0
-      },
-      "elapsed_s": 1.8
+      "status": "error",
+      "message": "TypeError: '<' not supported between instances of 'str' and 'Timestamp'",
+      "elapsed_s": 0.8
     },
     "news": {
       "status": "ok",
-      "total_items": 222,
-      "elapsed_s": 99.3
+      "total_items": 198,
+      "elapsed_s": 104.2
     }
   },
-  "warnings": []
+  "warnings": [
+    "[ecb] TypeError: '<' not supported between instances of 'str' and 'Timestamp'",
+    "[eia] TypeError: '<' not supported between instances of 'str' and 'Timestamp'"
+  ]
 }
