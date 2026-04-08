@@ -1,29 +1,67 @@
 {
-  "updatedAt": "2026-04-08T09:51:14.301574+00:00",
+  "updatedAt": "2026-04-08T10:52:30.343440+00:00",
   "sources": {
     "entsoe": {
-      "status": "skipped",
-      "message": "dry-run"
+      "status": "ok",
+      "total_rows": 9135,
+      "coverage": {
+        "ES": 1827,
+        "DE": 1827,
+        "FR": 1827,
+        "IT": 1827,
+        "GB": 0,
+        "NL": 1827
+      },
+      "elapsed_s": 74.1
     },
     "ember": {
-      "status": "skipped",
-      "message": "dry-run"
+      "status": "ok",
+      "total_rows": 0,
+      "coverage": {
+        "electricity-generation": 0,
+        "electricity-demand": 0,
+        "power-sector-emissions": 0,
+        "carbon-intensity": 0,
+        "installed-capacity": 0
+      },
+      "elapsed_s": 3.4
     },
     "fmp": {
-      "status": "skipped",
-      "message": "dry-run"
+      "status": "ok",
+      "total_rows": 0,
+      "coverage": {
+        "OUSX": 0,
+        "OJSX": 0,
+        "NGAS": 0,
+        "EURUSD": 0,
+        "GBPUSD": 0
+      },
+      "elapsed_s": 1.0
     },
     "ecb": {
-      "status": "skipped",
-      "message": "dry-run"
+      "status": "ok",
+      "total_rows": 2562,
+      "coverage": {
+        "eurusd": 1281,
+        "gbpeur": 1281
+      },
+      "elapsed_s": 2.0
     },
     "eia": {
-      "status": "skipped",
-      "message": "dry-run"
+      "status": "ok",
+      "total_rows": 2755,
+      "coverage": {
+        "brent": 1255,
+        "wti": 1240,
+        "henry_hub": 260,
+        "ng_storage": 0
+      },
+      "elapsed_s": 2.3
     },
     "news": {
-      "status": "skipped",
-      "message": "dry-run"
+      "status": "ok",
+      "total_items": 227,
+      "elapsed_s": 83.5
     }
   },
   "warnings": []

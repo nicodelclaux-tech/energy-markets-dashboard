@@ -55,23 +55,6 @@
     "relevance_score": 7.0
   },
   {
-    "id": "db76904fe99ab4fe",
-    "headline": "Europe energy grid cant keep up with the renewables boom . Which country will suffer the most ? ",
-    "url": "https://www.euronews.com/2026/04/01/europes-energy-grid-cant-keep-up-with-the-renewables-boom-which-country-will-suffer-the-mo",
-    "publishedAt": "20260401T074500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT"
-    ],
-    "topic_tags": [
-      "power",
-      "renewables"
-    ],
-    "summary": "",
-    "relevance_score": 6.5
-  },
-  {
     "id": "51a26cafd14fe097",
     "headline": "Energy Security Drives Coal ETF Assets to Double in March",
     "url": "https://www.etftrends.com/nuclear-energy-content-hub/energy-security-drives-coal-etf-assets-double-march/",
@@ -215,6 +198,24 @@
     "id": "9b61dced690e3fd9",
     "headline": "Renewables generated record share of united kingdom electricity in 2025 , data shows",
     "url": "https://www.timesandstar.co.uk/news/national/25990798.renewables-generated-record-share-uk-electricity-2025-data-shows/",
+    "publishedAt": "20260402T114500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT",
+      "GB"
+    ],
+    "topic_tags": [
+      "power",
+      "renewables"
+    ],
+    "summary": "",
+    "relevance_score": 5.5
+  },
+  {
+    "id": "fb68faa2397cc243",
+    "headline": "Renewables generated record share of united kingdom electricity in 2025 , data shows",
+    "url": "https://www.glasgowtimes.co.uk/news/national/25990798.renewables-generated-record-share-uk-electricity-2025-data-shows/",
     "publishedAt": "20260402T114500Z",
     "source": "gdelt",
     "country_tags": [
@@ -536,6 +537,24 @@
     "relevance_score": 5.5
   },
   {
+    "id": "3f247df050a96208",
+    "headline": "Renewables generated record share of united kingdom electricity in 2025 , data shows",
+    "url": "https://www.chelmsfordweeklynews.co.uk/news/national/25990798.renewables-generated-record-share-uk-electricity-2025-data-shows/",
+    "publishedAt": "20260402T140000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT",
+      "GB"
+    ],
+    "topic_tags": [
+      "power",
+      "renewables"
+    ],
+    "summary": "",
+    "relevance_score": 5.5
+  },
+  {
     "id": "9d07c885c9a37bdd",
     "headline": "Energy Capital & Power / Press release | Can Equatorial Guinea Reposition as West Africa Gas Hub ? ",
     "url": "https://energycapitalandpower.africa-newsroom.com/press/can-equatorial-guinea-reposition-as-west-africas-gas-hub",
@@ -690,6 +709,22 @@
     "relevance_score": 4.5
   },
   {
+    "id": "c4da3113df8c18dd",
+    "headline": "Renewable energy transition could accelerate as Iran war shocks oil and gas supply",
+    "url": "https://fortune.com/2026/04/02/high-energy-prices-iran-accelerates-renewable-transition-un-says/",
+    "publishedAt": "20260402T201500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT"
+    ],
+    "topic_tags": [
+      "gas",
+      "renewables"
+    ],
+    "summary": "",
+    "relevance_score": 4.5
+  },
+  {
     "id": "5e61cb296e13a648",
     "headline": "Lack of electricity grid space threatens thousands of new homes",
     "url": "https://www.dutchnews.nl/2026/04/lack-of-electricity-grid-space-threatens-thousands-of-new-homes/",
@@ -770,6 +805,22 @@
     "relevance_score": 4.5
   },
   {
+    "id": "b20df0a0fcae9560",
+    "headline": "EU countries call for windfall tax on energy companie profits",
+    "url": "https://www.spokesman.com/stories/2026/apr/04/eu-countries-call-for-windfall-tax-on-energy-compa/",
+    "publishedAt": "20260405T053000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT"
+    ],
+    "topic_tags": [
+      "renewables"
+    ],
+    "summary": "",
+    "relevance_score": 4.5
+  },
+  {
     "id": "3edb44988d692f11",
     "headline": "The South Pars natural gas complex is an energy lifeline for Iran – Winnipeg Free Press",
     "url": "https://www.winnipegfreepress.com/business/2026/04/06/the-south-pars-natural-gas-complex-is-an-energy-lifeline-for-iran",
@@ -784,24 +835,6 @@
     ],
     "summary": "",
     "relevance_score": 4.5
-  },
-  {
-    "id": "4389bbae08e4411a",
-    "headline": "Falade Assumes Role As NLNG New MD / CEO • Channels Television",
-    "url": "https://www.channelstv.com/2026/04/01/falade-assumes-role-as-nlngs-new-md-ceo/",
-    "publishedAt": "20260401T091500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "NL"
-    ],
-    "topic_tags": [
-      "gas",
-      "LNG"
-    ],
-    "summary": "",
-    "relevance_score": 4.0
   },
   {
     "id": "251400f880e1e79d",
@@ -968,6 +1001,36 @@
     "relevance_score": 4.0
   },
   {
+    "id": "3f3f5e30220949e9",
+    "headline": "International Business : EU countries call for windfall tax on energy companies",
+    "url": "https://www.gdnonline.com:443/Details/1380465",
+    "publishedAt": "20260404T230000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES"
+    ],
+    "topic_tags": [
+      "renewables"
+    ],
+    "summary": "",
+    "relevance_score": 4.0
+  },
+  {
+    "id": "7e0519c29bcdfe6d",
+    "headline": "Five EU countries call for windfall tax on energy companies - Economy",
+    "url": "https://www.thejakartapost.com/business/2026/04/05/five-eu-countries-call-for-windfall-tax-on-energy-companies.html",
+    "publishedAt": "20260405T050000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES"
+    ],
+    "topic_tags": [
+      "renewables"
+    ],
+    "summary": "",
+    "relevance_score": 4.0
+  },
+  {
     "id": "9b7400ff44f22cdb",
     "headline": "EU states seek windfall tax on energy firms",
     "url": "https://tribune.com.pk/story/2601103/eu-states-seek-windfall-tax-on-energy-firms",
@@ -1076,6 +1139,35 @@
     "relevance_score": 4.0
   },
   {
+    "id": "368c254460346d6d",
+    "headline": "The Biggest Oil Disruption in History Is Accelerating the Energy Transition",
+    "url": "https://oilprice.com/Energy/Energy-General/The-Biggest-Oil-Disruption-in-History-Is-Accelerating-the-Energy-Transition.html",
+    "publishedAt": "20260407T221500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 4.0
+  },
+  {
+    "id": "0f9addec948fcee3",
+    "headline": "France climate targets off track as emissions cuts slow again",
+    "url": "https://www.thelocal.fr/20260408/france-climate-targets-off-track-as-emissions-cuts-slow-again",
+    "publishedAt": "20260408T093000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "FR"
+    ],
+    "topic_tags": [
+      "emissions"
+    ],
+    "summary": "",
+    "relevance_score": 4.0
+  },
+  {
     "id": "4111d36d524a4858",
     "headline": "UK could depend on US LNG by 2035 as pressure mounts to boost North Sea",
     "url": "https://bmmagazine.co.uk/news/uk-us-lng-dependence-north-sea-output/",
@@ -1132,6 +1224,23 @@
       "ES"
     ],
     "topic_tags": [],
+    "summary": "",
+    "relevance_score": 3.5
+  },
+  {
+    "id": "0ac7662e9f616844",
+    "headline": "Japan Just Switched on Asia First Osmotic Power Plant , Which Runs 24 / 7 on Nothing But Fresh Water and Seawater",
+    "url": "https://www.zmescience.com/ecology/japan-first-osmotic-power-plantss/",
+    "publishedAt": "20260403T204500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "FR",
+      "IT"
+    ],
+    "topic_tags": [
+      "power"
+    ],
     "summary": "",
     "relevance_score": 3.5
   },
@@ -1322,6 +1431,19 @@
     "relevance_score": 3.5
   },
   {
+    "id": "ed01e0514bf6b15e",
+    "headline": "Global energy shares drop as oil plunges after U . S .- Iran ceasefire",
+    "url": "https://www.theglobeandmail.com/investing/article-global-energy-shares-drop-as-oil-plunges-after-us-iran-ceasefire/",
+    "publishedAt": "20260408T094500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 3.5
+  },
+  {
     "id": "4c2e76a7ff01f08c",
     "headline": "Greenpeace accuses oil companies of reaping Mideast  war profits  ",
     "url": "https://www.al-monitor.com/originals/2026/04/greenpeace-accuses-oil-companies-reaping-mideast-war-profits",
@@ -1448,22 +1570,6 @@
     "relevance_score": 3.0
   },
   {
-    "id": "792aea8f2edc45e1",
-    "headline": "LNG vessels U - turn after attempt to pass through Hormuz",
-    "url": "https://leaderpost.com:443/pmn/business-pmn/lng-vessels-u-turn-hormuz",
-    "publishedAt": "20260406T131500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES"
-    ],
-    "topic_tags": [
-      "gas",
-      "LNG"
-    ],
-    "summary": "",
-    "relevance_score": 3.0
-  },
-  {
     "id": "e3b9f7152226620a",
     "headline": "Hormuz standoff forces Qatar LNG tankers to turn back",
     "url": "https://worldoil.com/news/2026/4/6/hormuz-standoff-forces-qatar-lng-tankers-to-turn-back/",
@@ -1574,19 +1680,20 @@
     "relevance_score": 3.0
   },
   {
-    "id": "3d6b107a895081ee",
-    "headline": "Oil and gas prices wont immediately return to normal even if the Iran war ends EU",
-    "url": "https://www.manilatimes.net/2026/04/01/world/oil-and-gas-prices-wont-immediately-return-to-normal-even-if-the-iran-war-ends-eu/2312321",
-    "publishedAt": "20260401T104500Z",
+    "id": "257a806619f123d0",
+    "headline": "British Energy Policy Is Self - Defeating and Suicidal",
+    "url": "https://www.theamericanconservative.com/british-energy-policy-is-self-defeating-and-suicidal/",
+    "publishedAt": "20260408T071500Z",
     "source": "gdelt",
     "country_tags": [
-      "ES"
+      "DE",
+      "IT"
     ],
     "topic_tags": [
-      "gas"
+      "regulation"
     ],
     "summary": "",
-    "relevance_score": 2.5
+    "relevance_score": 3.0
   },
   {
     "id": "12b90501b32cdfe3",
@@ -1646,6 +1753,35 @@
     "relevance_score": 2.5
   },
   {
+    "id": "6e17b4c537cd1cad",
+    "headline": "Oil Jumps After Trump Vows to Hit Iran  Extremely Hard  Commodities Roundup",
+    "url": "https://www.morningstar.com/news/dow-jones/202604023118/oil-jumps-after-trump-vows-to-hit-iran-extremely-hard-commodities-roundup",
+    "publishedAt": "20260402T124500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "5122abab36cc4f01",
+    "headline": "Prospex Energy secures San onshore licence in Poland",
+    "url": "https://www.offshore-technology.com/news/prospex-san-onshore-licence/",
+    "publishedAt": "20260402T131500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES"
+    ],
+    "topic_tags": [
+      "renewables"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
     "id": "55eab153471d7f67",
     "headline": "UK - Netherlands interconnector marks 15 years of cross ‑ Channel power flows as partners plan LionLink",
     "url": "https://www.newcivilengineer.com/latest/uk-netherlands-interconnector-marks-15-years-of-cross%E2%80%91channel-power-flows-as-partners-plan-lionlink-02-04-2026/",
@@ -1656,6 +1792,21 @@
     ],
     "topic_tags": [
       "power"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "33443cda9a0b090e",
+    "headline": "Prospex Energy secures San onshore licence in Poland",
+    "url": "https://finance.yahoo.com/sectors/energy/articles/prospex-energy-secures-san-onshore-133519749.html",
+    "publishedAt": "20260402T140000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES"
+    ],
+    "topic_tags": [
+      "renewables"
     ],
     "summary": "",
     "relevance_score": 2.5
@@ -1716,6 +1867,20 @@
     "topic_tags": [
       "renewables"
     ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "3273c2c086bb7d6d",
+    "headline": "US , Israel , Iran war : European ministers call for profit caps on energy companies as Iran war drives price surge",
+    "url": "https://www.9news.com.au/world/us-israel-iran-war-european-ministers-call-for-profit-caps-on-energy-companies-price-surge/07c64e29-acd0-4c05-843b-5c4189d2c4fd",
+    "publishedAt": "20260404T171500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT"
+    ],
+    "topic_tags": [],
     "summary": "",
     "relevance_score": 2.5
   },
@@ -1853,6 +2018,21 @@
     "relevance_score": 2.5
   },
   {
+    "id": "9376374934d7908a",
+    "headline": "Amid war in Iran , EU urges people to drive less and for countries to urgently roll out renewables",
+    "url": "https://green-blog.org/2026/04/07/amid-war-in-iran-eu-urges-people-to-drive-less-and-for-countries-to-urgently-roll-out-renewables/",
+    "publishedAt": "20260408T010000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES"
+    ],
+    "topic_tags": [
+      "renewables"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
     "id": "9324f79cec382c52",
     "headline": "U . S . LNG Exports Reached Record High in March Amid Global Supply Shock – NaturalNews . com",
     "url": "https://www.naturalnews.com/2026-04-07-us-lng-exports-reach-record-high-march.html",
@@ -1882,19 +2062,6 @@
     "relevance_score": 2.5
   },
   {
-    "id": "9349623d5cadec4c",
-    "headline": "Iranian missile hit oil tanker in Qatari waters , Qatar says",
-    "url": "https://tribune.com.pk/story/2600465/tanker-hit-by-two-projectiles-off-qatar",
-    "publishedAt": "20260401T091500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IT"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 2.0
-  },
-  {
     "id": "a339edbcf2d47197",
     "headline": "Oil , war , and collapse risks : Hidden global costs of Iran - US - Israel conflict",
     "url": "https://www.azernews.az/analysis/256415.html",
@@ -1908,6 +2075,23 @@
     "relevance_score": 2.0
   },
   {
+    "id": "ad9df21b45082eee",
+    "headline": "AGR Biogas and TURN2X to Develop Projects to Generate Renewable Gases",
+    "url": "https://www.renewableenergymagazine.com/biogas/agr-biogas-and-turn2x-to-develop-projects-20260401",
+    "publishedAt": "20260401T171500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE"
+    ],
+    "topic_tags": [
+      "gas",
+      "renewables"
+    ],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
     "id": "2c9b63ad06fc5460",
     "headline": "Solar Stocks To Follow Now – April 1st",
     "url": "https://www.themarketsdaily.com/2026/04/01/solar-stocks-to-follow-now-april-1st.html",
@@ -1917,6 +2101,58 @@
     "topic_tags": [
       "renewables"
     ],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "7fa7b722ad38eadf",
+    "headline": "Europe Nuclear U - Turn : What Changed , What Hasnt , and What Next",
+    "url": "https://oilprice.com/Alternative-Energy/Nuclear-Power/Europes-Nuclear-U-Turn-Whats-Changed-What-Hasnt-and-Whats-Next.html",
+    "publishedAt": "20260401T221500Z",
+    "source": "gdelt",
+    "country_tags": [],
+    "topic_tags": [
+      "nuclear"
+    ],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "f0199a4b644e3840",
+    "headline": "Iran War Impact on Gas Price , Clean Energy , & Climate",
+    "url": "https://www.juancole.com/2026/04/impact-energy-climate.html",
+    "publishedAt": "20260402T090000Z",
+    "source": "gdelt",
+    "country_tags": [],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "64d1d5936ac5b2bc",
+    "headline": "Plug - in solar could be coming to Maine thanks to this measure",
+    "url": "https://www.pressherald.com/2026/04/02/plug-in-solar-could-be-coming-to-maine-thanks-to-this-measure/",
+    "publishedAt": "20260402T210000Z",
+    "source": "gdelt",
+    "country_tags": [],
+    "topic_tags": [
+      "renewables"
+    ],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "18d7a5902d4e9978",
+    "headline": "ABO Energy reaches international project milestones",
+    "url": "https://www.energy-pedia.com/news/general/abo-energy-reaches-international-project-milestones-203422",
+    "publishedAt": "20260403T083000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES"
+    ],
+    "topic_tags": [],
     "summary": "",
     "relevance_score": 2.0
   },
@@ -1978,17 +2214,6 @@
     "topic_tags": [],
     "summary": "",
     "relevance_score": 2.0
-  },
-  {
-    "id": "138e18b54306a22a",
-    "headline": "QatarEnergy confirms missile attack on fuel tanker , crew reported safe",
-    "url": "https://aninews.in/news/world/middle-east/qatarenergy-confirms-missile-attack-on-fuel-tanker-crew-reported-safe20260401140353/",
-    "publishedAt": "20260401T090000Z",
-    "source": "gdelt",
-    "country_tags": [],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.5
   },
   {
     "id": "faf1523336856d99",
@@ -2319,6 +2544,62 @@
     "relevance_score": 1.5
   },
   {
+    "id": "7d8d2793eca241b3",
+    "headline": "UK facing worst economic shock in decades IMF",
+    "url": "http://www.texasguardian.com/news/278957667/uk-facing-worst-economic-shock-in-decades-imf",
+    "publishedAt": "20260401T123000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "2133246c4602cbfd",
+    "headline": "UK facing worst economic shock in decades IMF",
+    "url": "http://www.indiagazette.com/news/278957667/uk-facing-worst-economic-shock-in-decades-imf",
+    "publishedAt": "20260401T124500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "684576bb635977d8",
+    "headline": "UK facing worst economic shock in decades IMF",
+    "url": "http://www.londonmercury.com/news/278957667/uk-facing-worst-economic-shock-in-decades-imf",
+    "publishedAt": "20260401T124500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "9060c55ab08df510",
+    "headline": "Iran war : EU urges citizens to save on fuel as  long crisi looms",
+    "url": "https://www.theolivepress.es/spain-news/2026/04/01/iran-war-eu-urges-citizens-to-save-on-fuel-as-long-crisis-looms/",
+    "publishedAt": "20260401T133000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
     "id": "1fe41a1d4fbc27d7",
     "headline": "How the Iran war has sent prices soaring as filling a car hits £100",
     "url": "https://www.dailymail.co.uk/news/article-15697173/Iran-war-prices-inflation-petrol-diesel-mortgages-energy-bills.html",
@@ -2327,6 +2608,62 @@
     "country_tags": [
       "ES",
       "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "7b8d9afe8e798004",
+    "headline": "UK facing worst economic shock in decades IMF",
+    "url": "http://www.parisguardian.com/news/278957667/uk-facing-worst-economic-shock-in-decades-imf",
+    "publishedAt": "20260401T153000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "60c1210a5f1ff406",
+    "headline": "UK facing worst economic shock in decades IMF",
+    "url": "http://www.israelherald.com/news/278957667/uk-facing-worst-economic-shock-in-decades-imf",
+    "publishedAt": "20260401T161500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "2dcec617594c292f",
+    "headline": "UK facing worst economic shock in decades IMF",
+    "url": "http://www.sierraleonetimes.com/news/278957667/uk-facing-worst-economic-shock-in-decades-imf",
+    "publishedAt": "20260401T161500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "02266248f2da91bc",
+    "headline": "UK facing worst economic shock in decades IMF",
+    "url": "http://www.taiwansun.com/news/278957667/uk-facing-worst-economic-shock-in-decades-imf",
+    "publishedAt": "20260401T161500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE"
     ],
     "topic_tags": [],
     "summary": "",
@@ -2355,6 +2692,20 @@
     "country_tags": [
       "ES",
       "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "7a6fe68a896075e2",
+    "headline": "  Another 20 to 30 years of life  | Local News | trinidadexpress . com",
+    "url": "https://trinidadexpress.com/news/local/another-20-to-30-years-of-life/article_36958441-fd58-4cce-b107-5789c8a80bba.html",
+    "publishedAt": "20260402T101500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE"
     ],
     "topic_tags": [],
     "summary": "",
@@ -2520,6 +2871,34 @@
     "headline": "Strait of Hormuz shipping blockade update",
     "url": "https://www.al-monitor.com/originals/2026/04/strait-hormuz-shipping-blockade-update",
     "publishedAt": "20260407T123000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "DE",
+      "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "2decd44464038648",
+    "headline": "Dalrada Technology Group , Inc . Continues to Build Momentum in Spain with Additional Contract",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-04/68136499-dalrada-technology-group-inc-continues-to-build-momentum-in-spain-with-additional-contract-200.htm",
+    "publishedAt": "20260407T130000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "4b0021e377d01760",
+    "headline": "Trump warns a  whole civilization will die tonight  if a deal with Iran isnt reached",
+    "url": "https://www.wdrb.com/news/national/trump-warns-a-whole-civilization-will-die-tonight-if-a-deal-with-iran-isnt-reached/article_6b40fbfe-a418-5879-971f-d072f8bbb3f9.html",
+    "publishedAt": "20260407T154500Z",
     "source": "gdelt",
     "country_tags": [
       "DE",
@@ -2810,15 +3189,30 @@
     "relevance_score": 0.5
   },
   {
-    "id": "ea099c202db720fe",
-    "headline": "WoodMac Says Iran Conflict Should Prompt North Sea Rethink",
-    "url": "https://www.rigzone.com/news/woodmac_says_iran_conflict_should_prompt_north_sea_rethink-01-apr-2026-183346-article/",
-    "publishedAt": "20260401T104500Z",
+    "id": "e00286e1b2c75369",
+    "headline": "Ancient Philippine map debunks Chinaâ€™s imagined sea boundary",
+    "url": "https://www.philstar.com/opinion/2026/04/08/2519351/ancient-philippine-map-debunks-chinas-imagined-sea-boundary",
+    "publishedAt": "20260407T163000Z",
     "source": "gdelt",
-    "country_tags": [],
+    "country_tags": [
+      "DE"
+    ],
     "topic_tags": [],
     "summary": "",
-    "relevance_score": 0.0
+    "relevance_score": 0.5
+  },
+  {
+    "id": "d020e8654801c05c",
+    "headline": "Trump says  whole civilization will die tonight  as Iran deadline looms",
+    "url": "https://www.news9.com/oklahoma-city-news/iran-us-israel-trump-lebanon-april-7-2026",
+    "publishedAt": "20260407T201500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "DE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.5
   },
   {
     "id": "cb83095579b482ec",
@@ -2865,10 +3259,32 @@
     "relevance_score": 0.0
   },
   {
+    "id": "b30b26a4e8b3dd45",
+    "headline": "How Algeria Is Navigating the War in Iran",
+    "url": "https://foreignpolicy.com/2026/04/01/iran-war-algeria-sahel-energy-gas/",
+    "publishedAt": "20260402T024500Z",
+    "source": "gdelt",
+    "country_tags": [],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.0
+  },
+  {
     "id": "95b1937140c50c68",
     "headline": "UK to host multi - nation meeting on Hormuz shipping Thursday",
     "url": "https://dunyanews.tv/en/World/943729-uk-to-host-multination-meeting-on-hormuz-shipping-thursday",
     "publishedAt": "20260402T033000Z",
+    "source": "gdelt",
+    "country_tags": [],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.0
+  },
+  {
+    "id": "60fc256e99835f45",
+    "headline": "Europe Intelligence Brief for Thursday , April 2 , 2026",
+    "url": "https://www.riotimesonline.com/europe-pulse-macron-rejects-hormuz-jet-fuel-risk/",
+    "publishedAt": "20260402T211500Z",
     "source": "gdelt",
     "country_tags": [],
     "topic_tags": [],

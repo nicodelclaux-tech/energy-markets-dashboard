@@ -1,0 +1,49 @@
+{
+  "pulled_at": "2026-04-08T10:53:44.470189+00:00",
+  "api_base": "https://api.ember-energy.org",
+  "latest_available_month_by_dataset": {},
+  "countries_requested": [
+    "Austria",
+    "Belgium",
+    "Bulgaria",
+    "Croatia",
+    "Cyprus",
+    "Czechia",
+    "Denmark",
+    "Estonia",
+    "Finland",
+    "France",
+    "Germany",
+    "Greece",
+    "Hungary",
+    "Ireland",
+    "Italy",
+    "Latvia",
+    "Lithuania",
+    "Luxembourg",
+    "Malta",
+    "Netherlands",
+    "Poland",
+    "Portugal",
+    "Romania",
+    "Slovakia",
+    "Slovenia",
+    "Spain",
+    "Sweden"
+  ],
+  "countries_returned_by_dataset": {
+    "electricity-generation": [],
+    "electricity-demand": [],
+    "power-sector-emissions": [],
+    "carbon-intensity": [],
+    "installed-capacity": []
+  },
+  "series_returned_by_dataset": {
+    "electricity-generation": [],
+    "electricity-demand": [],
+    "power-sector-emissions": [],
+    "carbon-intensity": [],
+    "installed-capacity": []
+  },
+  "attribution": "Source: Ember, CC BY 4.0"
+}
