@@ -35,6 +35,7 @@ logger = logging.getLogger("fetch_all")
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from config.settings import DATA_RAW_DIR
+from config.series_map import COUNTRIES
 
 # Adapters are imported lazily so that a broken adapter module doesn't
 # prevent the others from running
@@ -46,6 +47,12 @@ ADAPTER_MODULES = [
     ("eia",     "scripts.adapters.eia",     "fetch_all"),
     ("news",    "scripts.adapters.news",    "fetch_all"),
 ]
+
+
+def _warn(meta: dict, name: str, message: str) -> None:
+    msg = f"[{name}] {message}"
+    logger.warning(msg)
+    meta["warnings"].append(msg)
 
 
 def run(dry_run: bool = False) -> dict:
@@ -91,15 +98,30 @@ def run(dry_run: bool = False) -> dict:
                     if hasattr(df, "__len__")
                 )
                 coverage = {k: len(v) for k, v in result.items() if hasattr(v, "__len__")}
+                status = "ok"
+                if total_rows == 0:
+                    status = "warning"
+                    _warn(meta, name, "adapter returned zero rows")
+
+                if name == "entsoe":
+                    missing = [cc for cc in COUNTRIES if coverage.get(cc, 0) == 0]
+                    if missing:
+                        status = "warning"
+                        _warn(meta, name, "missing country coverage: " + ", ".join(missing))
+
                 meta["sources"][name] = {
-                    "status": "ok",
+                    "status": status,
                     "total_rows": total_rows,
                     "coverage": coverage,
                     "elapsed_s": elapsed,
                 }
             elif isinstance(result, list):
+                status = "ok"
+                if len(result) == 0:
+                    status = "warning"
+                    _warn(meta, name, "adapter returned zero items")
                 meta["sources"][name] = {
-                    "status": "ok",
+                    "status": status,
                     "total_items": len(result),
                     "elapsed_s": elapsed,
                 }
@@ -127,10 +149,13 @@ def run(dry_run: bool = False) -> dict:
     logger.info("Fetch metadata written → %s", meta_path)
 
     failed = [k for k, v in meta["sources"].items() if v.get("status") == "error"]
+    warned = [k for k, v in meta["sources"].items() if v.get("status") == "warning"]
     if failed:
         logger.warning("Failed adapters: %s", ", ".join(failed))
     else:
         logger.info("All adapters completed successfully")
+    if warned:
+        logger.warning("Adapters with warnings: %s", ", ".join(warned))
 
     return meta
 

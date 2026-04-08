@@ -102,10 +102,13 @@ var Analytics = (function () {
 
   // --- Rankings -----------------------------------------------------------------
 
-  function rankCountriesByDate(data, dateString) {
+  function rankCountriesByDate(data, dateString, allowedIsos) {
     if (!dateString) return [];
     var result = [];
-    Object.keys(data.seriesByIso).forEach(function (iso) {
+    var universe = Array.isArray(allowedIsos) && allowedIsos.length > 0
+      ? allowedIsos
+      : Object.keys(data.seriesByIso);
+    universe.forEach(function (iso) {
       var series = data.seriesByIso[iso];
       if (!series || series.length === 0) return;
       // Find the closest record on or before the target date
@@ -183,6 +186,34 @@ var Analytics = (function () {
     return buckets;
   }
 
+  function computePercentileBand(data, dateRange, aggregation, isos) {
+    var dateBuckets = {};
+    var countries = (isos && isos.length ? isos : data.countryOrder || []).slice();
+
+    countries.forEach(function (iso) {
+      var series = getSeriesForCountry(data, iso, dateRange);
+      var aggregated = applyAggregation(series, aggregation);
+      aggregated.forEach(function (r) {
+        if (r.price == null || isNaN(r.price)) return;
+        if (!dateBuckets[r.dateString]) dateBuckets[r.dateString] = [];
+        dateBuckets[r.dateString].push(r.price);
+      });
+    });
+
+    return Object.keys(dateBuckets)
+      .sort()
+      .map(function (dateString) {
+        var values = dateBuckets[dateString].slice().sort(function (a, b) { return a - b; });
+        if (values.length === 0) return null;
+        return {
+          dateString: dateString,
+          p25: percentileValue(values, 25),
+          p75: percentileValue(values, 75)
+        };
+      })
+      .filter(function (row) { return row && row.p25 != null && row.p75 != null; });
+  }
+
   // --- Percentile / Regime ------------------------------------------------------
 
   function percentileValue(sortedPrices, p) {
@@ -228,6 +259,7 @@ var Analytics = (function () {
     aggregateYearly: aggregateYearly,
     applyAggregation: applyAggregation,
     computeDistribution: computeDistribution,
+    computePercentileBand: computePercentileBand,
     classifyRegime: classifyRegime,
     findPeakTrough: findPeakTrough
   };
