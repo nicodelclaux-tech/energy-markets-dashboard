@@ -156,7 +156,7 @@ def load_ember_mixes() -> dict[str, pd.DataFrame]:
 
 
 def load_news() -> list[dict]:
-    """Load cached news articles."""
+    """Load cached news articles (Guardian/GDELT)."""
     logger.info("Loading news …")
     news_path = DATA_RAW_DIR / "news.json"
     if not news_path.exists():
@@ -167,6 +167,74 @@ def load_news() -> list[dict]:
     except Exception as exc:
         logger.warning("Could not load news.json: %s", exc)
         return []
+
+
+def load_av_news() -> list[dict]:
+    """Load cached Alpha Vantage news/sentiment articles."""
+    logger.info("Loading Alpha Vantage news …")
+    path = DATA_RAW_DIR / "av_news.json"
+    if not path.exists():
+        return []
+    try:
+        with open(path, encoding="utf-8") as fh:
+            return json.load(fh)
+    except Exception as exc:
+        logger.warning("Could not load av_news.json: %s", exc)
+        return []
+
+
+def load_av_metals() -> dict[str, list[dict]]:
+    """Load cached Alpha Vantage metals price series (gold, silver, copper)."""
+    logger.info("Loading Alpha Vantage metals …")
+    result: dict[str, list[dict]] = {}
+    for metal in ("gold", "silver", "copper"):
+        path = DATA_RAW_DIR / f"av_{metal}.csv"
+        if not path.exists():
+            logger.debug("AV metals cache missing: %s", path.name)
+            continue
+        try:
+            df = pd.read_csv(path)
+            if df.empty or "date" not in df.columns or "value" not in df.columns:
+                continue
+            df = df.dropna(subset=["value"])
+            unit = df["unit"].iloc[-1] if "unit" in df.columns and not df.empty else ""
+            records = [
+                {"date": str(row["date"])[:10], "value": round(float(row["value"]), 4), "unit": unit}
+                for _, row in df.sort_values("date").iterrows()
+                if not pd.isna(row["value"])
+            ]
+            result[metal] = records
+        except Exception as exc:
+            logger.warning("Could not load av_%s.csv: %s", metal, exc)
+    return result
+
+
+def load_gie_storage() -> dict:
+    """Load cached GIE gas storage snapshot."""
+    logger.info("Loading GIE gas storage …")
+    path = DATA_RAW_DIR / "gie_gas_storage.json"
+    if not path.exists():
+        return {}
+    try:
+        with open(path, encoding="utf-8") as fh:
+            return json.load(fh)
+    except Exception as exc:
+        logger.warning("Could not load gie_gas_storage.json: %s", exc)
+        return {}
+
+
+def load_gie_lng() -> dict:
+    """Load cached GIE LNG snapshot."""
+    logger.info("Loading GIE LNG …")
+    path = DATA_RAW_DIR / "gie_lng.json"
+    if not path.exists():
+        return {}
+    try:
+        with open(path, encoding="utf-8") as fh:
+            return json.load(fh)
+    except Exception as exc:
+        logger.warning("Could not load gie_lng.json: %s", exc)
+        return {}
 
 
 def load_fetch_meta() -> dict:
@@ -194,6 +262,10 @@ def build(output_path: Path) -> None:
     commodities = load_commodity_series()
     ember = load_ember_mixes()
     raw_news = load_news()
+    av_news = load_av_news()
+    av_metals = load_av_metals()
+    gie_gas = load_gie_storage()
+    gie_lng = load_gie_lng()
     fetch_meta = load_fetch_meta()
 
     def _add_warning(warnings_list: list[str], message: str) -> None:
@@ -304,7 +376,20 @@ def build(output_path: Path) -> None:
     rankings_out = compute_country_rankings(country_fundamentals)
 
     # ---- News section ----
-    news_out = rank_news(raw_news, max_per_country=5, min_score=2.0)
+    # Merge Guardian/GDELT articles with Alpha Vantage news; deduplicate by URL.
+    merged_news: list[dict] = []
+    seen_urls: set[str] = set()
+    for art in raw_news:
+        url = art.get("url", "")
+        if url and url not in seen_urls:
+            seen_urls.add(url)
+            merged_news.append(art)
+    for art in av_news:
+        url = art.get("url", "")
+        if url and url not in seen_urls:
+            seen_urls.add(url)
+            merged_news.append(art)
+    news_out = rank_news(merged_news, max_per_country=5, min_score=2.0)
 
     # ---- Meta section ----
     warnings = list(fetch_meta.get("warnings", []))
@@ -338,6 +423,15 @@ def build(output_path: Path) -> None:
         "comparisons": comparisons_out,
         "rankings": rankings_out,
         "news": news_out,
+        # GIE gas storage and LNG terminal snapshots (keyed by ISO-2 country code)
+        "gie": {
+            "gasStorage": dict(sorted(gie_gas.items())),
+            "lng": dict(sorted(gie_lng.items())),
+        },
+        # Alpha Vantage metals prices
+        "commodities": {
+            "metals": {metal: records for metal, records in sorted(av_metals.items())},
+        },
     }
 
     # ---- Write ----
@@ -348,10 +442,13 @@ def build(output_path: Path) -> None:
     size_kb = round(output_path.stat().st_size / 1024, 1)
     n_series = len(named_series)
     logger.info(
-        "data.js written: %.1f KB  (%d news articles, %d series)",
+        "data.js written: %.1f KB  (%d news articles, %d series, %d GIE gas, %d GIE LNG, %d metal series)",
         size_kb,
         len(news_out),
         n_series,
+        len(gie_gas),
+        len(gie_lng),
+        len(av_metals),
     )
 
 
