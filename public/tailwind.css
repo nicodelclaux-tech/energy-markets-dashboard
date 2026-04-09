@@ -1,17 +1,9 @@
 /*! tailwindcss v4.2.2 | MIT License | https://tailwindcss.com */
-@layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
-    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-      "Courier New", monospace;
-    --spacing: 0.25rem;
-    --font-weight-semibold: 600;
-    --leading-snug: 1.375;
-    --default-transition-duration: 150ms;
-    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --font-sans: var(--font-sans);
+    --font-mono: var(--font-mono);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -164,261 +156,75 @@
     display: none !important;
   }
 }
+@layer utilities;
 @layer utilities {
-  .visible {
-    visibility: visible;
-  }
-  .absolute {
-    position: absolute;
-  }
-  .relative {
-    position: relative;
-  }
-  .static {
-    position: static;
-  }
-  .sticky {
-    position: sticky;
-  }
-  .start {
-    inset-inline-start: var(--spacing);
-  }
-  .end {
-    inset-inline-end: var(--spacing);
-  }
-  .top-0 {
-    top: calc(var(--spacing) * 0);
-  }
-  .z-50 {
-    z-index: 50;
-  }
-  .mx-5 {
-    margin-inline: calc(var(--spacing) * 5);
-  }
-  .my-4 {
-    margin-block: calc(var(--spacing) * 4);
-  }
-  .-mt-px {
-    margin-top: -1px;
-  }
-  .mt-4 {
-    margin-top: calc(var(--spacing) * 4);
-  }
-  .mt-auto {
-    margin-top: auto;
-  }
-  .mb-0 {
-    margin-bottom: calc(var(--spacing) * 0);
-  }
-  .mb-6 {
-    margin-bottom: calc(var(--spacing) * 6);
-  }
-  .contents {
-    display: contents;
-  }
-  .flex {
-    display: flex;
-  }
-  .grid {
-    display: grid;
-  }
-  .table {
-    display: table;
-  }
-  .min-h-\[32px\] {
-    min-height: 32px;
-  }
-  .min-h-screen {
-    min-height: 100vh;
-  }
-  .min-w-0 {
-    min-width: calc(var(--spacing) * 0);
-  }
-  .flex-1 {
-    flex: 1;
-  }
-  .resize {
-    resize: both;
-  }
-  .grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-  .flex-col {
-    flex-direction: column;
-  }
-  .items-center {
-    align-items: center;
-  }
-  .justify-center {
-    justify-content: center;
-  }
-  .gap-0\.5 {
-    gap: calc(var(--spacing) * 0.5);
-  }
-  .gap-3 {
-    gap: calc(var(--spacing) * 3);
-  }
-  .gap-4 {
-    gap: calc(var(--spacing) * 4);
-  }
-  .gap-5 {
-    gap: calc(var(--spacing) * 5);
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
-  .border-t {
-    border-top-style: var(--tw-border-style);
-    border-top-width: 1px;
-  }
-  .border-b {
-    border-bottom-style: var(--tw-border-style);
-    border-bottom-width: 1px;
-  }
-  .border-\[var\(--border\)\] {
-    border-color: var(--border);
-  }
-  .bg-\[var\(--bg\)\] {
+  .bg-app-bg {
     background-color: var(--bg);
   }
-  .bg-\[var\(--surface\)\] {
+  .bg-app-surface {
     background-color: var(--surface);
   }
-  .p-5 {
-    padding: calc(var(--spacing) * 5);
+  .bg-app-surface2 {
+    background-color: var(--surface-2);
   }
-  .px-3 {
-    padding-inline: calc(var(--spacing) * 3);
+  .bg-app-surface3 {
+    background-color: var(--surface-3);
   }
-  .px-5 {
-    padding-inline: calc(var(--spacing) * 5);
-  }
-  .py-1\.5 {
-    padding-block: calc(var(--spacing) * 1.5);
-  }
-  .font-sans {
-    font-family: var(--font-sans);
-  }
-  .text-\[11px\] {
-    font-size: 11px;
-  }
-  .text-\[13px\] {
-    font-size: 13px;
-  }
-  .text-\[14px\] {
-    font-size: 14px;
-  }
-  .leading-snug {
-    --tw-leading: var(--leading-snug);
-    line-height: var(--leading-snug);
-  }
-  .font-semibold {
-    --tw-font-weight: var(--font-weight-semibold);
-    font-weight: var(--font-weight-semibold);
-  }
-  .tracking-\[0\.02em\] {
-    --tw-tracking: 0.02em;
-    letter-spacing: 0.02em;
-  }
-  .whitespace-nowrap {
-    white-space: nowrap;
-  }
-  .text-\[var\(--muted\)\] {
-    color: var(--muted);
-  }
-  .text-\[var\(--text\)\] {
+  .text-app-text {
     color: var(--text);
   }
-  .tabular-nums {
-    --tw-numeric-spacing: tabular-nums;
-    font-variant-numeric: var(--tw-ordinal,) var(--tw-slashed-zero,) var(--tw-numeric-figure,) var(--tw-numeric-spacing,) var(--tw-numeric-fraction,);
+  .text-app-dim {
+    color: var(--text-dim);
   }
-  .transition {
-    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  .text-app-muted {
+    color: var(--muted);
   }
-}
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
-@property --tw-leading {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-font-weight {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-tracking {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-ordinal {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-slashed-zero {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-numeric-figure {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-numeric-spacing {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-numeric-fraction {
-  syntax: "*";
-  inherits: false;
-}
-@layer properties {
-  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
-    *, ::before, ::after, ::backdrop {
-      --tw-border-style: solid;
-      --tw-leading: initial;
-      --tw-font-weight: initial;
-      --tw-tracking: initial;
-      --tw-ordinal: initial;
-      --tw-slashed-zero: initial;
-      --tw-numeric-figure: initial;
-      --tw-numeric-spacing: initial;
-      --tw-numeric-fraction: initial;
-    }
+  .text-app-sky {
+    color: var(--sky);
   }
-}
-
-/* ================================================================
-   Custom color utilities — generated from @theme inline tokens.
-   These map Tailwind color names to our CSS variable system,
-   allowing dark/light theme switching at runtime.
-   ================================================================ */
-@layer utilities {
-  /* Background colors */
-  .bg-app-bg      { background-color: var(--bg); }
-  .bg-app-surface { background-color: var(--surface); }
-  .bg-app-surface2{ background-color: var(--surface-2); }
-
-  /* Text colors */
-  .text-app-text   { color: var(--text); }
-  .text-app-muted  { color: var(--muted); }
-  .text-app-blue   { color: var(--blue); }
-  .text-app-green  { color: var(--green); }
-  .text-app-red    { color: var(--red); }
-  .text-app-amber  { color: var(--amber); }
-  .text-app-orange { color: var(--orange); }
-  .text-app-purple { color: var(--purple); }
-
-  /* Border colors */
-  .border-app-border  { border-color: var(--border); }
-  .border-app-surface { border-color: var(--surface); }
-  .border-app-blue    { border-color: var(--blue); }
-
-  /* Divide colors */
-  .divide-app-border > * + * { border-color: var(--border); }
+  .text-app-emerald {
+    color: var(--emerald);
+  }
+  .text-app-rose {
+    color: var(--rose);
+  }
+  .text-app-amber {
+    color: var(--amber);
+  }
+  .text-app-violet {
+    color: var(--violet);
+  }
+  .text-app-blue {
+    color: var(--blue);
+  }
+  .text-app-green {
+    color: var(--green);
+  }
+  .text-app-red {
+    color: var(--red);
+  }
+  .text-app-orange {
+    color: var(--orange);
+  }
+  .text-app-purple {
+    color: var(--purple);
+  }
+  .border-app-border {
+    border-color: var(--border);
+  }
+  .border-app-border-hi {
+    border-color: var(--border-hi);
+  }
+  .border-app-surface {
+    border-color: var(--surface);
+  }
+  .border-app-sky {
+    border-color: var(--sky);
+  }
+  .border-app-blue {
+    border-color: var(--blue);
+  }
+  .font-mono-ibm {
+    font-family: var(--font-mono);
+  }
 }
