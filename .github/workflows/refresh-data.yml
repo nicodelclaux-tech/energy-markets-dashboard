@@ -16,11 +16,13 @@ jobs:
     timeout-minutes: 30
 
     env:
-      ENTSOE_API_KEY:   ${{ secrets.ENTSOE_API_KEY }}
-      FMP_API_KEY:      ${{ secrets.FMP_API_KEY }}
-      EIA_API_KEY:      ${{ secrets.EIA_API_KEY }}
-      GUARDIAN_API_KEY: ${{ secrets.GUARDIAN_API_KEY }}
-      EMBER_API_KEY:    ${{ secrets.EMBER_API_KEY }}
+      ENTSOE_API_KEY:        ${{ secrets.ENTSOE_API_KEY }}
+      FMP_API_KEY:           ${{ secrets.FMP_API_KEY }}
+      EIA_API_KEY:           ${{ secrets.EIA_API_KEY }}
+      GUARDIAN_API_KEY:      ${{ secrets.GUARDIAN_API_KEY }}
+      EMBER_API_KEY:         ${{ secrets.EMBER_API_KEY }}
+      ALPHAVANTAGE_API_KEY:  ${{ secrets.ALPHAVANTAGE_API_KEY }}
+      GIE_API_KEY:           ${{ secrets.GIE_API_KEY }}
 
     steps:
       - name: Checkout repository

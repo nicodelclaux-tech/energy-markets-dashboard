@@ -12,6 +12,7 @@ any adapter code.
 # Countries
 # ---------------------------------------------------------------------------
 # Maps ISO 3166-1 alpha-2 code → display name
+# "Focus" countries used by ENTSO-E and Ember adapters (electricity data).
 COUNTRIES: dict[str, str] = {
     "ES": "Spain",
     "DE": "Germany",
@@ -24,6 +25,46 @@ COUNTRIES: dict[str, str] = {
     "FI": "Finland",
     "DK": "Denmark",
     "IE": "Ireland",
+}
+
+# Full geographic scope: EU-27 + EEA (IS, LI, NO) + UK + Switzerland.
+# Used by the Alpha Vantage news adapter and the GIE adapter.
+ALL_COUNTRIES: dict[str, str] = {
+    # EU-27
+    "AT": "Austria",
+    "BE": "Belgium",
+    "BG": "Bulgaria",
+    "CY": "Cyprus",
+    "CZ": "Czech Republic",
+    "DE": "Germany",
+    "DK": "Denmark",
+    "EE": "Estonia",
+    "ES": "Spain",
+    "FI": "Finland",
+    "FR": "France",
+    "GR": "Greece",
+    "HR": "Croatia",
+    "HU": "Hungary",
+    "IE": "Ireland",
+    "IT": "Italy",
+    "LT": "Lithuania",
+    "LU": "Luxembourg",
+    "LV": "Latvia",
+    "MT": "Malta",
+    "NL": "Netherlands",
+    "PL": "Poland",
+    "PT": "Portugal",
+    "RO": "Romania",
+    "SE": "Sweden",
+    "SI": "Slovenia",
+    "SK": "Slovakia",
+    # EEA (non-EU)
+    "IS": "Iceland",
+    "LI": "Liechtenstein",
+    "NO": "Norway",
+    # UK + Switzerland
+    "GB": "United Kingdom",
+    "CH": "Switzerland",
 }
 
 # ENTSO-E bidding-zone EIC codes (used as both in_Domain and out_Domain for
@@ -89,3 +130,41 @@ NEWS_TOPICS: dict[str, list[str]] = {
     "emissions":    ["emissions", "CO2", "carbon", "EUA", "ETS", "greenhouse"],
     "market_reform":["market reform", "electricity market", "capacity market", "energy reform"],
 }
+
+# ---------------------------------------------------------------------------
+# Alpha Vantage metals / commodities
+# ---------------------------------------------------------------------------
+# Logical name → (AV function, from_symbol, to_symbol or None, unit, description)
+# Gold and Silver use the FX_DAILY endpoint (XAU/XAG are ISO currency codes).
+# Copper uses the dedicated COPPER commodity endpoint.
+AV_METALS: dict[str, tuple] = {
+    "gold":   ("FX_DAILY",  "XAU", "USD",  "USD/oz",  "Gold Spot"),
+    "silver": ("FX_DAILY",  "XAG", "USD",  "USD/oz",  "Silver Spot"),
+    "copper": ("COPPER",    None,   None,   "USD/lb",  "Copper Spot"),
+}
+
+# Alpha Vantage NEWS_SENTIMENT topic identifiers.
+# Each string is a valid value for the ?topics= parameter.
+AV_NEWS_TOPICS: list[str] = [
+    "energy_transportation",
+    "commodities",
+    "financial_markets",
+    "economy_macro",
+]
+
+# ---------------------------------------------------------------------------
+# GIE / AGSI country scope
+# ---------------------------------------------------------------------------
+# Countries that have gas storage facilities tracked by AGSI (GIE).
+# Not all ALL_COUNTRIES have storage; missing ones are silently skipped.
+GIE_GAS_COUNTRIES: list[str] = [
+    "AT", "BE", "BG", "CZ", "DE", "DK", "ES", "FR", "HR",
+    "HU", "IE", "IT", "LT", "LU", "LV", "NL", "PL", "PT",
+    "RO", "SE", "SK", "SI", "GB",
+]
+
+# Countries that have LNG import terminals tracked by ALSI (GIE).
+GIE_LNG_COUNTRIES: list[str] = [
+    "BE", "ES", "FI", "FR", "GB", "GR", "IT", "LT", "NL",
+    "PL", "PT", "SE",
+]

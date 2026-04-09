@@ -35,6 +35,8 @@ FMP_API_KEY: str = os.environ.get("FMP_API_KEY", "")
 EIA_API_KEY: str = os.environ.get("EIA_API_KEY", "")
 GUARDIAN_API_KEY: str = os.environ.get("GUARDIAN_API_KEY", "")
 EMBER_API_KEY: str = os.environ.get("EMBER_API_KEY", "")
+ALPHAVANTAGE_API_KEY: str = os.environ.get("ALPHAVANTAGE_API_KEY", "")
+GIE_API_KEY: str = os.environ.get("GIE_API_KEY", "")
 
 # ---------------------------------------------------------------------------
 # HTTP settings

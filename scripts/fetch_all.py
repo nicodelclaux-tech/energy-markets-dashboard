@@ -40,12 +40,14 @@ from config.series_map import COUNTRIES
 # Adapters are imported lazily so that a broken adapter module doesn't
 # prevent the others from running
 ADAPTER_MODULES = [
-    ("entsoe",  "scripts.adapters.entsoe",  "fetch_all"),
-    ("ember",   "scripts.adapters.ember",   "fetch_all"),
-    ("fmp",     "scripts.adapters.fmp",     "fetch_all"),
-    ("ecb",     "scripts.adapters.ecb",     "fetch_all"),
-    ("eia",     "scripts.adapters.eia",     "fetch_all"),
-    ("news",    "scripts.adapters.news",    "fetch_all"),
+    ("entsoe",         "scripts.adapters.entsoe",         "fetch_all"),
+    ("ember",          "scripts.adapters.ember",           "fetch_all"),
+    ("fmp",            "scripts.adapters.fmp",             "fetch_all"),
+    ("ecb",            "scripts.adapters.ecb",             "fetch_all"),
+    ("eia",            "scripts.adapters.eia",             "fetch_all"),
+    ("news",           "scripts.adapters.news",            "fetch_all"),
+    ("gie",            "scripts.adapters.gie",             "fetch_all"),
+    ("alpha_vantage",  "scripts.adapters.alpha_vantage",   "fetch_all"),
 ]
 
 
