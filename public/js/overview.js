@@ -41,13 +41,15 @@ var Overview = (function () {
   }
 
   // Build SVG sparkline from a series array (last `count` points).
-  function sparkline(series, count, color) {
+  // Build SVG sparkline — color auto: green if trending up, red if down.
+  function sparkline(series, count) {
     var subset = series.slice(-count);
     if (subset.length < 2) return '<svg width="80" height="24"></svg>';
     var prices = subset.map(function (r) { return r.price; });
     var min = Math.min.apply(null, prices);
     var max = Math.max.apply(null, prices);
     var range = max - min || 1;
+    var trendColor = prices[prices.length - 1] >= prices[0] ? '#34d399' : '#fb7185';
     var W = 80, H = 16, PAD = 1;
     var n = prices.length - 1;
     var pts = prices.map(function (p, i) {
@@ -56,7 +58,7 @@ var Overview = (function () {
       return x.toFixed(1) + ',' + y.toFixed(1);
     }).join(' ');
     return '<svg width="' + W + '" height="' + H + '" viewBox="0 0 ' + W + ' ' + H + '" xmlns="http://www.w3.org/2000/svg">'
-      + '<polyline points="' + pts + '" stroke="' + (color || '#4f759b') + '" stroke-width="1.5" fill="none" stroke-linejoin="round"/>'
+      + '<polyline points="' + pts + '" stroke="' + trendColor + '" stroke-width="1.5" fill="none" stroke-linejoin="round"/>'
       + '</svg>';
   }
 
@@ -90,6 +92,47 @@ var Overview = (function () {
       + '<div class="range-avg-tick" style="left:' + avgPct + '%"></div>'
       + '<div class="range-current-dot" style="left:' + dotPct + '%;background:' + (color || '#4f759b') + '"></div>'
       + '</div>';
+  }
+
+  // % change vs N-day rolling average
+  function chgVsAvg(series, days) {
+    if (!series || series.length < 2) return null;
+    var current = series[series.length - 1].price;
+    var subset = series.slice(-days);
+    if (subset.length < 2) return null;
+    var prices = subset.map(function (r) { return r.price; });
+    var avg = prices.reduce(function (a, b) { return a + b; }, 0) / prices.length;
+    if (!avg) return null;
+    return (current - avg) / Math.abs(avg) * 100;
+  }
+
+  // Power spread vs EU average (current minus simple mean of all power countries)
+  function spreadVsEuAvg(current, data) {
+    if (current == null) return null;
+    var vals = data.countryOrder.map(function (iso) {
+      var s = data.seriesByIso[iso] || [];
+      return s.length > 0 ? s[s.length - 1].price : null;
+    }).filter(function (v) { return v != null; });
+    if (!vals.length) return null;
+    var eu = vals.reduce(function (a, b) { return a + b; }, 0) / vals.length;
+    return current - eu;
+  }
+
+  // Colored % change cell
+  function fmtPctCell(n) {
+    if (n == null || isNaN(n)) return '<td class="num muted small">—</td>';
+    var cls = n > 2 ? 'col-rose' : n < -2 ? 'col-emerald' : 'col-dim';
+    var sign = n > 0 ? '+' : '';
+    return '<td class="num small ' + cls + '">' + sign + n.toFixed(1) + '%</td>';
+  }
+
+  // Colored absolute spread cell (EUR/MWh or equivalent)
+  function fmtSpreadCell(n) {
+    if (n == null || isNaN(n)) return '<td class="num muted small">—</td>';
+    var cls = n > 5 ? 'col-rose' : n < -5 ? 'col-emerald' : 'col-dim';
+    var sign = n > 0 ? '+' : '';
+    var val = Math.abs(n) < 10 ? n.toFixed(1) : Math.round(n).toString();
+    return '<td class="num small ' + cls + '">' + sign + val + '</td>';
   }
 
   // Colour a futures cell relative to spot: lower = green (cheaper), higher = red.
@@ -196,26 +239,28 @@ var Overview = (function () {
   function powerRowSpot(iso, data) {
     var series = data.seriesByIso[iso] || [];
     var name = (data.countriesByIso[iso] || {}).name || iso;
-    var color = Charts.COUNTRY_COLORS[iso] || '#4f759b';
     var stats = rangeStats(series, data.latestDate);
     var spot = stats ? stats.current : null;
     var latestCell = spot != null
       ? '<td class="num latest">' + fmt(spot) + '</td>'
       : '<td class="num muted">—</td>';
-    var spark = series.length > 0 ? sparkline(series, 90, color) : '<svg width="80" height="24"></svg>';
-
+    var spark = series.length > 0 ? sparkline(series, 90) : '<svg width="80" height="24"></svg>';
+    var chg30 = chgVsAvg(series, 30);
+    var chg90 = chgVsAvg(series, 90);
+    var spread = spreadVsEuAvg(spot, data);
     return '<tr>'
       + '<td class="row-name"><button type="button" class="row-link" data-country-iso="' + esc(iso) + '">' + esc(name) + '</button></td>'
       + '<td class="muted small">EUR/MWh</td>'
       + latestCell
-      + '<td class="range-cell">' + rangebar(stats, color) + '</td>'
+      + fmtPctCell(chg30)
+      + fmtPctCell(chg90)
+      + fmtSpreadCell(spread)
       + '<td class="sparkline-cell">' + spark + '</td>'
       + '</tr>';
   }
 
   function commodityRowSpot(key, data) {
     var meta = COMMODITY_META[key] || {};
-    var color = meta.color || '#4f759b';
     var series = data.seriesByIso[key] || [];
     var stats = rangeStats(series, data.latestDate);
     var futures = findCommodityFuturesEntry(key, data);
@@ -223,18 +268,19 @@ var Overview = (function () {
     var latestCell = spot != null
       ? '<td class="num latest">' + fmtNum(spot) + '</td>'
       : '<td class="num muted">—</td>';
-    var rangeCell = '<td class="range-cell">' + rangebar(stats, color) + '</td>';
-    var spark = series.length > 0 ? sparkline(series, 90, color) : '<svg width="80" height="24"></svg>';
+    var spark = series.length > 0 ? sparkline(series, 90) : '<svg width="80" height="24"></svg>';
     var unit = (futures && futures.unit) || data.unitsByIso[key] || '';
-    var iconHtml = commIconImg(key, color);
-
+    var chg30 = chgVsAvg(series, 30);
+    var chg90 = chgVsAvg(series, 90);
     return '<tr>'
       + '<td class="row-name"><button type="button" class="row-link" data-commodity-key="' + esc(key) + '">'
-      + '<span class="comm-icon">' + iconHtml + '<span>' + esc(key) + '</span></span>'
+      + esc(key)
       + '</button></td>'
       + '<td class="muted small">' + esc(unit) + '</td>'
       + latestCell
-      + rangeCell
+      + fmtPctCell(chg30)
+      + fmtPctCell(chg90)
+      + '<td class="num muted small">—</td>'
       + '<td class="sparkline-cell">' + spark + '</td>'
       + '</tr>';
   }
@@ -290,14 +336,14 @@ var Overview = (function () {
     var spotTable = '<table class="market-table">'
       + '<thead><tr>'
       + '<th>Name</th><th class="muted small">Unit</th><th class="num">Latest</th>'
-      + '<th class="range-hdr">52-Week Range</th><th>Trend (90d)</th>'
+      + '<th class="num">Chg. v 30d Avg</th><th class="num">Chg. v 90d Avg</th><th class="num">Spread vs. EU avg</th><th>Trend (90d)</th>'
       + '</tr></thead>'
       + '<tbody>'
-      + '<tr class="section-header-row"><td colspan="5">Oil &amp; Gas</td></tr>'
+      + '<tr class="section-header-row"><td colspan="7">Oil &amp; Gas</td></tr>'
       + commodityRowsSpot
       + '</tbody>'
       + '<tbody>'
-      + '<tr class="section-header-row"><td colspan="5">Power Prices</td></tr>'
+      + '<tr class="section-header-row"><td colspan="7">Power Prices</td></tr>'
       + powerRowsSpot
       + '</tbody>'
       + '</table>';
@@ -353,6 +399,39 @@ var Overview = (function () {
     };
 
     renderForwardCurves(data);
+    renderResources();
+  }
+
+  // --------------------------------------------------------------------------
+  // Resources section
+  // --------------------------------------------------------------------------
+
+  function renderResources() {
+    var el = document.getElementById('resources-container');
+    if (!el) return;
+    if (typeof NewsSources === 'undefined') return;
+
+    var sources = NewsSources.getAll();
+    if (!sources || sources.length === 0) return;
+
+    var cards = sources.map(function (src) {
+      var catColor = NewsSources.getCategoryColor(src.category) || 'var(--muted)';
+      var badge = '<span class="resource-category-badge" style="border-color:' + catColor + ';color:' + catColor + '">'
+        + esc(src.category || '') + '</span>';
+      var name = src.url
+        ? '<a class="resource-card-name" href="' + esc(src.url) + '" target="_blank" rel="noopener noreferrer">' + esc(src.name || '') + '</a>'
+        : '<span class="resource-card-name">' + esc(src.name || '') + '</span>';
+      var desc = '<div class="resource-card-desc">' + esc(src.description || '') + '</div>';
+      return '<div class="resource-card">'
+        + '<div class="resource-card-top">' + name + badge + '</div>'
+        + desc
+        + '</div>';
+    }).join('');
+
+    el.innerHTML = '<section class="section-block resources-section">'
+      + '<div class="section-label">Data Sources &amp; References</div>'
+      + '<div class="resources-grid">' + cards + '</div>'
+      + '</section>';
   }
 
   // --------------------------------------------------------------------------

@@ -49,17 +49,27 @@ var APP = (function () {
   // ------------------------------------------------------------------
 
   function _activateTab(tabName) {
-    // Sidebar nav items
+    // Topbar nav items (new)
+    document.querySelectorAll('.axiom-topbar-nav-item').forEach(function (b) {
+      b.classList.toggle('active', b.dataset.tab === tabName);
+    });
+    // Sidebar nav items (legacy — keep for safety)
     document.querySelectorAll('.axiom-nav-item').forEach(function (b) {
       b.classList.toggle('active', b.dataset.tab === tabName);
     });
-    // Legacy tab-btn (none in new HTML but keep for safety)
+    // Legacy tab-btn
     document.querySelectorAll('.tab-btn').forEach(function (b) {
       b.classList.toggle('active', b.dataset.tab === tabName);
     });
     document.querySelectorAll('.page').forEach(function (p) {
       p.classList.toggle('active', p.id === 'page-' + tabName);
     });
+
+    // Sidebar control panes — show panel matching active tab
+    var powerSidebar     = document.getElementById('sidebar-power-controls');
+    var commoditySidebar = document.getElementById('sidebar-commodity-controls');
+    if (powerSidebar)     powerSidebar.style.display     = tabName === 'power'       ? '' : 'none';
+    if (commoditySidebar) commoditySidebar.style.display = tabName === 'commodities' ? '' : 'none';
 
     _scheduleChartResize();
 
@@ -121,8 +131,10 @@ var APP = (function () {
   function _initDensity() {
     var saved = null;
     try { saved = localStorage.getItem('energy_density'); } catch (e) {}
-    if (saved === 'compact') {
-      document.getElementById('app-body').classList.add('density-compact');
+    // Compact is the default; only skip if user has explicitly chosen standard
+    if (saved !== 'standard') {
+      var body = document.getElementById('app-body');
+      if (body) body.classList.add('density-compact');
     }
 
     document.addEventListener('click', function (e) {
@@ -172,7 +184,7 @@ var APP = (function () {
       return;
     }
 
-    inner.innerHTML = items.map(function (item) {
+    var singlePass = items.map(function (item) {
       var cls   = item.delta > 0.01 ? 'axiom-ticker-item-up' : item.delta < -0.01 ? 'axiom-ticker-item-down' : 'axiom-ticker-item-flat';
       var arrow = item.delta > 0.01 ? '\u2191' : item.delta < -0.01 ? '\u2193' : '\u2014';
       var priceStr = Math.abs(item.price) < 10 ? item.price.toFixed(2) : Math.round(item.price).toString();
@@ -185,6 +197,8 @@ var APP = (function () {
         + '<span class="' + cls + '">' + arrow + (deltaStr ? ' ' + deltaStr : '') + '</span>'
         + '</span>';
     }).join('');
+    // Duplicate for seamless carousel loop (translateX(-50%) lands exactly back at start)
+    inner.innerHTML = singlePass + singlePass;
   }
 
   // ------------------------------------------------------------------
@@ -378,6 +392,60 @@ var APP = (function () {
   }
 
   // ------------------------------------------------------------------
+  // News sidebar
+  // ------------------------------------------------------------------
+
+  var _NEWS_COUNTRY_CLASSES = {
+    ES: 'country-badge-es', DE: 'country-badge-de', FR: 'country-badge-fr',
+    IT: 'country-badge-it', GB: 'country-badge-gb', NL: 'country-badge-nl',
+    EU: 'country-badge-eu'
+  };
+
+  function _buildNewsSidebar(data) {
+    var feed = document.getElementById('news-sidebar-feed');
+    if (!feed) return;
+    var articles = Array.isArray(data.news) ? data.news : [];
+    if (!articles.length) {
+      feed.innerHTML = '<div class="news-sidebar-empty">No news available</div>';
+      return;
+    }
+
+    feed.innerHTML = articles.slice(0, 40).map(function (a) {
+      // Country badges
+      var countryCodes = Array.isArray(a.country_tags) ? a.country_tags : [];
+      var countryBadges = countryCodes.map(function (iso) {
+        var cls = _NEWS_COUNTRY_CLASSES[String(iso).toUpperCase()] || 'country-badge-eu';
+        var span = document.createElement('span');
+        span.className = 'news-badge-country ' + cls;
+        span.textContent = String(iso).toUpperCase();
+        return span.outerHTML;
+      }).join('');
+
+      // Topic badge
+      var topic = (Array.isArray(a.topic_tags) && a.topic_tags[0]) ? a.topic_tags[0] : '';
+      var topicBadge = topic ? '<span class="news-badge-topic">' + escapeHtml(topic.toUpperCase()) + '</span>' : '';
+
+      // Date
+      var raw = a.publishedAt || '';
+      var dateStr = raw.length >= 8 ? raw.slice(0, 4) + '-' + raw.slice(4, 6) + '-' + raw.slice(6, 8) : raw.slice(0, 10);
+
+      return '<div class="news-sidebar-item">'
+        + '<div class="news-sidebar-tags">' + countryBadges + topicBadge + '</div>'
+        + '<a class="news-sidebar-headline" href="' + escapeHtml(a.url || '#') + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(a.headline || a.title || '') + '</a>'
+        + (dateStr ? '<div class="news-sidebar-date">' + escapeHtml(dateStr) + '</div>' : '')
+        + '</div>';
+    }).join('');
+  }
+
+  function escapeHtml(str) {
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  // ------------------------------------------------------------------
   // renderApp
   // ------------------------------------------------------------------
 
@@ -453,8 +521,19 @@ var APP = (function () {
     // Live clock
     _startClock();
 
+    // News sidebar
+    _buildNewsSidebar(_data);
+
     // Sidebar nav click handlers
     document.querySelectorAll('.axiom-nav-item[data-tab]').forEach(function (btn) {
+      if (btn.disabled) return;
+      btn.addEventListener('click', function () {
+        _activateTab(btn.dataset.tab);
+      });
+    });
+
+    // Topbar nav click handlers
+    document.querySelectorAll('.axiom-topbar-nav-item[data-tab]').forEach(function (btn) {
       if (btn.disabled) return;
       btn.addEventListener('click', function () {
         _activateTab(btn.dataset.tab);

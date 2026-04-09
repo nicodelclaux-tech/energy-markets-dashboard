@@ -124,25 +124,17 @@ var UI = (function () {
 
     var benchmarkOptions = '<option value="EU_AVG">EU Average</option>' + countryOptions;
 
-    var compareButtons = data.countryOrder.map(function (iso) {
-      var name = (data.countriesByIso[iso] || {}).name || iso;
-      return '<button class="btn-pill btn-pill--country" data-compare-iso="' + iso + '">' + name + '</button>';
-    }).join('');
-
-    var _currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
-    var _themeIconFile = _currentTheme === 'dark' ? 'light-mode.svg' : 'dark-mode.svg';
-    var _themeToggleBtn = '<button class="btn-icon" data-action="toggle-theme" aria-label="Toggle theme"><img src="assets/icons/' + _themeIconFile + '" alt="Toggle theme" class="theme-toggle-icon"></button>';
-
+    // Controls panel — just market header (no theme toggle)
     panel.innerHTML = '<div class="market-header-bar">'
       + '<span id="market-primary-flag" class="market-primary-flag"></span>'
       + '<span id="market-primary-name" class="market-primary-name"></span>'
       + '<div class="market-header-actions">'
       + qualityBadge(formatUpdatedAt((data.meta || {}).updatedAt), 'neutral')
       + sourceBadge(data.meta || {}, 'entsoe', 'ENTSO-E')
-      + _themeToggleBtn
       + '</div>'
       + '</div>';
 
+    // Chart toolbar — heading + period only
     chartToolbar.innerHTML = '<div class="chart-toolbar-inner">'
       + '<div class="chart-toolbar-heading">'
       + '<div class="chart-toolbar-title">Price Trend</div>'
@@ -160,21 +152,29 @@ var UI = (function () {
       + '<button class="btn-pill" data-months="0">All</button>'
       + '</div>'
       + '</div>'
-      + '<div class="chart-toolbar-group">'
-      + '<label class="ctrl-label">Primary</label>'
-      + '<select id="ctrl-primary">' + countryOptions + '</select>'
-      + '</div>'
-      + '<div class="chart-toolbar-group chart-toolbar-group--wide">'
-      + '<label class="ctrl-label">Compare</label>'
-      + '<div class="btn-group btn-group-wrap" id="ctrl-compare-wrap">' + compareButtons + '</div>'
-      + '</div>'
-      + '<div class="chart-toolbar-group">'
-      + '<label class="ctrl-label">Benchmark</label>'
-      + '<select id="ctrl-benchmark">' + benchmarkOptions + '</select>'
-      + '</div>'
       + '<div class="chart-toolbar-fixed">Daily \u2022 30d \u2022 180d</div>'
       + '</div>'
       + '</div>';
+
+    // Sidebar controls — Primary | Benchmark | Compare
+    var compareButtons = data.countryOrder.map(function (iso) {
+      var name = (data.countriesByIso[iso] || {}).name || iso;
+      return '<button class="btn-pill btn-pill--country" data-compare-iso="' + iso + '">' + name + '</button>';
+    }).join('');
+
+    var sidebarEl = document.getElementById('sidebar-power-controls');
+    if (sidebarEl) {
+      sidebarEl.innerHTML = '<div class="sidebar-ctrl-block">'
+        + '<div class="sidebar-ctrl-sublabel">Primary Country</div>'
+        + '<select id="ctrl-primary">' + countryOptions + '</select>'
+        + '<div style="height:8px"></div>'
+        + '<div class="sidebar-ctrl-sublabel">Benchmark</div>'
+        + '<select id="ctrl-benchmark">' + benchmarkOptions + '</select>'
+        + '<div style="height:8px"></div>'
+        + '<div class="sidebar-ctrl-sublabel">Compare</div>'
+        + '<div id="ctrl-compare-wrap" class="sidebar-compare-list">' + compareButtons + '</div>'
+        + '</div>';
+    }
 
     _attachControlListeners(data);
   }
@@ -314,18 +314,13 @@ var UI = (function () {
       return Math.round((pos / allVals.length) * 100);
     }
 
-    function euBadges(val, euVal, allVals) {
+    function euBadge(val, euVal) {
       if (!isCountryPrimary || val == null) return '';
       var cmp = compareToEU(val, euVal);
-      if (!cmp) return '';
-      var cmpCls = cmp === 'above' ? 'eu-compare-above' : cmp === 'below' ? 'eu-compare-below' : 'eu-compare-inline';
-      var cmpLabel = cmp === 'above' ? '\u2191 ABOVE EU AVG' : cmp === 'below' ? '\u2193 BELOW EU AVG' : '\u2194 INLINE EU AVG';
-      var pctHtml = '';
-      if (allVals) {
-        var pct = percentileRank(val, allVals.filter(function (v) { return v != null; }));
-        if (pct != null) pctHtml = '<span class="percentile-badge">p' + pct + '</span>';
-      }
-      return '<span class="eu-compare-badge ' + cmpCls + '">' + cmpLabel + '</span>' + pctHtml;
+      if (!cmp || cmp === 'inline') return '';
+      var cmpCls = cmp === 'above' ? 'eu-compare-above' : 'eu-compare-below';
+      var cmpLabel = cmp === 'above' ? '\u2191 ABOVE EU' : '\u2193 BELOW EU';
+      return '<span class="eu-compare-badge ' + cmpCls + '">' + cmpLabel + '</span>';
     }
 
     // Spread vs benchmark (latest value)
@@ -357,10 +352,6 @@ var UI = (function () {
     var allMins    = allCountryStats.map(function (s) { return s.min; });
     var allMaxes   = allCountryStats.map(function (s) { return s.max; });
     var allStdDevs = allCountryStats.map(function (s) { return s.stdDev; });
-    var allSpreads = isCountryPrimary ? data.countryOrder.map(function (iso) {
-      var sp = Analytics.spreadToBenchmark(data, iso, 'EU_AVG', state.dateRange);
-      return sp.length > 0 ? sp[sp.length - 1].price : null;
-    }) : [];
 
     el.innerHTML = '<div class="kpi-inner">'
       + card('Latest Price',
@@ -369,19 +360,24 @@ var UI = (function () {
           '<span class="regime-badge ' + regimeClass + '">' + (regime !== 'unknown' ? regime.toUpperCase() : '') + '</span>')
       + card('Average',
           fmt(stats.avg) + '<span class="kpi-unit"> ' + unitLabel + '</span>',
-          euBadges(stats.avg, euStats && euStats.avg, allAvgs) || 'period avg')
+          'period avg',
+          euBadge(stats.avg, euStats && euStats.avg))
       + card('Min',
           fmt(stats.min) + '<span class="kpi-unit"> ' + unitLabel + '</span>',
-          euBadges(stats.min, euStats && euStats.min, allMins) || fmtDate(pt.troughDate))
+          fmtDate(pt.troughDate),
+          euBadge(stats.min, euStats && euStats.min))
       + card('Max',
           fmt(stats.max) + '<span class="kpi-unit"> ' + unitLabel + '</span>',
-          euBadges(stats.max, euStats && euStats.max, allMaxes) || fmtDate(pt.peakDate))
+          fmtDate(pt.peakDate),
+          euBadge(stats.max, euStats && euStats.max))
       + card('Volatility (\u03c3)',
           fmt(stats.stdDev) + '<span class="kpi-unit"> ' + unitLabel + '</span>',
-          euBadges(stats.stdDev, euStats && euStats.stdDev, allStdDevs) || 'std dev, period')
+          'std dev, period',
+          euBadge(stats.stdDev, euStats && euStats.stdDev))
       + card(spreadLabel,
           '<span class="' + spreadClass + '">' + spreadVal + '</span><span class="kpi-unit"> ' + unitLabel + '</span>',
-          euBadges(spread, 0, allSpreads) || (isCountryPrimary ? 'current vs benchmark' : 'benchmark N/A'))
+          isCountryPrimary ? 'current vs benchmark' : 'benchmark N/A',
+          '')
       + '</div>';
   }
 
@@ -549,7 +545,6 @@ var UI = (function () {
 
     el.innerHTML = '<div class="panel-title">Europe Price Map<span class="panel-subtitle">Europe - ' + metricLabel + ' (EUR/MWh)</span><div class="heatmap-toolbar">' + toggles + '</div></div>'
       + '<div class="heatmap-panel">'
-      + '<div class="heatmap-summary small muted">Window: ' + windowCode + ' ending ' + end + ' • Coverage: ' + coverage + '/' + total + ' markets</div>'
       + '<div class="europe-map-shell">'
       + '<div id="chart-heatmap-map" class="chart-canvas chart-heatmap-map" role="img" aria-label="Europe power price heatmap map"></div>'
       + '</div>'
@@ -656,15 +651,12 @@ var UI = (function () {
       el.style.display = 'none';
       return;
     }
-    el.style.display = 'block';
-    var items = warnings.slice(0, 3).map(function (w) {
-      return '<li class="warning-item small muted">' + escapeHtml(String(w)) + '</li>';
-    }).join('');
-    var more = warnings.length > 3 ? '<li class="warning-item small muted">… and ' + (warnings.length - 3) + ' more</li>' : '';
-    el.innerHTML = '<div class="warning-banner">'
-      + '<div class="warning-header">⚠ Data Quality Notice</div>'
-      + '<ul class="warning-list">' + items + more + '</ul>'
-      + '</div>';
+    // Render as a compact badge in the ticker footer
+    var tooltip = warnings.slice(0, 5).map(function (w) { return escapeHtml(String(w)); }).join(' | ');
+    el.style.display = 'flex';
+    el.innerHTML = '<span class="quality-badge quality-badge--warn" title="' + tooltip + '" style="cursor:help">'
+      + '\u26A0 ' + warnings.length + ' data warning' + (warnings.length > 1 ? 's' : '')
+      + '</span>';
   }
 
   return {

@@ -9,7 +9,9 @@ This repository builds a professional static dashboard for European energy and c
 - The static frontend reads from `public/data.js` through the files under `public/` and `src/`.
 - The Python pipeline fetches and normalizes source data under `scripts/`, `config/`, and `data/`.
 - GitHub Actions refreshes cached data daily through `.github/workflows/refresh-data.yml`.
-- Specialized reusable workflows live under `.claude/skills/` and should be preferred when their descriptions match the request.
+- Specialized reusable workflows live under `.github/skills/` and should be preferred when their descriptions match the request.
+- **Tailwind CSS is loaded via CDN** (`@tailwindcss/browser@4`) — no build step, no Node.js required. Component classes are defined in the `<style type="text/tailwindcss">` block in `public/index.html`.
+- **Design system:** Axiom Institutional — slate palette, dark-first (`html[data-theme="light"]` for light mode), 0px border-radius, IBM Plex Mono for numeric data.
 
 ## Core Rules
 
@@ -30,10 +32,11 @@ This repository builds a professional static dashboard for European energy and c
 
 ## Routing
 
-For each new chat request, classify the work before answering or editing.
+For each new chat request, classify the work before answering or editing. Use the `boss` agent to automatically orchestrate multi-step tasks across multiple specialists.
 
 - Dashboard feature or product change: follow `product-strategist`, then `dashboard-ui-architect`, `visual-design-system`, `charting-analytics`, `static-frontend-engineer`, `qa-data-integrity`, and finish with `repo-librarian` checks when relevant.
 - Frontend or UI implementation: prefer `dashboard-ui-architect`, `visual-design-system`, `charting-analytics`, and `static-frontend-engineer`.
+- Complex or novel chart: prefer `pro-frontend-charting-engineer` before `static-frontend-engineer`.
 - New data source, adapter, or pipeline change: prefer `market-data-architect`, `api-integration`, `time-series-processing`, `qa-data-integrity`, and `repo-librarian`.
 - New country support: treat it as a cross-cutting change spanning config, adapters, transforms, generated output, and UI implications.
 - Review, validation, or debugging: start from `qa-data-integrity`, then use the domain-specific skill for the affected area.
@@ -42,7 +45,8 @@ For each new chat request, classify the work before answering or editing.
 
 ## Skill Usage
 
-- Prefer the skills defined under `.claude/skills/` when their descriptions match the task.
+- Use `boss` (`.github/agents/boss.agent.md`) to orchestrate multi-step work — it decomposes the request, routes subtasks, and spawns background sub-agents automatically.
+- Prefer the skills defined under `.github/skills/` when their descriptions match the task.
 - Use the skill guidance as a workflow, not as rigid role-play.
 - Combine multiple skills when a request spans planning, data ingestion, transformations, frontend rendering, and validation.
 - If the request is ambiguous and routing changes the implementation path, ask one short clarification question. Otherwise proceed.

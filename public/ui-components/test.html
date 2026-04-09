@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI Components — Energy Markets Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    /* ── Design tokens ──────────────────────────────────────── */
+    :root {
+      --bg:            #0b0e14;
+      --surface:       #141720;
+      --surface-2:     #1c2030;
+      --border:        #252a38;
+      --text:          #e2e8f0;
+      --text-secondary:#94a3b8;
+      --color-muted:   #64748b;
+      --color-up:      #10b981;
+      --color-down:    #f43f5e;
+      --color-flat:    #94a3b8;
+      --color-border:  #252a38;
+      --color-accent:  #f59e0b;
+      --font-mono:     'IBM Plex Mono', monospace;
+      --font-sans:     'IBM Plex Sans', sans-serif;
+    }
+
+    html[data-theme="light"] {
+      --bg:            #f1f5f9;
+      --surface:       #ffffff;
+      --surface-2:     #f8fafc;
+      --border:        #e2e8f0;
+      --text:          #0f172a;
+      --text-secondary:#475569;
+      --color-muted:   #94a3b8;
+      --color-border:  #e2e8f0;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-size: 13px;
+      line-height: 1.5;
+      padding: 24px;
+    }
+
+    h2 {
+      font-size: 11px;
+      font-family: var(--font-mono);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-muted);
+      margin: 32px 0 12px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 6px;
+    }
+
+    h2:first-child { margin-top: 0; }
+
+    .theme-toggle {
+      position: fixed;
+      top: 16px; right: 16px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 4px 10px;
+      font-size: 11px;
+      cursor: pointer;
+      border-radius: 0;
+    }
+
+    .demo-section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 20px;
+      margin-bottom: 4px;
+    }
+
+    /* ── 1. Tab Nav ──────────────────────────────────────────── */
+    .tab-nav {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .tab-nav__item {
+      background: none;
+      border: none;
+      color: var(--text-secondary);
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-weight: 500;
+      padding: 8px 16px;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -2px;
+      transition: color 0.15s, border-color 0.15s;
+    }
+
+    .tab-nav__item:hover { color: var(--text); }
+
+    .tab-nav__item--active {
+      color: #38bdf8;
+      border-bottom-color: #38bdf8;
+    }
+
+    .tab-nav__more {
+      background: none;
+      border: none;
+      color: var(--text-secondary);
+      font-size: 18px;
+      padding: 8px 10px;
+      cursor: pointer;
+      margin-left: auto;
+    }
+
+    /* ── 2. Time Range ───────────────────────────────────────── */
+    .time-range {
+      display: flex;
+      align-items: center;
+      gap: 0;
+    }
+
+    .time-range__btn {
+      background: none;
+      border: none;
+      color: var(--text-secondary);
+      font-family: var(--font-mono);
+      font-size: 11px;
+      padding: 4px 10px;
+      cursor: pointer;
+      transition: color 0.15s, background 0.15s;
+    }
+
+    .time-range__btn:hover { color: var(--text); background: var(--surface-2); }
+
+    .time-range__btn--active {
+      color: var(--text);
+      background: var(--surface-2);
+    }
+
+    .time-range__grid {
+      background: none;
+      border: none;
+      color: var(--color-muted);
+      font-size: 14px;
+      padding: 4px 8px;
+      cursor: pointer;
+      margin-left: 8px;
+    }
+
+    /* ── 3. Main Chart ───────────────────────────────────────── */
+    .main-chart {
+      width: 100%;
+      height: 120px;
+      background: var(--bg);
+    }
+
+    .main-chart__empty {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      color: var(--color-muted);
+      font-family: var(--font-mono);
+      font-size: 11px;
+    }
+
+    /* ── 4. Ticker Table ─────────────────────────────────────── */
+    .ticker-table {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .ticker-row {
+      display: grid;
+      grid-template-columns: 1fr auto auto auto 20px;
+      align-items: center;
+      gap: 12px;
+      padding: 7px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .ticker-row:last-child { border-bottom: none; }
+
+    .ticker-row__name {
+      font-family: var(--font-sans);
+      font-size: 13px;
+      color: var(--text);
+    }
+
+    .ticker-row__price,
+    .ticker-row__change,
+    .ticker-row__pct {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      text-align: right;
+    }
+
+    .ticker-row__price { color: var(--text); }
+
+    .ticker-row__dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .ticker-row__dot--up   { background: var(--color-up);   box-shadow: 0 0 4px var(--color-up); }
+    .ticker-row__dot--down { background: var(--color-down); box-shadow: 0 0 4px var(--color-down); }
+
+    /* ── 5. News Impact Card ─────────────────────────────────── */
+    .news-impact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 16px;
+      max-width: 420px;
+    }
+
+    .news-impact-card__title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.3;
+      margin-bottom: 4px;
+    }
+
+    .news-impact-card__updated {
+      font-size: 11px;
+      color: var(--color-muted);
+      font-family: var(--font-mono);
+      margin-bottom: 12px;
+    }
+
+    .news-impact-table { width: 100%; }
+
+    .news-impact-table__header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      padding: 4px 0;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 4px;
+    }
+
+    .news-impact-table__col-header {
+      font-size: 10px;
+      font-family: var(--font-mono);
+      text-align: right;
+      color: var(--color-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      white-space: nowrap;
+    }
+
+    .news-impact-table__row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      padding: 6px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .news-impact-table__row:last-child { border-bottom: none; }
+
+    .news-impact-table__label {
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+
+    .news-impact-table__label--link {
+      color: #38bdf8;
+      cursor: pointer;
+    }
+
+    .news-impact-table__label--link:hover { text-decoration: underline; }
+
+    .news-impact-table__value {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 500;
+      text-align: right;
+    }
+
+    /* ── 6. Commodity Card Grid ──────────────────────────────── */
+    .commodity-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 1px;
+      background: var(--border);
+    }
+
+    .commodity-card {
+      background: var(--surface);
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      cursor: pointer;
+      transition: background 0.1s;
+    }
+
+    .commodity-card:hover { background: var(--surface-2); }
+
+    .commodity-card__ticker {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text);
+      letter-spacing: 0.02em;
+    }
+
+    .commodity-card__price {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      color: var(--text);
+      margin-top: 4px;
+    }
+
+    .commodity-card__unit {
+      font-size: 10px;
+      color: var(--color-muted);
+    }
+
+    .commodity-card__change {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .commodity-card__spark {
+      margin-top: 8px;
+    }
+
+    .sparkline-empty {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--color-muted);
+    }
+
+    /* ── 7. Topic Follow Pills ───────────────────────────────── */
+    .topic-follow {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 16px;
+      max-width: 320px;
+    }
+
+    .topic-follow__header {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 6px;
+    }
+
+    .topic-follow__icon {
+      color: var(--color-accent);
+      font-size: 14px;
+    }
+
+    .topic-follow__title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .topic-follow__subtitle {
+      font-size: 12px;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+    }
+
+    .topic-follow__row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 6px;
+    }
+
+    .topic-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 12px;
+      font-family: var(--font-sans);
+      padding: 5px 10px;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
+      border-radius: 0;
+    }
+
+    .topic-pill:hover { background: var(--border); color: var(--text); }
+
+    .topic-pill--active {
+      background: #1e3a5f;
+      border-color: #38bdf8;
+      color: #38bdf8;
+    }
+
+    .topic-pill__plus { font-size: 14px; }
+  </style>
+</head>
+<body>
+
+  <button class="theme-toggle" onclick="document.documentElement.dataset.theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'">
+    Toggle Light/Dark
+  </button>
+
+  <!-- 1. Tab Navigation -->
+  <h2>01 — Tab Navigation</h2>
+  <div class="demo-section" id="demo-tabnav"></div>
+
+  <!-- 2. Time Range Selector -->
+  <h2>02 — Time Range Selector</h2>
+  <div class="demo-section" id="demo-timerange"></div>
+
+  <!-- 3. Main Chart (Tab + Range combined) -->
+  <h2>03 — Main Sparkline Chart</h2>
+  <div class="demo-section">
+    <div id="demo-tabnav2" style="margin-bottom:8px"></div>
+    <div id="demo-timerange2" style="margin-bottom:8px"></div>
+    <div id="demo-mainchart"></div>
+  </div>
+
+  <!-- 4. Market Ticker Table -->
+  <h2>04 — Market Ticker Table</h2>
+  <div class="demo-section" id="demo-ticker"></div>
+
+  <!-- 5. News Impact Card -->
+  <h2>05 — News Impact Card</h2>
+  <div class="demo-section" id="demo-news"></div>
+
+  <!-- 6. Commodity Card Grid -->
+  <h2>06 — Commodity Card Grid</h2>
+  <div class="demo-section" id="demo-commodity"></div>
+
+  <!-- 7. Topic Follow Pills -->
+  <h2>07 — Topic Follow Pills</h2>
+  <div class="demo-section" id="demo-topics"></div>
+
+  <script src="ui-components.js"></script>
+  <script>
+    // ── 1. Tab Nav ──────────────────────────────────────────────────────────────
+    UIComponents.TabNav(document.getElementById('demo-tabnav'), {
+      tabs: ['Indices', 'Commodities', 'Bonds', 'Stocks'],
+      active: 'Commodities',
+    });
+
+    // ── 2. Time Range ───────────────────────────────────────────────────────────
+    UIComponents.TimeRange(document.getElementById('demo-timerange'), {
+      periods: ['1D', '1W', '1M', '6M', '1Y', '5Y', 'Max'],
+      active: '1M',
+    });
+
+    // ── 3. Chart (with controls) ────────────────────────────────────────────────
+    UIComponents.TabNav(document.getElementById('demo-tabnav2'), {
+      tabs: ['Indices', 'Commodities', 'Bonds', 'Stocks'],
+      active: 'Indices',
+    });
+    UIComponents.TimeRange(document.getElementById('demo-timerange2'), {
+      periods: ['1D', '1W', '1M', '6M', '1Y', '5Y', 'Max'],
+      active: '1M',
+    });
+    const mockIndexData = Array.from({ length: 60 }, (_, i) => {
+      return 46500 + Math.sin(i * 0.3) * 600 + Math.random() * 300 - 150;
+    });
+    const mockLabels = ['03/26', '', '', '', '', '', '', '', '', '',
+                        '03/26', '', '', '', '', '', '', '', '', '',
+                        '03/26', '', '', '', '', '', '', '', '', '',
+                        '04/26'];
+    UIComponents.MainChart(document.getElementById('demo-mainchart'), {
+      values: mockIndexData,
+      labels: mockLabels,
+      color: '#38bdf8',
+    });
+
+    // ── 4. Market Ticker Table ──────────────────────────────────────────────────
+    UIComponents.MarketTickerTable(document.getElementById('demo-ticker'), {
+      rows: [
+        { name: 'US 30',        price: '47,871.60', change: -39.2,    changePct: -0.08  },
+        { name: 'US 500',       price: '8,769.10',  change: -13.9,    changePct: -0.20  },
+        { name: 'Dow Jones',    price: '47,909.92', change: +1325.46, changePct: -2.85  },
+        { name: 'S&P 500',      price: '6,782.96',  change: +166.11,  changePct: +2.51  },
+        { name: 'Nasdaq',       price: '22,635.00', change: +617.15,  changePct: +2.80  },
+        { name: 'S&P 500 VIX',  price: '21.04',     change: +4.74,    changePct: -18.39 },
+        { name: 'Dollar Index', price: '98.91',     change: +0.080,   changePct: +0.08  },
+      ],
+    });
+
+    // ── 5. News Impact Card ─────────────────────────────────────────────────────
+    UIComponents.NewsImpactCard(document.getElementById('demo-news'), {
+      title: 'Tracking Key Market Moves on Iran War',
+      updated: 'April 9, 2026 at 9:20 AM GMT+1',
+      columnHeader: 'Change since start of war',
+      rows: [
+        { label: 'Daily Hormuz Ship Transits',   value: '−101 ships', change: -1, isLink: false },
+        { label: 'Brent Oil Futures',             value: '34.3%',      change: 1,  isLink: true  },
+        { label: 'US Gasoline Price (Avg Spot)',  value: '36.7%',      change: 1,  isLink: false },
+        { label: 'European Benchmark Gas',        value: '46.4%',      change: 1,  isLink: true  },
+        { label: 'Global Stocks',                 value: '2.5%',       change: -1, isLink: true  },
+        { label: 'Bloomberg Dollar Spot Index',   value: '1.3%',       change: 1,  isLink: true  },
+        { label: 'US 10-Year Yield',              value: '0.4 ppts',   change: 1,  isLink: true  },
+      ],
+    });
+
+    // ── 6. Commodity Card Grid ──────────────────────────────────────────────────
+    function rand(base, spread, n) {
+      let v = base;
+      return Array.from({ length: n }, () => {
+        v += (Math.random() - 0.5) * spread;
+        return Math.max(v, base * 0.5);
+      });
+    }
+
+    UIComponents.CommodityCardGrid(document.getElementById('demo-commodity'), {
+      cards: [
+        { ticker: 'CRYTR:IND',  price: '463.63',   unit: 'USD',        changePct: -3.95, values: rand(463,  8,  40) },
+        { ticker: 'CO1:COM',    price: '98.07',    unit: 'USD/bbl.',   changePct: +3.50, values: rand(98,   2,  40) },
+        { ticker: 'SI1:COM',    price: '74.07',    unit: 'USD/1 oz.',  changePct: -1.75, values: rand(74,   1.5,40) },
+        { ticker: 'HG1:COM',    price: '572.15',   unit: 'USd/lb.',    changePct: -0.96, values: rand(572,  5,  40) },
+        { ticker: 'XPTUSD:CUR', price: '2,018.23', unit: 'USD',        changePct: -0.75, values: rand(2018, 15, 40) },
+        { ticker: 'CL1:COM',    price: '97.39',    unit: 'USD/bbl.',   changePct: +3.16, values: rand(97,   2,  40) },
+        { ticker: 'GC1:COM',    price: '4,748.50', unit: 'USD/t oz.',  changePct: -0.60, values: rand(4748, 30, 40) },
+        { ticker: 'CC1:COM',    price: '3,196.00', unit: 'USD/MT',     changePct: +5.55, values: rand(3196, 40, 40) },
+        { ticker: 'LC1:COM',    price: '245.03',   unit: 'USd/lb.',    changePct: +0.05, values: rand(245,  2,  40) },
+        { ticker: 'C 1:COM',    price: '448.25',   unit: 'USd/bu.',    changePct: +0.22, values: rand(448,  4,  40) },
+      ],
+    });
+
+    // ── 7. Topic Follow Pills ───────────────────────────────────────────────────
+    UIComponents.TopicFollowPills(document.getElementById('demo-topics'), {
+      title: 'Follow Topics',
+      subtitle: 'Choose up to 12 markets topics to track the latest news.',
+      sections: [
+        ['Private Credit', 'Hedge Funds'],
+        ['Deals', 'Investment Banks'],
+        ['Private Equity', 'Inflation'],
+        ['Trade', 'AI', 'Crypto'],
+        ['Startups', 'Taxes'],
+        ['Monetary Policy', 'Currencies'],
+        ['Canada'],
+        ['America', 'Europe'],
+        ['Asia', 'Africa'],
+      ],
+    });
+  </script>
+</body>
+</html>

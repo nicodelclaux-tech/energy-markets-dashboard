@@ -80,19 +80,10 @@ var CommodityUI = (function () {
     var chartToolbar = document.getElementById('chart-main-toolbar-commodity');
     if (!panel || !chartToolbar) return;
 
-    var _currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
-    var _themeIconFile = _currentTheme === 'dark' ? 'light-mode.svg' : 'dark-mode.svg';
-    var _themeToggleBtn = '<button class="btn-icon" data-action="toggle-theme" aria-label="Toggle theme"><img src="assets/icons/' + _themeIconFile + '" alt="Toggle theme" class="theme-toggle-icon"></button>';
-
     var commodityOrder = data.commodityOrder || [];
     var commodityOptions = commodityOrder.map(function (iso) {
       var name = (data.countriesByIso[iso] || {}).name || iso;
       return '<option value="' + iso + '">' + name + '</option>';
-    }).join('');
-
-    var compareButtons = commodityOrder.map(function (iso) {
-      var name = (data.countriesByIso[iso] || {}).name || iso;
-      return '<button class="btn-pill btn-pill--country" data-compare-commodity="' + iso + '">' + name + '</button>';
     }).join('');
 
     panel.innerHTML = '<div class="market-header-bar">'
@@ -103,7 +94,6 @@ var CommodityUI = (function () {
       + sourceBadge(data.meta || {}, 'fmp', 'FMP')
       + sourceBadge(data.meta || {}, 'eia', 'EIA')
       + sourceBadge(data.meta || {}, 'ecb', 'ECB')
-      + _themeToggleBtn
       + '</div>'
       + '</div>';
 
@@ -124,21 +114,28 @@ var CommodityUI = (function () {
       + '<button class="btn-pill" data-months="0">All</button>'
       + '</div>'
       + '</div>'
-      + '<div class="chart-toolbar-group">'
-      + '<label class="ctrl-label">Primary</label>'
-      + '<select id="ctrl-primary-commodity">' + commodityOptions + '</select>'
-      + '</div>'
-      + '<div class="chart-toolbar-group chart-toolbar-group--wide">'
-      + '<label class="ctrl-label">Compare</label>'
-      + '<div class="btn-group btn-group-wrap" id="ctrl-compare-wrap-commodity">' + compareButtons + '</div>'
-      + '</div>'
-      + '<div class="chart-toolbar-group">'
-      + '<label class="ctrl-label">Benchmark</label>'
-      + '<select id="ctrl-benchmark-commodity">' + commodityOptions + '</select>'
-      + '</div>'
       + '<div class="chart-toolbar-fixed">Daily \u2022 30d \u2022 180d</div>'
       + '</div>'
       + '</div>';
+
+    var sidebarEl = document.getElementById('sidebar-commodity-controls');
+    if (sidebarEl) {
+      var sidebarCompareButtons = commodityOrder.map(function (iso) {
+        var name = (data.countriesByIso[iso] || {}).name || iso;
+        return '<button class="btn-pill btn-pill--country" data-compare-commodity="' + iso + '" style="width:100%;text-align:left;">' + name + '</button>';
+      }).join('');
+
+      sidebarEl.innerHTML = '<div class="sidebar-ctrl-block">'
+        + '<div class="sidebar-ctrl-sublabel">Primary</div>'
+        + '<select id="ctrl-primary-commodity" style="width:100%;">' + commodityOptions + '</select>'
+        + '<div style="height:8px"></div>'
+        + '<div class="sidebar-ctrl-sublabel">Benchmark</div>'
+        + '<select id="ctrl-benchmark-commodity" style="width:100%;">' + commodityOptions + '</select>'
+        + '<div style="height:8px"></div>'
+        + '<div class="sidebar-ctrl-sublabel">Compare</div>'
+        + '<div id="ctrl-compare-wrap-commodity" class="sidebar-compare-list">' + sidebarCompareButtons + '</div>'
+        + '</div>';
+    }
 
     attachControlListeners(data);
   }
