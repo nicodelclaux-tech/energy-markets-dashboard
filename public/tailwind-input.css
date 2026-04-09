@@ -14,6 +14,13 @@
 /* ================================================================
    THEME TOKENS — mapped to runtime CSS variables so dark/light
    switching works without a build step.
+<<<<<<< Updated upstream
+=======
+
+   Using @theme inline means Tailwind generates `var(--color-*)`
+   references rather than inlining literal values, which lets our
+   existing data-theme="light|dark" toggle work at runtime.
+>>>>>>> Stashed changes
    ================================================================ */
 @theme inline {
   /* Color tokens → our CSS variable system (Axiom Slate palette) */
@@ -69,6 +76,7 @@
   .text-app-amber   { color: var(--amber); }
   .text-app-violet  { color: var(--violet); }
 
+<<<<<<< Updated upstream
   /* Legacy aliases */
   .text-app-blue    { color: var(--blue); }
   .text-app-green   { color: var(--green); }
@@ -84,5 +92,164 @@
 
   /* IBM Plex Mono utility */
   .font-mono-ibm { font-family: var(--font-mono); }
+=======
+  .border-app-border  { border-color: var(--border); }
+  .border-app-surface { border-color: var(--surface); }
+  .border-app-blue    { border-color: var(--blue); }
+  .border-app-green   { border-color: var(--green); }
+  .border-app-red     { border-color: var(--red); }
+  .border-app-amber   { border-color: var(--amber); }
+  .border-app-orange  { border-color: var(--orange); }
+  .border-app-purple  { border-color: var(--purple); }
+>>>>>>> Stashed changes
 }
 
+/* ================================================================
+   Component classes — JS-rendered innerHTML uses these class names.
+   Using @apply keeps Tailwind as the single source of truth while
+   leaving the class names unchanged so no JS refactor is needed.
+   ================================================================ */
+@layer components {
+
+  /* ── Blocks / Surfaces ─────────────────────────────────────── */
+  .section-block {
+    @apply bg-app-surface border border-app-border;
+  }
+
+  .kpi-card {
+    @apply bg-app-surface border border-app-border flex flex-col;
+    padding: 9px 12px;
+  }
+
+  .chart-panel {
+    @apply bg-app-surface border border-app-border;
+  }
+
+  .secondary-panel {
+    @apply bg-app-surface border border-app-border overflow-hidden;
+    min-height: 280px;
+  }
+
+  /* Adjacent secondary panels share the left border */
+  .secondary-panel + .secondary-panel {
+    border-left: none;
+  }
+
+  .fwd-curve-card {
+    @apply bg-app-surface border border-app-border flex flex-col;
+  }
+
+  /* ── Buttons ───────────────────────────────────────────────── */
+  .btn-pill {
+    @apply border border-app-border text-app-muted cursor-pointer bg-transparent;
+    padding: 3px 10px;
+    font-family: inherit;
+    font-size: 11px;
+    transition: color 0.1s, background 0.1s, border-color 0.1s;
+  }
+
+  .btn-pill:hover {
+    @apply text-app-text;
+    border-color: var(--muted);
+  }
+
+  .btn-pill--active {
+    @apply bg-app-surface2 text-app-text border-app-blue;
+  }
+
+  .btn-pill--country {
+    padding: 2px 8px;
+  }
+
+  .btn-pill--country:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+  }
+
+  .btn-secondary {
+    @apply border border-app-border text-app-muted cursor-pointer bg-transparent;
+    padding: 4px 12px;
+    font-family: inherit;
+    font-size: 11px;
+    transition: color 0.15s, border-color 0.15s;
+  }
+
+  .btn-secondary:hover {
+    @apply text-app-text;
+    border-color: var(--muted);
+  }
+
+  .btn-icon {
+    @apply border border-transparent text-app-muted cursor-pointer bg-transparent;
+    padding: 4px 6px;
+    font-size: 16px;
+    line-height: 1;
+    font-family: inherit;
+    transition: color 0.15s, border-color 0.15s;
+  }
+
+  .btn-icon:hover {
+    @apply text-app-text border-app-border;
+  }
+
+  /* ── Badges ────────────────────────────────────────────────── */
+  .regime-badge {
+    @apply inline-block border;
+    padding: 1px 7px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+  }
+
+  .regime-low    { @apply text-app-green border-app-green; }
+  .regime-normal { @apply text-app-amber border-app-amber; }
+  .regime-high   { @apply text-app-red   border-app-red; }
+
+  .eu-compare-badge {
+    @apply inline-block border;
+    padding: 1px 5px;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .eu-compare-above  { @apply text-app-red   border-app-red; }
+  .eu-compare-below  { @apply text-app-green border-app-green; }
+  .eu-compare-inline { @apply text-app-amber border-app-amber; }
+
+  .percentile-badge {
+    @apply inline-block border border-app-border text-app-muted;
+    padding: 1px 5px;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+  }
+
+  /* Quality badges — previously unstyled (missing CSS) */
+  .quality-badge {
+    @apply inline-block border;
+    padding: 1px 6px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+  }
+
+  .quality-badge--ok      { @apply text-app-green border-app-green; }
+  .quality-badge--bad     { @apply text-app-red   border-app-red; }
+  .quality-badge--warn    { @apply text-app-amber border-app-amber; }
+  .quality-badge--neutral { @apply border-app-border text-app-muted; }
+
+  /* ── Dropdowns ─────────────────────────────────────────────── */
+  select {
+    @apply bg-app-bg border border-app-border text-app-text cursor-pointer;
+    font-family: inherit;
+    font-size: 12px;
+    padding: 3px 7px;
+    outline: none;
+  }
+
+  select:focus {
+    @apply border-app-blue;
+  }
+}

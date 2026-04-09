@@ -228,3 +228,101 @@
     font-family: var(--font-mono);
   }
 }
+<<<<<<< Updated upstream
+=======
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ordinal {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-slashed-zero {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-numeric-figure {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-numeric-spacing {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-numeric-fraction {
+  syntax: "*";
+  inherits: false;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
+      --tw-leading: initial;
+      --tw-font-weight: initial;
+      --tw-tracking: initial;
+      --tw-ordinal: initial;
+      --tw-slashed-zero: initial;
+      --tw-numeric-figure: initial;
+      --tw-numeric-spacing: initial;
+      --tw-numeric-fraction: initial;
+    }
+  }
+}
+
+/* ================================================================
+   Custom color utilities — generated from @theme inline tokens.
+   These map Tailwind color names to our CSS variable system,
+   allowing dark/light theme switching at runtime.
+   ================================================================ */
+@layer utilities {
+  /* Background colors */
+  .bg-app-bg      { background-color: var(--bg); }
+  .bg-app-surface { background-color: var(--surface); }
+  .bg-app-surface2{ background-color: var(--surface-2); }
+
+  /* Text colors */
+  .text-app-text   { color: var(--text); }
+  .text-app-muted  { color: var(--muted); }
+  .text-app-blue   { color: var(--blue); }
+  .text-app-green  { color: var(--green); }
+  .text-app-red    { color: var(--red); }
+  .text-app-amber  { color: var(--amber); }
+  .text-app-orange { color: var(--orange); }
+  .text-app-purple { color: var(--purple); }
+
+  /* Border colors */
+  .border-app-border  { border-color: var(--border); }
+  .border-app-surface { border-color: var(--surface); }
+  .border-app-blue    { border-color: var(--blue); }
+  .border-app-green   { border-color: var(--green); }
+  .border-app-red     { border-color: var(--red); }
+  .border-app-amber   { border-color: var(--amber); }
+  .border-app-orange  { border-color: var(--orange); }
+  .border-app-purple  { border-color: var(--purple); }
+
+  /* Divide colors */
+  .divide-app-border > * + * { border-color: var(--border); }
+
+  /* Spacing utilities needed for page-body wrapper */
+  .py-4 { padding-block: calc(var(--spacing) * 4); }
+  .flex-shrink-0 { flex-shrink: 0; }
+  .overflow-hidden { overflow: hidden; }
+  .ml-4 { margin-left: calc(var(--spacing) * 4); }
+  .ml-auto { margin-left: auto; }
+  .gap-2 { gap: calc(var(--spacing) * 2); }
+}
+>>>>>>> Stashed changes

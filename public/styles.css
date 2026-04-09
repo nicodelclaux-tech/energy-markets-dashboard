@@ -219,6 +219,7 @@ html, body {
   border: 1px solid transparent;
   color: var(--muted);
   cursor: pointer;
+<<<<<<< Updated upstream
   font-size: 14px;
   transition: color 0.15s, border-color 0.15s, background 0.15s;
   font-family: var(--font-sans);
@@ -232,11 +233,36 @@ html, body {
 
 .axiom-icon-btn:focus-visible {
   outline: 2px solid var(--sky);
+=======
+  font-size: 12px;
+  font-family: inherit;
+  letter-spacing: 0.02em;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+
+.tab-btn:hover { color: var(--text); }
+
+.tab-btn.active {
+  color: var(--text);
+  border-color: var(--border);
+  background: var(--accent-soft);
+}
+
+/* Focus ring — shared across interactive elements */
+.btn-secondary:focus-visible,
+.btn-pill:focus-visible,
+.tab-btn:focus-visible,
+.row-link:focus-visible,
+.news-link:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--blue);
+>>>>>>> Stashed changes
   outline-offset: 2px;
 }
 
 .theme-toggle-icon {
   display: block;
+<<<<<<< Updated upstream
   width: 16px;
   height: 16px;
   pointer-events: none;
@@ -629,6 +655,13 @@ html, body {
   color: var(--text-dim);
 }
 
+=======
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+}
+
+>>>>>>> Stashed changes
 /* =========================================================
    Data Quality Warnings
    ========================================================= */
@@ -677,6 +710,7 @@ html, body {
 .secondary-row--two   { grid-template-columns: 1fr 1fr; }
 .secondary-row--three { grid-template-columns: 1fr 1fr 1fr; }
 
+<<<<<<< Updated upstream
 .secondary-panel {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -685,6 +719,10 @@ html, body {
 }
 
 .secondary-panel + .secondary-panel { border-left: 1px solid var(--border); }
+=======
+/* Merge adjacent panel borders within a row */
+.secondary-panel + .secondary-panel { border-left: none; }
+>>>>>>> Stashed changes
 
 /* =========================================================
    Chart toolbar
@@ -760,11 +798,6 @@ html, body {
 /* =========================================================
    Section block & market table
    ========================================================= */
-.section-block {
-  background: var(--surface);
-  border: 1px solid var(--border);
-}
-
 .section-label {
   padding: 8px 12px 7px;
   font-size: 10px;
@@ -798,8 +831,13 @@ html, body {
   font-weight: 500;
   color: var(--muted);
   background: var(--surface-2);
+<<<<<<< Updated upstream
   letter-spacing: 0.05em;
   text-transform: uppercase;
+=======
+  letter-spacing: 0.04em;
+  vertical-align: middle;
+>>>>>>> Stashed changes
 }
 
 .market-table tbody tr { height: 26px; }
@@ -833,7 +871,11 @@ html, body {
   font-family: inherit;
 }
 
+<<<<<<< Updated upstream
 .row-link:hover { color: var(--sky); }
+=======
+.row-link:hover { color: var(--blue); }
+>>>>>>> Stashed changes
 
 .comm-icon {
   display: inline-flex;
@@ -849,12 +891,16 @@ html, body {
 }
 
 .muted  { color: var(--muted); }
+<<<<<<< Updated upstream
 .small  { font-size: var(--text-sm); }
 
 /* Delta color utilities — use with .num for themed table cells */
 .col-rose    { color: var(--rose); }
 .col-emerald { color: var(--emerald); }
 .col-dim     { color: var(--text-dim); }
+=======
+.small  { font-size: 11px; }
+>>>>>>> Stashed changes
 
 .num {
   text-align: right;
@@ -863,6 +909,7 @@ html, body {
   font-family: var(--font-mono);
 }
 
+<<<<<<< Updated upstream
 .latest {
   font-weight: 400;
   font-size: 11px;
@@ -878,6 +925,15 @@ html, body {
 .future-flat { color: var(--text);    font-family: var(--font-mono); }
 
 /* Range bar */
+=======
+.latest { font-weight: 400; font-size: 11px; }
+.futures-hdr { color: var(--muted); font-style: italic; text-align: left; }
+
+.future-down { color: var(--green); }
+.future-up   { color: var(--red); }
+.future-flat { color: var(--text); }
+
+>>>>>>> Stashed changes
 .range-hdr  { min-width: 140px; text-align: center; }
 .range-col  { min-width: 140px; }
 .range-cell { padding: 0 12px; min-width: 140px; }
@@ -944,6 +1000,7 @@ html, body {
   padding: 16px 20px 20px;
 }
 
+<<<<<<< Updated upstream
 /* Overview — spot and futures tables side by side */
 .overview-outer {
   display: grid;
@@ -958,6 +1015,8 @@ html, body {
   .overview-outer .overview-block-spot { border-right: 1px solid var(--border); }
 }
 
+=======
+>>>>>>> Stashed changes
 .fwd-curves-section { padding-bottom: 12px; }
 
 .fwd-curves-grid {
@@ -965,13 +1024,6 @@ html, body {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 12px;
   padding: 12px;
-}
-
-.fwd-curve-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  display: flex;
-  flex-direction: column;
 }
 
 .fwd-curve-card-head {
@@ -1005,7 +1057,11 @@ html, body {
 }
 
 /* =========================================================
+<<<<<<< Updated upstream
    Controls panel
+=======
+   Controls panel — sticky bar below header
+>>>>>>> Stashed changes
    ========================================================= */
 #controls-panel,
 #controls-panel-commodity {
@@ -1055,6 +1111,7 @@ html, body {
   margin-left: auto;
 }
 
+<<<<<<< Updated upstream
 .btn-icon {
   background: transparent;
   border: 1px solid transparent;
@@ -1072,6 +1129,8 @@ html, body {
   border-color: var(--border-hi);
 }
 
+=======
+>>>>>>> Stashed changes
 .controls-inner {
   display: flex;
   flex-wrap: wrap;
@@ -1101,6 +1160,7 @@ html, body {
   white-space: nowrap;
 }
 
+<<<<<<< Updated upstream
 select {
   background: var(--bg);
   border: 1px solid var(--border);
@@ -1146,6 +1206,11 @@ select:focus { border-color: var(--sky); }
   cursor: not-allowed;
 }
 
+=======
+.btn-group      { display: flex; gap: 2px; }
+.btn-group-wrap { flex-wrap: wrap; max-width: 380px; }
+
+>>>>>>> Stashed changes
 .date-input {
   background: var(--bg);
   border: 1px solid var(--border);
@@ -1193,6 +1258,7 @@ select:focus-visible {
   .kpi-inner { grid-template-columns: repeat(3, 1fr); }
 }
 
+<<<<<<< Updated upstream
 .kpi-card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -1204,6 +1270,8 @@ select:focus-visible {
 
 .kpi-card:hover { border-color: var(--border-hi); }
 
+=======
+>>>>>>> Stashed changes
 .kpi-card-head {
   display: flex;
   align-items: flex-start;
@@ -1244,6 +1312,7 @@ select:focus-visible {
 .kpi-positive { color: var(--emerald); }
 .kpi-negative { color: var(--rose); }
 
+<<<<<<< Updated upstream
 .regime-badge {
   display: inline-block;
   padding: 1px 7px;
@@ -1299,6 +1368,9 @@ select:focus-visible {
 .flash-down { animation: flash-down 0.3s ease-out forwards; }
 
 /* Forward curve trend badge */
+=======
+/* Forward curve trend badge overlay */
+>>>>>>> Stashed changes
 .fwd-trend-badge {
   position: absolute;
   top: 6px;
@@ -1310,17 +1382,15 @@ select:focus-visible {
 /* =========================================================
    Chart panels
    ========================================================= */
-.chart-panel {
-  background: var(--surface);
-  border: 1px solid var(--border);
-}
-
 .chart-main    { height: 380px; }
 .chart-sm      { height: 260px; }
 .chart-monthly { height: 200px; }
 
 .chart-canvas  { background: var(--surface); }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 .chart-panel-sm { min-height: 300px; }
 
 .heatmap-panel,
@@ -1337,17 +1407,20 @@ select:focus-visible {
 }
 
 .heatmap-summary { margin-bottom: 10px; }
+<<<<<<< Updated upstream
+=======
+
+.heatmap-toolbar .btn-pill {
+  font-size: 10px;
+  padding: 3px 10px;
+}
+>>>>>>> Stashed changes
 
 .europe-map-shell {
   border: 1px solid var(--border);
   background: var(--map-bg);
   min-height: 312px;
   overflow: hidden;
-}
-
-.heatmap-toolbar .btn-pill {
-  font-size: 10px;
-  padding: 3px 10px;
 }
 
 .europe-map {
@@ -1412,7 +1485,11 @@ select:focus-visible {
 }
 
 /* =========================================================
+<<<<<<< Updated upstream
    News panel — intelligence feed style
+=======
+   News panel
+>>>>>>> Stashed changes
    ========================================================= */
 .news-list {
   list-style: none;
@@ -1436,7 +1513,11 @@ select:focus-visible {
   transition: background-color 0.14s ease;
 }
 
+<<<<<<< Updated upstream
 .news-item:hover { background: rgba(255,255,255,0.02); }
+=======
+.news-item:hover { background: var(--surface-2); }
+>>>>>>> Stashed changes
 .news-item:first-child { border-top: none; }
 
 .news-item-head {
@@ -1514,10 +1595,84 @@ select:focus-visible {
 }
 
 .news-empty { padding: 14px 16px; }
+<<<<<<< Updated upstream
 
 /* =========================================================
    Ranking table — monospaced institutional
    ========================================================= */
+=======
+
+/* =========================================================
+   Responsive
+   ========================================================= */
+@media (max-width: 1200px) {
+  .overview-outer {
+    grid-template-columns: 1fr;
+  }
+
+  .secondary-row--three,
+  .secondary-row--two {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-toolbar-title {
+    width: 100%;
+    min-width: 0;
+    padding-top: 0;
+  }
+
+  .chart-toolbar-heading {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+  }
+
+  .chart-toolbar-group,
+  .chart-toolbar-group--wide {
+    width: 100%;
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+  }
+
+  .chart-toolbar-fixed {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+/* =========================================================
+   Ranking / panel titles
+   ========================================================= */
+.panel-title {
+  padding: 10px 12px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.chart-title         { background: var(--surface); }
+.chart-title--mini   { padding: 7px 10px 6px; font-size: 10px; }
+
+.panel-subtitle {
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--muted);
+  letter-spacing: 0.01em;
+}
+
+.date-input--inline {
+  margin-left: auto;
+  width: 130px;
+  font-size: 10px;
+}
+
+>>>>>>> Stashed changes
 .ranking-table {
   width: 100%;
   border-collapse: collapse;
@@ -1532,8 +1687,16 @@ select:focus-visible {
 .ranking-table tbody tr:last-child td { border-bottom: none; }
 .ranking-table tbody tr:hover { background: rgba(255,255,255,0.02); }
 
+<<<<<<< Updated upstream
 .ranking-primary td { background: rgba(56,189,248,0.04); }
 .ranking-primary:hover td { background: rgba(56,189,248,0.06) !important; }
+=======
+.rank-pos   { width: 24px; color: var(--muted); font-size: 11px; text-align: center; }
+.rank-name  { font-weight: 500; }
+.rank-price { font-size: 12px; font-weight: 600; text-align: right; white-space: nowrap; }
+.rank-price-value { display: inline; }
+.rank-price-unit  { margin-left: 4px; font-weight: 400; color: var(--muted); font-size: 10px; }
+>>>>>>> Stashed changes
 
 .rank-pos {
   font-family: var(--font-mono);
@@ -1564,6 +1727,7 @@ select:focus-visible {
   height: 100%;
   transition: width 0.4s ease;
 }
+<<<<<<< Updated upstream
 
 .rank-price {
   font-family: var(--font-mono);
@@ -2024,3 +2188,5 @@ select option {
   padding: 0 8px;
   flex-shrink: 0;
 }
+=======
+>>>>>>> Stashed changes
