@@ -1254,3 +1254,7 @@ date,series_id,value,unit,source
 2026-03-26,brent,113.39,USD/bbl,eia
 2026-03-27,brent,121.47,USD/bbl,eia
 2026-03-30,brent,121.88,USD/bbl,eia
+2026-03-31,brent,126.69,USD/bbl,eia
+2026-04-01,brent,119.56,USD/bbl,eia
+2026-04-02,brent,127.61,USD/bbl,eia
+2026-04-07,brent,138.21,USD/bbl,eia

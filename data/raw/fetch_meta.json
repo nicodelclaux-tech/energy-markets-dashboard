@@ -1,26 +1,26 @@
 {
-  "updatedAt": "2026-04-08T12:19:12.006867+00:00",
+  "updatedAt": "2026-04-09T06:30:57.051473+00:00",
   "sources": {
     "entsoe": {
-      "status": "ok",
-      "total_rows": 18270,
+      "status": "warning",
+      "total_rows": 18280,
       "coverage": {
-        "ES": 1827,
-        "DE": 1827,
-        "FR": 1827,
-        "IT": 1827,
+        "ES": 1828,
+        "DE": 1828,
+        "FR": 1828,
+        "IT": 1828,
         "GB": 0,
-        "NL": 1827,
-        "NO": 1827,
-        "SE": 1827,
-        "FI": 1827,
-        "DK": 1827,
-        "IE": 1827
+        "NL": 1828,
+        "NO": 1828,
+        "SE": 1828,
+        "FI": 1828,
+        "DK": 1828,
+        "IE": 1828
       },
-      "elapsed_s": 608.2
+      "elapsed_s": 93.7
     },
     "ember": {
-      "status": "ok",
+      "status": "warning",
       "total_rows": 0,
       "coverage": {
         "electricity-generation": 0,
@@ -29,10 +29,10 @@
         "carbon-intensity": 0,
         "installed-capacity": 0
       },
-      "elapsed_s": 1.8
+      "elapsed_s": 1.7
     },
     "fmp": {
-      "status": "ok",
+      "status": "warning",
       "total_rows": 0,
       "coverage": {
         "OUSX": 0,
@@ -41,33 +41,55 @@
         "EURUSD": 0,
         "GBPUSD": 0
       },
-      "elapsed_s": 0.6
+      "elapsed_s": 0.5
     },
     "ecb": {
       "status": "ok",
-      "total_rows": 2562,
+      "total_rows": 2564,
       "coverage": {
-        "eurusd": 1281,
-        "gbpeur": 1281
+        "eurusd": 1282,
+        "gbpeur": 1282
       },
-      "elapsed_s": 1.1
+      "elapsed_s": 1.8
     },
     "eia": {
       "status": "ok",
-      "total_rows": 2755,
+      "total_rows": 2765,
       "coverage": {
-        "brent": 1255,
-        "wti": 1240,
-        "henry_hub": 260,
+        "brent": 1259,
+        "wti": 1245,
+        "henry_hub": 261,
         "ng_storage": 0
       },
-      "elapsed_s": 2.2
+      "elapsed_s": 2.6
     },
     "news": {
       "status": "ok",
-      "total_items": 412,
-      "elapsed_s": 229.2
+      "total_items": 436,
+      "elapsed_s": 104.5
+    },
+    "gie": {
+      "status": "ok",
+      "total_rows": 35,
+      "coverage": {
+        "gas_countries": 23,
+        "lng_countries": 12
+      },
+      "elapsed_s": 7.8
+    },
+    "alpha_vantage": {
+      "status": "ok",
+      "total_rows": 2,
+      "coverage": {
+        "metals_fetched": 1,
+        "metals_rows": 1
+      },
+      "elapsed_s": 49.8
     }
   },
-  "warnings": []
+  "warnings": [
+    "[entsoe] missing country coverage: GB",
+    "[ember] adapter returned zero rows",
+    "[fmp] adapter returned zero rows"
+  ]
 }

@@ -1,0 +1,206 @@
+{
+  "BE": {
+    "country": "BE",
+    "full": null,
+    "gasDay": "2026-04-07",
+    "gasInStorage": null,
+    "injection": null,
+    "injectionCapacity": null,
+    "status": "C",
+    "trend": {
+      "daily": null,
+      "unit": "%points",
+      "weekly": null
+    },
+    "withdrawal": null,
+    "withdrawalCapacity": null,
+    "workingGasVolume": null
+  },
+  "ES": {
+    "country": "ES",
+    "full": null,
+    "gasDay": "2026-04-07",
+    "gasInStorage": null,
+    "injection": null,
+    "injectionCapacity": null,
+    "status": "C",
+    "trend": {
+      "daily": null,
+      "unit": "%points",
+      "weekly": null
+    },
+    "withdrawal": null,
+    "withdrawalCapacity": null,
+    "workingGasVolume": null
+  },
+  "FI": {
+    "country": "FI",
+    "full": null,
+    "gasDay": "2026-04-07",
+    "gasInStorage": null,
+    "injection": null,
+    "injectionCapacity": null,
+    "status": "C",
+    "trend": {
+      "daily": null,
+      "unit": "%points",
+      "weekly": null
+    },
+    "withdrawal": null,
+    "withdrawalCapacity": null,
+    "workingGasVolume": null
+  },
+  "FR": {
+    "country": "FR",
+    "full": null,
+    "gasDay": "2026-04-07",
+    "gasInStorage": null,
+    "injection": null,
+    "injectionCapacity": null,
+    "status": "C",
+    "trend": {
+      "daily": null,
+      "unit": "%points",
+      "weekly": null
+    },
+    "withdrawal": null,
+    "withdrawalCapacity": null,
+    "workingGasVolume": null
+  },
+  "GB": {
+    "country": "GB",
+    "full": null,
+    "gasDay": "2026-04-07",
+    "gasInStorage": null,
+    "injection": null,
+    "injectionCapacity": null,
+    "status": "N",
+    "trend": {
+      "daily": null,
+      "unit": "%points",
+      "weekly": null
+    },
+    "withdrawal": null,
+    "withdrawalCapacity": null,
+    "workingGasVolume": null
+  },
+  "GR": {
+    "country": "GR",
+    "full": null,
+    "gasDay": "2026-04-07",
+    "gasInStorage": null,
+    "injection": null,
+    "injectionCapacity": null,
+    "status": "C",
+    "trend": {
+      "daily": null,
+      "unit": "%points",
+      "weekly": null
+    },
+    "withdrawal": null,
+    "withdrawalCapacity": null,
+    "workingGasVolume": null
+  },
+  "IT": {
+    "country": "IT",
+    "full": null,
+    "gasDay": "2026-04-07",
+    "gasInStorage": null,
+    "injection": null,
+    "injectionCapacity": null,
+    "status": "C",
+    "trend": {
+      "daily": null,
+      "unit": "%points",
+      "weekly": null
+    },
+    "withdrawal": null,
+    "withdrawalCapacity": null,
+    "workingGasVolume": null
+  },
+  "LT": {
+    "country": "LT",
+    "full": null,
+    "gasDay": "2026-04-07",
+    "gasInStorage": null,
+    "injection": null,
+    "injectionCapacity": null,
+    "status": "C",
+    "trend": {
+      "daily": null,
+      "unit": "%points",
+      "weekly": null
+    },
+    "withdrawal": null,
+    "withdrawalCapacity": null,
+    "workingGasVolume": null
+  },
+  "NL": {
+    "country": "NL",
+    "full": null,
+    "gasDay": "2026-04-07",
+    "gasInStorage": null,
+    "injection": null,
+    "injectionCapacity": null,
+    "status": "C",
+    "trend": {
+      "daily": null,
+      "unit": "%points",
+      "weekly": null
+    },
+    "withdrawal": null,
+    "withdrawalCapacity": null,
+    "workingGasVolume": null
+  },
+  "PL": {
+    "country": "PL",
+    "full": null,
+    "gasDay": "2026-04-07",
+    "gasInStorage": null,
+    "injection": null,
+    "injectionCapacity": null,
+    "status": "C",
+    "trend": {
+      "daily": null,
+      "unit": "%points",
+      "weekly": null
+    },
+    "withdrawal": null,
+    "withdrawalCapacity": null,
+    "workingGasVolume": null
+  },
+  "PT": {
+    "country": "PT",
+    "full": null,
+    "gasDay": "2026-04-07",
+    "gasInStorage": null,
+    "injection": null,
+    "injectionCapacity": null,
+    "status": "C",
+    "trend": {
+      "daily": null,
+      "unit": "%points",
+      "weekly": null
+    },
+    "withdrawal": null,
+    "withdrawalCapacity": null,
+    "workingGasVolume": null
+  },
+  "SE": {
+    "country": "SE",
+    "full": null,
+    "gasDay": "2026-04-07",
+    "gasInStorage": null,
+    "injection": null,
+    "injectionCapacity": null,
+    "status": "N",
+    "trend": {
+      "daily": null,
+      "unit": "%points",
+      "weekly": null
+    },
+    "withdrawal": null,
+    "withdrawalCapacity": null,
+    "workingGasVolume": null
+  }
+}
