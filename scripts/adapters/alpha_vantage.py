@@ -87,15 +87,14 @@ def _get(params: dict) -> dict:
     Execute a single GET request to the Alpha Vantage API with retry on
     transient errors (429, 5xx, connection/timeout).
     """
-    params = {**params, "apikey": ALPHAVANTAGE_API_KEY}
-    # Redact key for logging
-    log_params = {k: ("***" if k == "apikey" else v) for k, v in params.items()}
-    logger.info("Alpha Vantage request: %s", log_params)
+    # Log before adding the API key so it never appears in logs
+    logger.info("Alpha Vantage request: %s", params)
+    request_params = {**params, "apikey": ALPHAVANTAGE_API_KEY}
 
     for attempt in range(1, MAX_RETRIES + 1):
         _throttle()
         try:
-            resp = requests.get(AV_BASE, params=params, timeout=REQUEST_TIMEOUT)
+            resp = requests.get(AV_BASE, params=request_params, timeout=REQUEST_TIMEOUT)
             resp.raise_for_status()
             data = resp.json()
             # Alpha Vantage signals rate-limit errors inside the JSON body
@@ -156,7 +155,8 @@ def _fetch_fx_daily(from_symbol: str, to_symbol: str) -> pd.DataFrame:
     df = pd.DataFrame(rows)
     if df.empty:
         return df
-    df["date"] = pd.to_datetime(df["date"]).dt.strftime("%Y-%m-%d")
+    df["date"] = pd.to_datetime(df["date"], errors="coerce").dt.strftime("%Y-%m-%d")
+    df.dropna(subset=["date"], inplace=True)
     df.sort_values("date", inplace=True)
     df.reset_index(drop=True, inplace=True)
     return df
@@ -185,7 +185,8 @@ def _fetch_commodity(function: str) -> pd.DataFrame:
     df = pd.DataFrame(rows)
     if df.empty:
         return df
-    df["date"] = pd.to_datetime(df["date"]).dt.strftime("%Y-%m-%d")
+    df["date"] = pd.to_datetime(df["date"], errors="coerce").dt.strftime("%Y-%m-%d")
+    df.dropna(subset=["date"], inplace=True)
     df.sort_values("date", inplace=True)
     df.reset_index(drop=True, inplace=True)
     return df
@@ -369,12 +370,13 @@ def fetch_news() -> list[dict]:
         call1_topics = "energy_transportation,commodities"
         logger.info("AV news fetch: topics=%s", call1_topics)
         raw1 = _fetch_news_page(call1_topics, limit=50)
+        count_before = len(all_raw)
         for item in raw1:
             url = item.get("url", "")
             if url and url not in seen_urls:
                 seen_urls.add(url)
                 all_raw.append(item)
-        logger.info("AV news call 1: %d articles", len(raw1))
+        logger.info("AV news call 1: %d articles fetched, %d added", len(raw1), len(all_raw) - count_before)
     except Exception as exc:
         logger.warning("AV news call 1 failed: %s", exc)
 
@@ -383,12 +385,13 @@ def fetch_news() -> list[dict]:
         call2_topics = "financial_markets,economy_macro"
         logger.info("AV news fetch: topics=%s", call2_topics)
         raw2 = _fetch_news_page(call2_topics, limit=50)
+        count_before = len(all_raw)
         for item in raw2:
             url = item.get("url", "")
             if url and url not in seen_urls:
                 seen_urls.add(url)
                 all_raw.append(item)
-        logger.info("AV news call 2: %d new articles", len(raw2))
+        logger.info("AV news call 2: %d articles fetched, %d added (new)", len(raw2), len(all_raw) - count_before)
     except Exception as exc:
         logger.warning("AV news call 2 failed: %s", exc)
 
@@ -397,7 +400,8 @@ def fetch_news() -> list[dict]:
         return []
 
     articles = [_normalise_article(item) for item in all_raw]
-    articles.sort(key=lambda a: (-a["relevance_score"], a.get("publishedAt", "")))
+    # Use a sentinel past-date so articles with missing timestamps sort last
+    articles.sort(key=lambda a: (-a["relevance_score"], a.get("publishedAt") or "1970-01-01T00:00:00Z"))
 
     with open(cache_path, "w", encoding="utf-8") as fh:
         json.dump(articles, fh, ensure_ascii=False, indent=2)

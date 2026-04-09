@@ -122,7 +122,12 @@ def _parse_day_record(record: dict) -> Optional[dict]:
     """
     Parse one day's gas-day record from the GIE API into a normalised dict.
     Returns None if the record cannot be parsed.
+
+    The GIE API uses camelCase field names (e.g. ``gasDayStart``) in its
+    JSON responses; ``gas_day_start`` is accepted as a snake_case fallback
+    in case the API response format changes.
     """
+    # GIE v1 API uses camelCase; accept snake_case as a defensive fallback
     gas_day = record.get("gasDayStart") or record.get("gas_day_start")
     if not gas_day:
         return None

@@ -197,7 +197,9 @@ def load_av_metals() -> dict[str, list[dict]]:
             if df.empty or "date" not in df.columns or "value" not in df.columns:
                 continue
             df = df.dropna(subset=["value"])
-            unit = df["unit"].iloc[-1] if "unit" in df.columns and not df.empty else ""
+            if df.empty:
+                continue
+            unit = df["unit"].iloc[-1] if "unit" in df.columns else ""
             records = [
                 {"date": str(row["date"])[:10], "value": round(float(row["value"]), 4), "unit": unit}
                 for _, row in df.sort_values("date").iterrows()
