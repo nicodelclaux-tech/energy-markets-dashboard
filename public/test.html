@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Component Test — European Energy Markets</title>
+
+  <!-- Tailwind CSS v4 — browser CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Theme tokens + Tailwind utilities (mirrors index.html inline block) -->
+  <style type="text/tailwindcss">
+    @theme inline {
+      --color-app-bg:       var(--bg);
+      --color-app-surface:  var(--surface);
+      --color-app-surface2: var(--surface-2);
+      --color-app-border:   var(--border);
+      --color-app-text:     var(--text);
+      --color-app-muted:    var(--muted);
+      --color-app-blue:     var(--blue);
+    }
+    @layer utilities {
+      .bg-app-bg      { background-color: var(--bg); }
+      .bg-app-surface { background-color: var(--surface); }
+      .text-app-text  { color: var(--text); }
+      .text-app-muted { color: var(--muted); }
+      .border-app-border { border-color: var(--border); }
+      .border-app-blue   { border-color: var(--blue); }
+    }
+  </style>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-app-bg text-app-text font-sans text-[13px] leading-snug min-h-screen flex flex-col">
+
+  <!-- ================================================================== -->
+  <!-- HEADER                                                               -->
+  <!-- ================================================================== -->
+  <header id="app-header" class="sticky top-0 z-50 flex items-center gap-4 px-5 bg-app-surface border-b border-app-border" style="height:60px">
+    <div class="flex items-center gap-3 flex-shrink-0">
+      <img src="https://higinfrastructure.com/wp-content/uploads/sites/3/2023/02/HIG-Infrastructure-logo.png"
+           alt="HIG Infrastructure" crossorigin="anonymous"
+           style="height:32px;width:auto;display:block" onerror="this.style.display='none'">
+      <div class="flex flex-col leading-tight">
+        <span class="text-[13px] font-semibold tracking-[0.02em] whitespace-nowrap">European Energy Markets</span>
+        <span class="text-[11px] text-app-muted whitespace-nowrap">Component Playground</span>
+      </div>
+    </div>
+
+    <nav class="flex gap-0.5 ml-4">
+      <a href="index.html" class="tab-btn" style="text-decoration:none">Overview</a>
+      <a href="index.html#power" class="tab-btn" style="text-decoration:none">Power Markets</a>
+      <a href="index.html#commodities" class="tab-btn" style="text-decoration:none">Commodity Markets</a>
+      <span class="tab-btn active">Test</span>
+    </nav>
+  </header>
+
+  <!-- ================================================================== -->
+  <!-- PAGE BODY                                                            -->
+  <!-- ================================================================== -->
+  <main class="flex-1 px-5 py-8">
+
+    <div class="mb-6">
+      <p class="text-[10px] font-semibold tracking-[0.07em] uppercase text-app-muted mb-1">Component Playground</p>
+      <h1 class="text-[16px] font-semibold text-app-text">Market Tracker Widget</h1>
+      <p class="text-[12px] text-app-muted mt-1">
+        Google Finance–style component. Tabs switch market category; time range updates the chart; clicking a row highlights it.
+      </p>
+    </div>
+
+    <!-- Widget mount — constrained to a card-like max-width -->
+    <div id="widget-mount" style="max-width:480px;"></div>
+
+  </main>
+
+  <!-- ================================================================== -->
+  <!-- FOOTER                                                               -->
+  <!-- ================================================================== -->
+  <footer class="mt-auto border-t border-app-border bg-app-surface min-h-[32px] flex items-center justify-center px-3 py-1.5">
+    <span class="text-[11px] text-app-muted">Test page — not connected to live data</span>
+  </footer>
+
+  <!-- ================================================================== -->
+  <!-- SCRIPTS                                                              -->
+  <!-- ================================================================== -->
+  <!-- ECharts required by MarketWidget -->
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+
+  <!-- Market widget component -->
+  <script src="js/market-widget.js"></script>
+
+  <script>
+    MarketWidget.mount(document.getElementById('widget-mount'));
+  </script>
+
+</body>
+</html>
