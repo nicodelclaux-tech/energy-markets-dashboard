@@ -203,9 +203,6 @@
   .text-app-red {
     color: var(--red);
   }
-  .text-app-amber {
-    color: var(--amber);
-  }
   .text-app-orange {
     color: var(--orange);
   }

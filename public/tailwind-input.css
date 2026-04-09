@@ -69,11 +69,10 @@
   .text-app-amber   { color: var(--amber); }
   .text-app-violet  { color: var(--violet); }
 
-  /* Legacy */
+  /* Legacy aliases */
   .text-app-blue    { color: var(--blue); }
   .text-app-green   { color: var(--green); }
   .text-app-red     { color: var(--red); }
-  .text-app-amber   { color: var(--amber); }
   .text-app-orange  { color: var(--orange); }
   .text-app-purple  { color: var(--purple); }
 
