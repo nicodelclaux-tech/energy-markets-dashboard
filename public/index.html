@@ -3,35 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>European Energy Markets</title>
+  <title>Terminal.OS — Energy Markets</title>
+  <!-- IBM Plex Mono + Inter from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <!-- Tailwind CSS (pre-built bundle — regenerate with: npx tailwindcss -i tailwind-input.css -o tailwind.css) -->
   <link rel="stylesheet" href="tailwind.css">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-app-bg text-app-text font-sans text-[13px] leading-snug min-h-screen flex flex-col">
+<body class="axiom-body" id="app-body">
 
   <!-- ================================================================== -->
-  <!-- HEADER                                                               -->
+  <!-- TOP BAR                                                              -->
   <!-- ================================================================== -->
-  <header id="app-header" class="sticky top-0 z-50 flex items-center gap-4 px-5 bg-app-surface border-b border-app-border" style="height:60px">
-    <div class="flex items-center gap-3 flex-shrink-0">
-      <img src="https://higinfrastructure.com/wp-content/uploads/sites/3/2023/02/HIG-Infrastructure-logo.png"
-           alt="HIG Infrastructure" crossorigin="anonymous"
-           style="height:32px;width:auto;display:block" onerror="this.style.display='none'">
-      <div class="flex flex-col leading-tight">
-        <span class="text-[13px] font-semibold tracking-[0.02em] whitespace-nowrap">European Energy Markets</span>
-        <span class="text-[11px] text-app-muted whitespace-nowrap">Wholesale Electricity &amp; Commodity Analytics</span>
+  <header id="app-header" class="axiom-topbar">
+    <div class="axiom-topbar-left">
+      <span class="axiom-wordmark">TERMINAL.OS</span>
+      <div class="axiom-topbar-divider"></div>
+      <div class="axiom-status" id="market-status">
+        <span class="axiom-status-dot" id="status-dot"></span>
+        <span class="axiom-status-label" id="status-label">STATUS: OPEN</span>
       </div>
+      <div class="axiom-topbar-divider"></div>
+      <span class="axiom-clock" id="app-clock">TIME: --:--:-- GMT</span>
     </div>
-
-    <nav class="flex gap-0.5 ml-4">
-      <button class="tab-btn active" data-tab="overview">Overview</button>
-      <button class="tab-btn" data-tab="power">Power Markets</button>
-      <button class="tab-btn" data-tab="commodities">Commodity Markets</button>
-    </nav>
-
-    <div class="flex items-center gap-2 ml-auto">
-      <button class="btn-icon" data-action="toggle-theme" aria-label="Toggle theme"></button>
+    <div class="axiom-topbar-right">
+      <button class="axiom-icon-btn" data-action="toggle-density" aria-label="Toggle density" title="Toggle density (D)">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5">
+          <line x1="1" y1="3" x2="13" y2="3"/><line x1="1" y1="7" x2="13" y2="7"/><line x1="1" y1="11" x2="13" y2="11"/>
+        </svg>
+      </button>
+      <button class="axiom-icon-btn" data-action="toggle-theme" aria-label="Toggle theme" title="Toggle theme"></button>
+      <button class="axiom-icon-btn" data-action="open-cmd" aria-label="Command palette" title="Command palette (⌘K)">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="6" cy="6" r="4"/><line x1="9.5" y1="9.5" x2="13" y2="13"/>
+        </svg>
+      </button>
     </div>
   </header>
 
@@ -41,86 +49,183 @@
   <div id="app-warnings" style="display: none;"></div>
 
   <!-- ================================================================== -->
-  <!-- OVERVIEW PAGE                                                        -->
+  <!-- MAIN CONTAINER — sidebar + workspace                                 -->
   <!-- ================================================================== -->
-  <div id="page-overview" class="page active">
-    <div id="market-table-container"></div>
-    <div id="forward-curve-container"></div>
-  </div>
+  <div class="axiom-main">
 
-  <!-- ================================================================== -->
-  <!-- POWER MARKETS PAGE                                                   -->
-  <!-- ================================================================== -->
-  <div id="page-power" class="page">
-    <div id="controls-panel"></div>
-
-    <div id="kpi-row"></div>
-
-    <div class="chart-panel">
-      <div id="chart-main-toolbar"></div>
-      <div id="chart-main" class="chart-canvas chart-main"></div>
-    </div>
-
-    <div class="secondary-row secondary-row--three">
-      <div class="secondary-panel" id="ranking-container"></div>
-      <div class="secondary-panel chart-panel-sm">
-        <div id="chart-title-spread-power" class="panel-title chart-title"></div>
-        <div id="chart-spread" class="chart-canvas chart-sm"></div>
+    <!-- LEFT SIDEBAR -->
+    <aside id="app-sidebar" class="axiom-sidebar">
+      <div class="axiom-sidebar-brand">
+        Institutional<br>Energy Terminal
       </div>
-      <div class="secondary-panel chart-panel-sm">
-        <div id="chart-title-dist-power" class="panel-title chart-title"></div>
-        <div id="chart-dist" class="chart-canvas chart-sm"></div>
+      <nav id="sidebar-nav" class="axiom-nav">
+        <button class="axiom-nav-item active" data-tab="overview">
+          <svg class="axiom-nav-icon" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="1" y="1" width="5" height="5"/><rect x="8" y="1" width="5" height="5"/>
+            <rect x="1" y="8" width="5" height="5"/><rect x="8" y="8" width="5" height="5"/>
+          </svg>
+          Overview
+        </button>
+        <button class="axiom-nav-item" data-tab="power">
+          <svg class="axiom-nav-icon" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <polyline points="8,1 5,7 9,7 6,13"/>
+          </svg>
+          Power
+        </button>
+        <button class="axiom-nav-item" data-tab="commodities">
+          <svg class="axiom-nav-icon" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="7" cy="7" r="5"/><line x1="7" y1="3" x2="7" y2="11"/>
+            <line x1="4.5" y1="5" x2="9.5" y2="5"/><line x1="4.5" y1="9" x2="9.5" y2="9"/>
+          </svg>
+          Commodities
+        </button>
+        <div class="axiom-nav-divider"></div>
+        <button class="axiom-nav-item axiom-nav-item--dim" disabled>
+          <svg class="axiom-nav-icon" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M3 11 C3 6 11 6 11 11"/><circle cx="7" cy="4" r="2"/>
+          </svg>
+          Gas
+        </button>
+        <button class="axiom-nav-item axiom-nav-item--dim" disabled>
+          <svg class="axiom-nav-icon" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M7 1 C7 1 3 5 3 8 A4 4 0 0 0 11 8 C11 5 7 1 7 1Z"/>
+          </svg>
+          Oil
+        </button>
+        <button class="axiom-nav-item axiom-nav-item--dim" disabled>
+          <svg class="axiom-nav-icon" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="7" cy="7" r="5"/><text x="5" y="10" font-size="5" fill="currentColor" stroke="none">CO₂</text>
+          </svg>
+          Carbon
+        </button>
+        <button class="axiom-nav-item axiom-nav-item--dim" disabled>
+          <svg class="axiom-nav-icon" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <polyline points="1,10 5,5 8,8 13,2"/>
+          </svg>
+          FX
+        </button>
+        <div class="axiom-nav-divider"></div>
+        <button class="axiom-nav-item axiom-nav-item--dim" disabled>
+          <svg class="axiom-nav-icon" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="1" y="4" width="5" height="6"/><rect x="8" y="4" width="5" height="6"/>
+            <line x1="6" y1="7" x2="8" y2="7"/>
+          </svg>
+          Compare
+        </button>
+        <button class="axiom-nav-item axiom-nav-item--dim" disabled>
+          <svg class="axiom-nav-icon" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="1" y="1" width="12" height="2"/><rect x="1" y="6" width="9" height="2"/>
+            <rect x="1" y="11" width="10" height="2"/>
+          </svg>
+          News
+        </button>
+      </nav>
+      <!-- Keyboard shortcut hint -->
+      <div class="axiom-sidebar-hint">
+        <kbd>⌘K</kbd> command palette
       </div>
-    </div>
+    </aside>
 
-    <div class="secondary-row secondary-row--three">
-      <div class="secondary-panel chart-panel-sm">
-        <div id="chart-title-monthly-power" class="panel-title chart-title"></div>
-        <div id="chart-monthly" class="chart-canvas chart-sm"></div>
+    <!-- WORKSPACE -->
+    <div class="axiom-workspace" id="axiom-workspace">
+
+      <!-- OVERVIEW PAGE -->
+      <div id="page-overview" class="page active axiom-page">
+        <div id="market-table-container"></div>
+        <div id="forward-curve-container"></div>
       </div>
-      <div class="secondary-panel" id="heatmap-container"></div>
-      <div class="secondary-panel" id="news-container"></div>
-    </div>
-  </div>
+
+      <!-- POWER MARKETS PAGE -->
+      <div id="page-power" class="page axiom-page">
+        <div id="controls-panel"></div>
+        <div id="kpi-row"></div>
+        <div class="chart-panel">
+          <div id="chart-main-toolbar"></div>
+          <div id="chart-main" class="chart-canvas chart-main"></div>
+        </div>
+        <div class="secondary-row secondary-row--three">
+          <div class="secondary-panel" id="ranking-container"></div>
+          <div class="secondary-panel chart-panel-sm">
+            <div id="chart-title-spread-power" class="panel-title chart-title"></div>
+            <div id="chart-spread" class="chart-canvas chart-sm"></div>
+          </div>
+          <div class="secondary-panel chart-panel-sm">
+            <div id="chart-title-dist-power" class="panel-title chart-title"></div>
+            <div id="chart-dist" class="chart-canvas chart-sm"></div>
+          </div>
+        </div>
+        <div class="secondary-row secondary-row--three">
+          <div class="secondary-panel chart-panel-sm">
+            <div id="chart-title-monthly-power" class="panel-title chart-title"></div>
+            <div id="chart-monthly" class="chart-canvas chart-sm"></div>
+          </div>
+          <div class="secondary-panel" id="heatmap-container"></div>
+          <div class="secondary-panel" id="news-container"></div>
+        </div>
+      </div>
+
+      <!-- COMMODITY MARKETS PAGE -->
+      <div id="page-commodities" class="page axiom-page">
+        <div id="controls-panel-commodity"></div>
+        <div id="kpi-row-commodity"></div>
+        <div class="chart-panel">
+          <div id="chart-title-main-commodity" class="panel-title chart-title"></div>
+          <div id="chart-main-toolbar-commodity"></div>
+          <div id="chart-main-commodity" class="chart-canvas chart-main"></div>
+        </div>
+        <div class="secondary-row secondary-row--three">
+          <div class="secondary-panel" id="ranking-container-commodity"></div>
+          <div class="secondary-panel chart-panel-sm">
+            <div id="chart-title-spread-commodity" class="panel-title chart-title"></div>
+            <div id="chart-spread-commodity" class="chart-canvas chart-sm"></div>
+          </div>
+          <div class="secondary-panel chart-panel-sm">
+            <div id="chart-title-dist-commodity" class="panel-title chart-title"></div>
+            <div id="chart-dist-commodity" class="chart-canvas chart-sm"></div>
+          </div>
+        </div>
+        <div class="chart-panel">
+          <div id="chart-title-monthly-commodity" class="panel-title chart-title"></div>
+          <div id="chart-monthly-commodity" class="chart-canvas chart-monthly"></div>
+        </div>
+      </div>
+
+    </div><!-- /WORKSPACE -->
+
+  </div><!-- /MAIN CONTAINER -->
 
   <!-- ================================================================== -->
-  <!-- COMMODITY MARKETS PAGE                                              -->
+  <!-- BOTTOM TICKER BAR                                                    -->
   <!-- ================================================================== -->
-  <div id="page-commodities" class="page">
-    <div id="controls-panel-commodity"></div>
-
-    <div id="kpi-row-commodity"></div>
-
-    <div class="chart-panel">
-      <div id="chart-title-main-commodity" class="panel-title chart-title"></div>
-      <div id="chart-main-toolbar-commodity"></div>
-      <div id="chart-main-commodity" class="chart-canvas chart-main"></div>
+  <footer id="ticker-bar" class="axiom-ticker">
+    <div class="axiom-ticker-label">TICKER</div>
+    <div class="axiom-ticker-scroll" id="ticker-scroll">
+      <div class="axiom-ticker-inner" id="ticker-inner"></div>
     </div>
-
-    <div class="secondary-row secondary-row--three">
-      <div class="secondary-panel" id="ranking-container-commodity"></div>
-      <div class="secondary-panel chart-panel-sm">
-        <div id="chart-title-spread-commodity" class="panel-title chart-title"></div>
-        <div id="chart-spread-commodity" class="chart-canvas chart-sm"></div>
-      </div>
-      <div class="secondary-panel chart-panel-sm">
-        <div id="chart-title-dist-commodity" class="panel-title chart-title"></div>
-        <div id="chart-dist-commodity" class="chart-canvas chart-sm"></div>
-      </div>
-    </div>
-
-    <div class="chart-panel">
-      <div id="chart-title-monthly-commodity" class="panel-title chart-title"></div>
-      <div id="chart-monthly-commodity" class="chart-canvas chart-monthly"></div>
-    </div>
-  </div>
-
-  <!-- ================================================================== -->
-  <!-- FOOTER                                                               -->
-  <!-- ================================================================== -->
-  <footer id="app-footer" class="mt-auto border-t border-app-border bg-app-surface min-h-[32px] flex items-center justify-center px-3 py-1.5">
-    <span id="footer-coverage" class="text-[11px] text-app-muted tabular-nums"></span>
+    <div class="axiom-ticker-coverage" id="footer-coverage"></div>
   </footer>
+
+  <!-- ================================================================== -->
+  <!-- COMMAND PALETTE                                                      -->
+  <!-- ================================================================== -->
+  <div id="cmd-palette" class="axiom-cmd-palette" aria-hidden="true">
+    <div class="axiom-cmd-backdrop" id="cmd-backdrop"></div>
+    <div class="axiom-cmd-panel" role="dialog" aria-label="Command palette">
+      <div class="axiom-cmd-search">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" class="axiom-cmd-search-icon">
+          <circle cx="6" cy="6" r="4"/><line x1="9.5" y1="9.5" x2="13" y2="13"/>
+        </svg>
+        <input id="cmd-input" class="axiom-cmd-input" type="text" placeholder="Switch market… (Power, Gas, Spain…)" autocomplete="off" spellcheck="false">
+        <kbd class="axiom-cmd-esc">ESC</kbd>
+      </div>
+      <div id="cmd-results" class="axiom-cmd-results"></div>
+      <div class="axiom-cmd-footer">
+        <span><kbd>↑↓</kbd> navigate</span>
+        <span><kbd>↵</kbd> select</span>
+        <span><kbd>1</kbd>/<kbd>2</kbd>/<kbd>3</kbd> 1M/6M/1Y</span>
+      </div>
+    </div>
+  </div>
 
   <!-- ================================================================== -->
   <!-- SCRIPTS — order matters                                              -->

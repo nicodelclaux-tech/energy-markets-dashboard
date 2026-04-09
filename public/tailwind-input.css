@@ -1,5 +1,6 @@
 /* ================================================================
    Tailwind CSS input file for the Energy Markets Dashboard.
+   Axiom Institutional Design System — Slate palette, dark-first.
 
    To regenerate tailwind.css after changing HTML/JS class usage:
      npx @tailwindcss/cli -i tailwind-input.css -o tailwind.css
@@ -13,27 +14,36 @@
 /* ================================================================
    THEME TOKENS — mapped to runtime CSS variables so dark/light
    switching works without a build step.
-
-   Using @theme inline means Tailwind generates `var(--color-*)` 
-   references rather than inlining literal values, which lets our
-   existing data-theme="light|dark" toggle work at runtime.
    ================================================================ */
 @theme inline {
-  /* Color tokens → our CSS variable system */
+  /* Color tokens → our CSS variable system (Axiom Slate palette) */
   --color-app-bg:       var(--bg);
   --color-app-surface:  var(--surface);
   --color-app-surface2: var(--surface-2);
+  --color-app-surface3: var(--surface-3);
   --color-app-border:   var(--border);
+  --color-app-border-hi: var(--border-hi);
   --color-app-text:     var(--text);
+  --color-app-dim:      var(--text-dim);
   --color-app-muted:    var(--muted);
+  --color-app-sky:      var(--sky);
+  --color-app-emerald:  var(--emerald);
+  --color-app-rose:     var(--rose);
+  --color-app-amber:    var(--amber);
+  --color-app-violet:   var(--violet);
+
+  /* Legacy aliases for existing JS-generated markup */
   --color-app-blue:     var(--blue);
   --color-app-green:    var(--green);
   --color-app-red:      var(--red);
-  --color-app-amber:    var(--amber);
   --color-app-orange:   var(--orange);
   --color-app-purple:   var(--purple);
 
-  /* Corporate aesthetic — no rounded corners */
+  /* Fonts */
+  --font-mono: var(--font-mono);
+  --font-sans: var(--font-sans);
+
+  /* Zero border-radius — institutional aesthetic */
   --radius:    0px;
   --radius-sm: 0px;
   --radius-md: 0px;
@@ -42,25 +52,38 @@
 }
 
 /* ================================================================
-   Custom color utilities — ensure bg-app-* / text-app-* /
-   border-app-* classes resolve to our runtime CSS variables.
+   Custom color utilities — bg-app-* / text-app-* / border-app-*
    ================================================================ */
 @layer utilities {
-  .bg-app-bg       { background-color: var(--bg); }
-  .bg-app-surface  { background-color: var(--surface); }
-  .bg-app-surface2 { background-color: var(--surface-2); }
+  .bg-app-bg        { background-color: var(--bg); }
+  .bg-app-surface   { background-color: var(--surface); }
+  .bg-app-surface2  { background-color: var(--surface-2); }
+  .bg-app-surface3  { background-color: var(--surface-3); }
 
-  .text-app-text   { color: var(--text); }
-  .text-app-muted  { color: var(--muted); }
-  .text-app-blue   { color: var(--blue); }
-  .text-app-green  { color: var(--green); }
-  .text-app-red    { color: var(--red); }
-  .text-app-amber  { color: var(--amber); }
-  .text-app-orange { color: var(--orange); }
-  .text-app-purple { color: var(--purple); }
+  .text-app-text    { color: var(--text); }
+  .text-app-dim     { color: var(--text-dim); }
+  .text-app-muted   { color: var(--muted); }
+  .text-app-sky     { color: var(--sky); }
+  .text-app-emerald { color: var(--emerald); }
+  .text-app-rose    { color: var(--rose); }
+  .text-app-amber   { color: var(--amber); }
+  .text-app-violet  { color: var(--violet); }
 
-  .border-app-border  { border-color: var(--border); }
-  .border-app-surface { border-color: var(--surface); }
-  .border-app-blue    { border-color: var(--blue); }
+  /* Legacy */
+  .text-app-blue    { color: var(--blue); }
+  .text-app-green   { color: var(--green); }
+  .text-app-red     { color: var(--red); }
+  .text-app-amber   { color: var(--amber); }
+  .text-app-orange  { color: var(--orange); }
+  .text-app-purple  { color: var(--purple); }
+
+  .border-app-border   { border-color: var(--border); }
+  .border-app-border-hi { border-color: var(--border-hi); }
+  .border-app-surface  { border-color: var(--surface); }
+  .border-app-sky      { border-color: var(--sky); }
+  .border-app-blue     { border-color: var(--blue); }
+
+  /* IBM Plex Mono utility */
+  .font-mono-ibm { font-family: var(--font-mono); }
 }
 
