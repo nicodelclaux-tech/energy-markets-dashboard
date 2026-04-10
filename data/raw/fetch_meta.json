@@ -1,23 +1,23 @@
 {
-  "updatedAt": "2026-04-09T06:30:57.051473+00:00",
+  "updatedAt": "2026-04-10T06:34:28.851623+00:00",
   "sources": {
     "entsoe": {
       "status": "warning",
-      "total_rows": 18280,
+      "total_rows": 18290,
       "coverage": {
-        "ES": 1828,
-        "DE": 1828,
-        "FR": 1828,
-        "IT": 1828,
+        "ES": 1829,
+        "DE": 1829,
+        "FR": 1829,
+        "IT": 1829,
         "GB": 0,
-        "NL": 1828,
-        "NO": 1828,
-        "SE": 1828,
-        "FI": 1828,
-        "DK": 1828,
-        "IE": 1828
+        "NL": 1829,
+        "NO": 1829,
+        "SE": 1829,
+        "FI": 1829,
+        "DK": 1829,
+        "IE": 1829
       },
-      "elapsed_s": 93.7
+      "elapsed_s": 81.0
     },
     "ember": {
       "status": "warning",
@@ -29,7 +29,7 @@
         "carbon-intensity": 0,
         "installed-capacity": 0
       },
-      "elapsed_s": 1.7
+      "elapsed_s": 2.8
     },
     "fmp": {
       "status": "warning",
@@ -41,16 +41,16 @@
         "EURUSD": 0,
         "GBPUSD": 0
       },
-      "elapsed_s": 0.5
+      "elapsed_s": 0.9
     },
     "ecb": {
       "status": "ok",
-      "total_rows": 2564,
+      "total_rows": 2566,
       "coverage": {
-        "eurusd": 1282,
-        "gbpeur": 1282
+        "eurusd": 1283,
+        "gbpeur": 1283
       },
-      "elapsed_s": 1.8
+      "elapsed_s": 2.0
     },
     "eia": {
       "status": "ok",
@@ -61,12 +61,12 @@
         "henry_hub": 261,
         "ng_storage": 0
       },
-      "elapsed_s": 2.6
+      "elapsed_s": 2.1
     },
     "news": {
       "status": "ok",
-      "total_items": 436,
-      "elapsed_s": 104.5
+      "total_items": 380,
+      "elapsed_s": 129.6
     },
     "gie": {
       "status": "ok",
@@ -75,7 +75,7 @@
         "gas_countries": 23,
         "lng_countries": 12
       },
-      "elapsed_s": 7.8
+      "elapsed_s": 0.0
     },
     "alpha_vantage": {
       "status": "ok",
@@ -84,7 +84,7 @@
         "metals_fetched": 1,
         "metals_rows": 1
       },
-      "elapsed_s": 49.8
+      "elapsed_s": 12.1
     }
   },
   "warnings": [
