@@ -1,38 +1,21 @@
 [
   {
-    "id": "d252a091f495bd25",
-    "headline": "Britain breaks solar energy record twice as united kingdom biggest solar farm gets approval | Solar power",
-    "url": "https://www.theguardian.com/environment/2026/apr/08/britain-breaks-solar-energy-record-twice-uk-biggest-solar-farm-springwell-approval",
-    "publishedAt": "20260408T181500Z",
+    "id": "04a93396d6e39bbd",
+    "headline": "Britain will have enough energy this summer despite Iran turmoil , grid operators say",
+    "url": "https://www.marketscreener.com/news/britain-will-have-enough-energy-this-summer-despite-iran-turmoil-grid-operators-say-ce7e50dede89f423",
+    "publishedAt": "20260414T004500Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
+      "DE",
       "IT",
-      "GB"
+      "NO"
     ],
     "topic_tags": [
-      "power",
-      "renewables",
-      "emissions"
+      "power"
     ],
     "summary": "",
-    "relevance_score": 9.0
-  },
-  {
-    "id": "126b238373a0003f",
-    "headline": "A new oil shock accelerates return to nuclear power",
-    "url": "https://www.straitstimes.com/world/a-new-oil-shock-accelerates-return-to-nuclear-power",
-    "publishedAt": "20260407T040000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES"
-    ],
-    "topic_tags": [
-      "power",
-      "nuclear"
-    ],
-    "summary": "",
-    "relevance_score": 6.0
+    "relevance_score": 7.0
   },
   {
     "id": "9d07c885c9a37bdd",
@@ -49,22 +32,6 @@
     "topic_tags": [
       "power",
       "gas"
-    ],
-    "summary": "",
-    "relevance_score": 6.0
-  },
-  {
-    "id": "d95d4adb9e118b6d",
-    "headline": "UK / Caribbean Partnership on Clean Energy : From Untapped Potential to Regional Powerhouse , by Ingrid Levine",
-    "url": "https://www.bajanreporter.com/2026/04/uk-caribbean-partnership-on-clean-energy-from-untapped-potential-to-regional-powerhouse-by-ingrid-levine/",
-    "publishedAt": "20260407T233000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "FR",
-      "SE"
-    ],
-    "topic_tags": [
-      "power"
     ],
     "summary": "",
     "relevance_score": 6.0
@@ -91,212 +58,51 @@
     "relevance_score": 6.0
   },
   {
-    "id": "a823f11697040195",
-    "headline": "A Russian attack kills 3 in Odesa while Ukraine targets Russian oil infrastructure , officials say",
-    "url": "https://isp.netscape.com:443/news/world/story/0001/20260406/e455aee8c725ef624bf23ddf1542c523",
-    "publishedAt": "20260406T094500Z",
+    "id": "93d51456fdb67ff2",
+    "headline": "An Iran War Winner : China Green Industrial Complex - Governor Wind Energy Coalition",
+    "url": "https://governorswindenergycoalition.org/an-iran-war-winner-chinas-green-industrial-complex/",
+    "publishedAt": "20260413T214500Z",
     "source": "gdelt",
     "country_tags": [
-      "ES",
-      "DE",
-      "FR",
-      "FI"
+      "IT",
+      "NO"
     ],
     "topic_tags": [
-      "emissions"
+      "renewables"
     ],
     "summary": "",
-    "relevance_score": 5.5
+    "relevance_score": 6.0
   },
   {
-    "id": "b9874e9260266e97",
-    "headline": "A Russian attack kills 3 in Odesa while Ukraine targets Russian oil infrastructure , officials say",
-    "url": "https://www.bostonglobe.com/2026/04/06/world/russia-ukraine-war/",
-    "publishedAt": "20260406T100000Z",
+    "id": "3ada160bd96672b2",
+    "headline": "ADB launches $25 million fund for ASEAN power grid - BusinessWorld Online",
+    "url": "https://www.bworldonline.com/top-stories/2026/04/07/741239/adb-launches-25-million-fund-for-asean-power-grid/",
+    "publishedAt": "20260407T094500Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
-      "DE",
-      "FR",
-      "FI"
+      "NL",
+      "SE"
     ],
     "topic_tags": [
-      "emissions"
+      "power"
     ],
     "summary": "",
-    "relevance_score": 5.5
+    "relevance_score": 5.0
   },
   {
-    "id": "55d971d0d4712406",
-    "headline": "A Russian attack kills 3 in Odesa while Ukraine targets Russian oil infrastructure , officials say",
-    "url": "https://mynorthwest.com/world/a-russian-attack-kills-3-in-odesa-while-ukraine-targets-russian-oil-infrastructure-officials-say/4225269",
-    "publishedAt": "20260406T110000Z",
+    "id": "7e5d442410cd1321",
+    "headline": "Power grid obliteration would be a death sentence for Iran",
+    "url": "http://www.minnpost.com/community-voices/2026/04/power-grid-obliterating-iran-civilian-life/",
+    "publishedAt": "20260408T044500Z",
     "source": "gdelt",
     "country_tags": [
-      "ES",
       "DE",
-      "FR",
-      "FI"
-    ],
-    "topic_tags": [
-      "emissions"
-    ],
-    "summary": "",
-    "relevance_score": 5.5
-  },
-  {
-    "id": "e1e66b85eb758155",
-    "headline": "A Russian attack kills 3 in Odesa while Ukraine targets Russian oil infrastructure , officials say",
-    "url": "https://www.thegazette.com/news/world/a-russian-attack-kills-3-in-odesa-while-ukraine-targets-russian-oil-infrastructure-officials-say/article_4e62d7b7-682a-5840-84e2-949c9e42ac4c.html",
-    "publishedAt": "20260406T110000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "FR",
-      "FI"
-    ],
-    "topic_tags": [
-      "emissions"
-    ],
-    "summary": "",
-    "relevance_score": 5.5
-  },
-  {
-    "id": "45f2848a7b7c5318",
-    "headline": "A Russian attack kills 3 in Odesa while Ukraine targets Russian oil infrastructure , officials say",
-    "url": "https://www.therecord.com/news/world/europe/a-russian-attack-kills-3-in-odesa-while-ukraine-targets-russian-oil-infrastructure-officials-say/article_2f570445-1406-5257-a3cc-de44c628e646.html",
-    "publishedAt": "20260406T110000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "FR",
-      "FI"
-    ],
-    "topic_tags": [
-      "emissions"
-    ],
-    "summary": "",
-    "relevance_score": 5.5
-  },
-  {
-    "id": "b69d8b83e829f8c1",
-    "headline": "A Russian attack kills 3 in Odesa while Ukraine targets Russian oil infrastructure , officials say",
-    "url": "https://www.stcatharinesstandard.ca/news/world/europe/a-russian-attack-kills-3-in-odesa-while-ukraine-targets-russian-oil-infrastructure-officials-say/article_42bfbcb9-4e83-53ae-8806-536d92986b3f.html",
-    "publishedAt": "20260406T120000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "FR",
-      "FI"
-    ],
-    "topic_tags": [
-      "emissions"
-    ],
-    "summary": "",
-    "relevance_score": 5.5
-  },
-  {
-    "id": "51546321ccf86de1",
-    "headline": "EU gives Russia €3bn LNG Arctic boost as Iran war exposes energy vulnerability",
-    "url": "https://euobserver.com/210692/eu-gives-russia-e3bn-lng-arctic-boost-as-iran-war-exposes-energy-vulnerability/",
-    "publishedAt": "20260410T161500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
       "IT",
       "SE"
     ],
     "topic_tags": [
-      "gas",
-      "LNG"
-    ],
-    "summary": "",
-    "relevance_score": 5.5
-  },
-  {
-    "id": "3c9f4273728f3a4c",
-    "headline": "Russian attack kills 3 in Odesa , Ukraine targets Russian oil infrastructure",
-    "url": "https://www.hurriyetdailynews.com/russian-attack-kills-3-in-odesa-ukraine-targets-russian-oil-infrastructure-220692",
-    "publishedAt": "20260406T131500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "FR"
-    ],
-    "topic_tags": [
-      "emissions"
-    ],
-    "summary": "",
-    "relevance_score": 5.0
-  },
-  {
-    "id": "b72cde978f2d3742",
-    "headline": "Standard Carbon Launches Reg CF Raise to Scale Clean - Energy Systems Nationwide",
-    "url": "https://www.financial-news.co.uk/standard-carbon-launches-reg-cf-raise-to-scale-clean-energy-systems-nationwide/",
-    "publishedAt": "20260406T223000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "SE"
-    ],
-    "topic_tags": [
-      "emissions"
-    ],
-    "summary": "",
-    "relevance_score": 5.0
-  },
-  {
-    "id": "525c794a6294f776",
-    "headline": "Pinergy may invest up to €35m to expand solar power supplies",
-    "url": "https://www.irishtimes.com/business/2026/04/10/pinergy-may-invest-up-to-35m-to-expand-solar-power-supplies/",
-    "publishedAt": "20260410T050000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IE"
-    ],
-    "topic_tags": [
-      "power",
-      "renewables"
-    ],
-    "summary": "",
-    "relevance_score": 5.0
-  },
-  {
-    "id": "5de1a84cd1a06bfd",
-    "headline": "Trump pays TotalEnergies billions to drop wind power and focus on fossil fuels",
-    "url": "https://ing.dk/artikel/trump-pays-totalenergies-billions-drop-wind-power-and-focus-fossil-fuels",
-    "publishedAt": "20260410T103000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IE"
-    ],
-    "topic_tags": [
-      "power",
-      "renewables"
-    ],
-    "summary": "",
-    "relevance_score": 5.0
-  },
-  {
-    "id": "d104265ed5fa125e",
-    "headline": "Newton Emerson : If we dont even like power lines , what chance is there of building a nuclear reactor in Ireland ? – The Irish News",
-    "url": "https://www.irishnews.com/opinion/newton-emerson-if-we-cant-agree-on-power-lines-what-chance-of-building-a-nuclear-reactor-in-ireland-YIPUIM22P5HEDM7JFNPC376LSI/",
-    "publishedAt": "20260411T093000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IE"
-    ],
-    "topic_tags": [
-      "power",
-      "nuclear"
+      "power"
     ],
     "summary": "",
     "relevance_score": 5.0
@@ -319,78 +125,6 @@
     "relevance_score": 5.0
   },
   {
-    "id": "2bebb330b156491c",
-    "headline": "More European offshore wind power firms exit Korea",
-    "url": "https://www.koreatimes.co.kr/business/companies/20260413/more-european-offshore-wind-power-firms-exit-korea",
-    "publishedAt": "20260413T000000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IT",
-      "FI"
-    ],
-    "topic_tags": [
-      "power",
-      "renewables"
-    ],
-    "summary": "",
-    "relevance_score": 5.0
-  },
-  {
-    "id": "b824b8c5e339ffad",
-    "headline": "Storm Dave in Sweden : 30 , 000 homes left without power | IceNews",
-    "url": "https://icenews.is/2026/04/06/storm-dave-in-sweden-30000-homes-left-without-power/",
-    "publishedAt": "20260406T154500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "IT",
-      "SE"
-    ],
-    "topic_tags": [
-      "power",
-      "weather"
-    ],
-    "summary": "",
-    "relevance_score": 4.5
-  },
-  {
-    "id": "3edb44988d692f11",
-    "headline": "The South Pars natural gas complex is an energy lifeline for Iran – Winnipeg Free Press",
-    "url": "https://www.winnipegfreepress.com/business/2026/04/06/the-south-pars-natural-gas-complex-is-an-energy-lifeline-for-iran",
-    "publishedAt": "20260406T164500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "FR"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 4.5
-  },
-  {
-    "id": "c3856c752ff85616",
-    "headline": "The lost gas fields that could power Britain for decades",
-    "url": "https://wattsupwiththat.com/2026/04/07/the-lost-gas-fields-that-could-power-britain-for-decades/",
-    "publishedAt": "20260407T144500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "IT",
-      "FI",
-      "IE"
-    ],
-    "topic_tags": [
-      "power",
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 4.5
-  },
-  {
     "id": "ed01e0514bf6b15e",
     "headline": "Global energy shares drop as oil plunges after U . S .- Iran ceasefire",
     "url": "https://www.theglobeandmail.com/investing/article-global-energy-shares-drop-as-oil-plunges-after-us-iran-ceasefire/",
@@ -406,22 +140,6 @@
     "relevance_score": 4.5
   },
   {
-    "id": "c26967e067f83da6",
-    "headline": "Motion in favour of nuclear power to go before Fianna Fáil Ard Fheis next month",
-    "url": "https://www.independent.ie/irish-news/politics/motion-in-favour-of-nuclear-power-to-go-before-fianna-fail-ard-fheis-next-month/a143404072.html",
-    "publishedAt": "20260408T094500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "FI"
-    ],
-    "topic_tags": [
-      "power",
-      "nuclear"
-    ],
-    "summary": "",
-    "relevance_score": 4.5
-  },
-  {
     "id": "d87bed444db04849",
     "headline": "Renewable energy news :  OX2 , GridStor , Osaka Gas",
     "url": "https://greentechlead.com/energy-news/renewable-energy-news-ox2-gridstor-osaka-gas-52972",
@@ -433,21 +151,6 @@
       "gas",
       "renewables"
     ],
-    "summary": "",
-    "relevance_score": 4.5
-  },
-  {
-    "id": "c07ff97a39eb47ba",
-    "headline": "Global energy stocks fall after US - iran ceasefire lowers oil prices",
-    "url": "http://virginiabusiness.com/global-energy-stocks-plunge-as-us-iran-ceasefire-hits-oil/",
-    "publishedAt": "20260408T200000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "SE",
-      "FI"
-    ],
-    "topic_tags": [],
     "summary": "",
     "relevance_score": 4.5
   },
@@ -649,33 +352,20 @@
     "relevance_score": 4.5
   },
   {
-    "id": "14a981f08013986f",
-    "headline": "Dow Jones Top Energy Headlines at 4 AM ET : Oil Futures Rise Amid Increased Supply Disruption Concerns | Oil ... ",
-    "url": "https://www.morningstar.com/news/dow-jones/20260406624/dow-jones-top-energy-headlines-at-4-am-et-oil-futures-rise-amid-increased-supply-disruption-concerns-oil",
-    "publishedAt": "20260406T090000Z",
+    "id": "97280f6e4180d562",
+    "headline": "AfD Strikes Back : Reopen Germany Nuclear Plants , Scrap Green Energy Mandates",
+    "url": "https://redstate.com/wardclark/2026/04/13/afd-strikes-back-reopen-germanys-nuclear-plants-scrap-green-energy-mandates-n2201235",
+    "publishedAt": "20260413T193000Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
-      "SE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 4.0
-  },
-  {
-    "id": "cd34eed5a39ab2ee",
-    "headline": "Fast Energy : How Europe Can Power The AI Revolution And Stay Competitive – Analysis",
-    "url": "https://www.eurasiareview.com/04042026-fast-energy-how-europe-can-power-the-ai-revolution-and-stay-competitive-analysis/",
-    "publishedAt": "20260406T171500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IT"
+      "DE"
     ],
     "topic_tags": [
-      "power"
+      "nuclear"
     ],
     "summary": "",
-    "relevance_score": 4.0
+    "relevance_score": 4.5
   },
   {
     "id": "17ec8edfa78a0156",
@@ -802,42 +492,6 @@
     "relevance_score": 4.0
   },
   {
-    "id": "5b9f3bd79b2d3956",
-    "headline": "Clean power cushions united kingdom as gas prices surge : report",
-    "url": "https://www.terradaily.com/afp/260408230112.nhwk8cj6.html",
-    "publishedAt": "20260409T033000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT",
-      "GB"
-    ],
-    "topic_tags": [
-      "power",
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 4.0
-  },
-  {
-    "id": "ccdda8571d0f1d84",
-    "headline": "Clean power cushions united kingdom as gas prices surge : report",
-    "url": "https://www.bssnews.net/business/375882",
-    "publishedAt": "20260409T034500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT",
-      "GB"
-    ],
-    "topic_tags": [
-      "power",
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 4.0
-  },
-  {
     "id": "cdc9f59ebd876652",
     "headline": "Hormuz Energy Shock Spurs Europe toward Renewables",
     "url": "https://www.juancole.com/2026/04/hormuz-energy-renewables.html",
@@ -848,6 +502,20 @@
     ],
     "topic_tags": [
       "renewables"
+    ],
+    "summary": "",
+    "relevance_score": 4.0
+  },
+  {
+    "id": "35c0f7e405167251",
+    "headline": "NTPC , EDF Sign MoU for Nuclear Power Project Exploration",
+    "url": "https://www.newkerala.com/news/a/ntpc-signs-mou-lectricite-de-france-edf-explore-687.htm",
+    "publishedAt": "20260409T171500Z",
+    "source": "gdelt",
+    "country_tags": [],
+    "topic_tags": [
+      "power",
+      "nuclear"
     ],
     "summary": "",
     "relevance_score": 4.0
@@ -889,40 +557,6 @@
     "relevance_score": 4.0
   },
   {
-    "id": "6e66f84b5b6e16c5",
-    "headline": "Orsted : Middle East Energy Crunch Rejuvenates Europe Offshore Wind Push",
-    "url": "https://www.oedigital.com/news/537885-orsted-middle-east-energy-crunch-rejuvenates-europe-offshore-wind-push",
-    "publishedAt": "20260409T190000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES"
-    ],
-    "topic_tags": [
-      "renewables"
-    ],
-    "summary": "",
-    "relevance_score": 4.0
-  },
-  {
-    "id": "a378ccc1bba457f8",
-    "headline": "Blair is at odds with Miliband as former PM think tank urges united kingdom to back new oil and gas fields",
-    "url": "https://www.dailymail.co.uk/news/article-15719701/Blair-odds-Miliband-former-PMs-think-tank-urges-UK-new-oil-gas-fields.html",
-    "publishedAt": "20260410T004500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT",
-      "GB",
-      "FI",
-      "IE"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 4.0
-  },
-  {
     "id": "7ce9f2ecd01aa42d",
     "headline": "Venture Global ( VG ) Reaches Settlement with Edison to Resolve LNG Arbitration",
     "url": "https://www.insidermonkey.com/blog/venture-global-vg-reaches-settlement-with-edison-to-resolve-lng-arbitration-1735166/",
@@ -959,6 +593,25 @@
     "relevance_score": 4.0
   },
   {
+    "id": "5e58b89a27443db3",
+    "headline": "EU considering excessive profit taxes on oil and gas companies",
+    "url": "https://www.euronews.com/my-europe/2026/04/10/eu-considering-excessive-profit-taxes-on-oil-and-gas-companies-foreign-profits-remain-uncl",
+    "publishedAt": "20260410T163000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "FI",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 4.0
+  },
+  {
     "id": "80345d839f1565bf",
     "headline": "Attack on oil pipeline in Italy threatened fuel supplies across southern Germany",
     "url": "https://www.politico.eu/article/attack-oil-pipeline-italy-threatened-fuel-supplies-across-southern-germany/",
@@ -977,264 +630,50 @@
     "relevance_score": 4.0
   },
   {
-    "id": "d71f27bacbb2235b",
-    "headline": "Excise duty cut further and carbon tax rise delayed in €500m of concessions to fuel protesters ; Blockades stood down ; Sinn Féin to bring confidence motion",
-    "url": "https://www.independent.ie/irish-news/excise-duty-cut-further-and-carbon-tax-rise-delayed-in-500m-of-concessions-to-fuel-protesters-blockades-stood-down-sinn-fein-to-bring-confidence-motion/a209263507.html",
-    "publishedAt": "20260412T180000Z",
+    "id": "0f84bf286b1668a3",
+    "headline": "A 1 . 9 billion - year - old bedrock will soon house the world first permanent nuclear waste site – KTBB News , Weather , Talk",
+    "url": "https://ktbb.com/post/?p=1495344",
+    "publishedAt": "20260410T200000Z",
     "source": "gdelt",
     "country_tags": [
-      "ES",
-      "DE",
+      "IT",
       "SE",
       "FI"
     ],
     "topic_tags": [
-      "emissions"
+      "nuclear",
+      "weather"
     ],
     "summary": "",
     "relevance_score": 4.0
   },
   {
-    "id": "792aea8f2edc45e1",
-    "headline": "LNG vessels U - turn after attempt to pass through Hormuz",
-    "url": "https://leaderpost.com:443/pmn/business-pmn/lng-vessels-u-turn-hormuz",
-    "publishedAt": "20260406T131500Z",
+    "id": "132bd50d68e097b6",
+    "headline": "Eni CEO calls for suspending EU ban on Russian LNG by Tsvetana Parask – Oil & Gas 360",
+    "url": "https://www.oilandgas360.com/eni-ceo-calls-for-suspending-eu-ban-on-russian-lng-by-tsvetana-parask/",
+    "publishedAt": "20260413T211500Z",
     "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "SE"
-    ],
+    "country_tags": [],
     "topic_tags": [
       "gas",
       "LNG"
     ],
     "summary": "",
-    "relevance_score": 3.5
+    "relevance_score": 4.0
   },
   {
-    "id": "ef42a81aa80a9915",
-    "headline": "The South Pars natural gas complex is an energy lifeline for Iran",
-    "url": "https://mynorthwest.com/world/the-south-pars-natural-gas-complex-is-an-energy-lifeline-for-iran/4225341",
-    "publishedAt": "20260406T164500Z",
-    "source": "gdelt",
-    "country_tags": [],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "3a94e167d701e1ff",
-    "headline": "South Pars natural gas complex is an energy lifeline for Iran",
-    "url": "https://www.pasadenastarnews.com/2026/04/06/iran-south-pars-natural-gas-complex/",
-    "publishedAt": "20260406T171500Z",
-    "source": "gdelt",
-    "country_tags": [],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "bbb1f6dd4fb3526c",
-    "headline": "South Pars natural gas complex is an energy lifeline for Iran",
-    "url": "https://www.morningjournal.com/2026/04/06/iran-south-pars-natural-gas-complex/",
-    "publishedAt": "20260406T171500Z",
-    "source": "gdelt",
-    "country_tags": [],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "47015737b06169f2",
-    "headline": "South Pars natural gas complex is an energy lifeline for Iran",
-    "url": "https://www.journal-advocate.com/2026/04/06/iran-south-pars-natural-gas-complex/",
-    "publishedAt": "20260406T171500Z",
-    "source": "gdelt",
-    "country_tags": [],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "42c320a764b8bd34",
-    "headline": "South Pars natural gas complex is an energy lifeline for Iran",
-    "url": "https://www.mainlinemedianews.com/2026/04/06/iran-south-pars-natural-gas-complex/",
-    "publishedAt": "20260406T171500Z",
-    "source": "gdelt",
-    "country_tags": [],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "4730400cc7d72d9b",
-    "headline": "South Pars natural gas complex is an energy lifeline for Iran",
-    "url": "https://www.dailylocal.com/2026/04/06/iran-south-pars-natural-gas-complex/",
-    "publishedAt": "20260406T173000Z",
-    "source": "gdelt",
-    "country_tags": [],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "55c2da2855e1be90",
-    "headline": "The South Pars natural gas complex is an energy lifeline for Iran",
-    "url": "https://www.wral.com/news/ap/29e03-the-south-pars-natural-gas-complex-is-an-energy-lifeline-for-iran/",
-    "publishedAt": "20260406T181500Z",
-    "source": "gdelt",
-    "country_tags": [],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "6b26be272fb4e09d",
-    "headline": "The South Pars natural gas complex is an energy lifeline for Iran",
-    "url": "https://www.durangoherald.com/articles/the-south-pars-natural-gas-complex-is-an-energy-lifeline-for-iran/",
-    "publishedAt": "20260406T183000Z",
-    "source": "gdelt",
-    "country_tags": [],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "c443a5929fea5a4c",
-    "headline": "South Pars natural gas complex is an energy lifeline for Iran",
-    "url": "https://www.ocregister.com/2026/04/06/iran-south-pars-natural-gas-complex/",
-    "publishedAt": "20260406T184500Z",
-    "source": "gdelt",
-    "country_tags": [],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "1bc25732cbe34454",
-    "headline": "South Pars natural gas complex is an energy lifeline for Iran",
-    "url": "https://www.presstelegram.com/2026/04/06/iran-south-pars-natural-gas-complex/",
-    "publishedAt": "20260406T190000Z",
-    "source": "gdelt",
-    "country_tags": [],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "1affeb268d598fd0",
-    "headline": "Qatar LNG Vessels U - Turn After Attempt to Pass Through Hormuz",
-    "url": "https://gcaptain.com/qatar-lng-vessels-u-turn-after-attempt-to-pass-through-hormuz/",
-    "publishedAt": "20260406T190000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "SE"
-    ],
-    "topic_tags": [
-      "gas",
-      "LNG"
-    ],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "b091624c354f72b3",
-    "headline": "The South Pars natural gas complex is an energy lifeline for Iran",
-    "url": "https://www.stcatharinesstandard.ca/business/the-south-pars-natural-gas-complex-is-an-energy-lifeline-for-iran/article_cf928df1-f0ef-5886-941c-784feb974ddf.html",
-    "publishedAt": "20260406T193000Z",
-    "source": "gdelt",
-    "country_tags": [],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "cea3c74ce290e721",
-    "headline": "Nikkiso to supply pumps for Germany largest LNG import terminal",
-    "url": "https://worldoil.com/news/2026/4/6/nikkiso-to-supply-pumps-for-germany-s-largest-lng-import-terminal/",
-    "publishedAt": "20260406T221500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE"
-    ],
-    "topic_tags": [
-      "gas",
-      "LNG"
-    ],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "f6e4064cdca9766b",
-    "headline": "UK / Norway : 700 Miles and a world apart : Why Norway and the united kingdom are on divergent energy trajectories",
-    "url": "https://www.energy-pedia.com/news/general/why-norway-and-the-uk-are-on-divergent-energy-trajectories-203443",
-    "publishedAt": "20260406T233000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT",
-      "GB",
-      "NO",
-      "IE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "97439c4d9681f114",
-    "headline": "Energy providers warn of price surge risk as Jamie Dimon worries more about bad credit",
-    "url": "https://www.irishtimes.com/business/2026/04/07/energy-providers-warn-of-price-surge-risk-as-jamie-dimon-worries-more-about-bad-credit/",
-    "publishedAt": "20260407T060000Z",
+    "id": "c04ba5e8cef9dffe",
+    "headline": "Preppers reveal the essential toiletries in their  go bag as they get ready for when  disaster strike - and the surprising £1 . 25 beauty product that included",
+    "url": "https://www.dailymail.co.uk/lifestyle/article-15709703/Preppers-essential-toiletries-disaster-strikes-beauty-product.html",
+    "publishedAt": "20260408T001500Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
       "DE",
-      "IT",
+      "SE",
       "IE"
     ],
     "topic_tags": [],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "8d4c4580151e14cf",
-    "headline": "DTU 3D Prints New Fuel Cell Design With 5x Power Boost - 3DPrint . com | Additive Manufacturing Business",
-    "url": "https://3dprint.com/325013/dtu-3d-prints-new-fuel-cell-design-with-5x-power-boost/",
-    "publishedAt": "20260407T163000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "IT"
-    ],
-    "topic_tags": [
-      "power"
-    ],
     "summary": "",
     "relevance_score": 3.5
   },
@@ -1256,90 +695,6 @@
     "relevance_score": 3.5
   },
   {
-    "id": "503399917d412ca2",
-    "headline": "British Gas issues  energy crisi update for all united kingdom bill payers",
-    "url": "https://www.mirror.co.uk/money/household-bills/british-gas-issues-energy-crisis-36985034",
-    "publishedAt": "20260408T141500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT",
-      "GB"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "cc17ea058d820b2d",
-    "headline": "Reform calls for  every last drop  of oil and gas to be extracted in united kingdom ",
-    "url": "https://www.thenorthernecho.co.uk/news/national/26004355.reform-calls-every-last-drop-oil-gas-extracted-uk/",
-    "publishedAt": "20260408T143000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IT",
-      "GB"
-    ],
-    "topic_tags": [
-      "gas",
-      "regulation"
-    ],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "e821444d31851a4b",
-    "headline": "US - Iran war will still hit energy bills despite ceasefire , experts warn",
-    "url": "https://www.independent.co.uk/news/uk/home-news/energy-bills-uk-july-ofgem-price-cap-us-iran-ceasefire-b2953747.html",
-    "publishedAt": "20260408T161500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "IT",
-      "SE",
-      "FI"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "7ceebd4f9e723810",
-    "headline": "Reform calls for  every last drop  of oil and gas to be extracted in united kingdom ",
-    "url": "https://www.tivysideadvertiser.co.uk/news/national/26004355.reform-calls-every-last-drop-oil-gas-extracted-uk/",
-    "publishedAt": "20260408T163000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IT",
-      "GB"
-    ],
-    "topic_tags": [
-      "gas",
-      "regulation"
-    ],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "9cb0b0320421b7d8",
-    "headline": "North Sea oil firm shares tumble amid Middle East ceasefire",
-    "url": "https://www.heraldscotland.com/news/26005215.north-sea-oil-firm-shares-tumble-amid-middle-east-ceasefire/",
-    "publishedAt": "20260409T044500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "NO",
-      "SE",
-      "FI"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
     "id": "da93845b91bfa3e9",
     "headline": "Iran , Strait of Hormuz , and Global Energy Crisis",
     "url": "https://athens-times.com/fragile-ceasefire-in-the-middle-east-iran-holds-global-economy-hostage-as-europe-fears-paying-for-trumps-fallout/",
@@ -1349,23 +704,6 @@
       "IT"
     ],
     "topic_tags": [],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "5582d03223196f18",
-    "headline": "Sanctioned Russian LNG Finds Buyers in Asia at Deep Discounts",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Sanctioned-Russian-LNG-Finds-Buyers-in-Asia-at-Deep-Discounts.html",
-    "publishedAt": "20260409T083000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "DE",
-      "FI"
-    ],
-    "topic_tags": [
-      "gas",
-      "LNG"
-    ],
     "summary": "",
     "relevance_score": 3.5
   },
@@ -1435,6 +773,23 @@
     "relevance_score": 3.5
   },
   {
+    "id": "442d2bf246161ee5",
+    "headline": "A 1 . 9 billion - year - old bedrock will soon house the world first permanent nuclear waste site",
+    "url": "https://www.advocate-news.com/2026/04/09/finland-nuclear-repository/",
+    "publishedAt": "20260409T193000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT",
+      "SE",
+      "FI"
+    ],
+    "topic_tags": [
+      "nuclear"
+    ],
+    "summary": "",
+    "relevance_score": 3.5
+  },
+  {
     "id": "d361b3c9da5aac1d",
     "headline": "A 1 . 9 billion - year - old bedrock will soon house the world first permanent nuclear waste site",
     "url": "https://www.capitalgazette.com/2026/04/09/finland-nuclear-repository/",
@@ -1485,80 +840,19 @@
     "relevance_score": 3.5
   },
   {
-    "id": "113cb83c9dedc705",
-    "headline": "Declan Power : Fuel protests show just how vulnerable we are to home threats – and how easy it is to fan the flames",
-    "url": "https://www.independent.ie/irish-news/declan-power-fuel-protests-show-just-how-vulnerable-we-are-to-home-threats-and-how-easy-it-is-to-fan-the-flames/a724315299.html",
-    "publishedAt": "20260410T083000Z",
+    "id": "c148a7a906e125c1",
+    "headline": "Bedrock of the Future : A 1 . 9 - billion - year - old bedrock will soon house the world first permanent nuclear waste site | News , Sports , Jobs",
+    "url": "https://www.altoonamirror.com/news/international/2026/04/finland-nuclear-waste-first-permanent-site/",
+    "publishedAt": "20260411T080000Z",
     "source": "gdelt",
     "country_tags": [
-      "ES",
-      "DE",
-      "IT"
-    ],
-    "topic_tags": [
-      "power"
-    ],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "fed51d78d2499294",
-    "headline": "Foraj Sonde Videle acquires Raffles Energy and Zenith Resources ; deal expected to close by end - August",
-    "url": "https://www.stiripesurse.ro/foraj-sonde-videle-acquires-raffles-energy-and-zenith-resources-deal-expected-to-close-by-end-august_3876807",
-    "publishedAt": "20260410T184500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
       "IT",
-      "SE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "458c6bde3283d6b6",
-    "headline": "Iran War Cease - Fire Deal Doesnt Stop Energy , Fertilizer Shocks",
-    "url": "https://foreignpolicy.com/2026/04/10/iran-war-ceasefire-energy-fertilizer-agriculture-food-prices/",
-    "publishedAt": "20260411T011500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
       "SE",
       "FI"
     ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "467ba0a5cfc1d049",
-    "headline": "Why updating national grid is pushing up energy bills",
-    "url": "https://www.bbc.co.uk/news/articles/cg73vm8yzv2o",
-    "publishedAt": "20260411T033000Z",
-    "source": "gdelt",
-    "country_tags": [],
     "topic_tags": [
-      "power"
+      "nuclear"
     ],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "5d26dae93ea09a29",
-    "headline": "Richard Curran : Ireland is sleep - walking into future energy crises by refusing to plan beyond ideology",
-    "url": "https://www.independent.ie/opinion/comment/richard-curran-ireland-is-sleep-walking-into-future-energy-crises-by-refusing-to-plan-beyond-ideology/a122966565.html",
-    "publishedAt": "20260411T050000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "SE",
-      "IE"
-    ],
-    "topic_tags": [],
     "summary": "",
     "relevance_score": 3.5
   },
@@ -1660,38 +954,6 @@
     "relevance_score": 3.5
   },
   {
-    "id": "6360fadf4158928c",
-    "headline": "Lessons learned in  70s have made the US and world economies less vulnerable to oil shocks",
-    "url": "https://www.reflector.com/news/national/lessons-learned-in-70s-have-made-the-us-and-world-economies-less-vulnerable-to-oil/article_889e87a7-70fd-5892-8f19-f669048a2cd2.html",
-    "publishedAt": "20260412T133000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "NO",
-      "IE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "369b4856cbc09029",
-    "headline": "Lessons learned in  70s have made the US and world economies less vulnerable to oil shocks",
-    "url": "https://mymotherlode.com/news/national/10730017/lessons-learned-in-70s-have-made-us-world-economies-less-vulnerable-to-oil-shocks.html",
-    "publishedAt": "20260412T144500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "NO",
-      "IE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
     "id": "a909c6e1ed6127d4",
     "headline": "The  70s made the U . S . and world economies less vulnerable to oil shocks – NBC Connecticut",
     "url": "https://www.nbcconnecticut.com/news/national-international/us-world-economies-less-vulnerable-oil-shocks/3724652/",
@@ -1708,42 +970,10 @@
     "relevance_score": 3.5
   },
   {
-    "id": "e93ffb43e2dca117",
-    "headline": "Lessons learned in  70s have made the US and world economies less vulnerable to oil shocks",
-    "url": "https://www.union-bulletin.com/news/national/lessons-learned-in-70s-have-made-the-us-and-world-economies-less-vulnerable-to-oil/article_0b3070e2-124b-513f-89f6-f5b723d42b4e.html",
-    "publishedAt": "20260412T151500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "NO",
-      "IE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
     "id": "365a80a400f997e8",
     "headline": "Lessons learned in  70s have made the US and world economies less vulnerable to oil shocks",
     "url": "https://www.newsday.com/business/oil-shocks-inflation-energy-stagflation-1970s-i28207",
     "publishedAt": "20260412T180000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "NO",
-      "IE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "c45fa2cf08f6ce33",
-    "headline": "Lessons learned in  70s have made the US and world economies less vulnerable to oil shocks",
-    "url": "http://www.bozemandailychronicle.com/ap_news/business/lessons-learned-in-70s-have-made-the-us-and-world-economies-less-vulnerable-to-oil/article_cbf8845e-2a6c-59ca-825d-78ed0fb08823.html",
-    "publishedAt": "20260412T183000Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
@@ -1788,69 +1018,6 @@
     "relevance_score": 3.5
   },
   {
-    "id": "d8f4d6e2feaf7b2e",
-    "headline": "Expand Energy Corporation Appoints Marcel Teunissen Chief Financial Officer",
-    "url": "https://www.manilatimes.net/2026/04/06/tmt-newswire/globenewswire/expand-energy-corporation-appoints-marcel-teunissen-chief-financial-officer/2314741",
-    "publishedAt": "20260406T131500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "SE",
-      "FI",
-      "IE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 3.0
-  },
-  {
-    "id": "e3b9f7152226620a",
-    "headline": "Hormuz standoff forces Qatar LNG tankers to turn back",
-    "url": "https://worldoil.com/news/2026/4/6/hormuz-standoff-forces-qatar-lng-tankers-to-turn-back/",
-    "publishedAt": "20260406T173000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES"
-    ],
-    "topic_tags": [
-      "gas",
-      "LNG"
-    ],
-    "summary": "",
-    "relevance_score": 3.0
-  },
-  {
-    "id": "ef3a3511b74ca33f",
-    "headline": "The inevitable surge : Why American electricity bills are set to climb higher – NaturalNews . com",
-    "url": "https://www.naturalnews.com/2026-04-06-why-american-electricity-bills-set-climb-higher.html",
-    "publishedAt": "20260406T173000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IT",
-      "SE"
-    ],
-    "topic_tags": [
-      "power"
-    ],
-    "summary": "",
-    "relevance_score": 3.0
-  },
-  {
-    "id": "a43b999804a4196d",
-    "headline": "Qatar LNG ships appear to abort bid to exit Strait of Hormuz",
-    "url": "https://www.moneycontrol.com/world/qatar-lng-ships-appear-to-abort-bid-to-exit-strait-of-hormuz-article-13881755.html",
-    "publishedAt": "20260407T031500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IT"
-    ],
-    "topic_tags": [
-      "gas",
-      "LNG"
-    ],
-    "summary": "",
-    "relevance_score": 3.0
-  },
-  {
     "id": "a6c839f5eea3eb80",
     "headline": "Greece Electricity Prices Stable Amid Crisis",
     "url": "https://athens-times.com/tsafos-daily-monitoring-of-electricity-prices-no-excessive-rise-amid-energy-crisis/",
@@ -1879,37 +1046,6 @@
     "topic_tags": [
       "renewables"
     ],
-    "summary": "",
-    "relevance_score": 3.0
-  },
-  {
-    "id": "24b5cf36427c4ed4",
-    "headline": "Gas Discharge Tubes Market worth USD 1 . 98 billion by 2030 - Exclusive Report by MarketsandMarkets",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-04/68137597-gas-discharge-tubes-market-worth-usd-1-98-billion-by-2030-exclusive-report-by-marketsandmarkets-008.htm",
-    "publishedAt": "20260407T144500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES"
-    ],
-    "topic_tags": [
-      "gas",
-      "emissions"
-    ],
-    "summary": "",
-    "relevance_score": 3.0
-  },
-  {
-    "id": "f2e6784158032a22",
-    "headline": "New Fortress Energy ( NFE ) Wins Support from Over 95 % of Stakeholders for Restructuring",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/fortress-energy-nfe-wins-support-143028253.html",
-    "publishedAt": "20260407T151500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "FR"
-    ],
-    "topic_tags": [],
     "summary": "",
     "relevance_score": 3.0
   },
@@ -2022,17 +1158,18 @@
     "relevance_score": 3.0
   },
   {
-    "id": "3c0844ba69dfc5de",
-    "headline": "Oil Tumbles Below USD 100 / bbl on US - Iran Ceasefire Agreement",
-    "url": "https://www.actionforex.com/contributors/fundamental-analysis/636002-oil-tumbles-below-usd-100-bbl-on-us-iran-ceasefire-agreement/",
-    "publishedAt": "20260408T094500Z",
+    "id": "8d824346ff8fa511",
+    "headline": "Why does India want fast breeder nuclear reactors ? | Explained",
+    "url": "https://www.thehindu.com/sci-tech/science/why-does-india-want-fast-breeder-nuclear-reactors-explained/article70836887.ece",
+    "publishedAt": "20260408T024500Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
-      "SE",
-      "FI"
+      "DE"
     ],
-    "topic_tags": [],
+    "topic_tags": [
+      "nuclear"
+    ],
     "summary": "",
     "relevance_score": 3.0
   },
@@ -2160,36 +1297,6 @@
     "relevance_score": 3.0
   },
   {
-    "id": "daba0d429718dedd",
-    "headline": "Greece – Energy Protests Worldwide | Armstrong Economics",
-    "url": "https://www.armstrongeconomics.com/world-news/civil-unrest/greece-energy-protests-worldwide/",
-    "publishedAt": "20260410T044500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "NO"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 3.0
-  },
-  {
-    "id": "5b30f628c799ae60",
-    "headline": "Energy Protests In Ireland | Armstrong Economics",
-    "url": "https://www.armstrongeconomics.com/world-news/civil-unrest/energy-protests-in-ireland/",
-    "publishedAt": "20260410T044500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "NO",
-      "IE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 3.0
-  },
-  {
     "id": "c9fbd91fc2c95ce9",
     "headline": "Expand Energy ( EXE ) Appoints Marcel Teunissen as Chief Financial Officer",
     "url": "https://www.insidermonkey.com/blog/expand-energy-exe-appoints-marcel-teunissen-as-chief-financial-officer-1735269/",
@@ -2199,6 +1306,36 @@
       "SE",
       "FI",
       "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 3.0
+  },
+  {
+    "id": "a80dbd648723de41",
+    "headline": "Sigenergy , Arausol and Memodo realize Germany largest DC - coupled PV plant with decentralized storage",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-04/68167263-sigenergy-arausol-and-memodo-realize-germany-s-largest-dc-coupled-pv-plant-with-decentralized-storage-008.htm",
+    "publishedAt": "20260410T103000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 3.0
+  },
+  {
+    "id": "284e74635ebf4e31",
+    "headline": "Sigenergy , Arausol and Memodo realize Germany largest DC - coupled PV plant with decentralized storage",
+    "url": "https://www.manilatimes.net/2026/04/10/tmt-newswire/pr-newswire/sigenergy-arausol-and-memodo-realize-germanys-largest-dc-coupled-pv-plant-with-decentralized-storage/2317890",
+    "publishedAt": "20260410T111500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT"
     ],
     "topic_tags": [],
     "summary": "",
@@ -2298,22 +1435,6 @@
     "relevance_score": 3.0
   },
   {
-    "id": "fd03c468b58dda54",
-    "headline": "Reform Will Not Save Nigeria Oil Economy , Only a Full ‑ Scale Transformation Will – THISDAYLIVE",
-    "url": "https://www.thisdaylive.com/2026/04/12/reform-will-not-save-nigerias-oil-economy-only-a-full%E2%80%91scale-transformation-will/",
-    "publishedAt": "20260412T220000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NL",
-      "NO"
-    ],
-    "topic_tags": [
-      "regulation"
-    ],
-    "summary": "",
-    "relevance_score": 3.0
-  },
-  {
     "id": "f7d02f8902152568",
     "headline": "Berlin says nuclear is over . The debate isnt . – POLITICO",
     "url": "https://www.politico.eu/article/germany-berlin-nuclear-is-over-the-debate-isnt/",
@@ -2346,139 +1467,20 @@
     "relevance_score": 3.0
   },
   {
-    "id": "1ef5823aada7cdd8",
-    "headline": "Russian attacks kill 4 as Ukraine drones target oil infrastructure",
-    "url": "https://www.news-gazette.com/news/nation-world/russian-attacks-kill-4-as-ukraine-drones-target-oil-infrastructure/article_6542a17b-72dc-52e5-8956-024460ad19f2.html",
-    "publishedAt": "20260406T133000Z",
+    "id": "933e244e47ab292d",
+    "headline": "Short Interest in Naturgy Energy Group , S . A . ( OTCMKTS : GASNF ) Declines By 60 . 2 % ",
+    "url": "https://www.dailypolitical.com/2026/04/13/short-interest-in-naturgy-energy-group-s-a-otcmktsgasnf-declines-by-60-2.html",
+    "publishedAt": "20260413T130000Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
-      "FR"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 2.5
-  },
-  {
-    "id": "e7aa6664227d3d6c",
-    "headline": "EU renewable transition faces gaps in planning for innovative technologies , expert says",
-    "url": "https://aa.com.tr/en/life/eu-renewable-transition-faces-gaps-in-planning-for-innovative-technologies-expert-says/3894733",
-    "publishedAt": "20260406T134500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT",
-      "NO",
-      "IE"
+      "DE"
     ],
     "topic_tags": [
-      "renewables"
+      "gas"
     ],
     "summary": "",
-    "relevance_score": 2.5
-  },
-  {
-    "id": "7bcac2c334ff4edc",
-    "headline": "Russian attacks kill 4 as Ukraine drones target oil infrastructure",
-    "url": "https://abcnews.com/International/wireStory/russian-attack-kills-3-odesa-ukraine-targets-russian-131757459",
-    "publishedAt": "20260406T134500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "FR"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 2.5
-  },
-  {
-    "id": "db5e3501fae787d9",
-    "headline": "Spanish wind industry warns EU windfall tax could hurt investment",
-    "url": "https://www.marketscreener.com/news/spanish-wind-industry-warns-eu-windfall-tax-could-hurt-investment-ce7e51d2d089ff23",
-    "publishedAt": "20260406T143000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES"
-    ],
-    "topic_tags": [
-      "renewables"
-    ],
-    "summary": "",
-    "relevance_score": 2.5
-  },
-  {
-    "id": "25badf61e8d0bd14",
-    "headline": "Russian attacks kill 4 as Ukraine drones target oil infrastructure",
-    "url": "https://www.latimes.com/world-nation/story/2026-04-06/russian-attacks-kill-4-as-ukraine-drones-target-oil-infrastructure",
-    "publishedAt": "20260406T164500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "FR"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 2.5
-  },
-  {
-    "id": "d257a826d6f15aa3",
-    "headline": "  Wake - up call : Iran war should fuel Europe push toward renewables , say experts",
-    "url": "https://aa.com.tr/en/europe/-wake-up-call-iran-war-should-fuel-europe-s-push-toward-renewables-say-experts/3894851",
-    "publishedAt": "20260406T173000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES"
-    ],
-    "topic_tags": [
-      "renewables"
-    ],
-    "summary": "",
-    "relevance_score": 2.5
-  },
-  {
-    "id": "fcd46dae231261ac",
-    "headline": "Plug - in solar is coming to Maine with Janet Mill approval",
-    "url": "https://www.sunjournal.com/2026/04/06/plug-in-solar-is-coming-to-maine-with-janet-mills-approval/",
-    "publishedAt": "20260406T210000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IT"
-    ],
-    "topic_tags": [
-      "renewables"
-    ],
-    "summary": "",
-    "relevance_score": 2.5
-  },
-  {
-    "id": "2cd6bb50cd70d7ba",
-    "headline": "Plug - in solar is coming to Maine with Janet Mill approval",
-    "url": "https://www.centralmaine.com/2026/04/06/plug-in-solar-is-coming-to-maine-with-janet-mills-approval/",
-    "publishedAt": "20260406T220000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IT"
-    ],
-    "topic_tags": [
-      "renewables"
-    ],
-    "summary": "",
-    "relevance_score": 2.5
-  },
-  {
-    "id": "5ad62486107f0baa",
-    "headline": "Plug - in solar is coming to Maine with Janet Mill approval",
-    "url": "https://www.pressherald.com/2026/04/06/plug-in-solar-is-coming-to-maine-with-janet-mills-approval/",
-    "publishedAt": "20260406T223000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IT"
-    ],
-    "topic_tags": [
-      "renewables"
-    ],
-    "summary": "",
-    "relevance_score": 2.5
+    "relevance_score": 3.0
   },
   {
     "id": "28a186921f532bef",
@@ -2522,21 +1524,6 @@
     ],
     "topic_tags": [
       "gas"
-    ],
-    "summary": "",
-    "relevance_score": 2.5
-  },
-  {
-    "id": "62ea5a16660bf68e",
-    "headline": "What you need to know before emissions regulators come knocking",
-    "url": "https://www.computerweekly.com/opinion/What-you-need-to-know-before-emissions-regulators-come-knocking",
-    "publishedAt": "20260407T153000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NO"
-    ],
-    "topic_tags": [
-      "emissions"
     ],
     "summary": "",
     "relevance_score": 2.5
@@ -2604,39 +1591,6 @@
     "relevance_score": 2.5
   },
   {
-    "id": "b988eef2419d1d52",
-    "headline": "Refining Margins to Provide Buffer as Shell Gas Production Takes War Hit",
-    "url": "https://www.rigzone.com/news/refining_margins_to_provide_buffer_as_shell_gas_production_takes_war_hit-08-apr-2026-183400-article/",
-    "publishedAt": "20260408T120000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "IT",
-      "FI"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 2.5
-  },
-  {
-    "id": "5616e7c67505fe2e",
-    "headline": "Solar - Plus - Storage : Considerations For Hyperscale Data Centers",
-    "url": "https://www.forbes.com/councils/forbesbusinesscouncil/2026/04/08/solar-plus-storage-systems-trends-and-considerations-for-hyperscale-data-centers/",
-    "publishedAt": "20260408T163000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "DE"
-    ],
-    "topic_tags": [
-      "renewables"
-    ],
-    "summary": "",
-    "relevance_score": 2.5
-  },
-  {
     "id": "407e2167179aedda",
     "headline": "eVISO launches Spanish expansion with new energy subsidiary",
     "url": "https://www.marketscreener.com/news/eviso-launches-spanish-expansion-with-new-energy-subsidiary-ce7e50dbd88efe23",
@@ -2651,21 +1605,6 @@
     "relevance_score": 2.5
   },
   {
-    "id": "510fe21e215cb58f",
-    "headline": "Renewable energy news :  European Energy , ENGIE , EBRD",
-    "url": "https://greentechlead.com/energy-news/renewable-energy-news-european-energy-engie-ebrd-52976",
-    "publishedAt": "20260408T184500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IE"
-    ],
-    "topic_tags": [
-      "renewables"
-    ],
-    "summary": "",
-    "relevance_score": 2.5
-  },
-  {
     "id": "cc7e81db2380c1c7",
     "headline": "Amanda Vanstone : Australia energy policy is virtue signalling | The Canberra Times",
     "url": "https://www.canberratimes.com.au/story/9217735/amanda-vanstone-australias-energy-policy-is-virtue-signalling/",
@@ -2673,21 +1612,6 @@
     "source": "gdelt",
     "country_tags": [
       "ES"
-    ],
-    "topic_tags": [
-      "regulation"
-    ],
-    "summary": "",
-    "relevance_score": 2.5
-  },
-  {
-    "id": "07f1c356770c2c21",
-    "headline": "Amanda Vanstone : Australia energy policy is virtue signalling | Bendigo Advertiser",
-    "url": "https://www.bendigoadvertiser.com.au/story/9217735/amanda-vanstone-australias-energy-policy-is-virtue-signalling/",
-    "publishedAt": "20260409T003000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "SE"
     ],
     "topic_tags": [
       "regulation"
@@ -2710,20 +1634,6 @@
     "topic_tags": [
       "gas"
     ],
-    "summary": "",
-    "relevance_score": 2.5
-  },
-  {
-    "id": "b1bedd6d70d00743",
-    "headline": "METLEN Energy & Metals PLC : METLEN Energy & Metals : 2025 Financial Results",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-04/68155680-metlen-energy-metals-plc-metlen-energy-metals-2025-financial-results-008.htm",
-    "publishedAt": "20260409T094500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "FI"
-    ],
-    "topic_tags": [],
     "summary": "",
     "relevance_score": 2.5
   },
@@ -2758,35 +1668,6 @@
     "relevance_score": 2.5
   },
   {
-    "id": "7a493cd192cf09cc",
-    "headline": "Energy Bill warning : Iran conflict could lift costs , but hedging is delaying the hit",
-    "url": "https://www.el-balad.com/16907616",
-    "publishedAt": "20260409T230000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "DE",
-      "IT"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 2.5
-  },
-  {
-    "id": "5a46805711872611",
-    "headline": "National Grid ( NGG ) Partners With GridCARE to Accelerate Large - Load Interconnections",
-    "url": "https://www.insidermonkey.com/blog/national-grid-ngg-partners-with-gridcare-to-accelerate-large-load-interconnections-1735299/",
-    "publishedAt": "20260410T060000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IT"
-    ],
-    "topic_tags": [
-      "power"
-    ],
-    "summary": "",
-    "relevance_score": 2.5
-  },
-  {
     "id": "274325c2f8e31959",
     "headline": "Best Solar Stocks To Watch Today – April 9th",
     "url": "https://www.themarketsdaily.com/2026/04/10/best-solar-stocks-to-watch-today-april-9th.html",
@@ -2802,21 +1683,6 @@
     "relevance_score": 2.5
   },
   {
-    "id": "c864a533ae77c31b",
-    "headline": "Can the government cut carbon tax , and what would happen if it did ? ",
-    "url": "https://www.thejournal.ie/carbon-tax-fuel-protests-7007865-Apr2026/",
-    "publishedAt": "20260410T143000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IT"
-    ],
-    "topic_tags": [
-      "emissions"
-    ],
-    "summary": "",
-    "relevance_score": 2.5
-  },
-  {
     "id": "63157eb45eae6734",
     "headline": "Houston World Cup Tickets Cheaper Than Dallas Matches",
     "url": "https://www.dallasobserver.com/news/texas-world-cup-tickets-40661337/",
@@ -2827,21 +1693,6 @@
     ],
     "topic_tags": [
       "emissions"
-    ],
-    "summary": "",
-    "relevance_score": 2.5
-  },
-  {
-    "id": "d5816800c4bef7b4",
-    "headline": "Iberdrola puts $1 billion solar stake sale on hold , sources say",
-    "url": "https://www.marketscreener.com/news/iberdrola-puts-1-billion-solar-stake-sale-on-hold-sources-say-ce7e50d9d880ff24",
-    "publishedAt": "20260410T164500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES"
-    ],
-    "topic_tags": [
-      "renewables"
     ],
     "summary": "",
     "relevance_score": 2.5
@@ -2894,76 +1745,937 @@
     "relevance_score": 2.5
   },
   {
-    "id": "7d4802d0f0921651",
-    "headline": "A man with two kitchens should know all about energy bills",
-    "url": "https://www.heraldscotland.com/opinion/26013631.man-two-kitchens-know-energy-bills/",
-    "publishedAt": "20260413T060000Z",
+    "id": "14156c7a3d0a7413",
+    "headline": "France to ban gas boilers in new buildings by 2026 and boost electric car leasing",
+    "url": "https://www.connexionfrance.com/news/france-announces-ban-on-gas-boilers-in-new-homes-and-expanded-electric-car-leasing/783402",
+    "publishedAt": "20260413T080000Z",
     "source": "gdelt",
     "country_tags": [
-      "IT",
-      "NO"
+      "FR"
     ],
-    "topic_tags": [],
+    "topic_tags": [
+      "gas"
+    ],
     "summary": "",
     "relevance_score": 2.5
   },
   {
-    "id": "f1d0ab0d82657279",
-    "headline": "Fiddler Irish Millie wins trip to perform in Sweden",
-    "url": "https://www.thepeterboroughexaminer.com/news/irish-millie-sweden-peterborough/article_d4ac28ae-b281-5b81-92cf-ae273642e76c.html",
-    "publishedAt": "20260406T134500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "DE",
-      "SE",
-      "FI",
-      "IE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 2.0
-  },
-  {
-    "id": "2e519e4a66f43f89",
-    "headline": "Russian Drone Strike Kills Toddler , Two Women in Odesa as Ukraine Hits Black Sea Port",
-    "url": "https://www.theyeshivaworld.com/news/general/2533531/russian-drone-strike-kills-toddler-two-women-in-odesa-as-ukraine-hits-black-sea-port.html",
-    "publishedAt": "20260406T214500Z",
+    "id": "55c53a6950bf76ca",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.aol.co.uk/articles/gas-supplies-meet-british-demand-230100701.html",
+    "publishedAt": "20260413T233000Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
       "DE",
       "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "fadcd5624fffb533",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.freepressseries.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260413T234500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "dbdc7e2c269ad394",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.newsshopper.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260413T234500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "9e51986029dfedbc",
+    "headline": "The united kingdom needs more North Sea gas , not greater reliance on US imports | Nils Pratley",
+    "url": "https://www.theguardian.com/business/nils-pratley-on-finance/2026/apr/14/uk-needs-north-sea-gas-not-us-imports-lng",
+    "publishedAt": "20260414T000000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT",
+      "GB",
+      "NO",
       "SE"
     ],
-    "topic_tags": [],
+    "topic_tags": [
+      "gas"
+    ],
     "summary": "",
-    "relevance_score": 2.0
+    "relevance_score": 2.5
   },
   {
-    "id": "4408137b3161d38b",
-    "headline": "Italian PM admits possibility of energy shortage due to Middle East crisis",
-    "url": "https://www.dailyexcelsior.com/italian-pm-admits-possibility-of-energy-shortage-due-to-middle-east-crisis/",
-    "publishedAt": "20260406T233000Z",
+    "id": "edfcda5252b61a52",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.lancashiretelegraph.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T000000Z",
     "source": "gdelt",
     "country_tags": [
-      "IT"
+      "ES",
+      "DE",
+      "IT",
+      "IE"
     ],
-    "topic_tags": [],
+    "topic_tags": [
+      "gas"
+    ],
     "summary": "",
-    "relevance_score": 2.0
+    "relevance_score": 2.5
   },
   {
-    "id": "25107ae0fefea175",
-    "headline": "Coal , The Fuel We Ignore But Cannot Replace",
-    "url": "https://wattsupwiththat.com/2026/04/06/coal-the-fuel-we-ignore-but-cannot-replace/",
-    "publishedAt": "20260407T014500Z",
+    "id": "fa279ddb1c6f6bd9",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.theboltonnews.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T000000Z",
     "source": "gdelt",
     "country_tags": [
-      "NO"
+      "ES",
+      "DE",
+      "IT",
+      "IE"
     ],
-    "topic_tags": [],
+    "topic_tags": [
+      "gas"
+    ],
     "summary": "",
-    "relevance_score": 2.0
+    "relevance_score": 2.5
+  },
+  {
+    "id": "70dbd30cdb8e6ece",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.surreycomet.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T000000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "3f3756df0cee3705",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.leaderlive.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T000000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "a0487771ff4242de",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.bordertelegraph.com/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T000000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "c3c3c5236b6460a8",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.glasgowtimes.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T000000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "0c2e3c9d9838670e",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.readingchronicle.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T000000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "73facfb3b549e851",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.thetelegraphandargus.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T001500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "a59056f05063c115",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.echo-news.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T001500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "a4fb72de3d080915",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.london-now.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T001500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "1541301d325b2562",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.sloughobserver.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T001500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "75dc7b17fcfe2f5e",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.ealingtimes.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T001500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "80d81fa5182b148a",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.clactonandfrintongazette.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T001500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "ca8df696dbb517dd",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.westerntelegraph.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T001500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "641812e72af8669b",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.southwalesguardian.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T001500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "6528b8cc97f02fec",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.wiltshiretimes.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T001500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "006dc370aefa7faa",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.borehamwoodtimes.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T001500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "c5c92f0f8df9d97f",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.keighleynews.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T001500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "c82cc9ca33f5d09e",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.gazetteherald.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T003000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "58fb3a55f728a5fa",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.northwalespioneer.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T003000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "94c5bb4875e6eda1",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.basingstokegazette.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T003000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "1983cd37f9794f8f",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.oxfordmail.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T004500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "ba292d03bb4221f7",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.dorsetecho.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T004500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "c54921ecda04c851",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.northwaleschronicle.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T004500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "f6b9d8aaa0b85207",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.burytimes.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T004500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "20f0c16a933d9a3c",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.barryanddistrictnews.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T004500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "622f8494b3d3e54e",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.southwalesargus.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T004500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "61c737b2ba694cec",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.enfieldindependent.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T010000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "4e45f01402e8b13a",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.eveshamjournal.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T010000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "48f49c210e67d203",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.northwichguardian.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T010000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "ee4214ed3e0dfd83",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption | Wilts and Gloucestershire Standard",
+    "url": "https://www.wiltsglosstandard.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T010000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "b3857fe0662c5995",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.nwemail.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T010000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "0cff2589bc05639c",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.lbc.co.uk/article/ad0f21752e72444faf2b0d022751f660-5HjdXfn_2/",
+    "publishedAt": "20260414T011500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "70437f888ce50a38",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.asianimage.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T011500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "7114dfc0cd50d20c",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.hampshirechronicle.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T011500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "f9e3fa3b14a98b91",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.warringtonguardian.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T011500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "239ece3fe5ee9ab8",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.thisisoxfordshire.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T011500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "66d23bd81ff796b1",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.wimbledonguardian.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T011500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "b5d2b3293321372e",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption | The Wiltshire Gazette and Herald",
+    "url": "https://www.gazetteandherald.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T011500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "93e0b5f303fe137b",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.gazetteseries.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T011500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "f65db19256756845",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.kidderminstershuttle.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T013000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "9b17fda7f4fefdcb",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.eppingforestguardian.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T013000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "8bda3a533fbd783f",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.halsteadgazette.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T013000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "cddcc2a6c77158c4",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.greenocktelegraph.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T013000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "55f2c5e26521ffa2",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.salisburyjournal.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T014500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "e42dc31733ecf7f4",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.darlingtonandstocktontimes.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T014500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "2e51cc71d629ef12",
+    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
+    "url": "https://www.runcornandwidnesworld.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
+    "publishedAt": "20260414T014500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
   },
   {
     "id": "2dd3c7271916ff96",
@@ -3000,39 +2712,6 @@
     "relevance_score": 2.0
   },
   {
-    "id": "b2114d2ed39d63f4",
-    "headline": "Pakistan proposes two - week extension to Trump Iran deadline after US president chilling threat that  a whole civilisation will die tonight  ",
-    "url": "https://www.independent.ie/world-news/north-america/pakistan-proposes-two-week-extension-to-trumps-iran-deadline-after-us-presidents-chilling-threat-that-a-whole-civilisation-will-die-tonight/a389627239.html",
-    "publishedAt": "20260407T214500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "SE",
-      "IE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 2.0
-  },
-  {
-    "id": "dbaf3b9ea0d7a9cc",
-    "headline": "Dunstone satisfied with silver – Winnipeg Free Press",
-    "url": "https://www.winnipegfreepress.com/breakingnews/2026/04/07/dunstone-satisfied-with-silver",
-    "publishedAt": "20260408T011500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "FR",
-      "IT",
-      "FI",
-      "IE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 2.0
-  },
-  {
     "id": "98058c9ff89d8c01",
     "headline": "Queen Máxima Brussels visit carries a personal story as Princess Amalia prepares for the future",
     "url": "https://www.hola.com/us/royals/20260408894257/queen-maxima-brussels-visit-personal-story/",
@@ -3059,6 +2738,23 @@
       "IT",
       "NL",
       "SE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "45dd53f5b84e0b7b",
+    "headline": "TikTok announces second billion - euro data centre investment in Finland : Here why",
+    "url": "https://www.thenews.com.pk/latest/1398154-tiktok-announces-second-billion-euro-data-centre-investment-in-finland-heres-why",
+    "publishedAt": "20260408T084500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "NL",
+      "NO",
+      "SE",
+      "FI"
     ],
     "topic_tags": [],
     "summary": "",
@@ -3115,22 +2811,6 @@
     "source": "gdelt",
     "country_tags": [
       "IT"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 2.0
-  },
-  {
-    "id": "561cf7394d638bbb",
-    "headline": "Nexans Completes Record - Depth Subsea Cable Project in Norway",
-    "url": "https://www.oedigital.com/news/537803-nexans-completes-record-depth-subsea-cable-project-in-norway",
-    "publishedAt": "20260408T131500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "NO",
-      "SE"
     ],
     "topic_tags": [],
     "summary": "",
@@ -3268,69 +2948,6 @@
     "relevance_score": 2.0
   },
   {
-    "id": "f453b1a2849e3bc4",
-    "headline": "Birmingham drivers urged to fill up on petrol and diesel before 5pm tomorrow",
-    "url": "https://www.birminghammail.co.uk/motoring/motoring-news/birmingham-drivers-urged-fill-up-33737471",
-    "publishedAt": "20260409T090000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "SE",
-      "FI",
-      "IE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 2.0
-  },
-  {
-    "id": "608f2e40cfe8d1dc",
-    "headline": "Ambassador Mittal expresses gratitude to UAE leadership for support of Indian community",
-    "url": "https://aninews.in/news/world/middle-east/ambassador-mittal-expresses-gratitude-to-uae-leadership-for-support-of-indian-community20260409132224/",
-    "publishedAt": "20260409T090000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "IT",
-      "SE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 2.0
-  },
-  {
-    "id": "06c4a6ec243cbd2c",
-    "headline": "Price of home - heating oil at highest price since 1996 amid Middle East war",
-    "url": "https://www.breakingnews.ie/ireland/price-of-home-heating-oil-at-highest-price-since-1996-amid-middle-east-war-1884533.html",
-    "publishedAt": "20260409T173000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 2.0
-  },
-  {
-    "id": "e245d6e01cba8353",
-    "headline": "Russian Spy Submarines :  We see your activity : united kingdom stern warning to Putin after Russian spy submarines detected in North Atlantic",
-    "url": "https://timesofindia.indiatimes.com/world/uk/we-see-your-activity-uks-stern-warning-to-putin-after-russian-spy-submarines-detected-in-north-atlantic/articleshow/130145065.cms",
-    "publishedAt": "20260409T184500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "IT",
-      "GB",
-      "NO",
-      "SE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 2.0
-  },
-  {
     "id": "38ee4d4ac8547354",
     "headline": "Mark Carney says Mideast ceasefire  needs to include Lebanon  ",
     "url": "https://www.stcatharinesstandard.ca/politics/federal/mark-carney-says-mideast-ceasefire-should-include-lebanon/article_6150328d-8df8-5997-be6d-191c87b5c97a.html",
@@ -3341,24 +2958,6 @@
       "NO",
       "SE",
       "FI"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 2.0
-  },
-  {
-    "id": "2694b9fe96576f5f",
-    "headline": "Condé Nast Traveller reveals its seven wonders of Ireland for 2026 , and there no Dublin or Galway – The Irish Times",
-    "url": "https://www.irishtimes.com/life-style/travel/2026/04/09/conde-nast-traveller-reveals-its-seven-wonders-of-ireland-for-2026-and-theres-no-dublin-or-galway/",
-    "publishedAt": "20260409T191500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "IT",
-      "NO",
-      "SE",
-      "IE"
     ],
     "topic_tags": [],
     "summary": "",
@@ -3391,17 +2990,15 @@
     "relevance_score": 2.0
   },
   {
-    "id": "d07f536f014bc528",
-    "headline": "The  Leading united kingdom Scientist Letter Urging Abandonment of North Sea is Ideology Masquerading as Science – Watts Up With That ? ",
-    "url": "https://wattsupwiththat.com/2026/04/09/the-leading-uk-scientists-letter-urging-abandonment-of-north-sea-is-ideology-masquerading-as-science/",
-    "publishedAt": "20260410T080000Z",
+    "id": "db8e7b0424c8cfab",
+    "headline": " [ INTERVIEW ] Nordic ambassadors highlight trust , human - centered values in AI cooperation with Korea",
+    "url": "https://www.koreatimes.co.kr/foreignaffairs/20260410/nordic-ambassadors-highlight-trust-human-centered-values-in-ai-cooperation-with-korea",
+    "publishedAt": "20260410T050000Z",
     "source": "gdelt",
     "country_tags": [
-      "DE",
+      "ES",
       "IT",
-      "GB",
       "NO",
-      "SE",
       "IE"
     ],
     "topic_tags": [],
@@ -3435,22 +3032,6 @@
     "relevance_score": 2.0
   },
   {
-    "id": "98c847a489bd09b8",
-    "headline": "Ella McSweeney : Cornafulla Bog is a gold mine . Let not squander it – The Irish Times",
-    "url": "https://www.irishtimes.com/environment/2026/04/11/ella-mcsweeney-cornafulla-bog-is-a-gold-mine-lets-not-squander-it/",
-    "publishedAt": "20260411T070000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "IT",
-      "NO"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 2.0
-  },
-  {
     "id": "1bd2e661ea8be033",
     "headline": "Ebony Bennett : Why now is the time to implement a gas tax | Camden Haven Courier",
     "url": "https://www.camdencourier.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
@@ -3464,40 +3045,6 @@
     "topic_tags": [
       "gas"
     ],
-    "summary": "",
-    "relevance_score": 2.0
-  },
-  {
-    "id": "3cff726c87a2a491",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | Tenterfield Star",
-    "url": "https://www.tenterfieldstar.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T230000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NO",
-      "FI",
-      "IE"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 2.0
-  },
-  {
-    "id": "1316795726311c34",
-    "headline": "Boreal Orders 20 Candela Electric Ferries For Use In Norway",
-    "url": "https://cleantechnica.com/2026/04/11/boreal-orders-20-candela-electric-ferries-for-use-in-norway/",
-    "publishedAt": "20260411T230000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "NO",
-      "SE",
-      "IE"
-    ],
-    "topic_tags": [],
     "summary": "",
     "relevance_score": 2.0
   },
@@ -3519,32 +3066,15 @@
     "relevance_score": 2.0
   },
   {
-    "id": "54f140e0eb0c5f55",
-    "headline": "Britain faces mass protests as fuel nears £2 a litre and drivers in Ireland revolt | united kingdom | News",
-    "url": "https://www.express.co.uk/news/uk/2193111/britain-mass-protests-fuel-prices-rise",
-    "publishedAt": "20260412T141500Z",
+    "id": "bae87325b6e6f1ea",
+    "headline": "Finnish President Alexander Stubb to meet with PM Carney in Ottawa this week",
+    "url": "https://www.therecord.com/business/finnish-president-alexander-stubb-to-meet-with-pm-carney-in-ottawa-this-week/article_e491651a-2390-5d4d-bb91-16a508e533ee.html",
+    "publishedAt": "20260412T183000Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
+      "DE",
       "IT",
-      "GB",
-      "IE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 2.0
-  },
-  {
-    "id": "2159332dbf8ad9d6",
-    "headline": "Norway : Worley Rosenberg RjukanLH2 FEED award for Nordic region first liquid hydrogen production facility",
-    "url": "https://www.energy-pedia.com/news/norway/worley-rosenberg%E2%80%99s-rjukanlh2-feed-award-for-nordic-region%E2%80%99s-first-liquid-hydrogen-production-facility-203507",
-    "publishedAt": "20260412T170000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IT",
-      "NL",
-      "NO",
-      "SE",
       "FI"
     ],
     "topic_tags": [],
@@ -3552,10 +3082,10 @@
     "relevance_score": 2.0
   },
   {
-    "id": "bae87325b6e6f1ea",
+    "id": "d3e65d531e66a910",
     "headline": "Finnish President Alexander Stubb to meet with PM Carney in Ottawa this week",
-    "url": "https://www.therecord.com/business/finnish-president-alexander-stubb-to-meet-with-pm-carney-in-ottawa-this-week/article_e491651a-2390-5d4d-bb91-16a508e533ee.html",
-    "publishedAt": "20260412T183000Z",
+    "url": "https://www.niagarafallsreview.ca/business/finnish-president-alexander-stubb-to-meet-with-pm-carney-in-ottawa-this-week/article_90a9b1fc-8235-5998-b372-e74780d3108f.html",
+    "publishedAt": "20260412T191500Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
@@ -3581,182 +3111,72 @@
     "relevance_score": 2.0
   },
   {
-    "id": "42fd2fad4e19c8f8",
-    "headline": "Resources minister defends gas companies amid tax push",
-    "url": "https://www.bunburymail.com.au/story/9221769/resources-minister-defends-gas-companies-amid-tax-push/",
-    "publishedAt": "20260413T053000Z",
+    "id": "d197f8175019699d",
+    "headline": "France – Farmers And Energy Costs Push Toward Confrontation",
+    "url": "https://www.armstrongeconomics.com/world-news/civil-unrest/france-farmers-and-energy-costs-push-toward-confrontation/",
+    "publishedAt": "20260413T083000Z",
     "source": "gdelt",
     "country_tags": [
-      "ES",
-      "DE",
-      "IE"
+      "FR"
     ],
-    "topic_tags": [
-      "gas"
-    ],
+    "topic_tags": [],
     "summary": "",
     "relevance_score": 2.0
   },
   {
-    "id": "d17e23b334b5a171",
-    "headline": "Resources minister defends gas companies amid tax push",
-    "url": "https://www.singletonargus.com.au/story/9221769/resources-minister-defends-gas-companies-amid-tax-push/",
-    "publishedAt": "20260413T053000Z",
+    "id": "6b9783941da05f7a",
+    "headline": "42 Stunning Photos Of Finland Northern Lights And Dreamlike Landscapes",
+    "url": "https://www.boredpanda.com/landscape-northern-lights-photography-ian-granstrom-finland/?cexp_id=150952&cexp_var=4&_f=homepage_featured",
+    "publishedAt": "20260413T110000Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
-      "DE",
-      "IE"
+      "NL",
+      "NO",
+      "FI"
     ],
-    "topic_tags": [
-      "gas"
-    ],
+    "topic_tags": [],
     "summary": "",
     "relevance_score": 2.0
   },
   {
-    "id": "b7aa37afb07f0670",
-    "headline": "Resources minister defends gas companies amid tax push",
-    "url": "https://www.wellingtontimes.com.au/story/9221769/resources-minister-defends-gas-companies-amid-tax-push/",
-    "publishedAt": "20260413T054500Z",
+    "id": "0a810119b941f3c6",
+    "headline": "International Business : Oil shock to dominate IMF and World Bank meetings",
+    "url": "https://www.gdnonline.com:443/Details/1381381/Oil-shock-to-dominate-IMF-and-World-Bank-meetings",
+    "publishedAt": "20260413T223000Z",
     "source": "gdelt",
     "country_tags": [
-      "ES",
-      "DE",
-      "IE"
+      "ES"
     ],
-    "topic_tags": [
-      "gas"
-    ],
+    "topic_tags": [],
     "summary": "",
     "relevance_score": 2.0
   },
   {
-    "id": "4d5d24ea4f119521",
-    "headline": "Resources minister defends gas companies amid tax push",
-    "url": "https://www.mudgeeguardian.com.au/story/9221769/resources-minister-defends-gas-companies-amid-tax-push/",
-    "publishedAt": "20260413T060000Z",
+    "id": "e67118b5f0043bca",
+    "headline": "International Business : Oil shock to dominate IMF and World Bank meetings",
+    "url": "https://www.gdnonline.com:443/Details/1381381",
+    "publishedAt": "20260413T223000Z",
     "source": "gdelt",
     "country_tags": [
-      "ES",
-      "DE",
-      "IE"
+      "ES"
     ],
-    "topic_tags": [
-      "gas"
-    ],
+    "topic_tags": [],
     "summary": "",
     "relevance_score": 2.0
   },
   {
-    "id": "684e4d9c19668cfa",
-    "headline": "Resources minister defends gas companies amid tax push",
-    "url": "https://www.cootamundraherald.com.au/story/9221769/resources-minister-defends-gas-companies-amid-tax-push/",
-    "publishedAt": "20260413T060000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "IE"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 2.0
-  },
-  {
-    "id": "975d2915081427b4",
-    "headline": "Resources minister defends gas companies amid tax push",
-    "url": "https://www.bordermail.com.au/story/9221769/resources-minister-defends-gas-companies-amid-tax-push/",
-    "publishedAt": "20260413T060000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "IE"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 2.0
-  },
-  {
-    "id": "78fa4d793bc845b6",
-    "headline": "Resources minister defends gas companies amid tax push",
-    "url": "https://www.muswellbrookchronicle.com.au/story/9221769/resources-minister-defends-gas-companies-amid-tax-push/",
-    "publishedAt": "20260413T060000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "IE"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 2.0
-  },
-  {
-    "id": "73b16ba2e1002c76",
-    "headline": "Resources minister defends gas companies amid tax push",
-    "url": "https://www.armidaleexpress.com.au/story/9221769/resources-minister-defends-gas-companies-amid-tax-push/",
-    "publishedAt": "20260413T061500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "IE"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 2.0
-  },
-  {
-    "id": "1735cc120096aac7",
-    "headline": "Opinion : The world has an energy problem . Canada is the solution",
-    "url": "https://windsorstar.com:443/commodities/energy/opinion-world-energy-problem-canada-solution",
-    "publishedAt": "20260406T153000Z",
+    "id": "6c6e974711945a16",
+    "headline": "Massive New Louisiana Natural Gas Plant Is Slated to Be US Most Polluting Yet",
+    "url": "https://truthout.org/articles/massive-new-louisiana-natural-gas-plant-is-slated-to-be-uss-most-polluting-yet/",
+    "publishedAt": "20260414T004500Z",
     "source": "gdelt",
     "country_tags": [],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "90dd15c09de9bea9",
-    "headline": "Is Trump the US president who loses Asia to China ? ",
-    "url": "https://www.straitstimes.com/opinion/is-trump-the-president-who-lost-asia-to-china",
-    "publishedAt": "20260406T230000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "SE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "804fe08202b9874c",
-    "headline": "LAUGFS Gas says ensuring stable supply for festive season",
-    "url": "https://www.ft.lk/business/LAUGFS-Gas-says-ensuring-stable-supply-for-festive-season/34-790547",
-    "publishedAt": "20260406T234500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "SE"
-    ],
     "topic_tags": [
       "gas"
     ],
     "summary": "",
-    "relevance_score": 1.5
+    "relevance_score": 2.0
   },
   {
     "id": "ca1f2106e15ee29d",
@@ -3781,21 +3201,6 @@
     "source": "gdelt",
     "country_tags": [
       "DE",
-      "SE",
-      "FI"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "2fb43ab7c4b62317",
-    "headline": "Duet to Fuel Shortages , Air Traffic Could Collapse by May",
-    "url": "https://hungarytoday.hu/duet-to-fuel-shortages-air-traffic-could-collapse-by-may/",
-    "publishedAt": "20260407T111500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
       "SE",
       "FI"
     ],
@@ -3920,6 +3325,21 @@
     "relevance_score": 1.5
   },
   {
+    "id": "89df4acc97d0b0a9",
+    "headline": "France Strait of Hormuz Problem | American Enterprise Institute",
+    "url": "https://www.aei.org/economics/frances-strait-of-hormuz-problem/",
+    "publishedAt": "20260407T213000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "FR",
+      "IT",
+      "SE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
     "id": "44503c0488f10351",
     "headline": "NNPC launches new crude grade , Cawthorne , exports 950 , 000 barrels to Netherlands",
     "url": "https://www.thecable.ng/nnpc-launches-new-crude-grade-cawthorne-exports-950000-barrels-to-netherlands/",
@@ -3939,6 +3359,21 @@
     "headline": "Trump warns a  whole civilization will die  if a deal with Iran isnt reached",
     "url": "https://lancasteronline.com/news/world/trump-warns-a-whole-civilization-will-die-if-a-deal-with-iran-isnt-reached/article_855e2e56-8297-557a-83f3-6fabcd44d39b.html",
     "publishedAt": "20260407T214500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "DE",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
+    "id": "7c7a4ba0d5dc6042",
+    "headline": "Trump warns a  whole civilization will die tonight  if a deal with Iran isnt reached",
+    "url": "https://www.santafenewmexican.com/ap/business/trump-warns-a-whole-civilization-will-die-tonight-if-a-deal-with-iran-isnt-reached/article_ffb99d4d-5b22-5d4e-a354-0b13c763fead.html",
+    "publishedAt": "20260407T221500Z",
     "source": "gdelt",
     "country_tags": [
       "DE",
@@ -4072,30 +3507,15 @@
     "relevance_score": 1.5
   },
   {
-    "id": "7f2b903877fe24d8",
-    "headline": "Nexans Completes Record - Depth Subsea Cable Project In",
-    "url": "https://www.marinetechnologynews.com/news/nexans-completes-record-depth-660867",
-    "publishedAt": "20260408T111500Z",
+    "id": "f8cf03b7122db4e0",
+    "headline": "Hormuz remains blocked for now as hundreds of ships seek safe exit",
+    "url": "https://www.ocregister.com/2026/04/08/us-and-iran-agree-to-hold-talks-even-as-hormuz-stays-blocked-2/",
+    "publishedAt": "20260408T181500Z",
     "source": "gdelt",
     "country_tags": [
-      "ES",
-      "DE",
+      "IT",
+      "NO",
       "SE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "560a3a9d0fc53f6c",
-    "headline": "What does the ceasefire mean for Irish consumers ? ",
-    "url": "https://www.rte.ie/news/business/2026/0408/1567262-ceasefire-iran-ireland/",
-    "publishedAt": "20260408T171500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "SE",
-      "FI"
     ],
     "topic_tags": [],
     "summary": "",
@@ -4117,36 +3537,6 @@
     "relevance_score": 1.5
   },
   {
-    "id": "084f617d8d737e73",
-    "headline": "International Business : Shippers seek clarity on Hormuz passage",
-    "url": "https://www.gdnonline.com:443/Details/1380911/-Shippers-seek-clarity-on-Hormuz-passage",
-    "publishedAt": "20260409T003000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT",
-      "SE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "5832d3b044cb3d26",
-    "headline": "International Business : Shippers seek clarity on Hormuz passage",
-    "url": "https://www.gdnonline.com:443/Details/1380911",
-    "publishedAt": "20260409T033000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT",
-      "SE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
     "id": "8a36b22596843e0d",
     "headline": "The Electrified Future Is Already Here . Canada Just Needs to Build It",
     "url": "https://cleantechnica.com/2026/04/08/the-electrified-future-is-already-here-canada-just-needs-to-build-it/",
@@ -4158,53 +3548,6 @@
       "IE"
     ],
     "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "928f5ff698224cc1",
-    "headline": "Recycling : Persona AB appoints new sales and service partner for Ireland",
-    "url": "https://waste-management-world.com/business/persona-ab-appoints-new-sales-and-service-partner-for-ireland/",
-    "publishedAt": "20260409T103000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "SE",
-      "IE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "2467651541da5a11",
-    "headline": "Norway Pushes for Reentry into Gro Gas Discovery",
-    "url": "https://www.rigzone.com/news/norway_pushes_for_reentry_into_gro_gas_discovery-09-apr-2026-183411-article/",
-    "publishedAt": "20260409T111500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "538b3baf4f8a2cce",
-    "headline": "REHLKO AND INNIO ENTER INTO MULTI - YEAR 1 . 25 GW ENGINE FRAMEWORK AGREEMENT TO SUPPORT ACCELERATING GLOBAL DATA CENTER AND FLEXIBLE GENERATION DEMAND",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-04/68158150-rehlko-and-innio-enter-into-multi-year-1-25-gw-engine-framework-agreement-to-support-accelerating-global-data-center-and-flexible-generation-demand-008.htm",
-    "publishedAt": "20260409T123000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "DE",
-      "FR"
-    ],
-    "topic_tags": [
-      "power"
-    ],
     "summary": "",
     "relevance_score": 1.5
   },
@@ -4224,21 +3567,6 @@
     "relevance_score": 1.5
   },
   {
-    "id": "7fa4086af7e9ed63",
-    "headline": "Opinion | With  The Keeper , Tana French reinvents the mystery novel",
-    "url": "https://www.bostonglobe.com/2026/04/09/opinion/tana-french-say-more-podcast/",
-    "publishedAt": "20260409T150000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "FR",
-      "IT",
-      "NO"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
     "id": "235e27ae8eba529a",
     "headline": "Diesel supplies to Poland ports at record in March",
     "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2811897-diesel-supplies-to-poland-s-ports-at-record-in-march",
@@ -4248,21 +3576,6 @@
       "ES",
       "SE",
       "IE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "0d3eb4ba4fdadae6",
-    "headline": "What Does The Iran Ceasefire Mean For Irish Consumers ? ",
-    "url": "https://www.nova.ie/iran-ceasefire-fuel-price-energy-crisis-363935/",
-    "publishedAt": "20260409T173000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "SE",
-      "FI"
     ],
     "topic_tags": [],
     "summary": "",
@@ -4330,6 +3643,36 @@
     "relevance_score": 1.5
   },
   {
+    "id": "588021cacd2a325e",
+    "headline": "Petrol and diesel in Europe : Where are prices highest and lowest ? ",
+    "url": "https://finance.yahoo.com/sectors/energy/articles/petrol-diesel-europe-where-prices-050128552.html",
+    "publishedAt": "20260410T053000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "SE",
+      "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
+    "id": "c49637baf60f6924",
+    "headline": "Petrol and diesel in Europe : Where are prices highest and lowest ? ",
+    "url": "https://www.euronews.com/business/2026/04/10/petrol-and-diesel-in-europe-where-are-prices-highest-and-lowest",
+    "publishedAt": "20260410T074500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "SE",
+      "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
     "id": "47260aaea2f3a346",
     "headline": "Mystery drones seen flying over Dutch gold reserve site , Fmr . queen home",
     "url": "https://nltimes.nl/2026/04/10/mystery-drones-seen-flying-dutch-gold-reserve-site-fmr-queens-home",
@@ -4360,21 +3703,6 @@
     "relevance_score": 1.5
   },
   {
-    "id": "ef37bceb63b3a113",
-    "headline": "MEREN ANNOUNCES DATE OF ITS AGM ON MAY 20 , 2026",
-    "url": "https://www.cantechletter.com/newswires/meren-announces-date-of-its-agm-on-may-20-2026/",
-    "publishedAt": "20260410T224500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT",
-      "NO"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
     "id": "d36c2e82f0e1245f",
     "headline": "Your questions answered on Sweden proposed permanent residency changes",
     "url": "https://www.thelocal.se/20260410/your-questions-answered-on-swedens-proposed-permanent-residency-changes/",
@@ -4384,21 +3712,6 @@
       "ES",
       "DE",
       "SE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "ced5cb0daa000b0f",
-    "headline": "Fuel protests disrupt Ireland as over a third of service stations run dry",
-    "url": "https://www.channelnewsasia.com/world/fuel-protests-disrupt-ireland-over-third-service-stations-run-dry-6050711",
-    "publishedAt": "20260411T193000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "SE",
-      "IE"
     ],
     "topic_tags": [],
     "summary": "",
@@ -4433,6 +3746,21 @@
     "topic_tags": [
       "gas"
     ],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
+    "id": "19be00942ee09c14",
+    "headline": "Cold comfort : A visit to northern Europe reveals a region gripped by insecurity",
+    "url": "https://www.nzherald.co.nz/the-listener/world/cold-comfort-a-visit-to-northern-europe-reveals-a-region-gripped-by-insecurity/premium/WXGIVLS5TNFNBFYNZEGXKAIDLE/",
+    "publishedAt": "20260411T194500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT",
+      "NO",
+      "SE"
+    ],
+    "topic_tags": [],
     "summary": "",
     "relevance_score": 1.5
   },
@@ -4697,103 +4025,65 @@
     "relevance_score": 1.5
   },
   {
-    "id": "a5cad929f3f07640",
-    "headline": "Beyond the  Nightingale : How Asha Bhosle redefined Indian music with 12 , 000 songs and a  daring  legacy",
-    "url": "https://indianexpress.com/article/live-news/top-news-today-daily-briefing-trump-blockade-china-tariff-threat-oil-above-100-dollar-10633405/",
-    "publishedAt": "20260413T041500Z",
+    "id": "cedea2d78e3190fd",
+    "headline": "Government and Sweden Democrats present Spring Budget",
+    "url": "https://www.sverigesradio.se/artikel/government-and-sweden-democrats-to-present-spring-budget",
+    "publishedAt": "20260413T093000Z",
     "source": "gdelt",
     "country_tags": [
+      "ES",
       "DE",
-      "IT",
-      "FI"
+      "SE"
     ],
     "topic_tags": [],
     "summary": "",
     "relevance_score": 1.5
   },
   {
-    "id": "46cbbe12ebf6f0ee",
-    "headline": "Suzanne Crowe : Ireland should compete with Canada and Australia for skilled healthcare workers uprooted by Iran war",
-    "url": "https://www.independent.ie/opinion/analysis/suzanne-crowe-ireland-should-compete-with-canada-and-australia-for-skilled-healthcare-workers-uprooted-by-iran-war/a52678413.html",
-    "publishedAt": "20260406T084500Z",
+    "id": "fd27e140617e9c6e",
+    "headline": "Xinhua Commentary : China - Spain ties show value of stability , win - win cooperation - 南海网",
+    "url": "https://www.hinews.cn:443/page?n=2815366&m=1&s=1044",
+    "publishedAt": "20260413T120000Z",
     "source": "gdelt",
     "country_tags": [
+      "ES",
       "IT",
       "IE"
     ],
     "topic_tags": [],
     "summary": "",
-    "relevance_score": 1.0
+    "relevance_score": 1.5
   },
   {
-    "id": "1c604055c78fe239",
-    "headline": "Investments drive jobs and growth in a more uncertain world - Maurice Info - Partager et informer en toute intégralité",
-    "url": "https://maurice-info.mu/2026/04/06/investments-drive-jobs-and-growth-in-a-more-uncertain-world.html",
-    "publishedAt": "20260406T111500Z",
+    "id": "bdceb7fa79de1268",
+    "headline": "Espiria Sweden Small Cap fell 7 . 6 percent in March - Dometic weighed heavily on performance",
+    "url": "https://www.marketscreener.com/news/espiria-sweden-small-cap-fell-7-6-percent-in-march-dometic-weighed-heavily-on-performance-ce7e50ded880fe24",
+    "publishedAt": "20260413T130000Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
-      "IT"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "bbaf5324b27d4ebf",
-    "headline": "Toddler among 3 killed in Russian attack in S . Ukraine Odesa",
-    "url": "https://www.dailysabah.com/world/europe/toddler-among-3-killed-in-russian-attack-in-s-ukraines-odesa",
-    "publishedAt": "20260406T123000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "2eeeba7f333f07df",
-    "headline": "Russian attack kills three in Odesa , including toddler",
-    "url": "https://www.canberratimes.com.au/story/9216036/russian-attack-kills-three-in-odesa-including-toddler/",
-    "publishedAt": "20260406T123000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "535196400ceef767",
-    "headline": "Why are we taxed to fly ? Europe aviation levies explained",
-    "url": "https://www.euronews.com/travel/2026/04/06/why-are-we-taxed-to-fly-europes-aviation-levies-explained",
-    "publishedAt": "20260406T134500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "5c75106a1bb756f7",
-    "headline": "Symra Beats Start - Up Schedule , DNO Boosts North Sea Output",
-    "url": "https://www.manilatimes.net/2026/04/07/tmt-newswire/globenewswire/symra-beats-start-up-schedule-dno-boosts-north-sea-output/2315114",
-    "publishedAt": "20260407T063000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NO",
+      "DE",
       "SE"
     ],
     "topic_tags": [],
     "summary": "",
-    "relevance_score": 1.0
+    "relevance_score": 1.5
+  },
+  {
+    "id": "96e80c592ca3e5a7",
+    "headline": "Because Eni wants Russian gas in Italy again",
+    "url": "https://www.thevermilion.com/because-eni-wants-russian-gas-in-italy-again/article_17177/",
+    "publishedAt": "20260414T030000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT",
+      "SE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 1.5
   },
   {
     "id": "c62ad1344dcc41a7",
@@ -4810,14 +4100,14 @@
     "relevance_score": 1.0
   },
   {
-    "id": "6bf55e6ea1d3e63c",
-    "headline": "Strait of Hormuz shipping blockade update",
-    "url": "https://www.al-monitor.com/originals/2026/04/strait-hormuz-shipping-blockade-update",
+    "id": "1cfee90e5ddc5c4a",
+    "headline": "Gemdale Gold Inc .: Gemdale Gold Announces Engagement of Investing News Network",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-04/68136201-gemdale-gold-inc-gemdale-gold-announces-engagement-of-investing-news-network-200.htm",
     "publishedAt": "20260407T123000Z",
     "source": "gdelt",
     "country_tags": [
-      "DE",
-      "IT"
+      "ES",
+      "NO"
     ],
     "topic_tags": [],
     "summary": "",
@@ -4866,20 +4156,6 @@
     "relevance_score": 1.0
   },
   {
-    "id": "1f195e3b1170d92b",
-    "headline": "Why the war in Iran will make your united kingdom mortgage more expensive",
-    "url": "https://theconversation.com/why-the-war-in-iran-will-make-your-uk-mortgage-more-expensive-279411",
-    "publishedAt": "20260407T183000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IT",
-      "GB"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
     "id": "d020e8654801c05c",
     "headline": "Trump says  whole civilization will die tonight  as Iran deadline looms",
     "url": "https://www.news9.com/oklahoma-city-news/iran-us-israel-trump-lebanon-april-7-2026",
@@ -4887,20 +4163,6 @@
     "source": "gdelt",
     "country_tags": [
       "DE",
-      "IE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "5b08a891d0a4a42c",
-    "headline": "Trump agrees to suspend  bombing and attack of Iran  for two weeks after chilling threat that  a whole civilisation will die tonight  ",
-    "url": "https://www.independent.ie/world-news/north-america/trump-agrees-to-suspend-bombing-and-attack-of-iran-for-two-weeks-after-chilling-threat-that-a-whole-civilisation-will-die-tonight/a389627239.html",
-    "publishedAt": "20260408T001500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
       "IE"
     ],
     "topic_tags": [],
@@ -4978,14 +4240,14 @@
     "relevance_score": 1.0
   },
   {
-    "id": "3f67453609d94a2b",
-    "headline": "Letters : Honouring the role of Cumann na mBan in the 1916 Rising is welcome , albeit belatedly",
-    "url": "https://www.independent.ie/opinion/letters/letters-honouring-the-role-of-cumann-na-mban-in-the-1916-rising-is-welcome-albeit-belatedly/a422953885.html",
-    "publishedAt": "20260408T070000Z",
+    "id": "73293516ef72abbd",
+    "headline": "Eurozone producer prices fall in February ahead of potential March rise",
+    "url": "https://aa.com.tr/en/economy/eurozone-producer-prices-fall-in-february-ahead-of-potential-march-rise/3897730",
+    "publishedAt": "20260408T113000Z",
     "source": "gdelt",
     "country_tags": [
-      "IT",
-      "NO"
+      "ES",
+      "SE"
     ],
     "topic_tags": [],
     "summary": "",
@@ -5020,34 +4282,6 @@
     "relevance_score": 1.0
   },
   {
-    "id": "7d60e89611fc643f",
-    "headline": "THE BIG READ : The Middle East conundrum and its ripples into Tullamore and Offaly",
-    "url": "https://www.offalyexpress.ie/news/home/2057193/the-big-read-the-middle-east-conundrum-and-its-ripples-into-tullamore-and-offaly.html",
-    "publishedAt": "20260408T201500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "d790d63b47370949",
-    "headline": "Alkane Resources posts strong March quarter production , boosts cash position to $374 million",
-    "url": "https://finance.yahoo.com/markets/commodities/articles/alkane-resources-posts-strong-march-005000613.html",
-    "publishedAt": "20260409T011500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
     "id": "972ea6ab342675e2",
     "headline": "Reports : Ukraine Military Establishes Foothold in Libya",
     "url": "https://www.breitbart.com/national-security/2026/04/07/reports-ukraine-military-establishes-foothold-in-libya/",
@@ -5069,20 +4303,6 @@
     "source": "gdelt",
     "country_tags": [
       "FR",
-      "IT"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "fe677f3c32531004",
-    "headline": "Ed Miliband  mad dash  to Net Zero is blamed for OpenAI shelving a multi - billion - pound investment into Britain",
-    "url": "https://www.dailymail.co.uk/news/article-15720487/Ed-Milibands-Net-Zero-blamed-OpenAI-multi-billion-pound-investment-Britain.html",
-    "publishedAt": "20260410T004500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
       "IT"
     ],
     "topic_tags": [],
@@ -5147,14 +4367,14 @@
     "relevance_score": 1.0
   },
   {
-    "id": "6a59573a308abf73",
-    "headline": "James Wild discusses the rising cost of bills and what can be done to lower them",
-    "url": "https://www.lynnnews.co.uk/news/the-same-issue-is-coming-up-again-and-again-energy-bills-9461107/",
-    "publishedAt": "20260411T054500Z",
+    "id": "edf3ec22f19f96a4",
+    "headline": "What Going On With Shares Of Nebius ? - Nebius Group ( NASDAQ : NBIS ) ",
+    "url": "https://www.benzinga.com/trading-ideas/movers/26/04/51755974/whats-going-on-with-shares-of-nebius",
+    "publishedAt": "20260410T160000Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
-      "SE"
+      "IT"
     ],
     "topic_tags": [],
     "summary": "",
@@ -5430,21 +4650,6 @@
     "relevance_score": 1.0
   },
   {
-    "id": "820c44d33e8940cd",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | Southern Cross",
-    "url": "https://www.juneesoutherncross.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T223000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
     "id": "949053ea04ef039b",
     "headline": "Keir Starmer has to choose : Rachel Reeves or Project Miliband",
     "url": "https://www.thetimes.com/uk/politics/article/keir-starmer-rachel-reeves-ed-miliband-net-zero-decarbonisation-djnsbcjph",
@@ -5455,21 +4660,6 @@
       "SE"
     ],
     "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "acc7c2cff9920203",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | Narromine News",
-    "url": "https://www.narrominenewsonline.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T230000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
     "summary": "",
     "relevance_score": 1.0
   },
@@ -5533,62 +4723,6 @@
     "relevance_score": 1.0
   },
   {
-    "id": "2a8f6ee8cccb9da0",
-    "headline": "DWP urges Brits to check eligibility for £50m pot to cut heating costs",
-    "url": "https://www.express.co.uk/finance/personalfinance/2193134/dwp-brits-check-eligibility-heating-oil",
-    "publishedAt": "20260412T151500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "140adc6d48a7231a",
-    "headline": "Police remove fuel protesters from Dublin center as disruption over soaring costs continues",
-    "url": "https://www.columbian.com/news/2026/apr/12/police-remove-fuel-protesters-from-dublin-center-as-disruption-over-soaring-costs-continues/",
-    "publishedAt": "20260412T191500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "FR"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "1f7237048380fd4c",
-    "headline": "Fuel protests to be raised at European Commission meeting",
-    "url": "https://www.rte.ie/news/2026/0412/1567854-european-commission-fuel/",
-    "publishedAt": "20260412T211500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "SE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "efe9fe75abd394f8",
-    "headline": "Irish prime minister announces fuel tax cuts to stop protests over soaring pump prices",
-    "url": "https://japantoday.com/category/world/police-remove-fuel-protesters-from-dublin-center-as-disruption-over-soaring-costs-continues",
-    "publishedAt": "20260413T014500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "NO"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
     "id": "51967c6f0ae66d3b",
     "headline": "Neste Oyj ( OTCMKTS : NTOIF ) versus ENEOS ( OTCMKTS : JXHLY ) Head - To - Head Review",
     "url": "https://www.dailypolitical.com/2026/04/12/neste-oyj-otcmktsntoif-versus-eneos-otcmktsjxhly-head-to-head-review.html",
@@ -5603,69 +4737,202 @@
     "relevance_score": 1.0
   },
   {
-    "id": "d14a4303e5d8a72d",
-    "headline": "Outbound investments accelerate in Q1",
-    "url": "https://vir.com.vn/outbound-investments-accelerate-in-q1-150049.html",
-    "publishedAt": "20260406T110000Z",
+    "id": "e252e43cb8e16a7b",
+    "headline": "Economist on Spring Budget : Not super - sure this will help households start to consume",
+    "url": "https://www.sverigesradio.se/artikel/economist-on-spring-budget-not-super-sure-this-will-help-households-start-to-consume",
+    "publishedAt": "20260413T181500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "NO",
+      "SE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "b70d585272ac1c37",
+    "headline": "News Analysis : Algeria emerges as Europe stable gas partner amid Hormuz risks",
+    "url": "http://www.bignewsnetwork.com/news/278981984/news-analysis-algeria-emerges-as-europe-stable-gas-partner-amid-hormuz-risks",
+    "publishedAt": "20260413T204500Z",
     "source": "gdelt",
     "country_tags": [
       "ES"
     ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 0.5
-  },
-  {
-    "id": "40ba047b1136e41e",
-    "headline": "China been very quiet during Trump Iran war . There a good reason for that",
-    "url": "https://www.theage.com.au/world/asia/china-s-been-very-quiet-during-trump-s-iran-war-there-s-a-good-reason-for-that-20260406-p5zlhn.html",
-    "publishedAt": "20260406T210000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 0.5
-  },
-  {
-    "id": "beec4eee3c0d8368",
-    "headline": "China been very quiet during Trump Iran war . There a good reason for that",
-    "url": "https://www.brisbanetimes.com.au/world/asia/china-s-been-very-quiet-during-trump-s-iran-war-there-s-a-good-reason-for-that-20260406-p5zlhn.html",
-    "publishedAt": "20260406T220000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 0.5
-  },
-  {
-    "id": "0d487f15c2849301",
-    "headline": "Merch sales surge as Buffalo Sabres return to playoffs after 14 years",
-    "url": "https://www.wkbw.com/news/local-news/merch-sales-surge-as-buffalo-sabres-return-to-playoffs-after-14-years",
-    "publishedAt": "20260407T000000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 0.5
-  },
-  {
-    "id": "2f27696115c90d26",
-    "headline": "Why EU foreign policy keeps getting stuck",
-    "url": "https://www.politico.eu/podcast/brussels-playbook-podcast/why-eu-foreign-policy-keeps-getting-stuck/",
-    "publishedAt": "20260407T050000Z",
-    "source": "gdelt",
-    "country_tags": [],
     "topic_tags": [
-      "regulation"
+      "gas"
     ],
     "summary": "",
-    "relevance_score": 0.5
+    "relevance_score": 1.0
+  },
+  {
+    "id": "70484149239949e3",
+    "headline": "City trash becomes a burning question for rural towns",
+    "url": "https://www.perthnow.com.au/news/politics/citys-trash-becomes-a-burning-question-for-rural-towns-c-22135804",
+    "publishedAt": "20260413T204500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "6c48929b5d6cbea3",
+    "headline": "City trash becomes a burning question for rural towns",
+    "url": "https://www.standard.net.au/story/9222227/citys-trash-becomes-a-burning-question-for-rural-towns/",
+    "publishedAt": "20260413T204500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "1ae1e8fa55eb0941",
+    "headline": "City trash becomes a burning question for rural towns",
+    "url": "https://www.inverelltimes.com.au/story/9222227/citys-trash-becomes-a-burning-question-for-rural-towns/",
+    "publishedAt": "20260413T204500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "07904dfe8bfa29ae",
+    "headline": "City trash becomes a burning question for rural towns",
+    "url": "https://www.therural.com.au/story/9222227/citys-trash-becomes-a-burning-question-for-rural-towns/",
+    "publishedAt": "20260413T204500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "edefd8ff611f7bf7",
+    "headline": "City trash becomes a burning question for rural towns",
+    "url": "https://www.canberratimes.com.au/story/9222227/citys-trash-becomes-a-burning-question-for-rural-towns/",
+    "publishedAt": "20260413T210000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "e53519efb6d4374b",
+    "headline": "City trash becomes a burning question for rural towns",
+    "url": "https://www.bunburymail.com.au/story/9222227/citys-trash-becomes-a-burning-question-for-rural-towns/",
+    "publishedAt": "20260413T210000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "fa8aa7c628e73b2d",
+    "headline": "City trash becomes a burning question for rural towns",
+    "url": "https://www.naroomanewsonline.com.au/story/9222227/citys-trash-becomes-a-burning-question-for-rural-towns/",
+    "publishedAt": "20260413T211500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "ec05d3002eb76e2f",
+    "headline": "City trash becomes a burning question for rural towns",
+    "url": "https://www.mandurahmail.com.au/story/9222227/citys-trash-becomes-a-burning-question-for-rural-towns/",
+    "publishedAt": "20260413T211500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "9e9f8cea53e6203d",
+    "headline": "News Analysis : Algeria emerges as Europe stable gas partner amid Hormuz risks - Xinhua",
+    "url": "https://english.news.cn/africa/20260414/b84802f404c24e94800cfacb59158664/c.html",
+    "publishedAt": "20260413T214500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "0bcab256beb6cf0e",
+    "headline": "City trash becomes a burning question for rural towns",
+    "url": "https://www.bendigoadvertiser.com.au/story/9222227/citys-trash-becomes-a-burning-question-for-rural-towns/",
+    "publishedAt": "20260413T214500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "a1ce3db409dc5e09",
+    "headline": "City trash becomes a burning question for rural towns",
+    "url": "https://www.examiner.com.au/story/9222227/citys-trash-becomes-a-burning-question-for-rural-towns/",
+    "publishedAt": "20260413T230000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "5242855039ae7ae1",
+    "headline": "Switzerland Wants A Global Roadmap To Phase Out Fossil Fuels – Analysis",
+    "url": "https://www.eurasiareview.com/14042026-switzerland-wants-a-global-roadmap-to-phase-out-fossil-fuels-analysis/",
+    "publishedAt": "20260414T014500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT",
+      "SE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
   },
   {
     "id": "f77bfda91ff9baeb",
@@ -5675,19 +4942,6 @@
     "source": "gdelt",
     "country_tags": [
       "ES"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 0.5
-  },
-  {
-    "id": "b55f0877333824dc",
-    "headline": "Global leadership : Trump is making China look like the more reliable candidate",
-    "url": "https://www.livemint.com/opinion/online-views/global-leadership-donald-trump-china-reliable-iran-war-solar-panels-electric-vehicles-technology-pakistan-africa-11775475638999.html",
-    "publishedAt": "20260407T110000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "DE"
     ],
     "topic_tags": [],
     "summary": "",
@@ -5733,13 +4987,13 @@
     "relevance_score": 0.5
   },
   {
-    "id": "9b30fbd50dd1dc51",
-    "headline": "6 reasons why Irish children need less sugar",
-    "url": "https://www.rte.ie/brainstorm/2026/0331/1566109-sugar-energy-parents-children-habits-eating/",
-    "publishedAt": "20260407T160000Z",
+    "id": "5667244a65892a64",
+    "headline": "Morale : Russian Imperial Dreams Fade Away",
+    "url": "http://www.strategypage.com/htmw/htmoral/articles/2026040842627.aspx",
+    "publishedAt": "20260408T094500Z",
     "source": "gdelt",
     "country_tags": [
-      "ES"
+      "DE"
     ],
     "topic_tags": [],
     "summary": "",
@@ -5759,23 +5013,23 @@
     "relevance_score": 0.5
   },
   {
-    "id": "399f8d15871119fb",
-    "headline": "Data center moratorium shot down in Calvert on split vote",
-    "url": "https://www.somdnews.com/recorder/news/local/data-center-moratorium-shot-down-in-calvert-on-split-vote/article_078da1d3-b2ce-434b-9e72-907b1b6e1964.html",
-    "publishedAt": "20260408T160000Z",
+    "id": "2eea2c25d0bdcf5a",
+    "headline": "US - Iran war sends FuelEU abatement price negative",
+    "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2811495-us-iran-war-sends-fueleu-abatement-price-negative",
+    "publishedAt": "20260408T224500Z",
     "source": "gdelt",
     "country_tags": [
-      "IT"
+      "SE"
     ],
     "topic_tags": [],
     "summary": "",
     "relevance_score": 0.5
   },
   {
-    "id": "2eea2c25d0bdcf5a",
-    "headline": "US - Iran war sends FuelEU abatement price negative",
-    "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2811495-us-iran-war-sends-fueleu-abatement-price-negative",
-    "publishedAt": "20260408T224500Z",
+    "id": "1b64c1a9c5b62e54",
+    "headline": "Thailand : Journalists Sued for Reporting Minister Bribery Case",
+    "url": "https://www.hrw.org/news/2026/04/09/thailand-journalists-sued-for-reporting-ministers-bribery-case",
+    "publishedAt": "20260409T040000Z",
     "source": "gdelt",
     "country_tags": [
       "SE"
@@ -5792,19 +5046,6 @@
     "source": "gdelt",
     "country_tags": [
       "NO"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 0.5
-  },
-  {
-    "id": "e850e10451a5e44b",
-    "headline": "Cairn Homes Plc : Holding ( s ) in Company",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-04/68160130-cairn-homes-plc-holding-s-in-company-015.htm",
-    "publishedAt": "20260409T150000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES"
     ],
     "topic_tags": [],
     "summary": "",
@@ -5837,19 +5078,6 @@
     "relevance_score": 0.5
   },
   {
-    "id": "bc8235da29a376c4",
-    "headline": "No time to waste",
-    "url": "https://weeklyworker.co.uk/worker/1580/no-time-to-waste/",
-    "publishedAt": "20260409T191500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NO"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 0.5
-  },
-  {
     "id": "0ea347c3782b6f39",
     "headline": "MACAU DAILY TIMES 澳門每日時報Europe exposure to the  Hormuz Shock  ",
     "url": "https://macaudailytimes.com.mo/europes-exposure-to-the-hormuz-shock.html",
@@ -5876,19 +5104,6 @@
     "relevance_score": 0.5
   },
   {
-    "id": "575ceed9c27291ba",
-    "headline": "Holding ( s ) in Company | Company Announcement",
-    "url": "https://www.investegate.co.uk/announcement/rns/van-elle-holdings--vanl/holding-s-in-company/9515323",
-    "publishedAt": "20260410T140000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NO"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 0.5
-  },
-  {
     "id": "50a07639c140fbd6",
     "headline": "Global rate path veers higher in wake of another Trump shock",
     "url": "https://windsorstar.com:443/news/economy/global-rate-veers-higher-trump-shock",
@@ -5902,39 +5117,13 @@
     "relevance_score": 0.5
   },
   {
-    "id": "9143af3510d6792e",
-    "headline": "Aldi is looking to make major changes to 62 stores in 2026",
-    "url": "https://www.manchestereveningnews.co.uk/whats-on/shopping/aldi-looking-make-major-changes-33748159",
-    "publishedAt": "20260410T171500Z",
+    "id": "a4bf4293ac0f0c5f",
+    "headline": "The real AI race | The Manila Times",
+    "url": "https://www.manilatimes.net/2026/04/11/opinion/columns/the-real-ai-race/2318095",
+    "publishedAt": "20260410T174500Z",
     "source": "gdelt",
     "country_tags": [
       "ES"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 0.5
-  },
-  {
-    "id": "ef60988efb6eba73",
-    "headline": "Fuel price protests bring parts of Dublin to standstill",
-    "url": "https://www.upi.com/Top_News/World-News/2026/04/10/ireland-fuel-protest/3601775837147/",
-    "publishedAt": "20260410T181500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 0.5
-  },
-  {
-    "id": "41b8c41319127861",
-    "headline": "Every garda in the country ordered to work for next three days for  exceptional event  ",
-    "url": "https://freerepublic.com/focus/f-chat/4374435/posts",
-    "publishedAt": "20260411T010000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "DE"
     ],
     "topic_tags": [],
     "summary": "",
@@ -5948,6 +5137,19 @@
     "source": "gdelt",
     "country_tags": [
       "NO"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.5
+  },
+  {
+    "id": "f64f9323f8619499",
+    "headline": "Interest in EVs surges in Europe as fuel prices jump after Iran war",
+    "url": "https://www.theguardian.com/environment/2026/apr/12/interest-evs-surge-europe-fuel-prices-iran-war",
+    "publishedAt": "20260412T163000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES"
     ],
     "topic_tags": [],
     "summary": "",
@@ -6032,87 +5234,36 @@
     "relevance_score": 0.5
   },
   {
-    "id": "9de6949efeb9ca72",
-    "headline": "Two women and toddler killed in Russian drone attack on Ukraine",
-    "url": "https://www.oxfordmail.co.uk/news/national/25997428.two-women-toddler-killed-russian-drone-attack-ukraine/",
-    "publishedAt": "20260406T124500Z",
+    "id": "61f5337cbd87d8cb",
+    "headline": "Contrasting Enel ( OTCMKTS : ENLAY ) & E . On ( OTCMKTS : EONGY ) ",
+    "url": "https://www.themarketsdaily.com/2026/04/13/contrasting-enel-otcmktsenlay-e-on-otcmktseongy.html",
+    "publishedAt": "20260413T113000Z",
     "source": "gdelt",
-    "country_tags": [],
+    "country_tags": [
+      "NL"
+    ],
     "topic_tags": [],
     "summary": "",
-    "relevance_score": 0.0
+    "relevance_score": 0.5
   },
   {
-    "id": "8c69a75389b386f4",
-    "headline": "Two women and toddler killed in Russian drone attack on Ukraine",
-    "url": "https://www.thejournal.ie/two-women-toddler-killed-ukraine-russia-drone-attack-7004680-Apr2026/",
-    "publishedAt": "20260406T130000Z",
+    "id": "f6a693b629bd77d7",
+    "headline": "Iran war weighs on global economy as IMF meeting starts",
+    "url": "https://www.geo.tv/latest/659810-iran-war-weighs-on-global-economy-as-imf-meeting-starts",
+    "publishedAt": "20260413T194500Z",
     "source": "gdelt",
-    "country_tags": [],
+    "country_tags": [
+      "NO"
+    ],
     "topic_tags": [],
     "summary": "",
-    "relevance_score": 0.0
+    "relevance_score": 0.5
   },
   {
-    "id": "4848d500f9933c1b",
-    "headline": "Two women and toddler killed in Russian drone attack on Ukraine",
-    "url": "https://www.ipswichstar.co.uk/news/national/25997428.two-women-toddler-killed-russian-drone-attack-ukraine/",
-    "publishedAt": "20260406T131500Z",
-    "source": "gdelt",
-    "country_tags": [],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 0.0
-  },
-  {
-    "id": "96c8e3496e93219a",
-    "headline": "Two women and toddler killed in Russian drone attack on Ukraine",
-    "url": "https://www.theargus.co.uk/news/national/25997428.two-women-toddler-killed-russian-drone-attack-ukraine/",
-    "publishedAt": "20260406T143000Z",
-    "source": "gdelt",
-    "country_tags": [],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 0.0
-  },
-  {
-    "id": "f3ea30752ca7e26a",
-    "headline": "Two women and toddler killed in Russian drone attack on Ukraine",
-    "url": "https://www.eveningnews24.co.uk/news/national/25997428.two-women-toddler-killed-russian-drone-attack-ukraine/",
-    "publishedAt": "20260406T143000Z",
-    "source": "gdelt",
-    "country_tags": [],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 0.0
-  },
-  {
-    "id": "659444e76836219b",
-    "headline": "Two women and toddler killed in Russian drone attack on Ukraine",
-    "url": "https://www.echo-news.co.uk/news/national/25997428.two-women-toddler-killed-russian-drone-attack-ukraine/",
-    "publishedAt": "20260406T153000Z",
-    "source": "gdelt",
-    "country_tags": [],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 0.0
-  },
-  {
-    "id": "4f020326de7dbb3f",
-    "headline": "SRN - US News - Taylorville Daily News",
-    "url": "https://taylorvilledailynews.com/local-news/srn-us-news/50235738e0654cfa20200a2c1ec5afba",
-    "publishedAt": "20260406T174500Z",
-    "source": "gdelt",
-    "country_tags": [],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 0.0
-  },
-  {
-    "id": "7c79d942c7707a5e",
-    "headline": "Engineering has a hydrogen storage problem salt caverns could be the answer",
-    "url": "https://www.imeche.org/news/news-article/engineering-has-a-hydrogen-storage-problem-salt-caverns-could-be-the-answer",
-    "publishedAt": "20260407T093000Z",
+    "id": "b6b35554e27b18a6",
+    "headline": "Lucy Group buys Nuventura | Electronics Weekly",
+    "url": "https://www.electronicsweekly.com/news/business/lucy-group-buys-nuventura-2026-04/",
+    "publishedAt": "20260407T080000Z",
     "source": "gdelt",
     "country_tags": [],
     "topic_tags": [],
@@ -6131,32 +5282,10 @@
     "relevance_score": 0.0
   },
   {
-    "id": "3580fdf2eebe8109",
-    "headline": "Shipping Stocks To Watch Today – April 7th",
-    "url": "https://www.themarketsdaily.com/2026/04/07/shipping-stocks-to-watch-today-april-7th.html",
-    "publishedAt": "20260407T194500Z",
-    "source": "gdelt",
-    "country_tags": [],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 0.0
-  },
-  {
     "id": "591b2f4e2654d02e",
     "headline": "Envoy says Iran will take  proportionate  action if Trump follows through on attack threats",
     "url": "https://gazette.com/2026/04/07/envoy-says-iran-will-take-proportionate-action-if-trump-follows-through-on-attack-threats/",
     "publishedAt": "20260407T221500Z",
-    "source": "gdelt",
-    "country_tags": [],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 0.0
-  },
-  {
-    "id": "cf4314e4266221c2",
-    "headline": "Ronan Keating Wild Atlantic is a  labour of love  ",
-    "url": "http://www.femalefirst.co.uk/tv/news/ronan-keatings-wild-atlantic-labour-love-1440372.html",
-    "publishedAt": "20260408T031500Z",
     "source": "gdelt",
     "country_tags": [],
     "topic_tags": [],
@@ -6175,10 +5304,10 @@
     "relevance_score": 0.0
   },
   {
-    "id": "2af495b139bdfc8d",
-    "headline": "",
-    "url": "https://dublinpeople.com/news/dublin/articles/2026/04/09/windfall-tax-andrews/",
-    "publishedAt": "20260409T111500Z",
+    "id": "cbc434403429657f",
+    "headline": "UK Warns Russian Subs to Stay Away After Month - Long Incursion",
+    "url": "https://www.livemint.com/news/world/uk-warns-russian-subs-to-stay-away-after-month-long-incursion-11775734267306.html",
+    "publishedAt": "20260409T123000Z",
     "source": "gdelt",
     "country_tags": [],
     "topic_tags": [],
@@ -6230,28 +5359,6 @@
     "relevance_score": 0.0
   },
   {
-    "id": "75f24d7b854f3740",
-    "headline": "Iran war puts focus on petrochemicals , a driver of climate change",
-    "url": "https://www.whittierdailynews.com/2026/04/09/climate-iran-petrochemicals/",
-    "publishedAt": "20260409T174500Z",
-    "source": "gdelt",
-    "country_tags": [],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 0.0
-  },
-  {
-    "id": "e4740141bde6d23d",
-    "headline": "The Nashville Ledger",
-    "url": "http://www.tnledger.com/editorial/Article.aspx?id=202348",
-    "publishedAt": "20260409T174500Z",
-    "source": "gdelt",
-    "country_tags": [],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 0.0
-  },
-  {
     "id": "4c4d3e80a2f8c4d2",
     "headline": "Iran war puts focus on petrochemicals , a driver of climate change",
     "url": "https://www.pilotonline.com/2026/04/09/climate-iran-petrochemicals/",
@@ -6285,17 +5392,6 @@
     "relevance_score": 0.0
   },
   {
-    "id": "5b450e5853089c38",
-    "headline": "Namibia : NNN SONA Ushers in Hope Amid Turbulence",
-    "url": "https://allafrica.com/stories/202604100458.html",
-    "publishedAt": "20260410T171500Z",
-    "source": "gdelt",
-    "country_tags": [],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 0.0
-  },
-  {
     "id": "b8a5580cb9a7b523",
     "headline": "Robert Nils Sporrong",
     "url": "https://www.stgeorgeutah.com/obituaries/robert-nils-sporrong/article_f48de744-2077-4437-8a4d-35d66dbd1abc.html",
@@ -6307,10 +5403,10 @@
     "relevance_score": 0.0
   },
   {
-    "id": "8d3d2eeb733721e1",
-    "headline": "SRN - US News - Taylorville Daily News",
-    "url": "https://taylorvilledailynews.com/local-news/srn-us-news/94ee6ea6ad2b0179d8d512fbb0f06835",
-    "publishedAt": "20260412T103000Z",
+    "id": "5ba39cabd6ade869",
+    "headline": "Doubling down",
+    "url": "http://usa.chinadaily.com.cn/a/202604/12/WS69dbb050a310d6866eb42f30.html",
+    "publishedAt": "20260413T004500Z",
     "source": "gdelt",
     "country_tags": [],
     "topic_tags": [],
@@ -6318,10 +5414,10 @@
     "relevance_score": 0.0
   },
   {
-    "id": "5ba39cabd6ade869",
-    "headline": "Doubling down",
-    "url": "http://usa.chinadaily.com.cn/a/202604/12/WS69dbb050a310d6866eb42f30.html",
-    "publishedAt": "20260413T004500Z",
+    "id": "93c456966074ad21",
+    "headline": "The green solution to climate change isnt happening – and that good",
+    "url": "https://www.newscientist.com/article/2522770-the-green-solution-to-climate-change-isnt-happening-and-thats-good/",
+    "publishedAt": "20260414T014500Z",
     "source": "gdelt",
     "country_tags": [],
     "topic_tags": [],
