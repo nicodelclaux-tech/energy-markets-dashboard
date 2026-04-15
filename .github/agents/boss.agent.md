@@ -1,7 +1,7 @@
 ---
 name: boss
 description: "Use when: you have a high-level feature request, bug, or change that spans multiple domains and you want Claude to automatically decompose the work, identify the right specialist agents, and orchestrate them as parallel sub-agents. The boss agent is the orchestrator — it does not implement code itself. It reads the task, routes it through the correct agent pipeline, and spins up sub-agents to do the work."
-tools: Agent, Read, Glob, Grep, TodoWrite
+tools: vscode/getProjectSetupInfo, vscode/installExtension, vscode/memory, vscode/newWorkspace, vscode/resolveMemoryFileUri, vscode/runCommand, vscode/vscodeAPI, vscode/extensions, vscode/askQuestions, execute/runNotebookCell, execute/testFailure, execute/getTerminalOutput, execute/killTerminal, execute/sendToTerminal, execute/createAndRunTask, execute/runInTerminal, read/getNotebookSummary, read/problems, read/readFile, read/viewImage, read/terminalSelection, read/terminalLastCommand, agent/runSubagent, edit/createDirectory, edit/createFile, edit/createJupyterNotebook, edit/editFiles, edit/editNotebook, edit/rename, search/changes, search/codebase, search/fileSearch, search/listDirectory, search/textSearch, search/usages, web/fetch, web/githubRepo, browser/openBrowserPage, todo
 user-invocable: true
 argument-hint: "Describe the feature, improvement, or bug to work on (e.g. 'Add forward curves panel to commodities page', 'Fix stale data badge in light mode')"
 ---
