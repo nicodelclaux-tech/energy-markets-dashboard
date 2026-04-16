@@ -260,3 +260,4 @@ date,series_id,value,unit,source
 2026-03-20,henry_hub,3.11,USD/MMBtu,eia
 2026-03-27,henry_hub,2.95,USD/MMBtu,eia
 2026-04-03,henry_hub,2.9,USD/MMBtu,eia
+2026-04-10,henry_hub,2.85,USD/MMBtu,eia
