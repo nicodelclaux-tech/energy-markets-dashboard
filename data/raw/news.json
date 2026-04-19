@@ -1,24 +1,5 @@
 [
   {
-    "id": "7155e7787118f27b",
-    "headline": "From sea breeze to power blades Cox Bazar leads wind energy push",
-    "url": "https://www.thedailystar.net/business/news/sea-breeze-power-blades-coxs-bazar-leads-wind-energy-push-4153951",
-    "publishedAt": "20260418T051500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "FR",
-      "SE"
-    ],
-    "topic_tags": [
-      "power",
-      "renewables"
-    ],
-    "summary": "",
-    "relevance_score": 7.5
-  },
-  {
     "id": "04a93396d6e39bbd",
     "headline": "Britain will have enough energy this summer despite Iran turmoil , grid operators say",
     "url": "https://www.marketscreener.com/news/britain-will-have-enough-energy-this-summer-despite-iran-turmoil-grid-operators-say-ce7e50dede89f423",
@@ -124,27 +105,6 @@
     "relevance_score": 6.5
   },
   {
-    "id": "d307b32e938f2560",
-    "headline": "Energy Capital & Power / Press release | TotalEnergie Africa Senior Vice President ( SVP ) Mike Sangster to Spotlight Expanding Project Pipeline at Paris Forum",
-    "url": "https://energycapitalandpower.africa-newsroom.com/press/totalenergies-africa-svp-mike-sangster-to-spotlight-expanding-project-pipeline-at-paris-forum",
-    "publishedAt": "20260411T120000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "FR",
-      "IT",
-      "SE",
-      "IE"
-    ],
-    "topic_tags": [
-      "power",
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 6.0
-  },
-  {
     "id": "93d51456fdb67ff2",
     "headline": "An Iran War Winner : China Green Industrial Complex - Governor Wind Energy Coalition",
     "url": "https://governorswindenergycoalition.org/an-iran-war-winner-chinas-green-industrial-complex/",
@@ -195,6 +155,25 @@
     "relevance_score": 6.0
   },
   {
+    "id": "24e5e30796f12572",
+    "headline": "Winda Energy to build battery storage facilities in Finland",
+    "url": "https://www.power-technology.com/news/winda-energy-to-build-battery-storage/",
+    "publishedAt": "20260416T124500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT",
+      "NL",
+      "FI",
+      "IE"
+    ],
+    "topic_tags": [
+      "renewables"
+    ],
+    "summary": "",
+    "relevance_score": 5.5
+  },
+  {
     "id": "91405ced48541ee3",
     "headline": "Why Investing in Wind and Solar to Avoid Gas Shocks Hasnt Added Up for Some",
     "url": "https://governorswindenergycoalition.org/why-investing-in-wind-and-solar-to-avoid-gas-shocks-hasnt-added-up-for-some/",
@@ -206,6 +185,23 @@
     ],
     "topic_tags": [
       "gas",
+      "renewables"
+    ],
+    "summary": "",
+    "relevance_score": 5.0
+  },
+  {
+    "id": "2bebb330b156491c",
+    "headline": "More European offshore wind power firms exit Korea",
+    "url": "https://www.koreatimes.co.kr/business/companies/20260413/more-european-offshore-wind-power-firms-exit-korea",
+    "publishedAt": "20260413T000000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT",
+      "FI"
+    ],
+    "topic_tags": [
+      "power",
       "renewables"
     ],
     "summary": "",
@@ -229,9 +225,60 @@
     "relevance_score": 5.0
   },
   {
+    "id": "1fd7f02d41b6a95e",
+    "headline": "ABC Touts Tom Friedman to Lobby for Taxes on Oil and Carbon",
+    "url": "https://newsbusters.org/blogs/nb/scott-whitlock/2010/05/06/abc-touts-tom-friedman-lobby-taxes-oil-and-carbon",
+    "publishedAt": "20260417T043000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "FR",
+      "IE"
+    ],
+    "topic_tags": [
+      "emissions"
+    ],
+    "summary": "",
+    "relevance_score": 5.0
+  },
+  {
+    "id": "13a3cfbb649b4101",
+    "headline": "Iran war energy shock drives nuclear plans in hard - hit Asia , Africa",
+    "url": "https://www.dailybulletin.com/2026/04/17/iran-war-nuclear-energy/",
+    "publishedAt": "20260417T170000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "FR",
+      "IT"
+    ],
+    "topic_tags": [
+      "nuclear"
+    ],
+    "summary": "",
+    "relevance_score": 5.0
+  },
+  {
     "id": "455526995a960513",
     "headline": "Iran war energy shock drives nuclear plans in hard - hit Asia , Africa",
     "url": "https://www.fortmorgantimes.com/2026/04/17/iran-war-nuclear-energy/",
+    "publishedAt": "20260417T173000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "FR",
+      "IT"
+    ],
+    "topic_tags": [
+      "nuclear"
+    ],
+    "summary": "",
+    "relevance_score": 5.0
+  },
+  {
+    "id": "8bf2184902370e54",
+    "headline": "Iran war energy shock drives nuclear plans in hard - hit Asia , Africa",
+    "url": "https://www.greeleytribune.com/2026/04/17/iran-war-nuclear-energy/",
     "publishedAt": "20260417T173000Z",
     "source": "gdelt",
     "country_tags": [
@@ -283,6 +330,23 @@
     "id": "a2a06c06b08d0215",
     "headline": "Iran war energy shock drives nuclear plans in hard - hit Asia , Africa",
     "url": "https://www.thetimes-tribune.com/2026/04/17/iran-war-nuclear-energy/",
+    "publishedAt": "20260417T183000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "FR",
+      "IT"
+    ],
+    "topic_tags": [
+      "nuclear"
+    ],
+    "summary": "",
+    "relevance_score": 5.0
+  },
+  {
+    "id": "82d14482b61d568f",
+    "headline": "Iran war energy shock drives nuclear plans in hard - hit Asia , Africa",
+    "url": "https://www.redlandsdailyfacts.com/2026/04/17/iran-war-nuclear-energy/",
     "publishedAt": "20260417T183000Z",
     "source": "gdelt",
     "country_tags": [
@@ -399,16 +463,16 @@
     "relevance_score": 5.0
   },
   {
-    "id": "97280f6e4180d562",
-    "headline": "AfD Strikes Back : Reopen Germany Nuclear Plants , Scrap Green Energy Mandates",
-    "url": "https://redstate.com/wardclark/2026/04/13/afd-strikes-back-reopen-germanys-nuclear-plants-scrap-green-energy-mandates-n2201235",
-    "publishedAt": "20260413T193000Z",
+    "id": "8a268e0c074e7b44",
+    "headline": "John Gibbons : Ive changed my mind on nuclear power we dont need it any more « nuclear - news",
+    "url": "https://nuclear-news.net/2026/04/14/3-b1-john-gibbons-ive-changed-my-mind-on-nuclear-power-we-dont-need-it-any-more/",
+    "publishedAt": "20260414T080000Z",
     "source": "gdelt",
     "country_tags": [
-      "ES",
-      "DE"
+      "IT"
     ],
     "topic_tags": [
+      "power",
       "nuclear"
     ],
     "summary": "",
@@ -434,17 +498,33 @@
     "relevance_score": 4.5
   },
   {
-    "id": "4cd6f7eb6ef80d01",
-    "headline": "Here comes the sun : New bill would let New Yorkers hang solar panels from windows",
-    "url": "https://gothamist.com/news/here-comes-the-sun-new-bill-would-let-new-yorkers-hang-solar-panels-from-windows",
-    "publishedAt": "20260414T124500Z",
+    "id": "4f3b94cb94ed3287",
+    "headline": "How 2 , 000 Tons Of Sand Stores 100 Megawatt - Hours And Slashes Carbon Emissions 70 % ",
+    "url": "https://www.forbes.com/sites/johnkoetsier/2026/04/14/how-2000-tons-of-sand-stores-100-megawatt-hours-and-slashes-carbon-emissions-70/",
+    "publishedAt": "20260415T010000Z",
     "source": "gdelt",
     "country_tags": [
-      "ES",
-      "FR"
+      "ES"
     ],
     "topic_tags": [
-      "renewables"
+      "power",
+      "emissions"
+    ],
+    "summary": "",
+    "relevance_score": 4.5
+  },
+  {
+    "id": "568c21a5829ba4b7",
+    "headline": "Why Ireland should think again about nuclear power",
+    "url": "https://www.irishtimes.com/opinion/letters/2026/04/15/why-ireland-should-think-again-about-nuclear-power/",
+    "publishedAt": "20260415T060000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IE"
+    ],
+    "topic_tags": [
+      "power",
+      "nuclear"
     ],
     "summary": "",
     "relevance_score": 4.5
@@ -461,22 +541,6 @@
     ],
     "topic_tags": [
       "renewables"
-    ],
-    "summary": "",
-    "relevance_score": 4.5
-  },
-  {
-    "id": "e56f28a3e6fdef47",
-    "headline": "Europe Eyes Canada LNG as Iran War Rewires Energy Routes",
-    "url": "https://gcaptain.com/europe-eyes-canada-lng-as-iran-war-rewires-energy-routes/",
-    "publishedAt": "20260415T213000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES"
-    ],
-    "topic_tags": [
-      "gas",
-      "LNG"
     ],
     "summary": "",
     "relevance_score": 4.5
@@ -514,6 +578,24 @@
     "relevance_score": 4.5
   },
   {
+    "id": "8042ecd5a309990c",
+    "headline": "Renewable power capacity continues to grow at record speed , with 692 GW added in 2025 : IRENA",
+    "url": "http://www.bignewsnetwork.com/news/278980981/renewable-power-capacity-continues-to-grow-at-record-speed-with-692-gw-added-in-2025-irena",
+    "publishedAt": "20260413T114500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT"
+    ],
+    "topic_tags": [
+      "power",
+      "renewables"
+    ],
+    "summary": "",
+    "relevance_score": 4.0
+  },
+  {
     "id": "132bd50d68e097b6",
     "headline": "Eni CEO calls for suspending EU ban on Russian LNG by Tsvetana Parask – Oil & Gas 360",
     "url": "https://www.oilandgas360.com/eni-ceo-calls-for-suspending-eu-ban-on-russian-lng-by-tsvetana-parask/",
@@ -539,6 +621,25 @@
       "FR",
       "IT",
       "IE"
+    ],
+    "topic_tags": [
+      "power"
+    ],
+    "summary": "",
+    "relevance_score": 4.0
+  },
+  {
+    "id": "bc3ffa91b547d13a",
+    "headline": "Royal Philips : Philips receives FDA 510 ( k ) clearance for Verida , the world first AI - powered detector - based spectral CT *, advancing diagnostic precision across clinical applications",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-04/68218042-royal-philips-philips-receives-fda-510-k-clearance-for-verida-the-world-s-first-ai-powered-detector-based-spectral-ct-advancing-diagnostic-precis-399.htm",
+    "publishedAt": "20260416T133000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "NO",
+      "SE",
+      "FI"
     ],
     "topic_tags": [
       "power"
@@ -722,6 +823,22 @@
     "relevance_score": 3.5
   },
   {
+    "id": "73221fc0df8c0cf8",
+    "headline": "Meet the latest movers and shakers in the united kingdom energy sector | East Anglian Daily Times",
+    "url": "https://www.eadt.co.uk/news/26016642.meet-latest-movers-shakers-uk-energy-sector/",
+    "publishedAt": "20260414T143000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT",
+      "GB",
+      "SE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 3.5
+  },
+  {
     "id": "cf89e07481edd58a",
     "headline": "Dow Jones Top Energy Headlines at 11 AM ET : Oil Futures Move Lower on Hopes for Renewed Talks | $133 ... ",
     "url": "https://www.morningstar.com/news/dow-jones/202604145334/dow-jones-top-energy-headlines-at-11-am-et-oil-futures-move-lower-on-hopes-for-renewed-talks-133",
@@ -731,6 +848,40 @@
       "ES"
     ],
     "topic_tags": [],
+    "summary": "",
+    "relevance_score": 3.5
+  },
+  {
+    "id": "6a016601a4bcdee2",
+    "headline": "Finland Is About to Open the World First Permanent Nuclear Waste Site « nuclear - news",
+    "url": "https://nuclear-news.net/2026/04/15/1-b-finland-is-about-to-open-the-worlds-first-permanent-nuclear-waste-site/",
+    "publishedAt": "20260415T070000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT",
+      "NL",
+      "FI"
+    ],
+    "topic_tags": [
+      "nuclear"
+    ],
+    "summary": "",
+    "relevance_score": 3.5
+  },
+  {
+    "id": "c6aa9b42b921a3d0",
+    "headline": "France , Germany set daily solar records for April",
+    "url": "https://www.pv-magazine.com/2026/04/15/france-germany-set-daily-solar-records-for-april/",
+    "publishedAt": "20260415T114500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "DE",
+      "FR",
+      "SE"
+    ],
+    "topic_tags": [
+      "renewables"
+    ],
     "summary": "",
     "relevance_score": 3.5
   },
@@ -801,6 +952,23 @@
     "relevance_score": 3.5
   },
   {
+    "id": "400aa685fa3cdc47",
+    "headline": "Threat of grounded planes nears as jet fuel supplies dwindle",
+    "url": "https://www.digitaljournal.com/business/threat-of-grounded-planes-nears-as-jet-fuel-supplies-dwindle/article",
+    "publishedAt": "20260416T073000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IE"
+    ],
+    "topic_tags": [
+      "renewables"
+    ],
+    "summary": "",
+    "relevance_score": 3.5
+  },
+  {
     "id": "6c76c26c7c38ba66",
     "headline": "Sweden blames pro - Russian group for cyberattack last year on its energy infrastructure",
     "url": "https://www.asiaone.com:443/world/sweden-blames-pro-russian-group-cyberattack-energy-infrastructure",
@@ -831,40 +999,6 @@
       "SE"
     ],
     "topic_tags": [],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "71e7ab3ab17ad8b7",
-    "headline": "Abaxx to Launch World First Exchange - Traded Solar Futures Contract",
-    "url": "https://portal.sina.com.hk/finance/finance-globenewswire/globenewswire/2026/04/16/1701771/abaxx-to-launch-worlds-first-exchange-traded-solar-futures-contract/",
-    "publishedAt": "20260416T133000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "FI"
-    ],
-    "topic_tags": [
-      "renewables"
-    ],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "3e217ed51e3fc109",
-    "headline": "EU approves over €4 , 2bln in electricity state aid for Bulgaria , Germany , and Slovenia",
-    "url": "https://www.trend.az/business/4175579.html",
-    "publishedAt": "20260416T144500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "IT"
-    ],
-    "topic_tags": [
-      "power"
-    ],
     "summary": "",
     "relevance_score": 3.5
   },
@@ -903,23 +1037,6 @@
     "relevance_score": 3.5
   },
   {
-    "id": "8879eab8ab567a08",
-    "headline": "How LNG terminals can spike utility bills ; the cult following of NOLA band LSD Clownsystem",
-    "url": "https://www.wwno.org/show/louisiana-considered/2026-04-17/how-lng-terminals-can-spike-utility-bills-the-cult-following-of-nola-band-lsd-clownsystem",
-    "publishedAt": "20260417T221500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IT",
-      "NO"
-    ],
-    "topic_tags": [
-      "gas",
-      "LNG"
-    ],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
     "id": "a1da578d94aa97c5",
     "headline": "VN - Denmark partnership drives industrial energy efficiency gains under DEPP3",
     "url": "https://vietnamnet.vn/en/vn-denmark-partnership-drives-industrial-energy-efficiency-gains-under-depp3-2507725.html",
@@ -937,35 +1054,20 @@
     "relevance_score": 3.5
   },
   {
-    "id": "4f2aa78ccaee9b5f",
-    "headline": "France unveils measures to speed up shift to electric power",
-    "url": "https://www.thelocal.fr/20260411/france-unveils-measures-to-speed-up-shift-to-electric-power",
-    "publishedAt": "20260411T083000Z",
+    "id": "288a0f8cdee18eb1",
+    "headline": "Ukraine strikes Russian refineries , Crimea oil depot",
+    "url": "https://www.perthnow.com.au/news/conflict/ukraine-strikes-russian-refineries-crimea-oil-depot-c-22161193",
+    "publishedAt": "20260419T010000Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
-      "FR"
-    ],
-    "topic_tags": [
-      "power"
-    ],
-    "summary": "",
-    "relevance_score": 3.0
-  },
-  {
-    "id": "e7e5a59a73a8cf7a",
-    "headline": "Why united kingdom energy prices are so high",
-    "url": "https://moneyweek.com/investments/energy/why-uk-energy-prices-are-so-high",
-    "publishedAt": "20260411T103000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT",
-      "GB"
+      "DE",
+      "FI",
+      "IE"
     ],
     "topic_tags": [],
     "summary": "",
-    "relevance_score": 3.0
+    "relevance_score": 3.5
   },
   {
     "id": "9c3df61046c0d0a4",
@@ -1048,6 +1150,21 @@
     "relevance_score": 3.0
   },
   {
+    "id": "b1ed1d3063386736",
+    "headline": "Plumbers , permits and energy rules : how to start a renovation",
+    "url": "https://www.dutchnews.nl/2026/04/renovation-netherlands-2026/",
+    "publishedAt": "20260414T080000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT",
+      "NO"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 3.0
+  },
+  {
     "id": "ef10e9bf790bc0d3",
     "headline": "Economic Watch : Europe unveils energy relief measures , but risks linger if conflict continues - Xinhua",
     "url": "https://english.news.cn/20260414/ee204913da8a4fe987ec3ba4954b975d/c.html",
@@ -1057,6 +1174,37 @@
       "ES",
       "NO",
       "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 3.0
+  },
+  {
+    "id": "2ac1ec0ec7d77c00",
+    "headline": "Enagas ( OTCMKTS : ENGGY ) Sets New 12 - Month High – Time to Buy ? ",
+    "url": "https://www.dailypolitical.com/2026/04/14/enagas-otcmktsenggy-sets-new-12-month-high-time-to-buy.html",
+    "publishedAt": "20260414T184500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "SE"
+    ],
+    "topic_tags": [
+      "gas",
+      "emissions"
+    ],
+    "summary": "",
+    "relevance_score": 3.0
+  },
+  {
+    "id": "fa6248a91022eaba",
+    "headline": "Dutch State energy firm seeks billions for energy transition projects",
+    "url": "https://nltimes.nl/2026/04/14/dutch-state-energy-firm-seeks-billions-energy-transition-projects",
+    "publishedAt": "20260414T224500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT",
+      "SE",
+      "FI"
     ],
     "topic_tags": [],
     "summary": "",
@@ -1110,45 +1258,76 @@
     "relevance_score": 3.0
   },
   {
-    "id": "7a2126e9101af624",
-    "headline": "Denys Shmyhal holds meeting with German Federal Minister for Economic Affairs and Energy Katherina Reiche",
-    "url": "https://www.globalsecurity.org/wmd/library/news/ukraine/2026/04/ukraine-260415-govua03.htm",
-    "publishedAt": "20260416T124500Z",
+    "id": "2926b10adc6dc4a7",
+    "headline": "The Leader Room : Equinix Peter Lantry on powering Ireland sustainably",
+    "url": "https://www.siliconrepublic.com/business/the-leaders-room-building-sustainable-digital-infrastructure-with-equinixs-peter-lantry-data-centres",
+    "publishedAt": "20260416T101500Z",
     "source": "gdelt",
     "country_tags": [
       "DE",
-      "IT",
-      "NO"
+      "IE"
+    ],
+    "topic_tags": [
+      "power"
+    ],
+    "summary": "",
+    "relevance_score": 3.0
+  },
+  {
+    "id": "9b739c7c05f79066",
+    "headline": "Oil prices may be falling for the wrong reason a  demand destruction , IEA warns",
+    "url": "https://fortune.com/2026/04/16/oil-prices-demand-destruction-iran-war-renewable-energy-push/",
+    "publishedAt": "20260416T110000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IE"
     ],
     "topic_tags": [],
     "summary": "",
     "relevance_score": 3.0
   },
   {
-    "id": "2a33d856d3d525a2",
-    "headline": "Can Hungary wean itself off Russian energy , as its new leader has promised ? ",
-    "url": "https://www.aljazeera.com/news/2026/4/17/can-hungary-wean-itself-off-russian-energy-as-its-new-leader-has-promised",
-    "publishedAt": "20260417T154500Z",
+    "id": "545ebe44fb382ae6",
+    "headline": "Oil prices may be falling for the wrong reason a  demand destruction , IEA warns | Peak Oil News and Message Boards",
+    "url": "https://peakoil.com/business/oil-prices-may-be-falling-for-the-wrong-reason-a-demand-destruction-iea-warns",
+    "publishedAt": "20260416T171500Z",
     "source": "gdelt",
     "country_tags": [
+      "ES",
       "DE",
-      "IT",
-      "SE"
+      "IE"
     ],
     "topic_tags": [],
     "summary": "",
     "relevance_score": 3.0
   },
   {
-    "id": "df65790c3f00931e",
-    "headline": "Can Hungary wean itself off Russian energy , as its new leader has promised ? - Grenada Chronicle – Daily Grenada And Caribbean News",
-    "url": "https://grenadachronicle.com/can-hungary-wean-itself-off-russian-energy-as-its-new-leader-has-promised/",
-    "publishedAt": "20260417T154500Z",
+    "id": "412505956469f192",
+    "headline": "Healey - Driscoll Administration and City of Boston Invest in Thermal Energy Project to Unlock Large - Scale Clean Heating and Cooling",
+    "url": "https://www.infohaiti.net/healey-driscoll-administration-and-city-of-boston-invest-in-thermal-energy-project-to-unlock-large-scale-clean-heating-and-cooling/",
+    "publishedAt": "20260417T043000Z",
     "source": "gdelt",
     "country_tags": [
-      "DE",
+      "ES",
       "IT",
-      "SE"
+      "NL"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 3.0
+  },
+  {
+    "id": "f8ec5873d4046ac4",
+    "headline": "Colombia convenes climate  coalition of the willing  to break global fossil fuel deadlock | Fossil fuels",
+    "url": "https://www.theguardian.com/environment/2026/apr/17/colombia-convenes-climate-coalition-of-the-willing-to-break-global-fossil-fuel-deadlock",
+    "publishedAt": "20260417T083000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT"
     ],
     "topic_tags": [],
     "summary": "",
@@ -1168,6 +1347,55 @@
     "topic_tags": [],
     "summary": "",
     "relevance_score": 3.0
+  },
+  {
+    "id": "5c4675e5cd7214b9",
+    "headline": "India renewable energy - led transition a major step towards nation economic and strategic future",
+    "url": "https://www.livemint.com/industry/energy/indias-renewable-energy-led-transition-a-major-step-towards-nation-s-economic-and-strategic-future-11776495794451.html",
+    "publishedAt": "20260418T083000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT",
+      "NO"
+    ],
+    "topic_tags": [
+      "renewables"
+    ],
+    "summary": "",
+    "relevance_score": 3.0
+  },
+  {
+    "id": "e61cc2bcda772c5a",
+    "headline": "Trump thinks he crazy but Miliband wont listen over North Sea oil | Politics | News",
+    "url": "https://www.express.co.uk/news/politics/2195253/debate-north-sea-oil-gas",
+    "publishedAt": "20260418T083000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT",
+      "NO",
+      "SE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 3.0
+  },
+  {
+    "id": "0c1658fde71a9572",
+    "headline": "Gas and Russian dolls : the fruitful dealings of Daniel Křetínský",
+    "url": "https://denikreferendum.cz/clanek/238762-gas-and-russian-dolls-the-fruitful-dealings-of-daniel-kretinsky",
+    "publishedAt": "20260412T183000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "DE",
+      "FR",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
   },
   {
     "id": "14156c7a3d0a7413",
@@ -1584,24 +1812,6 @@
     "id": "c82cc9ca33f5d09e",
     "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
     "url": "https://www.gazetteherald.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
-    "publishedAt": "20260414T003000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "IT",
-      "IE"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 2.5
-  },
-  {
-    "id": "58fb3a55f728a5fa",
-    "headline": "Gas supplies  can meet British demand over summer  despite Iran war disruption",
-    "url": "https://www.northwalespioneer.co.uk/news/national/26018304.gas-supplies-can-meet-british-demand-summer-despite-iran-war-disruption/",
     "publishedAt": "20260414T003000Z",
     "source": "gdelt",
     "country_tags": [
@@ -2103,6 +2313,21 @@
     "relevance_score": 2.5
   },
   {
+    "id": "b0d22bf1d73df5ad",
+    "headline": "Rosatom CEO Vows Construction of Hungary Paks - 2 Nuclear Plant to Be  Special Priority  ",
+    "url": "https://sputnikglobe.com/20260414/paks-2-nuclear-power-plant-construction-hungary-will-be-special-priority-for-rosatom---ceo-1123987608.html",
+    "publishedAt": "20260414T151500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT"
+    ],
+    "topic_tags": [
+      "nuclear"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
     "id": "3f61fc8fd6974896",
     "headline": "Most of energy in Portugal produced by renewable sources",
     "url": "https://www.theportugalnews.com/news/2026-04-14/most-of-energy-in-portugal-produced-by-renewable-sources/1006548",
@@ -2128,6 +2353,84 @@
       "SE"
     ],
     "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "da8d7da78946288f",
+    "headline": "Wärtsilä integrated propulsion solution to deliver future - proofing for new next - generation short - sea cargo vessel",
+    "url": "https://www.hellenicshippingnews.com/wartsila-integrated-propulsion-solution-to-deliver-future-proofing-for-new-next-generation-short-sea-cargo-vessel/",
+    "publishedAt": "20260414T190000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "SE",
+      "FI"
+    ],
+    "topic_tags": [
+      "power"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "25c3fc394ef5c856",
+    "headline": "Europe unveils energy relief measures , but risks linger if conflict continues",
+    "url": "http://www.batonrougepost.com/news/278983988/europe-unveils-energy-relief-measures-but-risks-linger-if-conflict-continues",
+    "publishedAt": "20260414T191500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "c957fb84ff8e76c6",
+    "headline": "Europe unveils energy relief measures , but risks linger if conflict continues",
+    "url": "http://www.parisguardian.com/news/278983988/europe-unveils-energy-relief-measures-but-risks-linger-if-conflict-continues",
+    "publishedAt": "20260414T211500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "d8ec3aeb3772174f",
+    "headline": "Europe unveils energy relief measures , but risks linger if conflict continues",
+    "url": "http://www.europesun.com/news/278983988/europe-unveils-energy-relief-measures-but-risks-linger-if-conflict-continues",
+    "publishedAt": "20260414T221500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "bdbc4b7ea216e569",
+    "headline": "Will the united kingdom have gas supplies over summer due to Iran war ? ",
+    "url": "https://www.thenorthernecho.co.uk/news/26021996.will-uk-gas-supplies-summer-due-iran-war/",
+    "publishedAt": "20260415T074500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT",
+      "GB",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
     "summary": "",
     "relevance_score": 2.5
   },
@@ -2161,30 +2464,30 @@
     "relevance_score": 2.5
   },
   {
-    "id": "634f766e31ec300e",
-    "headline": "European buyers hold talks to ship Canadian LNG via Panama Canal to diversify supply",
-    "url": "https://www.marketscreener.com/news/european-buyers-hold-talks-to-ship-canadian-lng-via-panama-canal-to-diversify-supply-ce7e50dcd18ffe24",
-    "publishedAt": "20260415T190000Z",
+    "id": "f32cbe8ce1060c4b",
+    "headline": "How the war on Iran is testing China clean energy shield against fossil fuel price shocks",
+    "url": "https://www.greenpeace.org/international/story/82741/iran-war-china-clean-energy-fossil-fuel-price-shocks/",
+    "publishedAt": "20260415T160000Z",
     "source": "gdelt",
-    "country_tags": [],
-    "topic_tags": [
-      "gas",
-      "LNG"
+    "country_tags": [
+      "ES",
+      "IE"
     ],
+    "topic_tags": [],
     "summary": "",
     "relevance_score": 2.5
   },
   {
-    "id": "cfae1a8a117dbc4c",
-    "headline": "European Buyers Eye Canadian LNG to Diversify Supply",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/European-Buyers-Eye-Canadian-LNG-to-Diversify-Supply.html",
-    "publishedAt": "20260416T100000Z",
+    "id": "e802ae6f802a425a",
+    "headline": "No further sanctions waiver on Russian or Iranian crude oil : US",
+    "url": "https://www.thehindubusinessline.com/news/us-says-no-further-sanctions-waiver-on-russian-or-iranian-crude-oil/article70868164.ece",
+    "publishedAt": "20260416T084500Z",
     "source": "gdelt",
-    "country_tags": [],
-    "topic_tags": [
-      "gas",
-      "LNG"
+    "country_tags": [
+      "DE",
+      "NO"
     ],
+    "topic_tags": [],
     "summary": "",
     "relevance_score": 2.5
   },
@@ -2203,16 +2506,21 @@
     "relevance_score": 2.5
   },
   {
-    "id": "e530aab6ba239e03",
-    "headline": "Germany Wins EU Approval for €3 . 8 Billion Industry Power Aid",
-    "url": "https://www.bloomberg.com:443/news/articles/2026-04-16/germany-gets-ok-for-3-8-billion-power-cost-support-for-industry",
-    "publishedAt": "20260416T144500Z",
+    "id": "8a85278f92059381",
+    "headline": "Green Financing Workshop Under EU Switch Asia - Green Threads Project Organised in Panipat with Young Entrepreneurs Society ( YES ) ",
+    "url": "https://news.webindia123.com/news/Articles/Business/20260416/4439897.html",
+    "publishedAt": "20260416T101500Z",
     "source": "gdelt",
     "country_tags": [
-      "DE"
+      "ES",
+      "DE",
+      "IT",
+      "SE",
+      "FI",
+      "IE"
     ],
     "topic_tags": [
-      "power"
+      "nuclear"
     ],
     "summary": "",
     "relevance_score": 2.5
@@ -2257,6 +2565,21 @@
     ],
     "topic_tags": [
       "power"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "22b8b64b92205851",
+    "headline": "The promise and pain of Australia solar transformation",
+    "url": "https://www.sbs.com.au/news/article/inside-australias-renewable-energy-transition/9r70uqphp",
+    "publishedAt": "20260416T200000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "SE"
+    ],
+    "topic_tags": [
+      "renewables"
     ],
     "summary": "",
     "relevance_score": 2.5
@@ -2335,53 +2658,100 @@
     "relevance_score": 2.5
   },
   {
-    "id": "1bd2e661ea8be033",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | Camden Haven Courier",
-    "url": "https://www.camdencourier.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T200000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "DE",
-      "NO",
-      "IE"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 2.0
-  },
-  {
-    "id": "3cff726c87a2a491",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | Tenterfield Star",
-    "url": "https://www.tenterfieldstar.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T230000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NO",
-      "FI",
-      "IE"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 2.0
-  },
-  {
-    "id": "24dc11866871c47b",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | Harden Murrumburrah Express",
-    "url": "https://www.hardenexpress.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260412T001500Z",
+    "id": "a4285764b96a21fe",
+    "headline": "Generation alpha fascination with old technology on show at Denmark Youth Festival",
+    "url": "https://www.abc.net.au/news/2026-04-18/gen-alpha-fascinated-old-tech-denmark-youth-festival/106567284",
+    "publishedAt": "20260418T024500Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
       "DE",
-      "NO"
+      "IT",
+      "NO",
+      "DK"
     ],
     "topic_tags": [
-      "gas"
+      "power"
     ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "a27c2122b8557810",
+    "headline": "Trading Desks Boom While Big Oil Output Stalls",
+    "url": "https://oilprice.com/Energy/Crude-Oil/Trading-Desks-Boom-While-Big-Oil-Output-Stalls.html",
+    "publishedAt": "20260419T000000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "2159332dbf8ad9d6",
+    "headline": "Norway : Worley Rosenberg RjukanLH2 FEED award for Nordic region first liquid hydrogen production facility",
+    "url": "https://www.energy-pedia.com/news/norway/worley-rosenberg%E2%80%99s-rjukanlh2-feed-award-for-nordic-region%E2%80%99s-first-liquid-hydrogen-production-facility-203507",
+    "publishedAt": "20260412T170000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT",
+      "NL",
+      "NO",
+      "SE",
+      "FI"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "8f79d66559e61ea5",
+    "headline": "Trump is expected to meet NATO leader Rutte as he muses about pulling out of the military alliance",
+    "url": "https://www.kvue.com/article/syndication/associatedpress/trump-is-expected-to-meet-nato-leader-rutte-as-he-muses-about-pulling-out-of-the-military-alliance/616-162ecc16-2f16-49c6-a3ca-9445dfa6f82b",
+    "publishedAt": "20260412T171500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "SE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "bae87325b6e6f1ea",
+    "headline": "Finnish President Alexander Stubb to meet with PM Carney in Ottawa this week",
+    "url": "https://www.therecord.com/business/finnish-president-alexander-stubb-to-meet-with-pm-carney-in-ottawa-this-week/article_e491651a-2390-5d4d-bb91-16a508e533ee.html",
+    "publishedAt": "20260412T183000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "FI"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "d3e65d531e66a910",
+    "headline": "Finnish President Alexander Stubb to meet with PM Carney in Ottawa this week",
+    "url": "https://www.niagarafallsreview.ca/business/finnish-president-alexander-stubb-to-meet-with-pm-carney-in-ottawa-this-week/article_90a9b1fc-8235-5998-b372-e74780d3108f.html",
+    "publishedAt": "20260412T191500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "FI"
+    ],
+    "topic_tags": [],
     "summary": "",
     "relevance_score": 2.0
   },
@@ -2399,6 +2769,32 @@
     "relevance_score": 2.0
   },
   {
+    "id": "483ac2ae83f1a03d",
+    "headline": "Tema gets new wastewater treatment plant for sustainable water management",
+    "url": "http://businessghana.com/site/news/general/346541/Tema-gets-new-wastewater-treatment-plant",
+    "publishedAt": "20260413T041500Z",
+    "source": "gdelt",
+    "country_tags": [],
+    "topic_tags": [
+      "emissions"
+    ],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "fdf3b6df131c4f8c",
+    "headline": "Tema gets new wastewater treatment plant for sustainable water management",
+    "url": "http://www.businessghana.com/site/news/general/346541/Tema-gets-new-wastewater-treatment-plant-for-sustainable-water-management",
+    "publishedAt": "20260413T041500Z",
+    "source": "gdelt",
+    "country_tags": [],
+    "topic_tags": [
+      "emissions"
+    ],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
     "id": "d197f8175019699d",
     "headline": "France – Farmers And Energy Costs Push Toward Confrontation",
     "url": "https://www.armstrongeconomics.com/world-news/civil-unrest/france-farmers-and-energy-costs-push-toward-confrontation/",
@@ -2406,6 +2802,22 @@
     "source": "gdelt",
     "country_tags": [
       "FR"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "6b9783941da05f7a",
+    "headline": "42 Stunning Photos Of Finland Northern Lights And Dreamlike Landscapes",
+    "url": "https://www.boredpanda.com/landscape-northern-lights-photography-ian-granstrom-finland/?cexp_id=150952&cexp_var=4&_f=homepage_featured",
+    "publishedAt": "20260413T110000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "NL",
+      "NO",
+      "FI"
     ],
     "topic_tags": [],
     "summary": "",
@@ -2438,15 +2850,52 @@
     "relevance_score": 2.0
   },
   {
-    "id": "6c6e974711945a16",
-    "headline": "Massive New Louisiana Natural Gas Plant Is Slated to Be US Most Polluting Yet",
-    "url": "https://truthout.org/articles/massive-new-louisiana-natural-gas-plant-is-slated-to-be-uss-most-polluting-yet/",
-    "publishedAt": "20260414T004500Z",
+    "id": "3f0cf1e81e4c10d6",
+    "headline": "China electrostate is poised to benefit from war in the Middle East",
+    "url": "https://www.theglobeandmail.com/business/international-business/article-china-electrostate-energy-middle-east-war/",
+    "publishedAt": "20260414T001500Z",
     "source": "gdelt",
-    "country_tags": [],
-    "topic_tags": [
-      "gas"
+    "country_tags": [
+      "FR",
+      "IT",
+      "SE",
+      "FI"
     ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "96c1f78f8e8627ac",
+    "headline": "Gov . Shapiro welcomes the King and Queen of the Netherlands to Philadelphia , celebrate economic and historical ties",
+    "url": "https://www.wfmz.com/news/area/pennsylvania/gov-shapiro-welcomes-the-king-and-queen-of-the-netherlands-to-philadelphia-celebrate-economic-and/article_0bf130c3-fe1f-4a71-9337-8b7fefc55fd7.html",
+    "publishedAt": "20260414T003000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "NL",
+      "NO",
+      "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "053bcbc79931409e",
+    "headline": "Manila Bulletin - Emperador raises 300 million euros from its first sustainability - linked loan",
+    "url": "https://mb.com.ph/2026/04/14/emperador-raises-300-million-euros-from-its-first-sustainability-linked-loan",
+    "publishedAt": "20260414T043000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "FR",
+      "IT",
+      "SE",
+      "FI"
+    ],
+    "topic_tags": [],
     "summary": "",
     "relevance_score": 2.0
   },
@@ -2467,16 +2916,33 @@
     "relevance_score": 2.0
   },
   {
-    "id": "bbb6e815e96485a0",
-    "headline": "These 3 Country ETFs Are Big Beneficiaries of the Iran Ceasefire",
-    "url": "https://finance.yahoo.com/markets/world-indices/articles/3-country-etfs-big-beneficiaries-141500992.html",
-    "publishedAt": "20260414T224500Z",
+    "id": "06a6b2b095e11851",
+    "headline": "Politics Insider : Carney says majority government will move quicker on economic priorities",
+    "url": "https://www.theglobeandmail.com/politics/article-politics-insider-carney-says-majority-government-will-move-quicker-on/",
+    "publishedAt": "20260414T233000Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
-      "SE",
-      "FI",
+      "DE",
+      "IT",
+      "NO",
       "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "a108545d4b250dba",
+    "headline": "Trump set to plunge us all into a global recession - with the united kingdom  most | World | News",
+    "url": "https://www.express.co.uk/news/world/2194141/trump-iran-war-uk-recession-imf-warning",
+    "publishedAt": "20260415T061500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT",
+      "GB",
+      "SE"
     ],
     "topic_tags": [],
     "summary": "",
@@ -2500,15 +2966,63 @@
     "relevance_score": 2.0
   },
   {
-    "id": "b265dccfb944a149",
-    "headline": "Canada has a Second Chance to Fuel the World | Asian Pacific Post | Chinese newspaper - Vancouver , Richmond , Calgary , Edmonton , Winnipeg , Toronto , North York , Montreal",
-    "url": "https://asianpacificpost.com/article/10582-canada-has-second-chance-fuel-world.html",
-    "publishedAt": "20260415T081500Z",
+    "id": "94fc8a768bee167a",
+    "headline": "5 things Canada and Finland have in common as NATO ally leader visits - National",
+    "url": "https://globalnews.ca/news/11802189/canada-finland-relationship/",
+    "publishedAt": "20260415T141500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "DE",
+      "IT",
+      "NL",
+      "FI"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "ad730abadd9b57fb",
+    "headline": "Spain Is Outpacing Europe In 2026 - 3 Stocks Set To Benefit - Iberdrola ( OTC : IBDRY ), Iberdrola ( OTC : IBDSF",
+    "url": "https://www.benzinga.com/Opinion/26/04/51835024/spain-is-outpacing-europe-in-2026-3-stocks-set-to-benefit",
+    "publishedAt": "20260415T161500Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
-      "NO",
+      "IT",
       "SE",
+      "FI"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "6a06ed23fb0fec32",
+    "headline": "Rachel Reeves calls US war with Iran  a mistake  that has  not made world a safer place  ",
+    "url": "https://www.manchestereveningnews.co.uk/news/uk-news/rachel-reeves-calls-war-iran-33778250",
+    "publishedAt": "20260415T173000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "NO"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "6ca274ea112e212e",
+    "headline": "First Phosphate advances funding strategy , earning repeat  Outperform  rating from Noble analysts",
+    "url": "https://www.proactiveinvestors.com/companies/news/1090632/first-phosphate-advances-funding-strategy-earning-repeat-outperform-rating-from-noble-analysts-1090632.html",
+    "publishedAt": "20260415T213000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "FR",
+      "NO",
       "FI"
     ],
     "topic_tags": [],
@@ -2549,6 +3063,37 @@
     "relevance_score": 2.0
   },
   {
+    "id": "707a224b40506d55",
+    "headline": "Tanzania : UNDP Names 14 Enterprises to Benefit From the Finland - Backed Project",
+    "url": "https://allafrica.com/stories/202604160021.html",
+    "publishedAt": "20260416T054500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "FR",
+      "IT",
+      "NL",
+      "SE",
+      "FI"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "5f6bd12bcaac287b",
+    "headline": "U . S . Crude Oil Exports Surge Toward Record Highs Amid Global Supply Crisis",
+    "url": "http://www.econotimes.com/US-Crude-Oil-Exports-Surge-Toward-Record-Highs-Amid-Global-Supply-Crisis-1739168",
+    "publishedAt": "20260416T060000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "DE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
     "id": "72f5499f1c4a3d2e",
     "headline": "Princess Cruises announces three new Voyager Class builds with Fincantieri",
     "url": "https://travelweekly.com.au/princess-cruises-announces-three-new-voyager-class-builds-with-fincantieri/",
@@ -2561,6 +3106,24 @@
       "SE",
       "FI",
       "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "35f15e0b1031843e",
+    "headline": "Nokia Oyj : Nokia and Cinia partner to secure Finland critical infrastructure with advanced DDoS protection",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-04/68212091-nokia-oyj-nokia-and-cinia-partner-to-secure-finland-s-critical-infrastructure-with-advanced-ddos-protection-399.htm",
+    "publishedAt": "20260416T064500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "FR",
+      "IT",
+      "NL",
+      "NO",
+      "SE",
+      "FI"
     ],
     "topic_tags": [],
     "summary": "",
@@ -2647,10 +3210,227 @@
     "relevance_score": 2.0
   },
   {
-    "id": "bfadd5cf79887f3d",
-    "headline": "Germany Looks To Help Secure Hormuz After Hostilities",
-    "url": "https://www.marinelink.com/news/germany-looks-help-secure-hormuz-538162",
-    "publishedAt": "20260416T211500Z",
+    "id": "912665b85647fda9",
+    "headline": "European countries have capacity to clear mines in Hormuz , French Defence Minister says",
+    "url": "https://www.marketscreener.com/news/european-countries-have-capacity-to-clear-mines-in-hormuz-french-defence-minister-says-ce7e50d2dd88f225",
+    "publishedAt": "20260417T061500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "FR",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "9b4cb5e38dfb899e",
+    "headline": "Finland seeks EU funding for subsea cable repair capacity",
+    "url": "https://www.globalsecurity.org/security/library/news/2026/04/sec-260416-finmfa01.htm",
+    "publishedAt": "20260417T121500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT",
+      "NL",
+      "SE",
+      "FI"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "2a71179de6b21fdd",
+    "headline": "Colombia environment minister says Middle East crisis should speed energy transition",
+    "url": "https://www.independent.co.uk/news/world/europe/colombia-middle-east-donald-trump-iran-bogota-b2959925.html",
+    "publishedAt": "20260417T160000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "4d2b69240a3f5caa",
+    "headline": "The World Oldest Amusement Park Is A Quirky Escape With Coasters And Games Near Copenhagen",
+    "url": "https://www.islands.com/2146438/bakken-world-oldest-amusement-park-quirky-escape-coasters-games-woods-copenhagen/",
+    "publishedAt": "20260417T170000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "SE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "e25130f5e547f3a8",
+    "headline": "Colombia environment minister says Middle East crisis should speed energy transition",
+    "url": "http://www.sitkasentinel.com/stories/colombias-environment-minister-says-middle-east-crisis-should-speed-energy-transition,134253",
+    "publishedAt": "20260417T173000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "c98f34532a5f5452",
+    "headline": "Solar Foods Wins US Patent for Air Protein Solein",
+    "url": "https://www.nutraingredients.com/Article/2026/04/16/solar-foods-wins-us-patent-for-air-protein-solein/",
+    "publishedAt": "20260417T180000Z",
+    "source": "gdelt",
+    "country_tags": [],
+    "topic_tags": [
+      "renewables"
+    ],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "5bafed34c2496742",
+    "headline": "Terra Innovatum Provides Update on Annual Report Filing Process",
+    "url": "https://www.manilatimes.net/2026/04/18/tmt-newswire/globenewswire/terra-innovatum-provides-update-on-annual-report-filing-process/2323112",
+    "publishedAt": "20260417T231500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "NO",
+      "FI"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "56ab64087e776175",
+    "headline": "Pope Leo XIV Historic Visit To Algeria Seen As Model Of Interfaith Dialogue and Solidarity – Analysis – Eurasia Review",
+    "url": "https://www.eurasiareview.com/18042026-pope-leo-xivs-historic-visit-to-algeria-seen-as-model-of-interfaith-dialogue-and-solidarity-analysis/",
+    "publishedAt": "20260418T014500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "DE",
+      "IT",
+      "SE",
+      "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "002c723f6211aad3",
+    "headline": "Dutch Mayor Finds No Basis to Ban Kanye West From Netherlands Concerts",
+    "url": "https://www.billboard.com/music/rb-hip-hop/netherlands-mayor-no-ban-kanye-west-concerts-1236226014/",
+    "publishedAt": "20260418T040000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "FR",
+      "NL",
+      "NO",
+      "FI"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "99ec8425665ca604",
+    "headline": "Dog - friendly lodge in Wales where guests watch the stars from a wood - fired bath",
+    "url": "https://www.chroniclelive.co.uk/whats-on/shopping/dog-friendly-lodge-west-wales-33768980",
+    "publishedAt": "20260418T054500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "FR",
+      "FI",
+      "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "14124ac6212e7b5d",
+    "headline": "Dog - friendly lodge in Wales where guests watch the stars from a wood - fired bath",
+    "url": "https://www.bristolpost.co.uk/whats-on/shopping/dog-friendly-lodge-west-wales-10915889",
+    "publishedAt": "20260418T061500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "FR",
+      "FI",
+      "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "25eb820d746505f6",
+    "headline": "Stranded and dying , the German whale is a parable of our troubled relationship with these sea giants | Whales",
+    "url": "https://www.theguardian.com/environment/2026/apr/18/stranded-dying-german-whale-troubled-relationship-sea-timmy",
+    "publishedAt": "20260418T063000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "SE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "63c3f347312e45d7",
+    "headline": "Dog - friendly lodge in Wales where guests watch the stars from a wood - fired bath",
+    "url": "https://www.plymouthherald.co.uk/whats-on/shopping/dog-friendly-lodge-west-wales-10915889",
+    "publishedAt": "20260418T080000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "FR",
+      "FI",
+      "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "09cccbe93795e875",
+    "headline": "Ukraine strikes two Russian refineries , Baltic Sea port",
+    "url": "https://www.rte.ie/news/ukraine/2026/0418/1568927-ukraine-russia/",
+    "publishedAt": "20260418T114500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "SE",
+      "FI",
+      "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "ac208ca2c6d5f34d",
+    "headline": "Which countries are most vulnerable as US imposes its own blockade in Persian Gulf ? ",
+    "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/04/18/which-countries-are-most-vulnerable-as-us-imposes-its-own-blockade-in-persian-gulf",
+    "publishedAt": "20260418T121500Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
@@ -2664,283 +3444,30 @@
     "relevance_score": 2.0
   },
   {
-    "id": "4a0853b7d22db91b",
-    "headline": "Hundreds of people to get free energy for  at least 10 year in new scheme",
-    "url": "https://www.mirror.co.uk/money/hundreds-people-free-energy-at-37030729",
-    "publishedAt": "20260417T094500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "FR"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 2.0
-  },
-  {
-    "id": "d36c2e82f0e1245f",
-    "headline": "Your questions answered on Sweden proposed permanent residency changes",
-    "url": "https://www.thelocal.se/20260410/your-questions-answered-on-swedens-proposed-permanent-residency-changes/",
-    "publishedAt": "20260411T103000Z",
+    "id": "fc5c6c95612ad147",
+    "headline": "EU largest economies vs top US states : How do they compare in GDP ? ",
+    "url": "https://www.euronews.com/business/2026/04/12/eus-largest-economies-vs-top-us-states-how-do-they-compare-in-gdp",
+    "publishedAt": "20260412T080000Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
-      "DE",
-      "SE"
+      "NO",
+      "IE"
     ],
     "topic_tags": [],
     "summary": "",
     "relevance_score": 1.5
   },
   {
-    "id": "793282c38ad2fb99",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | Central Western Daily",
-    "url": "https://www.centralwesterndaily.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T194500Z",
+    "id": "5ce2940744031731",
+    "headline": "Carney to meet Finnish President Alexander Stubb in Ottawa this week",
+    "url": "https://www.theglobeandmail.com/politics/article-carney-finland-president-alexander-stubb/",
+    "publishedAt": "20260412T181500Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "4c5a0bf5c36a9dde",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | Port Macquarie News",
-    "url": "https://www.portnews.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T194500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NO",
-      "IE"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "7e6b67f46299253e",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | Oberon Review",
-    "url": "https://www.oberonreview.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T200000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NO",
-      "IE"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "97a22d5cc59e6c78",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | Gloucester Advocate",
-    "url": "https://www.gloucesteradvocate.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T200000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "800742ca66f2012f",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | Manning River Times",
-    "url": "https://www.manningrivertimes.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T201500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "3b2a8c5602b1067a",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | St George & Sutherland Shire Leader",
-    "url": "https://www.theleader.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T201500Z",
-    "source": "gdelt",
-    "country_tags": [
       "DE",
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "ed4f73e6b8978a8f",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | The Canberra Times",
-    "url": "https://www.canberratimes.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T210000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "46c4907edb751e3f",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | The Daily Advertiser",
-    "url": "https://www.dailyadvertiser.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T213000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NO",
-      "SE"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "896f311179cac3e7",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | The Armidale Express",
-    "url": "https://www.armidaleexpress.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T214500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "6e58f72e37e7fb53",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | Great Lakes Advocate",
-    "url": "https://www.greatlakesadvocate.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T220000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "0099eae81749d7eb",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | Western Advocate",
-    "url": "https://www.westernadvocate.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T220000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "96e0eaddd5b6d62d",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | Katherine Times",
-    "url": "https://www.katherinetimes.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T220000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "8be143750ed70d93",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | Namoi Valley Independent",
-    "url": "https://www.nvi.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T221500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "DE",
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "031736166ab16197",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | Bendigo Advertiser",
-    "url": "https://www.bendigoadvertiser.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T223000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NO",
-      "SE"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "5e854460b8e4cde8",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | The Northern Daily Leader",
-    "url": "https://www.northerndailyleader.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T223000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "DE",
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "70ca7a9936e63e59",
-    "headline": "War piles economic pain onto Europe political stress",
-    "url": "https://www.omanobserver.om/article/1187732/business/economy/war-piles-economic-pain-onto-europes-political-stress",
-    "publishedAt": "20260412T063000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT",
-      "NO"
+      "FI"
     ],
     "topic_tags": [],
     "summary": "",
@@ -2953,6 +3480,21 @@
     "publishedAt": "20260413T034500Z",
     "source": "gdelt",
     "country_tags": [],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
+    "id": "b7eaf86367f65444",
+    "headline": "UK could make migrants wait up to 20 years before becoming settled - making it one of the longest waits in world",
+    "url": "https://economictimes.indiatimes.com/nri/migrate/uk-could-make-migrants-wait-up-to-20-years-before-becoming-settled-making-it-one-of-the-longest-waits-in-world/articleshow/130225379.cms",
+    "publishedAt": "20260413T053000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT",
+      "SE"
+    ],
     "topic_tags": [],
     "summary": "",
     "relevance_score": 1.5
@@ -2973,6 +3515,22 @@
     "relevance_score": 1.5
   },
   {
+    "id": "f70c9f1edf4c17fd",
+    "headline": "Gas Networks Ireland to invest €50m in network",
+    "url": "https://www.irishtimes.com/business/2026/04/14/gas-networks-ireland-to-invest-50m-in-network/",
+    "publishedAt": "20260413T234500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
     "id": "96e80c592ca3e5a7",
     "headline": "Because Eni wants Russian gas in Italy again",
     "url": "https://www.thevermilion.com/because-eni-wants-russian-gas-in-italy-again/article_17177/",
@@ -2985,6 +3543,36 @@
     "topic_tags": [
       "gas"
     ],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
+    "id": "87bb029fb80938fc",
+    "headline": "Fuel rationing and three day work week - is the united kingdom headed back to 1970s hell ? | united kingdom | News",
+    "url": "https://www.express.co.uk/news/uk/2193549/could-uk-face-fuel-rationing",
+    "publishedAt": "20260414T064500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "DE",
+      "IT",
+      "GB"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
+    "id": "7f26060f61602c26",
+    "headline": "King stresses importance of Nato and reliability in US speech",
+    "url": "https://www.dutchnews.nl/2026/04/king-stresses-importance-of-nato-and-reliability-in-us-speech/",
+    "publishedAt": "20260414T080000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT",
+      "SE"
+    ],
+    "topic_tags": [],
     "summary": "",
     "relevance_score": 1.5
   },
@@ -3019,21 +3607,6 @@
     "relevance_score": 1.5
   },
   {
-    "id": "b593eee45f74d096",
-    "headline": "Electric Cars could be the united kingdom Answer to Fuel Shortages",
-    "url": "https://www.desiblitz.com/content/electric-cars-could-be-the-uks-answer-to-fuel-shortages",
-    "publishedAt": "20260414T190000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT",
-      "GB"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
     "id": "1b3016b694500e7a",
     "headline": "World News : Economic pressure on Russia key for peace , Italy Meloni says",
     "url": "https://www.gdnonline.com:443/Details/1381466",
@@ -3043,6 +3616,21 @@
       "ES",
       "IT",
       "NO"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
+    "id": "b593eee45f74d096",
+    "headline": "Electric Cars could be the united kingdom Answer to Fuel Shortages",
+    "url": "https://www.desiblitz.com/content/electric-cars-could-be-the-uks-answer-to-fuel-shortages",
+    "publishedAt": "20260414T190000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT",
+      "GB"
     ],
     "topic_tags": [],
     "summary": "",
@@ -3064,15 +3652,45 @@
     "relevance_score": 1.5
   },
   {
-    "id": "34099298fffdc483",
-    "headline": "Trump sabotaged America and handed its enemy a massive gift : Nobel - winning economist",
-    "url": "https://www.rawstory.com/trump-iran-china/",
-    "publishedAt": "20260414T230000Z",
+    "id": "c255841bb1dfa2cc",
+    "headline": "Melania Trump sculptural floral dress contrasts Queen Máxima bold orange look at the White House",
+    "url": "https://www.hola.com/us/royals/20260414895647/melania-trump-floral-dress-contrasts-queen-maxima-orange-look/",
+    "publishedAt": "20260414T214500Z",
     "source": "gdelt",
     "country_tags": [
-      "DE",
+      "ES",
       "IT",
-      "NO"
+      "SE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
+    "id": "9eb085567e02ac17",
+    "headline": "Roundup : Vehicle electrification accelerates in the Netherlands - Xinhua",
+    "url": "https://english.news.cn/europe/20260415/c0044388693d41e0846c8e0956157f24/c.html",
+    "publishedAt": "20260414T214500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "NL",
+      "FI"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
+    "id": "92bde5e91febf85b",
+    "headline": "Roundup : Vehicle electrification accelerates in the Netherlands - Xinhua",
+    "url": "https://english.news.cn/20260415/262dd4997d6d4fd0bdf98086a2989970/c.html",
+    "publishedAt": "20260414T214500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "NL",
+      "FI"
     ],
     "topic_tags": [],
     "summary": "",
@@ -3094,6 +3712,67 @@
     "relevance_score": 1.5
   },
   {
+    "id": "edb8e06fb17b7ab9",
+    "headline": "Shell in talks to sell 600 South African petrol stations in $1bn deal",
+    "url": "https://www.bizcommunity.com/article/shell-in-talks-to-sell-600-south-african-petrol-stations-in-1bn-deal-403079a",
+    "publishedAt": "20260415T064500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "DE",
+      "FR",
+      "SE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
+    "id": "e17612b2c1709f8d",
+    "headline": "More discrimination reports , most about Wilders ; Anti - Semitism also  alarmingly  high",
+    "url": "https://nltimes.nl/2026/04/15/discrimination-reports-wilders-anti-semitism-also-alarmingly-high",
+    "publishedAt": "20260415T134500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "DE",
+      "IT",
+      "SE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
+    "id": "bd8c343a21a4cd0f",
+    "headline": "Enagas ( OTCMKTS : ENGGY ) Sees Strong Trading Volume – Should You Buy ? ",
+    "url": "https://www.dailypolitical.com/2026/04/15/enagas-otcmktsenggy-sees-strong-trading-volume-should-you-buy.html",
+    "publishedAt": "20260415T161500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "SE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
+    "id": "02e0c2d713150adc",
+    "headline": "Donald Trump double blockade of Hormuz : A high - stakes gamble with many limitations | International",
+    "url": "https://english.elpais.com/international/2026-04-15/donald-trumps-double-blockade-of-hormuz-a-high-stakes-gamble-with-many-limitations.html",
+    "publishedAt": "20260415T161500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
     "id": "e8b3ae979f34b28e",
     "headline": "Sweden blames Russian hackers for attempting  destructive  cyberattack on thermal plant",
     "url": "https://techcrunch.com/2026/04/15/sweden-blames-russian-hackers-for-attempting-destructive-cyberattack-on-thermal-plant/",
@@ -3109,12 +3788,46 @@
     "relevance_score": 1.5
   },
   {
-    "id": "565dbb555bd3163b",
-    "headline": "Geothermal Energy Turns Red Hot",
-    "url": "https://www.miragenews.com/geothermal-energy-turns-red-hot-1656270/",
-    "publishedAt": "20260416T001500Z",
+    "id": "4e2f06265651d3ec",
+    "headline": "Visit to enhance trade between China , Spain",
+    "url": "http://africa.chinadaily.com.cn/a/202604/16/WS69e03830a310d6866eb43b42.html",
+    "publishedAt": "20260416T024500Z",
     "source": "gdelt",
-    "country_tags": [],
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
+    "id": "5bf3d21dbe4f136c",
+    "headline": "Visit to enhance trade between China , Spain",
+    "url": "http://europe.chinadaily.com.cn/a/202604/16/WS69e03830a310d6866eb43b42.html",
+    "publishedAt": "20260416T044500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
+    "id": "bf89ac819fec1eca",
+    "headline": "University Green Tech Innovations Set for Market Growth",
+    "url": "https://www.miragenews.com/universitys-green-tech-innovations-set-for-1656543/",
+    "publishedAt": "20260416T064500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT",
+      "NO",
+      "SE"
+    ],
     "topic_tags": [],
     "summary": "",
     "relevance_score": 1.5
@@ -3131,12 +3844,42 @@
     "relevance_score": 1.5
   },
   {
+    "id": "f4649ffe2dfa0b57",
+    "headline": "Refresco Europe Partners with ISN to Help Advance Contractor Oversight Across European Operations",
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-04/68213943-refresco-europe-partners-with-isn-to-help-advance-contractor-oversight-across-european-operations-399.htm",
+    "publishedAt": "20260416T084500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "FR",
+      "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
     "id": "6f3b37080e4bae9f",
     "headline": "Energy Storage Boom Propels Former Huawei Executive Into Billionaire Ranks",
     "url": "https://www.forbes.com/sites/ywang/2026/04/16/energy-storage-boom-propels-former-huawei-executive-into-billionaire-ranks/",
     "publishedAt": "20260416T100000Z",
     "source": "gdelt",
     "country_tags": [],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
+    "id": "c1709148af619e6f",
+    "headline": "Losses of russian forces now exceed russia mobilization rates , says Mykhailo Fedorov at the opening of the 34th Ramstein - format meeting",
+    "url": "https://www.globalsecurity.org/wmd/library/news/ukraine/2026/04/ukraine-260415-ukraine-mod01.htm",
+    "publishedAt": "20260416T124500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "NO",
+      "SE"
+    ],
     "topic_tags": [],
     "summary": "",
     "relevance_score": 1.5
@@ -3151,6 +3894,51 @@
       "IT",
       "SE",
       "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
+    "id": "09e60ccbc4382361",
+    "headline": "2 AI Stocks Wall Street Says Could Soar 70 % or More From Here , and 1 It Says to Sell Immediately",
+    "url": "https://www.fool.com/investing/2026/04/16/2-ai-stocks-wall-street-says-could-soar-70-or-more/?source=iedfolrf0000001",
+    "publishedAt": "20260416T193000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "FR",
+      "IT",
+      "SE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
+    "id": "98c9cf10b01b4440",
+    "headline": "First Two Arctic Security Cutters To Be Homeported In",
+    "url": "https://www.marinelink.com/news/first-two-arctic-security-cutters-538171",
+    "publishedAt": "20260416T211500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT",
+      "SE",
+      "FI"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
+    "id": "7725f7ef47806751",
+    "headline": "India to continue buying Russian crude , LPG despite end of US sanctions waiver",
+    "url": "https://www.livemint.com/economy/india-to-continue-buying-russian-crude-oil-lpg-despite-end-of-us-sanctions-waiver-11776337035100.html",
+    "publishedAt": "20260417T023000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT"
     ],
     "topic_tags": [],
     "summary": "",
@@ -3172,21 +3960,6 @@
     "relevance_score": 1.5
   },
   {
-    "id": "3483963ff47fd2df",
-    "headline": "PHNIX Unveils airMono : The Revolutionary A+++ R290 Indoor Monoblock Heat Pump for Urban Retrofit",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-04/68226461-phnix-unveils-airmono-the-revolutionary-a-r290-indoor-monoblock-heat-pump-for-urban-retrofit-008.htm",
-    "publishedAt": "20260417T093000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IT",
-      "NO",
-      "FI"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
     "id": "450695efb135e8df",
     "headline": "Princess Cruises orders three new Voyager Class ships",
     "url": "https://www.traveldailymedia.com/princess-cruises-orders-three-new-voyager-class-ships/",
@@ -3196,6 +3969,51 @@
       "ES",
       "DE",
       "SE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
+    "id": "8e138f96512b7c7a",
+    "headline": "MAGA figures are pushing Trump campaign to grab Greenland",
+    "url": "https://www.freemalaysiatoday.com/category/world/2026/04/17/maga-figures-are-pushing-trumps-campaign-to-grab-greenland",
+    "publishedAt": "20260417T101500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "NL",
+      "FI"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
+    "id": "ea8b524b4303d308",
+    "headline": "Iran war brings US close to net crude exporter for first time since World War Two",
+    "url": "https://finance.yahoo.com/sectors/energy/articles/iran-war-brings-us-close-023327078.html",
+    "publishedAt": "20260417T120000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "DE",
+      "SE",
+      "FI"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
+    "id": "93ba2f47b0176db7",
+    "headline": "Danish travel companies : Fuel shortages  no threat  to summer holidays",
+    "url": "https://www.thelocal.dk/20260417/danish-travel-companies-fuel-shortages-no-threat-to-summer-holidays",
+    "publishedAt": "20260417T120000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "NO",
+      "IE"
     ],
     "topic_tags": [],
     "summary": "",
@@ -3217,358 +4035,103 @@
     "relevance_score": 1.5
   },
   {
-    "id": "aeb8c5dc88565841",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | Moree Champion",
-    "url": "https://www.moreechampion.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T194500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "d9e5ee23fc30d80e",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | The Advocate",
-    "url": "https://www.theadvocate.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T200000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "ecec22eed7583771",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | Crookwell Gazette",
-    "url": "https://www.crookwellgazette.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T200000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "a7e0a90749c69782",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | The Singleton Argus",
-    "url": "https://www.singletonargus.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T200000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "dae518b1688b596e",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | Daily Liberal",
-    "url": "https://www.dailyliberal.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T200000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "57d5194d74daa590",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | The Macleay Argus",
-    "url": "https://www.macleayargus.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T200000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "0d2a7b1a953504ae",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | The Examiner",
-    "url": "https://www.examiner.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T201500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "12e3b62ed39fedc0",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | Newcastle Herald",
-    "url": "https://www.newcastleherald.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T201500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "e94e4e26e192340a",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | The Standard",
-    "url": "https://www.standard.net.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T210000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "ee0ca71c083d860e",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | Bunbury Mail",
-    "url": "https://www.bunburymail.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T210000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "eff98b2713f11d37",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | Mandurah Mail",
-    "url": "https://www.mandurahmail.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T213000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "94ccb17401071054",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | Dungog Chronicle",
-    "url": "https://www.dungogchronicle.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T220000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "a886c82d818e6368",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | Port Stephens Examiner",
-    "url": "https://www.portstephensexaminer.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T220000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "0fa7983a7211da8c",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | Eastern Riverina Chronicle",
-    "url": "https://www.easternriverinachronicle.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T220000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "3439f2ddf28c96fe",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | The Area News",
-    "url": "https://www.areanews.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T221500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "1f64d78ff81f915f",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | The Scone Advocate",
-    "url": "https://www.sconeadvocate.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T223000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "a4f1b80dfb7c1f64",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | Narooma News",
-    "url": "https://www.naroomanewsonline.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T223000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "949053ea04ef039b",
-    "headline": "Keir Starmer has to choose : Rachel Reeves or Project Miliband",
-    "url": "https://www.thetimes.com/uk/politics/article/keir-starmer-rachel-reeves-ed-miliband-net-zero-decarbonisation-djnsbcjph",
-    "publishedAt": "20260411T223000Z",
+    "id": "e24540a51f1555b1",
+    "headline": "Ukraine strikes Baltic Sea port , Volga river industrial sites",
+    "url": "https://economictimes.indiatimes.com/news/defence/ukraine-strikes-baltic-sea-port-volga-river-industrial-sites/articleshow/130349420.cms",
+    "publishedAt": "20260418T081500Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
+      "IT",
       "SE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
+    "id": "0dcb5bdb2b2a276a",
+    "headline": "Ukraine strikes Baltic Sea port , Volga river industrial sites",
+    "url": "https://www.marketscreener.com/news/ukraine-strikes-baltic-sea-port-volga-river-industrial-sites-ce7e50d3da8bf022",
+    "publishedAt": "20260418T090000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT",
+      "SE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
+    "id": "a62a23012442a537",
+    "headline": "Ukraine strikes Baltic Sea port , Volga river industrial sites",
+    "url": "https://www.yahoo.com/news/articles/ukraine-strikes-industrial-targets-volga-065634937.html",
+    "publishedAt": "20260418T091500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT",
+      "SE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
+    "id": "37d036ac43a947a0",
+    "headline": "How Hungary new leader is turning into a bigger friend to Putin than anybody had thought",
+    "url": "https://www.independent.co.uk/news/world/europe/hungary-putin-orban-russia-ukraine-b2959920.html",
+    "publishedAt": "20260418T103000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "DE",
+      "FR",
+      "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
+    "id": "4460e980e8b1bf40",
+    "headline": "More than 30 trains damaged in Denmark after traction system fault upends traffic",
+    "url": "https://www.railwaygazette.com/infrastructure/2026/04/15/more-than-30-trains-damaged-in-denmark-after-traction-system-fault-upends-traffic/",
+    "publishedAt": "20260419T050000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "DE",
+      "FI",
+      "DK"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
+    "id": "fc2aeb81c517970b",
+    "headline": "Electric car demand surges in Europe amid Iran war fuel shock",
+    "url": "https://news.az/news/electric-car-demand-surges-in-europe-amid-iran-war-fuel-shock",
+    "publishedAt": "20260412T200000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE"
     ],
     "topic_tags": [],
     "summary": "",
     "relevance_score": 1.0
   },
   {
-    "id": "820c44d33e8940cd",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | Southern Cross",
-    "url": "https://www.juneesoutherncross.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T223000Z",
+    "id": "51967c6f0ae66d3b",
+    "headline": "Neste Oyj ( OTCMKTS : NTOIF ) versus ENEOS ( OTCMKTS : JXHLY ) Head - To - Head Review",
+    "url": "https://www.dailypolitical.com/2026/04/12/neste-oyj-otcmktsntoif-versus-eneos-otcmktsjxhly-head-to-head-review.html",
+    "publishedAt": "20260413T053000Z",
     "source": "gdelt",
     "country_tags": [
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "acc7c2cff9920203",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | Narromine News",
-    "url": "https://www.narrominenewsonline.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260411T230000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "04db79955ab48099",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | Blue Mountains Gazette",
-    "url": "https://www.bluemountainsgazette.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260412T001500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "2a59782a77793db7",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | Yass Tribune",
-    "url": "https://www.yasstribune.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260412T001500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "be403308633bb9d4",
-    "headline": "Ebony Bennett : Why now is the time to implement a gas tax | Muswellbrook Chronicle",
-    "url": "https://www.muswellbrookchronicle.com.au/story/9219673/ebony-bennett-why-now-is-the-time-to-implement-a-gas-tax/",
-    "publishedAt": "20260412T004500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "NO"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "9b928abfbd629c64",
-    "headline": "Twist as Governor ORENGO defends RUTO controversial project in Siaya",
-    "url": "https://www.kenyan-post.com/2026/04/twist-as-governor-orengo-defends-rutos.html",
-    "publishedAt": "20260412T070000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "DE",
-      "NO"
+      "ES",
+      "IE"
     ],
     "topic_tags": [],
     "summary": "",
@@ -3632,10 +4195,80 @@
     "relevance_score": 1.0
   },
   {
+    "id": "1ae1e8fa55eb0941",
+    "headline": "City trash becomes a burning question for rural towns",
+    "url": "https://www.inverelltimes.com.au/story/9222227/citys-trash-becomes-a-burning-question-for-rural-towns/",
+    "publishedAt": "20260413T204500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "07904dfe8bfa29ae",
+    "headline": "City trash becomes a burning question for rural towns",
+    "url": "https://www.therural.com.au/story/9222227/citys-trash-becomes-a-burning-question-for-rural-towns/",
+    "publishedAt": "20260413T204500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
     "id": "edefd8ff611f7bf7",
     "headline": "City trash becomes a burning question for rural towns",
     "url": "https://www.canberratimes.com.au/story/9222227/citys-trash-becomes-a-burning-question-for-rural-towns/",
     "publishedAt": "20260413T210000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "e53519efb6d4374b",
+    "headline": "City trash becomes a burning question for rural towns",
+    "url": "https://www.bunburymail.com.au/story/9222227/citys-trash-becomes-a-burning-question-for-rural-towns/",
+    "publishedAt": "20260413T210000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "fa8aa7c628e73b2d",
+    "headline": "City trash becomes a burning question for rural towns",
+    "url": "https://www.naroomanewsonline.com.au/story/9222227/citys-trash-becomes-a-burning-question-for-rural-towns/",
+    "publishedAt": "20260413T211500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "ec05d3002eb76e2f",
+    "headline": "City trash becomes a burning question for rural towns",
+    "url": "https://www.mandurahmail.com.au/story/9222227/citys-trash-becomes-a-burning-question-for-rural-towns/",
+    "publishedAt": "20260413T211500Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
@@ -3689,6 +4322,20 @@
     "relevance_score": 1.0
   },
   {
+    "id": "5242855039ae7ae1",
+    "headline": "Switzerland Wants A Global Roadmap To Phase Out Fossil Fuels – Analysis",
+    "url": "https://www.eurasiareview.com/14042026-switzerland-wants-a-global-roadmap-to-phase-out-fossil-fuels-analysis/",
+    "publishedAt": "20260414T014500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT",
+      "SE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
     "id": "e0e3b45c1f34d4a5",
     "headline": "Today in Norway : A roundup of the latest news on Tuesday",
     "url": "https://www.thelocal.no/20260414/today-in-norway-a-roundup-of-the-latest-news-on-tuesday-233",
@@ -3697,6 +4344,20 @@
     "country_tags": [
       "ES",
       "NO"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "1ad7ae19c2e096d1",
+    "headline": "ECB Rehn : Slowing green transition due to war would be  serious mistake  ",
+    "url": "https://www.marketscreener.com/news/ecb-s-rehn-slowing-green-transition-due-to-war-would-be-serious-mistake-ce7e50ded08ef72c",
+    "publishedAt": "20260414T084500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT",
+      "SE"
     ],
     "topic_tags": [],
     "summary": "",
@@ -3731,6 +4392,48 @@
     "relevance_score": 1.0
   },
   {
+    "id": "e854982ef0cc1ecd",
+    "headline": "Building a Fairer Economic Order",
+    "url": "https://foreignpolicy.com/2026/04/14/bretton-woods-world-bank-g20-trade-economic-order/",
+    "publishedAt": "20260414T151500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "DE",
+      "NO"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "af7d8293764a9d44",
+    "headline": "Europe Electrification Dream Is Hitting a Wall",
+    "url": "https://oilprice.com/Energy/Energy-General/Europes-Electrification-Dream-Is-Hitting-a-Wall.html",
+    "publishedAt": "20260414T224500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT",
+      "FI"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "e03350e3ced5cd7f",
+    "headline": "KRISTEN FOURIE | The hidden environmental cost of war",
+    "url": "https://www.businessday.co.za/opinion/2026-04-15-kristen-fourie-the-hidden-environmental-cost-of-war/",
+    "publishedAt": "20260415T043000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "DE",
+      "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
     "id": "65af7bf3491fc3f3",
     "headline": "2026 Marhaba Operation : GNV Expands Italy - Morocco Routes via Barcelona Hub",
     "url": "https://www.moroccoworldnews.com/2026/04/287291/2026-marhaba-operation-gnv-expands-italy-morocco-routes-via-barcelona-hub/",
@@ -3739,20 +4442,6 @@
     "country_tags": [
       "ES",
       "IT"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "9468510e7aec6267",
-    "headline": "Mexican farmers raise alarm over Sheinbaum fracking proposal",
-    "url": "https://www.digitaljournal.com/business/mexican-farmers-raise-alarm-over-sheinbaums-fracking-proposal/article",
-    "publishedAt": "20260416T023000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "FR",
-      "SE"
     ],
     "topic_tags": [],
     "summary": "",
@@ -3787,6 +4476,34 @@
     "relevance_score": 1.0
   },
   {
+    "id": "02f34e72d13cf514",
+    "headline": "Europe Electrification Dream Is Hitting A Wall",
+    "url": "https://www.zerohedge.com/energy/europes-electrification-dream-hitting-wall",
+    "publishedAt": "20260416T074500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT",
+      "FI"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "a790a035f61647b4",
+    "headline": "Inflation in the euro area rising faster than initial estimates",
+    "url": "https://www.independent.ie/business/inflation-in-the-euro-area-rising-faster-than-initial-estimates/a365712411.html",
+    "publishedAt": "20260416T110000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
     "id": "70d403af320d01b7",
     "headline": "Nord Stream blasts due to war , say insurers seeking to avoid pay out",
     "url": "https://www.marketscreener.com/news/nord-stream-blasts-due-to-war-say-insurers-seeking-to-avoid-pay-out-ce7e50ddde8bf527",
@@ -3794,6 +4511,20 @@
     "source": "gdelt",
     "country_tags": [
       "NO",
+      "SE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "95ef2278390c0659",
+    "headline": "Wartsila ( OTCMKTS : WRTBY ) Sees Large Volume Increase – Time to Buy ? ",
+    "url": "https://www.dailypolitical.com/2026/04/16/wartsila-otcmktswrtby-sees-large-volume-increase-time-to-buy.html",
+    "publishedAt": "20260416T170000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
       "SE"
     ],
     "topic_tags": [],
@@ -3843,42 +4574,14 @@
     "relevance_score": 1.0
   },
   {
-    "id": "e6f61d492ff00163",
-    "headline": "Today picks : Dozen stocks including Wipro , BPCL , DCM Shriram , DCX Systems , Aditya Infotech will be in focus on Friday",
-    "url": "https://www.thehindubusinessline.com/markets/todays-picks-dozen-stocks-including-wipro-bpcl-dcm-shriram-dcx-systems-aditya-infotech-will-be-in-focus-on-friday/article70872098.ece",
-    "publishedAt": "20260417T033000Z",
+    "id": "890f1ec547065961",
+    "headline": "Business funding must be priority for Scottish Government",
+    "url": "https://www.heraldscotland.com/news/26026179.business-funding-must-priority-scottish-government/",
+    "publishedAt": "20260417T043000Z",
     "source": "gdelt",
     "country_tags": [
-      "FR",
+      "ES",
       "IT"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "9988c856f013b671",
-    "headline": "Nord Stream sabotage : High - stakes London trial begins as Lloyd suggests state - actor involvement in €580 million payout battle",
-    "url": "https://www.bankingnews.gr/diethni/articles/869203/nord-stream-sabotage-high-stakes-london-trial-begins-as-lloyd-s-suggests-state-actor-involvement-in-580m-payout-battle",
-    "publishedAt": "20260417T134500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "NO"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "f0c28cbb16aa430a",
-    "headline": "Nord Stream sabotage : High - stakes London trial begins as Lloyd suggests state - actor involvement in €580 million payout battle",
-    "url": "https://www.bankingnews.gr/diethni/articles/869203/nord-stream-sabotage-high-stakes-london-trial-begins-as-lloyd-s-suggests-state-actor-involvement-in-580m-payout-battle%20title=",
-    "publishedAt": "20260417T134500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "NO"
     ],
     "topic_tags": [],
     "summary": "",
@@ -3892,6 +4595,62 @@
     "source": "gdelt",
     "country_tags": [
       "SE",
+      "FI"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "4e52384629c97ec8",
+    "headline": "The Iran war has exposed the limits of neutrality",
+    "url": "https://www.aljazeera.com/opinions/2026/4/17/the-iran-war-has-exposed-the-limits-of-neutrality",
+    "publishedAt": "20260417T154500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT",
+      "SE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "8f221cd28d35dac1",
+    "headline": "Bunker volumes in the port of Rotterdam down 25 % in first quarter 2026 compared to last year",
+    "url": "https://www.hellenicshippingnews.com/bunker-volumes-in-the-port-of-rotterdam-down-25-in-first-quarter-2026-compared-to-last-year/",
+    "publishedAt": "20260417T220000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "FI"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "ad179e5f791a8c3b",
+    "headline": "Baystreet . ca - Europe Electrification Dream Is Hitting a Wall",
+    "url": "http://baystreet.ca/articles/commodities/120099/Europes-Electrification-Dream-Is-Hitting-a-Wall",
+    "publishedAt": "20260418T080000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT",
+      "FI"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "e11c1f80ea422b0f",
+    "headline": "Stubb heading to Jordan , Egypt for official visits",
+    "url": "https://yle.fi/a/74-20221315",
+    "publishedAt": "20260418T111500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT",
       "FI"
     ],
     "topic_tags": [],
@@ -3925,6 +4684,19 @@
     "relevance_score": 0.5
   },
   {
+    "id": "7698282b9498b6b9",
+    "headline": "Amid West Asia crisis : Santa Marta meet aims to drive fossil fuel shift",
+    "url": "https://economictimes.indiatimes.com/industry/renewables/amid-west-asia-crisis-santa-marta-meet-aims-to-drive-fossil-fuel-shift/articleshow/130218833.cms",
+    "publishedAt": "20260412T193000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.5
+  },
+  {
     "id": "a10f7953bd472cc8",
     "headline": "Iran war puts focus on climate - changing petrochemicals | Lifestyle",
     "url": "https://www.news8000.com/lifestyle/money/iran-war-puts-focus-on-petrochemicals-used-in-numerous-products-and-a-driver-of-climate/article_e0b07207-c6f7-5ec9-8ae3-1c11c6ff548f.html",
@@ -3951,6 +4723,45 @@
     "relevance_score": 0.5
   },
   {
+    "id": "a9075fac205dd2c8",
+    "headline": "The Iran war has exposed Taiwan Achille heel",
+    "url": "https://www.taipeitimes.com/News/editorials/archives/2026/04/13/2003855484",
+    "publishedAt": "20260412T211500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "SE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.5
+  },
+  {
+    "id": "62bfbaeb0a2c7600",
+    "headline": "Clean nickel paradox vs . fossil fuel dominance - Academia",
+    "url": "https://www.thejakartapost.com/opinion/2026/04/13/clean-nickel-paradox-vs-fossil-fuel-dominance.html",
+    "publishedAt": "20260413T031500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "DE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.5
+  },
+  {
+    "id": "6ee8b1e2a415ace4",
+    "headline": "R65 a litre for petrol ? | The Citizen",
+    "url": "https://www.citizen.co.za/business/r65-a-litre-for-petrol/",
+    "publishedAt": "20260413T110000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.5
+  },
+  {
     "id": "61f5337cbd87d8cb",
     "headline": "Contrasting Enel ( OTCMKTS : ENLAY ) & E . On ( OTCMKTS : EONGY ) ",
     "url": "https://www.themarketsdaily.com/2026/04/13/contrasting-enel-otcmktsenlay-e-on-otcmktseongy.html",
@@ -3958,6 +4769,19 @@
     "source": "gdelt",
     "country_tags": [
       "NL"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.5
+  },
+  {
+    "id": "50954021337533e0",
+    "headline": "Govt , Perenco formalise production sharing",
+    "url": "https://trinidadexpress.com/business/local/govt-perenco-formalise-production-sharing/article_478a7037-d227-4199-8297-670ccf748232.html",
+    "publishedAt": "20260413T141500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "SE"
     ],
     "topic_tags": [],
     "summary": "",
@@ -3977,6 +4801,32 @@
     "relevance_score": 0.5
   },
   {
+    "id": "abda3b06de449b92",
+    "headline": "Breaking his silence on the Iran war , Xi Jinping delivers a stark warning on world order",
+    "url": "https://www.moneycontrol.com/world/breaking-his-silence-on-the-iran-war-xi-jinping-delivers-a-stark-warning-on-world-order-article-13888357.html",
+    "publishedAt": "20260414T081500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "DE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.5
+  },
+  {
+    "id": "a8b2bdc814d101c9",
+    "headline": "Atalaya Mining first quarter production hurt by hefty Iberian rainfall",
+    "url": "https://www.marketscreener.com/news/atalaya-mining-first-quarter-production-hurt-by-hefty-iberian-rainfall-ce7e50ded081fe21",
+    "publishedAt": "20260414T084500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "FI"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.5
+  },
+  {
     "id": "1fc74c0c47de0d60",
     "headline": "The end of the petrostate era might not bring peace",
     "url": "https://www.taipeitimes.com/News/editorials/archives/2026/04/15/2003855612",
@@ -3984,6 +4834,19 @@
     "source": "gdelt",
     "country_tags": [
       "NO"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.5
+  },
+  {
+    "id": "815c5be9f11d0613",
+    "headline": "European Industrial Leaders Aim To Accelerate Clean",
+    "url": "https://www.marinelink.com/news/european-industrial-leaders-aim-538052",
+    "publishedAt": "20260415T011500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "DE"
     ],
     "topic_tags": [],
     "summary": "",
@@ -4094,19 +4957,6 @@
     "relevance_score": 0.5
   },
   {
-    "id": "8d63709f3dfcfc18",
-    "headline": "Trump slams Italy Meloni over lack of support for Iran war",
-    "url": "https://www.pilotonline.com/2026/04/15/trump-meloni-criticism/",
-    "publishedAt": "20260415T193000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IT"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 0.5
-  },
-  {
     "id": "448526b1e82c2e52",
     "headline": "After criticizing the pope , Trump slams Italy Meloni over lack of support for Iran war",
     "url": "https://www.wboc.com/news/international/after-criticizing-the-pope-trump-slams-italys-meloni-over-lack-of-support-for-iran-war/article_10a7ddf7-dd4a-5608-af11-e6e286d115d5.html",
@@ -4133,13 +4983,104 @@
     "relevance_score": 0.5
   },
   {
-    "id": "be47b67553442325",
-    "headline": "Trump slams Italy Meloni over lack of support for Iran war",
-    "url": "https://www.sandiegouniontribune.com/2026/04/15/trump-meloni-criticism/",
-    "publishedAt": "20260415T211500Z",
+    "id": "c2bea37bc7c4c781",
+    "headline": "Iran war complicates US - China relations ahead of planned Trump - Xi meeting",
+    "url": "https://13wham.com/news/nation-world/iran-war-complicates-us-china-relations-ahead-of-planned-trump-xi-meeting-trump-xi-jinping-strait-of-hormuz-oil-middle-east",
+    "publishedAt": "20260415T233000Z",
     "source": "gdelt",
     "country_tags": [
-      "IT"
+      "ES"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.5
+  },
+  {
+    "id": "50355f3669ae579c",
+    "headline": "Iran war complicates US - China relations ahead of planned Trump - Xi meeting",
+    "url": "https://wcyb.com/news/nation-world/iran-war-complicates-us-china-relations-ahead-of-planned-trump-xi-meeting-trump-xi-jinping-strait-of-hormuz-oil-middle-east",
+    "publishedAt": "20260416T010000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.5
+  },
+  {
+    "id": "918d27bbad5c10b1",
+    "headline": "Iran war complicates US - China relations ahead of planned Trump - Xi meeting",
+    "url": "https://turnto10.com/news/nation-world/iran-war-complicates-us-china-relations-ahead-of-planned-trump-xi-meeting-trump-xi-jinping-strait-of-hormuz-oil-middle-east",
+    "publishedAt": "20260416T013000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.5
+  },
+  {
+    "id": "11a52085eef0f649",
+    "headline": "Iran war complicates US - China relations ahead of planned Trump - Xi meeting",
+    "url": "https://wwmt.com/news/nation-world/iran-war-complicates-us-china-relations-ahead-of-planned-trump-xi-meeting-trump-xi-jinping-strait-of-hormuz-oil-middle-east",
+    "publishedAt": "20260416T014500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.5
+  },
+  {
+    "id": "bb473cac572b19ab",
+    "headline": "Iran war complicates US - China relations ahead of planned Trump - Xi meeting",
+    "url": "https://katu.com/news/nation-world/iran-war-complicates-us-china-relations-ahead-of-planned-trump-xi-meeting-trump-xi-jinping-strait-of-hormuz-oil-middle-east",
+    "publishedAt": "20260416T023000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.5
+  },
+  {
+    "id": "6a986fca46dab70b",
+    "headline": "Iran war complicates US - China relations ahead of planned Trump - Xi meeting",
+    "url": "https://abc6onyourside.com/news/nation-world/iran-war-complicates-us-china-relations-ahead-of-planned-trump-xi-meeting-trump-xi-jinping-strait-of-hormuz-oil-middle-east",
+    "publishedAt": "20260416T023000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.5
+  },
+  {
+    "id": "413dd02e19a03221",
+    "headline": "Iran war complicates US - China relations ahead of planned Trump - Xi meeting",
+    "url": "https://ktul.com/news/nation-world/iran-war-complicates-us-china-relations-ahead-of-planned-trump-xi-meeting-trump-xi-jinping-strait-of-hormuz-oil-middle-east",
+    "publishedAt": "20260416T030000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.5
+  },
+  {
+    "id": "39539f6bee65a96f",
+    "headline": "Iran war complicates US - China relations ahead of planned Trump - Xi meeting",
+    "url": "https://kfdm.com/news/nation-world/iran-war-complicates-us-china-relations-ahead-of-planned-trump-xi-meeting-trump-xi-jinping-strait-of-hormuz-oil-middle-east",
+    "publishedAt": "20260416T031500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES"
     ],
     "topic_tags": [],
     "summary": "",
@@ -4185,6 +5126,32 @@
     "relevance_score": 0.5
   },
   {
+    "id": "d53391862f074249",
+    "headline": "ABB to provide GMD and RMD systems for Australian mine",
+    "url": "https://www.mining-technology.com/news/abb-gmd-rmd-systems-australian-mine/",
+    "publishedAt": "20260416T100000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "DE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.5
+  },
+  {
+    "id": "87637d591d86029c",
+    "headline": "Thursday papers : Melting prices , cancer costs , and meatball lollipops",
+    "url": "https://yle.fi/a/74-20220870",
+    "publishedAt": "20260416T111500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.5
+  },
+  {
     "id": "287df44a51538ce6",
     "headline": "After criticizing the pope , Trump slams Italy Meloni over lack of support for Iran war",
     "url": "https://www.11alive.com/article/syndication/associatedpress/after-criticizing-the-pope-trump-slams-italys-meloni-over-lack-of-support-for-iran-war/616-8395149c-411b-401a-a5ae-d7d2d5706b70",
@@ -4198,10 +5165,36 @@
     "relevance_score": 0.5
   },
   {
+    "id": "d39d6bd61211aa1b",
+    "headline": "Spring blooms burst into color at Netherland Keukenhof Gardens",
+    "url": "https://www.dailysabah.com/life/spring-blooms-burst-into-color-at-netherlands-keukenhof-gardens/news",
+    "publishedAt": "20260417T120000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "DE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.5
+  },
+  {
     "id": "25313f4bd0833447",
     "headline": "Italy Meloni breaks with Trump over war in Iran , pope",
     "url": "https://www.dw.com/en/italys-meloni-breaks-with-trump-over-war-in-iran-pope/a-76827787",
     "publishedAt": "20260417T170000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.5
+  },
+  {
+    "id": "79d13b0bb30f02c5",
+    "headline": "Italian PM is expected to visit Azerbaijan",
+    "url": "https://en.apa.az/europe/italian-pm-is-expected-to-visit-azerbaijan-502195",
+    "publishedAt": "20260418T204500Z",
     "source": "gdelt",
     "country_tags": [
       "IT"
@@ -4233,10 +5226,54 @@
     "relevance_score": 0.0
   },
   {
+    "id": "4df3cc44bf1974a4",
+    "headline": "IMF warns of slower growth and higher inflation amid Iran war",
+    "url": "https://www.helsinkitimes.fi/world-int/28727-imf-warns-of-slower-growth-and-higher-inflation-amid-iran-war.html",
+    "publishedAt": "20260414T214500Z",
+    "source": "gdelt",
+    "country_tags": [],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.0
+  },
+  {
+    "id": "f9da1900825c3e23",
+    "headline": "Carney and Stubb : Two centrist dads trying to save the world",
+    "url": "https://www.politico.eu/article/mark-carney-alexander-stubb-two-centrist-dads-trying-save-the-world/",
+    "publishedAt": "20260415T024500Z",
+    "source": "gdelt",
+    "country_tags": [],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.0
+  },
+  {
     "id": "3dd9da53c16c7567",
     "headline": "Timothée Chalamet boot game just got even more niche",
     "url": "https://www.gq-magazine.co.uk/article/timothee-chalamets-boot-game-just-got-even-more-niche",
     "publishedAt": "20260415T184500Z",
+    "source": "gdelt",
+    "country_tags": [],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.0
+  },
+  {
+    "id": "3602cc694e630c24",
+    "headline": "2 Mining Stocks to Buy in 2026 to Hedge Inflation",
+    "url": "https://www.fool.com/investing/2026/04/15/2-mining-stocks-to-buy-in-2026-to-hedge-inflation/?source=iedfolrf0000001",
+    "publishedAt": "20260415T194500Z",
+    "source": "gdelt",
+    "country_tags": [],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.0
+  },
+  {
+    "id": "689ea2efd9805f49",
+    "headline": "April 15 , 2026 UPDATE - Radio Romania International",
+    "url": "https://www.rri.ro/en/news-and-current-affairs/newsflash/april-15-2026-update-id1006362.html",
+    "publishedAt": "20260415T201500Z",
     "source": "gdelt",
     "country_tags": [],
     "topic_tags": [],
@@ -4259,6 +5296,39 @@
     "headline": "Alternative - Fuel Inflection Point : Gotland Horizon X",
     "url": "https://www.marinelink.com/news/alternativefuel-inflection-point-gotland-538110",
     "publishedAt": "20260415T220000Z",
+    "source": "gdelt",
+    "country_tags": [],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.0
+  },
+  {
+    "id": "7ea3e679d52936d2",
+    "headline": "Welcome Bellevision . com",
+    "url": "http://www.bellevision.com/?action=topnews&type=28406",
+    "publishedAt": "20260415T230000Z",
+    "source": "gdelt",
+    "country_tags": [],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.0
+  },
+  {
+    "id": "63a39b41dd81dfdf",
+    "headline": "Foreign cash is sabotaging America in AI race against China",
+    "url": "https://www.washingtonexaminer.com/op-eds/4530518/foreign-cash-sabotaging-america-ai-race-china/",
+    "publishedAt": "20260416T150000Z",
+    "source": "gdelt",
+    "country_tags": [],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.0
+  },
+  {
+    "id": "9827d79bcf931da0",
+    "headline": "This week on  Sunday Morning  ( April 19 ) ",
+    "url": "https://www.cbsnews.com/news/this-week-on-sunday-morning-april-19-2026/",
+    "publishedAt": "20260417T144500Z",
     "source": "gdelt",
     "country_tags": [],
     "topic_tags": [],
