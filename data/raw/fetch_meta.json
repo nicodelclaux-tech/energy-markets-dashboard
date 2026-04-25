@@ -1,23 +1,23 @@
 {
-  "updatedAt": "2026-04-24T06:36:47.763678+00:00",
+  "updatedAt": "2026-04-25T06:28:57.304825+00:00",
   "sources": {
     "entsoe": {
       "status": "warning",
-      "total_rows": 18420,
+      "total_rows": 18428,
       "coverage": {
-        "ES": 1843,
-        "DE": 1843,
-        "FR": 1843,
-        "IT": 1843,
+        "ES": 1844,
+        "DE": 1844,
+        "FR": 1844,
+        "IT": 1844,
         "GB": 0,
-        "NL": 1843,
+        "NL": 1844,
         "NO": 1843,
-        "SE": 1843,
-        "FI": 1843,
-        "DK": 1843,
+        "SE": 1844,
+        "FI": 1844,
+        "DK": 1844,
         "IE": 1833
       },
-      "elapsed_s": 95.6
+      "elapsed_s": 120.2
     },
     "ember": {
       "status": "warning",
@@ -29,7 +29,7 @@
         "carbon-intensity": 0,
         "installed-capacity": 0
       },
-      "elapsed_s": 3.7
+      "elapsed_s": 1.7
     },
     "fmp": {
       "status": "warning",
@@ -41,16 +41,16 @@
         "EURUSD": 0,
         "GBPUSD": 0
       },
-      "elapsed_s": 1.6
+      "elapsed_s": 0.4
     },
     "ecb": {
       "status": "ok",
-      "total_rows": 2586,
+      "total_rows": 2588,
       "coverage": {
-        "eurusd": 1293,
-        "gbpeur": 1293
+        "eurusd": 1294,
+        "gbpeur": 1294
       },
-      "elapsed_s": 2.2
+      "elapsed_s": 1.6
     },
     "eia": {
       "status": "ok",
@@ -65,8 +65,8 @@
     },
     "news": {
       "status": "ok",
-      "total_items": 331,
-      "elapsed_s": 370.6
+      "total_items": 315,
+      "elapsed_s": 256.1
     },
     "gie": {
       "status": "ok",
@@ -84,7 +84,7 @@
         "metals_fetched": 1,
         "metals_rows": 1
       },
-      "elapsed_s": 12.1
+      "elapsed_s": 12.0
     }
   },
   "warnings": [
