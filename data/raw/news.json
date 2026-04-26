@@ -110,23 +110,6 @@
     "relevance_score": 7.0
   },
   {
-    "id": "e3f162971e8df1f2",
-    "headline": "Too hot for solar and too much wind for turbines : Can renewables withstand our worsening climate ? ",
-    "url": "https://www.euronews.com/2026/04/19/too-hot-for-solar-and-too-much-wind-for-turbines-can-renewables-withstand-our-worsening-cl",
-    "publishedAt": "20260419T063000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT",
-      "SE"
-    ],
-    "topic_tags": [
-      "renewables"
-    ],
-    "summary": "",
-    "relevance_score": 6.5
-  },
-  {
     "id": "4be5480c9104ddf6",
     "headline": "Bangladesh Wind Energy Project Cox Bazar | Can wind power emerge as a pillar in the energy mix ? ",
     "url": "https://www.thedailystar.net/business/news/can-wind-power-emerge-pillar-the-energy-mix-4153951",
@@ -474,23 +457,21 @@
     "relevance_score": 5.0
   },
   {
-    "id": "ba78e8f0f9f0af86",
-    "headline": "Ofgem issues warning for united kingdom households with electricity or gas meter",
-    "url": "https://www.birminghammail.co.uk/news/cost-of-living/ofgem-issues-warning-uk-households-33759295",
-    "publishedAt": "20260418T174500Z",
+    "id": "6df8a3af9c3e9b74",
+    "headline": "Will this energy shock seal the deal for renewables ? ",
+    "url": "https://www.rte.ie/news/analysis-and-comment/2026/0425/1570090-oil-supplies-energy-renewables/",
+    "publishedAt": "20260425T063000Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
-      "IT",
-      "GB",
+      "DE",
       "SE"
     ],
     "topic_tags": [
-      "power",
-      "gas"
+      "renewables"
     ],
     "summary": "",
-    "relevance_score": 4.5
+    "relevance_score": 5.0
   },
   {
     "id": "87a1230ebb18b89f",
@@ -706,6 +687,38 @@
     "relevance_score": 4.5
   },
   {
+    "id": "cf11bf76e11fbfca",
+    "headline": "Sun and wind to lower power prices this weekend - The Copenhagen Post",
+    "url": "https://cphpost.dk/2026-04-25/news/round-up/sun-and-wind-to-lower-power-prices-this-weekend/",
+    "publishedAt": "20260425T100000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES"
+    ],
+    "topic_tags": [
+      "power",
+      "renewables"
+    ],
+    "summary": "",
+    "relevance_score": 4.5
+  },
+  {
+    "id": "598b2968cfd7f3cb",
+    "headline": "EU Starts Roll Out of Russian LNG Import Ban at Tricky Time  | Peak Oil News and Message Boards",
+    "url": "https://peakoil.com/publicpolicy/eu-starts-roll-out-of-russian-lng-import-ban-at-tricky-time",
+    "publishedAt": "20260425T154500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES"
+    ],
+    "topic_tags": [
+      "gas",
+      "LNG"
+    ],
+    "summary": "",
+    "relevance_score": 4.5
+  },
+  {
     "id": "1c6e98892696b630",
     "headline": "Electricity prices in Ireland could rise by 8 %, minister warns",
     "url": "https://www.kilkennypeople.ie/news/national-news/2065327/electricity-prices-in-ireland-could-rise-by-8-minister-warns.html",
@@ -865,6 +878,24 @@
     "relevance_score": 4.0
   },
   {
+    "id": "322588ce160c0900",
+    "headline": "Energy bills to drop ? Millions to benefit from new united kingdom reform",
+    "url": "https://www.heraldscotland.com/news/national/uk-today/26038857.energy-bills-drop-millions-benefit-new-uk-reform/",
+    "publishedAt": "20260421T113000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "FR",
+      "IT",
+      "GB",
+      "FI"
+    ],
+    "topic_tags": [
+      "regulation"
+    ],
+    "summary": "",
+    "relevance_score": 4.0
+  },
+  {
     "id": "87d1178d0bf20f5a",
     "headline": "Nordic Countries Built so Much Renewable Energy They Literally Have to Pay People to Use It",
     "url": "https://www.zmescience.com/science/news-science/nordic-countries-built-so-much-renewable-energy-they-literally-have-to-pay-people-to-use-it/",
@@ -897,6 +928,24 @@
     ],
     "topic_tags": [
       "renewables"
+    ],
+    "summary": "",
+    "relevance_score": 4.0
+  },
+  {
+    "id": "a31114b320aaca10",
+    "headline": "Energy bills to drop ? Millions to benefit from new united kingdom reform",
+    "url": "https://www.echo-news.co.uk/news/26045319.energy-bills-drop-millions-benefit-new-uk-reform/",
+    "publishedAt": "20260422T190000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "FR",
+      "IT",
+      "GB",
+      "FI"
+    ],
+    "topic_tags": [
+      "regulation"
     ],
     "summary": "",
     "relevance_score": 4.0
@@ -1235,6 +1284,38 @@
     "relevance_score": 4.0
   },
   {
+    "id": "86598777f599a63a",
+    "headline": "Italy says energy crisis puts its plans for defence spending in doubt",
+    "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/04/23/italy-says-energy-crisis-puts-its-plans-for-defence-spending-in-doubt",
+    "publishedAt": "20260423T110000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "DE",
+      "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 4.0
+  },
+  {
+    "id": "d2e30bcb034c6441",
+    "headline": "Countries Offer Free Electricity , Pay Consumers",
+    "url": "https://www.miragenews.com/countries-offer-free-electricity-pay-consumers-1661092/",
+    "publishedAt": "20260423T161500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "FR",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "power"
+    ],
+    "summary": "",
+    "relevance_score": 4.0
+  },
+  {
     "id": "13ce3cb5c44b1d55",
     "headline": "Nuclear energy is having a global revival 40 years after Chernobyl",
     "url": "https://www.manilatimes.net/2026/04/24/news/national/nuclear-energy-is-having-a-global-revival-40-years-after-chernobyl/2327377",
@@ -1311,56 +1392,6 @@
     ],
     "summary": "",
     "relevance_score": 4.0
-  },
-  {
-    "id": "21aa5daf9f6203b8",
-    "headline": "British Gas , EDF , EON , Ovo , Octopus households to be urged to use more power this summer",
-    "url": "https://www.birminghammail.co.uk/news/cost-of-living/british-gas-edf-eon-ovo-33769871",
-    "publishedAt": "20260418T080000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IT",
-      "SE"
-    ],
-    "topic_tags": [
-      "power",
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "f08455e52ff585a1",
-    "headline": "Nottinghamshire Reform MP Robert Jenrick says  weve got to end that madnes in push for North Sea oil drilling",
-    "url": "https://www.nottinghampost.com/news/local-news/nottinghamshire-reform-mp-robert-jenrick-10922036",
-    "publishedAt": "20260418T144500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "NO",
-      "SE"
-    ],
-    "topic_tags": [
-      "regulation"
-    ],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "f7a05a95a261b267",
-    "headline": "Drill , baby , drill ? The ethics of exploiting North Sea oil resources",
-    "url": "https://theweek.com/environment/drill-baby-drill-the-ethics-of-exploiting-north-sea-oil-resources",
-    "publishedAt": "20260419T063000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT",
-      "NO",
-      "SE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 3.5
   },
   {
     "id": "c410962a4f14742f",
@@ -1927,37 +1958,6 @@
     "relevance_score": 3.5
   },
   {
-    "id": "5c4675e5cd7214b9",
-    "headline": "India renewable energy - led transition a major step towards nation economic and strategic future",
-    "url": "https://www.livemint.com/industry/energy/indias-renewable-energy-led-transition-a-major-step-towards-nation-s-economic-and-strategic-future-11776495794451.html",
-    "publishedAt": "20260418T083000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IT",
-      "NO"
-    ],
-    "topic_tags": [
-      "renewables"
-    ],
-    "summary": "",
-    "relevance_score": 3.0
-  },
-  {
-    "id": "e61cc2bcda772c5a",
-    "headline": "Trump thinks he crazy but Miliband wont listen over North Sea oil | Politics | News",
-    "url": "https://www.express.co.uk/news/politics/2195253/debate-north-sea-oil-gas",
-    "publishedAt": "20260418T083000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IT",
-      "NO",
-      "SE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 3.0
-  },
-  {
     "id": "0b1563a11a0c6398",
     "headline": "Exercise to test response to offshore energy threat involving vessels and drones",
     "url": "https://www.aol.co.uk/articles/exercise-test-response-offshore-energy-230100569.html",
@@ -2087,6 +2087,21 @@
     "publishedAt": "20260421T200000Z",
     "source": "gdelt",
     "country_tags": [],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 3.0
+  },
+  {
+    "id": "7c3337e22b560d0d",
+    "headline": "Norway Pumps Near Capacity as Spare Output Buffer Disappears  | Peak Oil News and Message Boards",
+    "url": "https://peakoil.com/production/norway-pumps-near-capacity-as-spare-output-buffer-disappears",
+    "publishedAt": "20260421T201500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT",
+      "NO"
+    ],
     "topic_tags": [],
     "summary": "",
     "relevance_score": 3.0
@@ -2280,22 +2295,6 @@
     "relevance_score": 3.0
   },
   {
-    "id": "80d51bcf3632dafa",
-    "headline": "Ireland has complied with EU air pollution targets",
-    "url": "https://www.rte.ie/news/ireland/2026/0423/1569871-epa-report/",
-    "publishedAt": "20260424T003000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IT",
-      "IE"
-    ],
-    "topic_tags": [
-      "emissions"
-    ],
-    "summary": "",
-    "relevance_score": 3.0
-  },
-  {
     "id": "f460f616fd515623",
     "headline": "Ireland has complied with EU air pollution targets",
     "url": "https://www.rte.ie/news/ireland/2026/0424/1569871-epa-report/",
@@ -2335,22 +2334,6 @@
     "country_tags": [
       "IT",
       "SE"
-    ],
-    "topic_tags": [
-      "power"
-    ],
-    "summary": "",
-    "relevance_score": 3.0
-  },
-  {
-    "id": "38ea0e736764fc00",
-    "headline": "CES Power makes three Irish acquisitions | Electronics Weekly",
-    "url": "https://www.electronicsweekly.com/news/business/ces-power-makes-three-irish-acquisitions-2026-04/",
-    "publishedAt": "20260424T113000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT"
     ],
     "topic_tags": [
       "power"
@@ -2437,46 +2420,51 @@
     "relevance_score": 3.0
   },
   {
-    "id": "a27c2122b8557810",
-    "headline": "Trading Desks Boom While Big Oil Output Stalls",
-    "url": "https://oilprice.com/Energy/Crude-Oil/Trading-Desks-Boom-While-Big-Oil-Output-Stalls.html",
-    "publishedAt": "20260419T000000Z",
+    "id": "6b22da20a92893f7",
+    "headline": "Norway Oil Production Maxed Out : No Spare Capacity in 2026  | Peak Oil News and Message Boards",
+    "url": "https://peakoil.com/production/norways-oil-production-maxed-out-no-spare-capacity-in-2026",
+    "publishedAt": "20260425T061500Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
-      "DE"
+      "IT",
+      "NO"
     ],
     "topic_tags": [],
     "summary": "",
-    "relevance_score": 2.5
+    "relevance_score": 3.0
   },
   {
-    "id": "47f7ee9a90c5e5b0",
-    "headline": "Europe Energy Problem Isnt the Transition It That Europe Never Finished It",
-    "url": "https://oilprice.com/Alternative-Energy/Renewable-Energy/Europes-Energy-Problem-Isnt-the-TransitionIts-That-Europe-Never-Finished-It.html",
-    "publishedAt": "20260419T000000Z",
+    "id": "7ff9e6ca060c0f88",
+    "headline": "Mideast war boosts nuclear revival 40 years after Chernobyl disaster",
+    "url": "https://www.columbian.com/news/2026/apr/25/mideast-war-boosts-nuclear-revival-40-years-after-chernobyl-disaster/",
+    "publishedAt": "20260425T170000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "DE",
+      "NO"
+    ],
+    "topic_tags": [
+      "nuclear"
+    ],
+    "summary": "",
+    "relevance_score": 3.0
+  },
+  {
+    "id": "63dcad9add53ee9f",
+    "headline": "Minister warns households that electricity bills could rise by more than €150 in the coming months",
+    "url": "https://www.irishmirror.ie/news/irish-news/minister-warns-households-electricity-bills-37067052",
+    "publishedAt": "20260426T061500Z",
     "source": "gdelt",
     "country_tags": [
       "IT",
-      "FI"
+      "SE"
     ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 2.5
-  },
-  {
-    "id": "dd295a6493cc102a",
-    "headline": "Are the fuel protestors right - should Ireland drill for oil ? ",
-    "url": "https://www.thejournal.ie/should-ireland-drill-for-oil-7016295-Apr2026/",
-    "publishedAt": "20260419T001500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IE"
+    "topic_tags": [
+      "power"
     ],
-    "topic_tags": [],
     "summary": "",
-    "relevance_score": 2.5
+    "relevance_score": 3.0
   },
   {
     "id": "ab909391f83ba5c4",
@@ -2634,20 +2622,6 @@
     "source": "gdelt",
     "country_tags": [
       "ES",
-      "IT"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 2.5
-  },
-  {
-    "id": "0b3ff8083e1c6019",
-    "headline": "Top French utility executive on Le Pen energy plan :  Oh my God , we have a problem  – POLITICO",
-    "url": "https://www.politico.eu/article/oh-my-god-we-have-a-problem-french-energy-chief-engie-catherine-macgregor-on-marine-le-pen-energy-plan/",
-    "publishedAt": "20260422T131500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "FR",
       "IT"
     ],
     "topic_tags": [],
@@ -2870,34 +2844,19 @@
     "relevance_score": 2.5
   },
   {
-    "id": "ac208ca2c6d5f34d",
-    "headline": "Which countries are most vulnerable as US imposes its own blockade in Persian Gulf ? ",
-    "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/04/18/which-countries-are-most-vulnerable-as-us-imposes-its-own-blockade-in-persian-gulf",
-    "publishedAt": "20260418T121500Z",
+    "id": "f6e39d2e166f3cbd",
+    "headline": "Will Differentials Between U . S . and European / Asian Natural Gas Prices Support U . S . Prices ? ",
+    "url": "https://finance.yahoo.com/sectors/energy/articles/differentials-between-u-european-asian-140002312.html",
+    "publishedAt": "20260425T160000Z",
     "source": "gdelt",
     "country_tags": [
-      "ES",
-      "DE",
-      "IT",
-      "SE",
-      "IE"
+      "ES"
     ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 2.0
-  },
-  {
-    "id": "672bba4c12b8d891",
-    "headline": "Hydropower Is Making a Global Comeback",
-    "url": "https://oilprice.com/Alternative-Energy/Hydroelectric/Hydropower-Is-Making-a-Global-Comeback.html",
-    "publishedAt": "20260418T193000Z",
-    "source": "gdelt",
-    "country_tags": [],
     "topic_tags": [
-      "power"
+      "gas"
     ],
     "summary": "",
-    "relevance_score": 2.0
+    "relevance_score": 2.5
   },
   {
     "id": "7ce14ca6d3ff358d",
@@ -3468,6 +3427,57 @@
     "relevance_score": 2.0
   },
   {
+    "id": "d3379be55b13aa8f",
+    "headline": "Bunnies  doing well  after rescue from North Sea drilling rig",
+    "url": "https://www.yorkpress.co.uk/news/national/26044616.bunnies-doing-well-rescue-north-sea-drilling-rig/",
+    "publishedAt": "20260422T153000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "FR",
+      "NO",
+      "SE",
+      "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "90eec9750a058ac7",
+    "headline": "Bunnies  doing well  after rescue from North Sea drilling rig",
+    "url": "https://www.lancashiretelegraph.co.uk/news/national/26044616.bunnies-doing-well-rescue-north-sea-drilling-rig/",
+    "publishedAt": "20260422T154500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "FR",
+      "NO",
+      "SE",
+      "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "6f7e8bd2bee203bf",
+    "headline": "Bunnies  doing well  after rescue from North Sea drilling rig",
+    "url": "https://www.edp24.co.uk/news/national/26044616.bunnies-doing-well-rescue-north-sea-drilling-rig/",
+    "publishedAt": "20260422T160000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "FR",
+      "NO",
+      "SE",
+      "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
     "id": "dbdb4325309fdd20",
     "headline": "First Nations are not obstacles to development",
     "url": "https://financialpost.com/news/first-nations-owners-investors-not-obstacles",
@@ -3672,34 +3682,53 @@
     "relevance_score": 2.0
   },
   {
-    "id": "37d036ac43a947a0",
-    "headline": "How Hungary new leader is turning into a bigger friend to Putin than anybody had thought",
-    "url": "https://www.independent.co.uk/news/world/europe/hungary-putin-orban-russia-ukraine-b2959920.html",
-    "publishedAt": "20260418T103000Z",
+    "id": "589c379196da2e15",
+    "headline": "Premier : GPS committed to making Sarawak a regional model of progress",
+    "url": "https://www.theborneopost.com/2026/04/25/premier-gps-committed-to-making-sarawak-a-regional-model-of-progress/",
+    "publishedAt": "20260425T101500Z",
     "source": "gdelt",
     "country_tags": [
+      "ES",
       "DE",
-      "FR",
+      "IT",
       "IE"
     ],
     "topic_tags": [],
     "summary": "",
-    "relevance_score": 1.5
+    "relevance_score": 2.0
   },
   {
-    "id": "4460e980e8b1bf40",
-    "headline": "More than 30 trains damaged in Denmark after traction system fault upends traffic",
-    "url": "https://www.railwaygazette.com/infrastructure/2026/04/15/more-than-30-trains-damaged-in-denmark-after-traction-system-fault-upends-traffic/",
-    "publishedAt": "20260419T050000Z",
+    "id": "96a2c8b1866e3e6d",
+    "headline": "Cork apprentice highlights career opportunities as Gas Networks Ireland opens 2026 applications",
+    "url": "https://avondhupress.ie/cork-apprentice-highlights-career-opportunities-as-gas-networks-ireland-opens-2026-applications/",
+    "publishedAt": "20260425T154500Z",
     "source": "gdelt",
     "country_tags": [
-      "DE",
-      "FI",
-      "DK"
+      "ES",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "60dfefa595e0ca4c",
+    "headline": "Former Treasury boss says Australians left with little to show from commodities boom",
+    "url": "https://www.abc.net.au/news/2026-04-26/ken-henry-tells-inquiry-to-tax-australia-gas-industry-more/106591686",
+    "publishedAt": "20260425T204500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "FR",
+      "IT",
+      "IE"
     ],
     "topic_tags": [],
     "summary": "",
-    "relevance_score": 1.5
+    "relevance_score": 2.0
   },
   {
     "id": "7ff3dff065714d26",
@@ -3764,21 +3793,6 @@
     "relevance_score": 1.5
   },
   {
-    "id": "a524c129574ef885",
-    "headline": "UK World War 3 wargames as major  operation  to take place in North Sea",
-    "url": "https://www.dailystar.co.uk/news/latest-news/uks-world-war-3-wargames-37040206",
-    "publishedAt": "20260420T071500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "NO",
-      "SE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
     "id": "45d8476ff77d2f03",
     "headline": "Oil Last Stand and the End of the American Empire ? ",
     "url": "https://www.counterpunch.org/2026/04/20/oils-last-stand-and-the-end-of-the-american-empire/",
@@ -3833,15 +3847,26 @@
     "relevance_score": 1.5
   },
   {
-    "id": "2772296bb7bc70b0",
-    "headline": "PlumbexIndia 2026 Showcases Innovation in Water and Plumbing Sector",
-    "url": "https://dailypioneer.com/news/water-management-takes-centre-stage-at-plumbexindia-2026-in-bengaluru",
-    "publishedAt": "20260421T070000Z",
+    "id": "887e1dd19e28f4de",
+    "headline": "UK to accelerate clean energy drive amid Middle East war",
+    "url": "https://www.freemalaysiatoday.com/category/world/2026/04/21/uk-to-accelerate-clean-energy-drive-amid-middle-east-war",
+    "publishedAt": "20260421T011500Z",
+    "source": "gdelt",
+    "country_tags": [],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
+    "id": "3f23ba1522a11284",
+    "headline": "Equinor Expects Strong Trading Profits in Q1 Amid US - Iran War",
+    "url": "https://finance.yahoo.com/sectors/energy/articles/equinor-expects-strong-trading-profits-072203117.html",
+    "publishedAt": "20260421T183000Z",
     "source": "gdelt",
     "country_tags": [
-      "ES",
+      "IT",
       "NO",
-      "SE"
+      "FI"
     ],
     "topic_tags": [],
     "summary": "",
@@ -4093,21 +4118,6 @@
     "relevance_score": 1.5
   },
   {
-    "id": "f30faaccff10b70c",
-    "headline": "HorsegiirL Shares Earth Is Turning And Confirms Nature Is Healing Album Release",
-    "url": "https://www.noise11.com/news/horsegiirl-earth-is-turning-nature-is-healing-album-20260423",
-    "publishedAt": "20260423T064500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "SE",
-      "FI"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
     "id": "69543bbe963d8523",
     "headline": "Kenya - Netherlands ties : Key allies in building a more sustainable and prosperous future",
     "url": "https://www.standardmedia.co.ke/opinion/article/2001546094/kenya-netherlands-ties-key-allies-in-building-a-more-sustainable-and-prosperous-future",
@@ -4159,21 +4169,6 @@
       "DE",
       "NO",
       "SE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "e455c8c9f9c60b51",
-    "headline": "  Bombing our little hearts out  How Trump taps into America enduring appetite for destruction",
-    "url": "https://theconversation.com/bombing-our-little-hearts-out-how-trump-taps-into-americas-enduring-appetite-for-destruction-280699",
-    "publishedAt": "20260423T221500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "IT"
     ],
     "topic_tags": [],
     "summary": "",
@@ -4257,60 +4252,35 @@
     "relevance_score": 1.5
   },
   {
-    "id": "ad179e5f791a8c3b",
-    "headline": "Baystreet . ca - Europe Electrification Dream Is Hitting a Wall",
-    "url": "http://baystreet.ca/articles/commodities/120099/Europes-Electrification-Dream-Is-Hitting-a-Wall",
-    "publishedAt": "20260418T080000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IT",
-      "FI"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "e11c1f80ea422b0f",
-    "headline": "Stubb heading to Jordan , Egypt for official visits",
-    "url": "https://yle.fi/a/74-20221315",
-    "publishedAt": "20260418T111500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IT",
-      "FI"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "35c7a2d00e70b61b",
-    "headline": "How prolonged Iran war could disrupt Asia tech industry from chipmaking to AI data centres",
-    "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/04/18/how-prolonged-iran-war-could-disrupt-asia-tech-industry-from-chipmaking-to-ai-data-centres",
-    "publishedAt": "20260418T151500Z",
+    "id": "9b8db88334aa909f",
+    "headline": "Trump Falklands threat shows clearly his reckless and rudderless US foreign policy",
+    "url": "https://www.lbc.co.uk/article/trump-falklands-opinion-5HjdYFH_2/",
+    "publishedAt": "20260425T083000Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
-      "FR"
+      "DE"
     ],
-    "topic_tags": [],
+    "topic_tags": [
+      "regulation"
+    ],
     "summary": "",
-    "relevance_score": 1.0
+    "relevance_score": 1.5
   },
   {
-    "id": "b8e4a46e5cbba132",
-    "headline": "Which European countries will be the richest by 2030 ? ",
-    "url": "https://www.euronews.com/business/2026/04/19/which-european-countries-will-be-the-richest-by-2030",
-    "publishedAt": "20260419T063000Z",
+    "id": "ae698096dece0a82",
+    "headline": "The geopolitics of infrastructure - The Korea Times",
+    "url": "https://www.koreatimes.co.kr/opinion/columns/guestcolumns/20260426/the-geopolitics-of-infrastructure",
+    "publishedAt": "20260426T024500Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
-      "IE"
+      "FR",
+      "IT"
     ],
     "topic_tags": [],
     "summary": "",
-    "relevance_score": 1.0
+    "relevance_score": 1.5
   },
   {
     "id": "54d6cb729665ab64",
@@ -4412,6 +4382,20 @@
     "relevance_score": 1.0
   },
   {
+    "id": "64913627816a2c4d",
+    "headline": "Top 5 Most Productive Countries in the World",
+    "url": "https://www.jagranjosh.com/general-knowledge/most-productive-countries-in-the-world-1820008073-1",
+    "publishedAt": "20260421T101500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
     "id": "f8b672e5881946d6",
     "headline": "Norway Pumps Near Capacity as Spare Output Buffer Disappears",
     "url": "https://oilprice.com/Latest-Energy-News/World-News/Norway-Pumps-Near-Capacity-as-Spare-Output-Buffer-Disappears.html",
@@ -4483,20 +4467,6 @@
     "relevance_score": 1.0
   },
   {
-    "id": "522bca90bbea0f49",
-    "headline": "Modi may travel to Europe in May for India - Nordic Summit",
-    "url": "https://indianexpress.com/article/india/modi-may-travel-to-europe-in-may-for-india-nordic-summit-10651057/",
-    "publishedAt": "20260422T231500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IT",
-      "NO"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
     "id": "7ba49b711c11222e",
     "headline": "Safest countries in the world 2026 : What makes them resilient",
     "url": "https://www.asiaone.com:443/lifestyle/safest-countries-world-2026-what-makes-them-resilient",
@@ -4533,6 +4503,20 @@
     "country_tags": [
       "ES",
       "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "99010040a6b9ca1e",
+    "headline": "+25 %: strong growth in Q1 2026 turnover | The Manila Times",
+    "url": "https://www.manilatimes.net/2026/04/24/tmt-newswire/globenewswire/25-strong-growth-in-q1-2026-turnover/2327496",
+    "publishedAt": "20260423T171500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "NO"
     ],
     "topic_tags": [],
     "summary": "",
@@ -4603,6 +4587,76 @@
     "country_tags": [
       "NO",
       "FI"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "c74fd0a01813a4a8",
+    "headline": "REVEALED : The countries in Europe that will buck the trend and grow in population",
+    "url": "https://www.thelocal.se/20260425/revealed-the-countries-in-europe-that-will-buck-the-trend-and-grow-in-population",
+    "publishedAt": "20260425T100000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "3415f6e0232c27c0",
+    "headline": "REVEALED : The countries in Europe that will buck the trend and grow in population",
+    "url": "https://www.thelocal.es/20260425/revealed-the-countries-in-europe-that-will-buck-the-trend-and-grow-in-population",
+    "publishedAt": "20260425T101500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "998267deb70e632c",
+    "headline": "REVEALED : The countries in Europe that will buck the trend and grow in population",
+    "url": "https://www.thelocal.fr/20260425/revealed-the-countries-in-europe-that-will-buck-the-trend-and-grow-in-population",
+    "publishedAt": "20260425T120000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "3b3676e808e1ce02",
+    "headline": "REVEALED : The countries in Europe that will buck the trend and grow in population",
+    "url": "https://www.thelocal.dk/20260425/revealed-the-countries-in-europe-that-will-buck-the-trend-and-grow-in-population",
+    "publishedAt": "20260425T124500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "5773b8bc5bf84b19",
+    "headline": "REVEALED : The countries in Europe that will buck the trend and grow in population",
+    "url": "https://www.thelocal.it/20260425/revealed-the-countries-in-europe-that-will-buck-the-trend-and-grow-in-population",
+    "publishedAt": "20260425T124500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IE"
     ],
     "topic_tags": [],
     "summary": "",
@@ -4765,13 +4819,13 @@
     "relevance_score": 0.5
   },
   {
-    "id": "8caf71dd9c62907b",
-    "headline": "MSC Euribia Returning to Europe Through Red Sea - Cruise Industry News",
-    "url": "https://cruiseindustrynews.com/cruise-news/2026/04/msc-euribia-returning-to-europe-through-red-sea/",
-    "publishedAt": "20260425T043000Z",
+    "id": "ad7d997b11cb6fc0",
+    "headline": "Fossil fuels and climate change impact women rights – The Irish Times",
+    "url": "https://www.irishtimes.com/opinion/letters/2026/04/25/fossil-fuels-and-climate-change-impact-womens-rights/",
+    "publishedAt": "20260425T104500Z",
     "source": "gdelt",
     "country_tags": [
-      "SE"
+      "ES"
     ],
     "topic_tags": [],
     "summary": "",
@@ -4837,17 +4891,6 @@
     "headline": "AP News Summary at 6 : 07 a . m . EDT",
     "url": "https://www.woonsocketcall.com/news/national_and_world_news/ap-news-summary-at-5-32-a-m-edt/article_a5c9be0f-d7bb-53ee-8389-e1682e9631b4.html",
     "publishedAt": "20260423T103000Z",
-    "source": "gdelt",
-    "country_tags": [],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 0.0
-  },
-  {
-    "id": "7660bcc848993d5a",
-    "headline": "Thomas & Uber Cup 2026 : India Opening Day Schedule",
-    "url": "https://www.newkerala.com/news/a/thomas-uber-cup-finals-2026-india-men-take-353.htm",
-    "publishedAt": "20260423T111500Z",
     "source": "gdelt",
     "country_tags": [],
     "topic_tags": [],
