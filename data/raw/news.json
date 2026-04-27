@@ -110,23 +110,6 @@
     "relevance_score": 7.0
   },
   {
-    "id": "4be5480c9104ddf6",
-    "headline": "Bangladesh Wind Energy Project Cox Bazar | Can wind power emerge as a pillar in the energy mix ? ",
-    "url": "https://www.thedailystar.net/business/news/can-wind-power-emerge-pillar-the-energy-mix-4153951",
-    "publishedAt": "20260419T164500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE"
-    ],
-    "topic_tags": [
-      "power",
-      "renewables"
-    ],
-    "summary": "",
-    "relevance_score": 6.5
-  },
-  {
     "id": "32e04fbcc97e153d",
     "headline": "China solar exports hit record 68 GW in March 2026 as energy crisis accelerates global clean energy demand",
     "url": "https://greentechlead.com/solar/china-solar-exports-hit-record-68-gw-in-march-2026-as-energy-crisis-accelerates-global-clean-energy-demand-53215",
@@ -304,6 +287,24 @@
     "relevance_score": 5.5
   },
   {
+    "id": "84bab04521c917ec",
+    "headline": "Hormuz disruption sharpens global push for renewables as energy security strategy – Channel Africa",
+    "url": "https://www.channelafrica.co.za/channelafrica/news/hormuz-disruption-sharpens-global-push-for-renewables-as-energy-security-strategy/",
+    "publishedAt": "20260426T141500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "FR",
+      "IT",
+      "SE"
+    ],
+    "topic_tags": [
+      "renewables"
+    ],
+    "summary": "",
+    "relevance_score": 5.5
+  },
+  {
     "id": "7d964157ab909ec6",
     "headline": "Government to propose electricity price changes in clean power push",
     "url": "https://www.yahoo.com/news/articles/government-propose-electricity-price-changes-005137865.html",
@@ -367,23 +368,6 @@
     ],
     "topic_tags": [
       "power"
-    ],
-    "summary": "",
-    "relevance_score": 5.0
-  },
-  {
-    "id": "9ab72a7f57922fc6",
-    "headline": "Reolink Solar Security Cameras Help Power a Greener Planet this Earth Day",
-    "url": "https://www.prnewswire.com/news-releases/reolink-solar-security-cameras-help-power-a-greener-planet-this-earth-day-302749563.html",
-    "publishedAt": "20260422T174500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IT",
-      "SE"
-    ],
-    "topic_tags": [
-      "power",
-      "renewables"
     ],
     "summary": "",
     "relevance_score": 5.0
@@ -474,19 +458,38 @@
     "relevance_score": 5.0
   },
   {
-    "id": "87a1230ebb18b89f",
-    "headline": "Europe Energy Problem Isnt the Transition It That Europe Never Finished It | Peak Oil News and Message Boards",
-    "url": "https://peakoil.com/publicpolicy/europes-energy-problem-isnt-the-transition-its-that-europe-never-finished-it",
-    "publishedAt": "20260419T203000Z",
+    "id": "6447f36127b33d1f",
+    "headline": "The Iran War Is Accelerating the Renewable Energy Transition Just Not in the U . S . | Peak Oil News and Message Boards",
+    "url": "https://peakoil.com/publicpolicy/the-iran-war-is-accelerating-the-renewable-energy-transition-just-not-in-the-u-s",
+    "publishedAt": "20260427T013000Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
       "IT",
-      "FI"
+      "NO"
     ],
-    "topic_tags": [],
+    "topic_tags": [
+      "renewables"
+    ],
     "summary": "",
-    "relevance_score": 4.5
+    "relevance_score": 5.0
+  },
+  {
+    "id": "51bc2e9f0c8574c8",
+    "headline": "Japan aims to build world largest wind farm . Can it power on by 2035 ? ",
+    "url": "https://www.scmp.com/week-asia/economics/article/3351366/japan-aims-build-worlds-largest-wind-farm-can-it-power-2035",
+    "publishedAt": "20260427T013000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT"
+    ],
+    "topic_tags": [
+      "power",
+      "renewables"
+    ],
+    "summary": "",
+    "relevance_score": 5.0
   },
   {
     "id": "5bfb51a6dd45cb15",
@@ -620,6 +623,21 @@
     "relevance_score": 4.5
   },
   {
+    "id": "2ed03b961c2dfd81",
+    "headline": "EU unveils new measures to tackle fallout from energy crisis - Jowhar News Leader",
+    "url": "https://jowhar.com/eu-unveils-new-measures-to-tackle-fallout-from-energy-crisis/",
+    "publishedAt": "20260423T014500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "FR"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 4.5
+  },
+  {
     "id": "d11fb174d8bf5d07",
     "headline": "Iran war revives European rooftop solar demand to cut energy bills",
     "url": "https://www.marketscreener.com/news/iran-war-revives-european-rooftop-solar-demand-to-cut-energy-bills-ce7f59d9db81f626",
@@ -719,148 +737,35 @@
     "relevance_score": 4.5
   },
   {
-    "id": "1c6e98892696b630",
-    "headline": "Electricity prices in Ireland could rise by 8 %, minister warns",
-    "url": "https://www.kilkennypeople.ie/news/national-news/2065327/electricity-prices-in-ireland-could-rise-by-8-minister-warns.html",
-    "publishedAt": "20260419T181500Z",
+    "id": "0f9f7e4c268201cc",
+    "headline": "AI Power Demand Is Rewiring Global Markets",
+    "url": "https://fnarena.com/index.php/2026/04/27/ais-power-demand-is-rewiring-global-markets/",
+    "publishedAt": "20260427T040000Z",
     "source": "gdelt",
     "country_tags": [
-      "ES",
-      "IT",
-      "SE",
-      "IE"
+      "DE"
     ],
     "topic_tags": [
-      "power"
+      "power",
+      "emissions"
     ],
     "summary": "",
-    "relevance_score": 4.0
+    "relevance_score": 4.5
   },
   {
-    "id": "ebe51f3026357965",
-    "headline": "Electricity prices in Ireland could rise by 8 %, minister warns",
-    "url": "https://www.offalyexpress.ie/news/national-news/2065327/electricity-prices-in-ireland-could-rise-by-8-minister-warns.html",
-    "publishedAt": "20260419T184500Z",
+    "id": "695f319dc1cac332",
+    "headline": "Russia and China Emerge as Major Beneficiaries of Iran War Energy Crisis",
+    "url": "https://www.thailand-business-news.com/china/303756-russia-and-china-emerge-as-major-beneficiaries-of-iran-war-energy-crisis",
+    "publishedAt": "20260427T053000Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
-      "IT",
-      "SE",
+      "FI",
       "IE"
     ],
-    "topic_tags": [
-      "power"
-    ],
+    "topic_tags": [],
     "summary": "",
-    "relevance_score": 4.0
-  },
-  {
-    "id": "ce27271aad0ae61f",
-    "headline": "Electricity prices in Ireland could rise by 8 %, minister warns",
-    "url": "https://www.tipperarylive.ie/news/national-news/2065327/electricity-prices-in-ireland-could-rise-by-8-minister-warns.html",
-    "publishedAt": "20260419T193000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT",
-      "SE",
-      "IE"
-    ],
-    "topic_tags": [
-      "power"
-    ],
-    "summary": "",
-    "relevance_score": 4.0
-  },
-  {
-    "id": "3adace0b102aeca1",
-    "headline": "Electricity prices in Ireland could rise by 8 %, minister warns",
-    "url": "https://www.leitrimobserver.ie/news/national-news/2065327/electricity-prices-in-ireland-could-rise-by-8-minister-warns.html",
-    "publishedAt": "20260419T194500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT",
-      "SE",
-      "IE"
-    ],
-    "topic_tags": [
-      "power"
-    ],
-    "summary": "",
-    "relevance_score": 4.0
-  },
-  {
-    "id": "18e6c867173aeb21",
-    "headline": "Electricity prices in Ireland could rise by 8 %, minister warns",
-    "url": "https://www.leinsterexpress.ie/news/national-news/2065327/electricity-prices-in-ireland-could-rise-by-8-minister-warns.html",
-    "publishedAt": "20260419T211500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT",
-      "SE",
-      "IE"
-    ],
-    "topic_tags": [
-      "power"
-    ],
-    "summary": "",
-    "relevance_score": 4.0
-  },
-  {
-    "id": "929ce1c1d0662639",
-    "headline": "Electricity prices in Ireland could rise by 8 %, minister warns",
-    "url": "https://www.leinsterleader.ie/news/national-news/2065327/electricity-prices-in-ireland-could-rise-by-8-minister-warns.html",
-    "publishedAt": "20260419T223000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT",
-      "SE",
-      "IE"
-    ],
-    "topic_tags": [
-      "power"
-    ],
-    "summary": "",
-    "relevance_score": 4.0
-  },
-  {
-    "id": "8dc5e6d13cfe41f7",
-    "headline": "Electricity prices could rise by 8 %, minister warns | Westmeath Independent",
-    "url": "https://www.westmeathindependent.ie/2026/04/19/electricity-prices-could-rise-by-8-minister-warns/",
-    "publishedAt": "20260419T224500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "IT",
-      "SE"
-    ],
-    "topic_tags": [
-      "power"
-    ],
-    "summary": "",
-    "relevance_score": 4.0
-  },
-  {
-    "id": "a976e4c23497b85b",
-    "headline": "Electricity prices in Ireland could rise by 8 %, minister warns",
-    "url": "https://www.irishmirror.ie/news/irish-news/electricity-prices-ireland-could-rise-37039877",
-    "publishedAt": "20260420T053000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT",
-      "SE",
-      "IE"
-    ],
-    "topic_tags": [
-      "power"
-    ],
-    "summary": "",
-    "relevance_score": 4.0
+    "relevance_score": 4.5
   },
   {
     "id": "a6d307096340ba28",
@@ -873,24 +778,6 @@
     ],
     "topic_tags": [
       "renewables"
-    ],
-    "summary": "",
-    "relevance_score": 4.0
-  },
-  {
-    "id": "322588ce160c0900",
-    "headline": "Energy bills to drop ? Millions to benefit from new united kingdom reform",
-    "url": "https://www.heraldscotland.com/news/national/uk-today/26038857.energy-bills-drop-millions-benefit-new-uk-reform/",
-    "publishedAt": "20260421T113000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "FR",
-      "IT",
-      "GB",
-      "FI"
-    ],
-    "topic_tags": [
-      "regulation"
     ],
     "summary": "",
     "relevance_score": 4.0
@@ -928,24 +815,6 @@
     ],
     "topic_tags": [
       "renewables"
-    ],
-    "summary": "",
-    "relevance_score": 4.0
-  },
-  {
-    "id": "a31114b320aaca10",
-    "headline": "Energy bills to drop ? Millions to benefit from new united kingdom reform",
-    "url": "https://www.echo-news.co.uk/news/26045319.energy-bills-drop-millions-benefit-new-uk-reform/",
-    "publishedAt": "20260422T190000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "FR",
-      "IT",
-      "GB",
-      "FI"
-    ],
-    "topic_tags": [
-      "regulation"
     ],
     "summary": "",
     "relevance_score": 4.0
@@ -1284,20 +1153,6 @@
     "relevance_score": 4.0
   },
   {
-    "id": "86598777f599a63a",
-    "headline": "Italy says energy crisis puts its plans for defence spending in doubt",
-    "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/04/23/italy-says-energy-crisis-puts-its-plans-for-defence-spending-in-doubt",
-    "publishedAt": "20260423T110000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "DE",
-      "IT"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 4.0
-  },
-  {
     "id": "d2e30bcb034c6441",
     "headline": "Countries Offer Free Electricity , Pay Consumers",
     "url": "https://www.miragenews.com/countries-offer-free-electricity-pay-consumers-1661092/",
@@ -1394,207 +1249,18 @@
     "relevance_score": 4.0
   },
   {
-    "id": "c410962a4f14742f",
-    "headline": "Electricity bills could increase by up to 9 % with gas even higher , Minister says",
-    "url": "https://www.irishtimes.com/politics/2026/04/19/electricity-bills-could-increase-by-up-to-9-with-gas-even-higher-minister-says/",
-    "publishedAt": "20260419T154500Z",
+    "id": "32d6ea3825a4851f",
+    "headline": "Origin Energy Flags Lower LNG Revenue and Cuts Octopus Earnings Outlook",
+    "url": "https://oilprice.com/Company-News/Origin-Energy-Flags-Lower-LNG-Revenue-and-Cuts-Octopus-Earnings-Outlook.html",
+    "publishedAt": "20260427T010000Z",
     "source": "gdelt",
-    "country_tags": [
-      "IT",
-      "SE"
-    ],
+    "country_tags": [],
     "topic_tags": [
-      "power",
-      "gas"
+      "gas",
+      "LNG"
     ],
     "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "ccdf1bb52159812c",
-    "headline": "Electricity prices could rise by 8 %, minister warns - Homepage",
-    "url": "https://www.westernpeople.ie/electricity-prices-could-rise-by-8-minister-warns_arid-95064.html",
-    "publishedAt": "20260419T183000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT",
-      "SE"
-    ],
-    "topic_tags": [
-      "power"
-    ],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "311ae0fc705d923d",
-    "headline": "Electricity prices could rise by 8 %, minister warns - Homepage",
-    "url": "https://www.waterford-news.ie/electricity-prices-could-rise-by-8-minister-warns_arid-95064.html",
-    "publishedAt": "20260419T190000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT",
-      "SE"
-    ],
-    "topic_tags": [
-      "power"
-    ],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "94cd08a3f7dfd6d6",
-    "headline": "Electricity prices could rise by 8 %, minister warns - Homepage",
-    "url": "https://www.roscommonherald.ie/electricity-prices-could-rise-by-8-minister-warns_arid-95064.html",
-    "publishedAt": "20260419T193000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT",
-      "SE"
-    ],
-    "topic_tags": [
-      "power"
-    ],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "45dcc86b814d4938",
-    "headline": "Electricity prices could rise by 8 %, minister warns",
-    "url": "https://www.echolive.ie/nationalnews/arid-41830265.html",
-    "publishedAt": "20260419T203000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT",
-      "SE"
-    ],
-    "topic_tags": [
-      "power"
-    ],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "f46fa4665c99365f",
-    "headline": "Electricity prices could rise by 8 %, minister warns - National News",
-    "url": "https://www.carlow-nationalist.ie/news/national-news/electricity-prices-could-rise-by-8-minister-warns_arid-95064.html",
-    "publishedAt": "20260419T211500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT",
-      "SE"
-    ],
-    "topic_tags": [
-      "power"
-    ],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "0c5045b33392349c",
-    "headline": "Electricity prices could rise by 8 %, minister warns",
-    "url": "https://www.anglocelt.ie/2026/04/19/electricity-prices-could-rise-by-8-minister-warns/",
-    "publishedAt": "20260419T213000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT",
-      "SE"
-    ],
-    "topic_tags": [
-      "power"
-    ],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "ffadc1579050c88a",
-    "headline": "Electricity prices could rise by 8 %, minister warns",
-    "url": "https://www.breakingnews.ie/ireland/electricity-prices-in-ireland-could-rise-by-8-minister-warns-1889051.html",
-    "publishedAt": "20260419T214500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT",
-      "SE"
-    ],
-    "topic_tags": [
-      "power"
-    ],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "068d3366ab089a1c",
-    "headline": "Electricity prices could rise by 8 %, minister warns",
-    "url": "https://www.offalyindependent.ie/2026/04/19/electricity-prices-could-rise-by-8-minister-warns/",
-    "publishedAt": "20260419T224500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT",
-      "SE"
-    ],
-    "topic_tags": [
-      "power"
-    ],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "6ef6abda01fa953e",
-    "headline": "Electricity prices could rise by 8 %, minister warns",
-    "url": "https://www.meathchronicle.ie/2026/04/19/electricity-prices-could-rise-by-8-minister-warns/",
-    "publishedAt": "20260419T224500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT",
-      "SE"
-    ],
-    "topic_tags": [
-      "power"
-    ],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "461128f417dd7f1a",
-    "headline": "Fuel rations and free buses : How countries have responded to rising oil prices",
-    "url": "https://www.yahoo.com/news/articles/fuel-rations-free-buses-countries-082218873.html",
-    "publishedAt": "20260420T021500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "FR",
-      "SE",
-      "IE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "8475e27272e4c9a1",
-    "headline": "Southeast Asia must pursue energy sovereignty , not just security , says civil society",
-    "url": "https://www.eco-business.com/news/southeast-asia-must-pursue-energy-sovereignty-not-just-security-says-civil-society/",
-    "publishedAt": "20260420T054500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IT",
-      "NO",
-      "SE",
-      "IE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 3.5
+    "relevance_score": 4.0
   },
   {
     "id": "f15549b9f7cc2f2d",
@@ -1894,6 +1560,23 @@
     "relevance_score": 3.5
   },
   {
+    "id": "54f687d7cc143309",
+    "headline": "Allied Industrial - backed CES Power completes three acquisitions in Ireland",
+    "url": "https://www.pehub.com/allied-industrial-backed-ces-power-completes-three-acquisitions-in-ireland/",
+    "publishedAt": "20260423T161500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "power"
+    ],
+    "summary": "",
+    "relevance_score": 3.5
+  },
+  {
     "id": "01f25c8c08ec9239",
     "headline": "Judge Blocks Trump Admin Move To Halt Wind , Solar Approvals",
     "url": "https://www.zerohedge.com/political/judge-blocks-trump-admins-move-halt-wind-solar-approvals-0",
@@ -1956,38 +1639,6 @@
     ],
     "summary": "",
     "relevance_score": 3.5
-  },
-  {
-    "id": "0b1563a11a0c6398",
-    "headline": "Exercise to test response to offshore energy threat involving vessels and drones",
-    "url": "https://www.aol.co.uk/articles/exercise-test-response-offshore-energy-230100569.html",
-    "publishedAt": "20260420T000000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "SE"
-    ],
-    "topic_tags": [
-      "renewables"
-    ],
-    "summary": "",
-    "relevance_score": 3.0
-  },
-  {
-    "id": "ab27143f90578872",
-    "headline": "Exercise to test response to offshore energy threat involving vessels and drones",
-    "url": "https://www.lbc.co.uk/article/af4e1569cfeb427d8bae337d2b38083f-5HjdXyx_2/",
-    "publishedAt": "20260420T021500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "SE"
-    ],
-    "topic_tags": [
-      "renewables"
-    ],
-    "summary": "",
-    "relevance_score": 3.0
   },
   {
     "id": "b02a8660be871a39",
@@ -2134,6 +1785,21 @@
       "power",
       "gas"
     ],
+    "summary": "",
+    "relevance_score": 3.0
+  },
+  {
+    "id": "cb0854c90afbbd99",
+    "headline": "What are EU countries doing to counter energy price rises ? ",
+    "url": "https://www.marketscreener.com/news/what-are-eu-countries-doing-to-counter-energy-price-rises-ce7f59d8d880f324",
+    "publishedAt": "20260422T083000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "SE",
+      "IE"
+    ],
+    "topic_tags": [],
     "summary": "",
     "relevance_score": 3.0
   },
@@ -2295,6 +1961,22 @@
     "relevance_score": 3.0
   },
   {
+    "id": "80d51bcf3632dafa",
+    "headline": "Ireland has complied with EU air pollution targets",
+    "url": "https://www.rte.ie/news/ireland/2026/0423/1569871-epa-report/",
+    "publishedAt": "20260424T003000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT",
+      "IE"
+    ],
+    "topic_tags": [
+      "emissions"
+    ],
+    "summary": "",
+    "relevance_score": 3.0
+  },
+  {
     "id": "f460f616fd515623",
     "headline": "Ireland has complied with EU air pollution targets",
     "url": "https://www.rte.ie/news/ireland/2026/0424/1569871-epa-report/",
@@ -2307,6 +1989,21 @@
     "topic_tags": [
       "emissions"
     ],
+    "summary": "",
+    "relevance_score": 3.0
+  },
+  {
+    "id": "3e2be4a183cda2c8",
+    "headline": "The Irish Independent View : Fuel crisis underlines our need to focus on green energy",
+    "url": "https://www.independent.ie/opinion/editorial/the-irish-independents-view-fuel-crisis-underlines-our-need-to-focus-on-green-energy/a786005254.html",
+    "publishedAt": "20260424T073000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IE"
+    ],
+    "topic_tags": [],
     "summary": "",
     "relevance_score": 3.0
   },
@@ -2334,6 +2031,22 @@
     "country_tags": [
       "IT",
       "SE"
+    ],
+    "topic_tags": [
+      "power"
+    ],
+    "summary": "",
+    "relevance_score": 3.0
+  },
+  {
+    "id": "38ea0e736764fc00",
+    "headline": "CES Power makes three Irish acquisitions | Electronics Weekly",
+    "url": "https://www.electronicsweekly.com/news/business/ces-power-makes-three-irish-acquisitions-2026-04/",
+    "publishedAt": "20260424T113000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT"
     ],
     "topic_tags": [
       "power"
@@ -2467,19 +2180,52 @@
     "relevance_score": 3.0
   },
   {
-    "id": "ab909391f83ba5c4",
-    "headline": "Asella Wind Farm inaugurated , €145 million project will pay back in two years",
-    "url": "https://capitalethiopia.com/2026/04/19/asella-wind-farm-inaugurated-e145-million-project-will-pay-back-in-two-years/",
-    "publishedAt": "20260419T134500Z",
+    "id": "a139b37507e3dfbd",
+    "headline": "The Iran War Is Accelerating the Renewable Energy Transition Just Not in the U . S . ",
+    "url": "https://www.yahoo.com/news/articles/iran-war-accelerating-renewable-energy-130000588.html",
+    "publishedAt": "20260426T133000Z",
     "source": "gdelt",
     "country_tags": [
-      "SE"
+      "IT",
+      "NO"
     ],
     "topic_tags": [
       "renewables"
     ],
     "summary": "",
-    "relevance_score": 2.5
+    "relevance_score": 3.0
+  },
+  {
+    "id": "3e8c55314cb95b19",
+    "headline": "Iran War , Strait of Hormuz Closure Forces Embrace of Renewable Energy",
+    "url": "https://www.rollingstone.com/politics/politics-features/iran-war-strait-hormuz-renewable-energy-1235553721/",
+    "publishedAt": "20260426T151500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT"
+    ],
+    "topic_tags": [
+      "renewables"
+    ],
+    "summary": "",
+    "relevance_score": 3.0
+  },
+  {
+    "id": "5605d4bfacd0383c",
+    "headline": "Anthropic Targets EU Data Center Market With A Six - Figure Recruitment Drive : Report",
+    "url": "https://finance.yahoo.com/sectors/technology/articles/anthropic-targets-eu-data-center-173112409.html",
+    "publishedAt": "20260426T181500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT",
+      "FI"
+    ],
+    "topic_tags": [
+      "emissions"
+    ],
+    "summary": "",
+    "relevance_score": 3.0
   },
   {
     "id": "622d157ec6e412a9",
@@ -2814,6 +2560,21 @@
     "relevance_score": 2.5
   },
   {
+    "id": "114dd11d1b0b9fdd",
+    "headline": "Ireland met EU air pollutant targets in 2024 and is on track to meet 2030 goals , Environmental Protection Agency says",
+    "url": "https://www.independent.ie/irish-news/ireland-met-eu-air-pollutant-targets-in-2024-and-is-on-track-to-meet-2030-goals-environmental-protection-agency-says/a324654372.html",
+    "publishedAt": "20260424T184500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IE"
+    ],
+    "topic_tags": [
+      "emissions"
+    ],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
     "id": "e6245ecbf4e5a523",
     "headline": "Iran Conflict to Tighten Global Natural Gas Market for Two Years : IEA",
     "url": "https://www.el-balad.com/16922801",
@@ -2859,88 +2620,34 @@
     "relevance_score": 2.5
   },
   {
-    "id": "7ce14ca6d3ff358d",
-    "headline": "Finland endorses united kingdom , France statement on Strait of Hormuz",
-    "url": "https://yle.fi/a/74-20221402",
-    "publishedAt": "20260419T111500Z",
+    "id": "1bf0fceb3f06fc89",
+    "headline": "Green Hydrogen Engine Powers World - First 3 MW Data Center Backup",
+    "url": "https://www.hydrogenfuelnews.com/green-hydrogen-engine-powers-world-first-3-mw-data-center-backup/8575698/",
+    "publishedAt": "20260426T124500Z",
     "source": "gdelt",
     "country_tags": [
-      "ES",
-      "FR",
-      "IT",
-      "GB",
-      "NL",
-      "SE",
       "FI"
     ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 2.0
-  },
-  {
-    "id": "a60336d101e020aa",
-    "headline": "Uranium enrichment : key sticking point at center of US - Iran nuclear talks",
-    "url": "https://www.ynetnews.com/health_science/article/hyhvkzztwe",
-    "publishedAt": "20260419T113000Z",
-    "source": "gdelt",
-    "country_tags": [],
     "topic_tags": [
-      "nuclear"
+      "power"
     ],
     "summary": "",
-    "relevance_score": 2.0
+    "relevance_score": 2.5
   },
   {
-    "id": "ae32e1d3d447f04d",
-    "headline": "Annual maintenance on OL1 nuclear reactor begins",
-    "url": "https://yle.fi/a/74-20221387",
-    "publishedAt": "20260419T160000Z",
+    "id": "23f8b02e78f33fd8",
+    "headline": "Oops They Did It Again – A Third State Allows Plug - And - Play Solar",
+    "url": "https://www.forbes.com/sites/joshpearce/2026/04/26/oops-they-did-it-again--a-third-state-allows-plug-and-play-solar/",
+    "publishedAt": "20260427T023000Z",
     "source": "gdelt",
-    "country_tags": [],
+    "country_tags": [
+      "IT"
+    ],
     "topic_tags": [
-      "nuclear"
+      "renewables"
     ],
     "summary": "",
-    "relevance_score": 2.0
-  },
-  {
-    "id": "547cfdcca2a1593a",
-    "headline": "Letter : Our energy future is tied to sky and sun",
-    "url": "https://www.adn.com/opinions/letters/2026/04/19/letter-our-energy-future-is-tied-to-sky-and-sun/",
-    "publishedAt": "20260419T233000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 2.0
-  },
-  {
-    "id": "df66a41ac60288b1",
-    "headline": "IEA Chief Warns Persian Gulf Energy Recovery Could Take Up to Two Years – NaturalNews . com",
-    "url": "https://www.naturalnews.com/2026-04-19-iea-chief-gulf-energy-recovery-two-years.html",
-    "publishedAt": "20260420T000000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 2.0
-  },
-  {
-    "id": "d351b60f8b83122c",
-    "headline": "US - Iran war : Former Shell executive urges Australia to tax energy giants",
-    "url": "https://www.theage.com.au/world/asia/never-waste-a-crisis-ex-shell-executive-says-it-s-time-for-australia-to-tax-windfall-profits-on-energy-20260418-p5zp1j.html",
-    "publishedAt": "20260420T061500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 2.0
+    "relevance_score": 2.5
   },
   {
     "id": "2283db0d81c61fd5",
@@ -3062,6 +2769,22 @@
       "SE",
       "FI",
       "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "168ae3b741a7dbb5",
+    "headline": "ICS Nordic Hires Live Comedy Exec & Strikes Deal With Ismo Leikola",
+    "url": "https://deadline.com/2026/04/finlands-ics-nordic-live-comedy-push-ismo-leikola-deal-1236865670/",
+    "publishedAt": "20260421T080000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IT",
+      "NO"
     ],
     "topic_tags": [],
     "summary": "",
@@ -3731,64 +3454,33 @@
     "relevance_score": 2.0
   },
   {
-    "id": "7ff3dff065714d26",
-    "headline": "Consolidated Edison ( NYSE : ED ) and ENGIE ( OTCMKTS : ENGIY ) Critical Contrast",
-    "url": "https://www.dailypolitical.com/2026/04/19/consolidated-edison-nyseed-and-engie-otcmktsengiy-critical-contrast.html",
-    "publishedAt": "20260419T120000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IT",
-      "SE",
-      "IE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "1e0e184b6cac9d09",
-    "headline": "Majority in Netherlands supports keeping Groningen gas wells",
-    "url": "https://nltimes.nl/2026/04/19/majority-netherlands-supports-keeping-groningen-gas-wells",
-    "publishedAt": "20260419T171500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IT",
-      "NL"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "009bf5629983534b",
-    "headline": "Danske Bank Downgrades Equinor ( EQNR ) to  Hold  ",
-    "url": "https://finance.yahoo.com/sectors/energy/articles/danske-bank-downgrades-equinor-eqnr-182137142.html",
-    "publishedAt": "20260419T191500Z",
+    "id": "bfab53f30a6e14a6",
+    "headline": "Give it a Rest George Monbiot : Decades of Hysterical Climate and Net Zero Fearmongering Have Left You Terminally Confused",
+    "url": "https://wattsupwiththat.com/2026/04/26/give-it-a-rest-george-monbiot-decades-of-hysterical-climate-and-net-zero-fearmongering-have-left-you-terminally-confused/",
+    "publishedAt": "20260427T063000Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
       "DE",
-      "NO"
+      "IT",
+      "SE"
     ],
     "topic_tags": [],
     "summary": "",
-    "relevance_score": 1.5
+    "relevance_score": 2.0
   },
   {
-    "id": "63a6e78cfc78e4af",
-    "headline": "Africa new £26bn gas pipeline to be the  new Strait of Hormuz  | World | News",
-    "url": "https://www.express.co.uk/news/world/2195904/africa-gas-pipeline-new-strait-hormuz-13-countries",
-    "publishedAt": "20260419T224500Z",
+    "id": "a524c129574ef885",
+    "headline": "UK World War 3 wargames as major  operation  to take place in North Sea",
+    "url": "https://www.dailystar.co.uk/news/latest-news/uks-world-war-3-wargames-37040206",
+    "publishedAt": "20260420T071500Z",
     "source": "gdelt",
     "country_tags": [
-      "FR",
-      "IT"
+      "ES",
+      "NO",
+      "SE"
     ],
-    "topic_tags": [
-      "gas"
-    ],
+    "topic_tags": [],
     "summary": "",
     "relevance_score": 1.5
   },
@@ -3847,12 +3539,47 @@
     "relevance_score": 1.5
   },
   {
-    "id": "887e1dd19e28f4de",
-    "headline": "UK to accelerate clean energy drive amid Middle East war",
-    "url": "https://www.freemalaysiatoday.com/category/world/2026/04/21/uk-to-accelerate-clean-energy-drive-amid-middle-east-war",
-    "publishedAt": "20260421T011500Z",
+    "id": "c3529c3161a6b959",
+    "headline": "Canadian inflation surges on record gas price jump : The Daily Chase",
+    "url": "https://www.bnnbloomberg.ca/business/economics/2026/04/20/the-daily-chase-inflation-surges-on-record-gas-price-jump/",
+    "publishedAt": "20260420T150000Z",
     "source": "gdelt",
-    "country_tags": [],
+    "country_tags": [
+      "ES",
+      "SE"
+    ],
+    "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
+    "id": "fe4a7d214d4ccc0b",
+    "headline": "Letters : Leo Varadkar should realise that the country would come to a halt if rural Ireland shut down",
+    "url": "https://www.independent.ie/opinion/letters/letters-leo-varadkar-should-realise-that-the-country-would-come-to-a-halt-if-rural-ireland-shut-down/a1831074434.html",
+    "publishedAt": "20260421T063000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "SE",
+      "DK",
+      "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
+    "id": "1a53cae8f551a367",
+    "headline": "Budget surplus while families struggle to heat homes , says Sinn Féin leader",
+    "url": "https://www.breakingnews.ie/ireland/budget-surplus-while-families-struggle-to-heat-homes-says-sinn-fein-leader-1889917.html",
+    "publishedAt": "20260421T171500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IE"
+    ],
     "topic_tags": [],
     "summary": "",
     "relevance_score": 1.5
@@ -4118,6 +3845,21 @@
     "relevance_score": 1.5
   },
   {
+    "id": "fddf17aaeb35caeb",
+    "headline": "Gloves off as Dáil deputies square up for a slot on Katie Taylor Croke Park barney – The Irish Times",
+    "url": "https://www.irishtimes.com/politics/oireachtas/2026/04/23/gloves-off-as-dail-deputies-square-up-for-a-slot-on-katie-taylors-croke-park-barney/",
+    "publishedAt": "20260423T070000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
     "id": "69543bbe963d8523",
     "headline": "Kenya - Netherlands ties : Key allies in building a more sustainable and prosperous future",
     "url": "https://www.standardmedia.co.ke/opinion/article/2001546094/kenya-netherlands-ties-key-allies-in-building-a-more-sustainable-and-prosperous-future",
@@ -4283,32 +4025,34 @@
     "relevance_score": 1.5
   },
   {
-    "id": "54d6cb729665ab64",
-    "headline": "Nations gather for first - ever conference on fossil fuel exit",
-    "url": "https://www.enca.com/business/nations-gather-first-ever-conference-fossil-fuel-exit",
-    "publishedAt": "20260420T053000Z",
+    "id": "8cb06e71ae4781c9",
+    "headline": "Europe fuel prices before the Iran war and after the ceasefire : Where did they rise most ? ",
+    "url": "https://www.euronews.com/business/2026/04/26/europe-fuel-prices-before-the-iran-war-and-after-the-ceasefire-where-did-they-rise-most",
+    "publishedAt": "20260426T071500Z",
     "source": "gdelt",
     "country_tags": [
-      "IT",
+      "ES",
+      "SE",
       "FI"
     ],
     "topic_tags": [],
     "summary": "",
-    "relevance_score": 1.0
+    "relevance_score": 1.5
   },
   {
-    "id": "c538de05e3324253",
-    "headline": "Ireland to seek cut in EU tax on imported US aviation fuel to ease airline cost crisis",
-    "url": "https://www.irishtimes.com/ireland/2026/04/20/ireland-to-seek-cut-in-eu-tax-on-imported-us-aviation-fuel-to-ease-airline-cost-crisis/",
-    "publishedAt": "20260420T063000Z",
+    "id": "e3dda208ab09caf4",
+    "headline": "Why the united kingdom and EU Keep Doubling Down on Net Zero Dogma in the Face of Spiralling Economic Dysfunction",
+    "url": "https://wattsupwiththat.com/2026/04/26/why-the-uk-and-eu-keep-doubling-down-on-net-zero-dogma-in-the-face-of-spiralling-economic-dysfunction/",
+    "publishedAt": "20260427T013000Z",
     "source": "gdelt",
     "country_tags": [
-      "SE",
-      "IE"
+      "IT",
+      "GB",
+      "NO"
     ],
     "topic_tags": [],
     "summary": "",
-    "relevance_score": 1.0
+    "relevance_score": 1.5
   },
   {
     "id": "a38130a06f3f6b7b",
@@ -4319,6 +4063,20 @@
     "country_tags": [
       "NO",
       "FI"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "ee569beccecb92d5",
+    "headline": "Dutch water authority emitted excess nitrogen for years without permit",
+    "url": "https://nltimes.nl/2026/04/20/dutch-water-authority-emitted-excess-nitrogen-years-without-permit",
+    "publishedAt": "20260420T210000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT"
     ],
     "topic_tags": [],
     "summary": "",
@@ -4467,6 +4225,34 @@
     "relevance_score": 1.0
   },
   {
+    "id": "1bdf4b92dd66c840",
+    "headline": "Strong finances will allow for personal income tax package in next budget , Harris says",
+    "url": "https://www.irishtimes.com/politics/2026/04/22/strong-finances-will-allow-for-personal-income-tax-package-in-next-budget-harris-says/",
+    "publishedAt": "20260422T224500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "FI"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "d5018294b8c9bb6d",
+    "headline": "CRCG sees promising future for PNG",
+    "url": "https://www.thenational.com.pg/crcg-sees-promising-future-for-png/",
+    "publishedAt": "20260423T010000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "SE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
     "id": "7ba49b711c11222e",
     "headline": "Safest countries in the world 2026 : What makes them resilient",
     "url": "https://www.asiaone.com:443/lifestyle/safest-countries-world-2026-what-makes-them-resilient",
@@ -4509,6 +4295,34 @@
     "relevance_score": 1.0
   },
   {
+    "id": "e2c7c0b5eefb8277",
+    "headline": "Greens condemn Government for  chickening out  during fuel protest",
+    "url": "https://www.newstalk.com/news/fuel-protest-8-2255243",
+    "publishedAt": "20260423T121500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "b371f6b75b428a5e",
+    "headline": "Major airline  cancels hundreds of flight - 5 major united kingdom airports impacted",
+    "url": "https://www.express.co.uk/travel/articles/2197580/aer-lingus-flight-cancellations-uk-airports",
+    "publishedAt": "20260423T150000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT",
+      "GB"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
     "id": "99010040a6b9ca1e",
     "headline": "+25 %: strong growth in Q1 2026 turnover | The Manila Times",
     "url": "https://www.manilatimes.net/2026/04/24/tmt-newswire/globenewswire/25-strong-growth-in-q1-2026-turnover/2327496",
@@ -4531,6 +4345,20 @@
     "country_tags": [
       "ES",
       "NO"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "52add5fb8139a85d",
+    "headline": "GLOBAL MARKET OVERVIEW TOMATOES",
+    "url": "https://www.freshplaza.com/north-america/article/9831916/global-market-overview-tomatoes/",
+    "publishedAt": "20260424T144500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IE"
     ],
     "topic_tags": [],
     "summary": "",
@@ -4587,6 +4415,20 @@
     "country_tags": [
       "NO",
       "FI"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "5138d2655628b9dd",
+    "headline": "Letters sent by Newark Advertiser readers",
+    "url": "https://www.newarkadvertiser.co.uk/news/advertiser-readers-letters-9462891/",
+    "publishedAt": "20260425T050000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "DE",
+      "SE"
     ],
     "topic_tags": [],
     "summary": "",
@@ -4663,30 +4505,32 @@
     "relevance_score": 1.0
   },
   {
-    "id": "9b8e9345ee568d42",
-    "headline": "Thousands of people call for faster green shift in Germany",
-    "url": "https://www.hurriyetdailynews.com/thousands-of-people-call-for-faster-green-shift-in-germany-221201",
-    "publishedAt": "20260419T100000Z",
+    "id": "fe111604430597fa",
+    "headline": "Acting Venezuelan President arrives in Barbados",
+    "url": "https://www.guardian.co.tt/news/acting-venezuelan-president-arrives-in-barbados-6.2.2571834.4fd0cf4931",
+    "publishedAt": "20260427T051500Z",
     "source": "gdelt",
     "country_tags": [
+      "ES",
       "DE"
     ],
     "topic_tags": [],
     "summary": "",
-    "relevance_score": 0.5
+    "relevance_score": 1.0
   },
   {
-    "id": "cb9adc4168fa9bf9",
-    "headline": "Time to stop giving away gas",
-    "url": "https://cpa.org.au/guardian/issue-2186/time-to-stop-giving-away-gas/",
-    "publishedAt": "20260419T134500Z",
+    "id": "1f81bf703033fd07",
+    "headline": "Little prospect of interest rate hike by ECB on Thursday",
+    "url": "https://www.independent.ie/business/irish/little-prospect-of-interest-rate-hike-by-ecb-on-thursday/a1671927803.html",
+    "publishedAt": "20260427T060000Z",
     "source": "gdelt",
-    "country_tags": [],
-    "topic_tags": [
-      "gas"
+    "country_tags": [
+      "ES",
+      "IT"
     ],
+    "topic_tags": [],
     "summary": "",
-    "relevance_score": 0.5
+    "relevance_score": 1.0
   },
   {
     "id": "028ef8c01a4acbad",
@@ -4806,6 +4650,19 @@
     "relevance_score": 0.5
   },
   {
+    "id": "bf7f5e3f7f544b58",
+    "headline": "More Dutch crossing the border to fuel up in Belgium : ABN Amro",
+    "url": "https://nltimes.nl/2026/04/24/dutch-crossing-border-fuel-belgium-abn-amro",
+    "publishedAt": "20260424T214500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "DE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.5
+  },
+  {
     "id": "5b5e12cc516868d0",
     "headline": "India resorts to LPG spot buying to bridge West Asia supply gap",
     "url": "https://timesofindia.indiatimes.com/business/india-business/india-resorts-to-lpg-spot-buying-to-bridge-west-asia-supply-gap/articleshow/130506135.cms",
@@ -4813,6 +4670,19 @@
     "source": "gdelt",
     "country_tags": [
       "ES"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.5
+  },
+  {
+    "id": "32940ced5d6755cf",
+    "headline": "Newton Emerson : Will it be guns or butter , Irish or English , savings or spin ? ",
+    "url": "https://www.irishnews.com/opinion/newton-emerson-will-it-be-guns-or-butter-savings-or-spin-2Y3GVDZGYZCQZK2RK44I3D4TXE/",
+    "publishedAt": "20260425T101500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT"
     ],
     "topic_tags": [],
     "summary": "",
@@ -4832,10 +4702,10 @@
     "relevance_score": 0.5
   },
   {
-    "id": "f4ebac1fab51c145",
-    "headline": "The Hormuz Crisis and the Fate of the Global South",
-    "url": "http://www.dhakacourier.com.bd/news/Global/The-Hormuz-Crisis-and-the-Fate-of-the-Global-South/10137",
-    "publishedAt": "20260419T074500Z",
+    "id": "0e50c0367594bfef",
+    "headline": "Why Iran can outlast America in this war",
+    "url": "https://freerepublic.com/focus/f-bloggers/4375701/posts",
+    "publishedAt": "20260420T164500Z",
     "source": "gdelt",
     "country_tags": [],
     "topic_tags": [],
@@ -4843,10 +4713,21 @@
     "relevance_score": 0.0
   },
   {
-    "id": "0e50c0367594bfef",
-    "headline": "Why Iran can outlast America in this war",
-    "url": "https://freerepublic.com/focus/f-bloggers/4375701/posts",
-    "publishedAt": "20260420T164500Z",
+    "id": "7881f5f91996e82d",
+    "headline": "",
+    "url": "https://dublinpeople.com/news/dublin/articles/2026/04/22/bacik-paye/",
+    "publishedAt": "20260422T130000Z",
+    "source": "gdelt",
+    "country_tags": [],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.0
+  },
+  {
+    "id": "f6331224340294b3",
+    "headline": "",
+    "url": "https://dublinpeople.com/news/dublin/articles/2026/04/22/boylan-data-centre-usage/",
+    "publishedAt": "20260422T130000Z",
     "source": "gdelt",
     "country_tags": [],
     "topic_tags": [],
