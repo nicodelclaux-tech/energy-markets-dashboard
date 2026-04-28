@@ -19,24 +19,6 @@
     "relevance_score": 9.0
   },
   {
-    "id": "ac2236014d3723b1",
-    "headline": "Renewables and Nuclear Hit 43 % of Global Power Mix in 2025 as Solar and Wind Drive Record Capacity Growth",
-    "url": "https://greentechlead.com/renewable-energy/renewables-and-nuclear-hit-43-of-global-power-mix-in-2025-as-solar-and-wind-drive-record-capacity-growth-53155",
-    "publishedAt": "20260420T154500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT"
-    ],
-    "topic_tags": [
-      "power",
-      "renewables",
-      "nuclear"
-    ],
-    "summary": "",
-    "relevance_score": 8.5
-  },
-  {
     "id": "debb16bab552e859",
     "headline": "From Amazon to Meta : how the world biggest companies are securing supplies of low - carbon energy | The Grid",
     "url": "https://www.theguardian.com/the-grid/2026/mar/17/how-big-tech-companies-are-securing-low-carbon-energy",
@@ -305,21 +287,18 @@
     "relevance_score": 5.5
   },
   {
-    "id": "7d964157ab909ec6",
-    "headline": "Government to propose electricity price changes in clean power push",
-    "url": "https://www.yahoo.com/news/articles/government-propose-electricity-price-changes-005137865.html",
-    "publishedAt": "20260421T024500Z",
+    "id": "08e344bcfee1a488",
+    "headline": "Rooppur Nuclear Power Plant Fuel Loading | What fuel loading at Rooppur means for our energy future",
+    "url": "https://www.thedailystar.net/opinion/views/news/what-fuel-loading-rooppur-means-our-energy-future-4162316",
+    "publishedAt": "20260428T034500Z",
     "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT",
-      "SE"
-    ],
+    "country_tags": [],
     "topic_tags": [
-      "power"
+      "power",
+      "nuclear"
     ],
     "summary": "",
-    "relevance_score": 5.0
+    "relevance_score": 5.5
   },
   {
     "id": "ffda192afe613a41",
@@ -492,56 +471,21 @@
     "relevance_score": 5.0
   },
   {
-    "id": "5bfb51a6dd45cb15",
-    "headline": "Giant gas field that could provide a tenth of Britain power will be used to  mine Bitcoin  instead",
-    "url": "https://www.dailymail.co.uk/news/article-15747675/gas-field-Britains-power-used-bitcoin-instead.html",
-    "publishedAt": "20260420T093000Z",
+    "id": "33eef75570d4bc62",
+    "headline": "Energy independence means more renewables - IrishDentist . ie",
+    "url": "https://www.irishdentist.ie/energy-independence-means-more-renewables/17679/",
+    "publishedAt": "20260427T150000Z",
     "source": "gdelt",
     "country_tags": [
+      "ES",
       "DE",
-      "IT",
-      "SE",
-      "FI",
       "IE"
-    ],
-    "topic_tags": [
-      "power",
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 4.5
-  },
-  {
-    "id": "41b06f090ac688fb",
-    "headline": "Majority of Dutch favor more nuclear energy as costs rise during Iran war",
-    "url": "https://nltimes.nl/2026/04/20/majority-dutch-favor-nuclear-energy-costs-rise-iran-war",
-    "publishedAt": "20260420T164500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IT",
-      "SE"
-    ],
-    "topic_tags": [
-      "nuclear"
-    ],
-    "summary": "",
-    "relevance_score": 4.5
-  },
-  {
-    "id": "9b76ae3b698778ab",
-    "headline": "UK shifts older wind and solar farms to fixed - price deals to reduce price shocks",
-    "url": "https://www.aol.co.uk/news/uk-shifts-older-wind-solar-230108601.html",
-    "publishedAt": "20260420T234500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "DE",
-      "FI"
     ],
     "topic_tags": [
       "renewables"
     ],
     "summary": "",
-    "relevance_score": 4.5
+    "relevance_score": 5.0
   },
   {
     "id": "3203405c530967be",
@@ -737,22 +681,6 @@
     "relevance_score": 4.5
   },
   {
-    "id": "0f9f7e4c268201cc",
-    "headline": "AI Power Demand Is Rewiring Global Markets",
-    "url": "https://fnarena.com/index.php/2026/04/27/ais-power-demand-is-rewiring-global-markets/",
-    "publishedAt": "20260427T040000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "DE"
-    ],
-    "topic_tags": [
-      "power",
-      "emissions"
-    ],
-    "summary": "",
-    "relevance_score": 4.5
-  },
-  {
     "id": "695f319dc1cac332",
     "headline": "Russia and China Emerge as Major Beneficiaries of Iran War Energy Crisis",
     "url": "https://www.thailand-business-news.com/china/303756-russia-and-china-emerge-as-major-beneficiaries-of-iran-war-energy-crisis",
@@ -768,6 +696,22 @@
     "relevance_score": 4.5
   },
   {
+    "id": "ecd1dee984a133d8",
+    "headline": "Renewables in vogue as Iran war drives up Europe power prices",
+    "url": "https://www.marketscreener.com/news/renewables-in-vogue-as-iran-war-drives-up-europe-power-prices-ce7f59dcdc80f32d",
+    "publishedAt": "20260427T083000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES"
+    ],
+    "topic_tags": [
+      "power",
+      "renewables"
+    ],
+    "summary": "",
+    "relevance_score": 4.5
+  },
+  {
     "id": "a6d307096340ba28",
     "headline": "Energy firms fight €2 . 7 billion of 2022 Dutch windfall tax",
     "url": "https://www.dutchnews.nl/2026/04/energy-firms-fight-e2-7-billion-of-2022-dutch-windfall-tax/",
@@ -778,6 +722,24 @@
     ],
     "topic_tags": [
       "renewables"
+    ],
+    "summary": "",
+    "relevance_score": 4.0
+  },
+  {
+    "id": "322588ce160c0900",
+    "headline": "Energy bills to drop ? Millions to benefit from new united kingdom reform",
+    "url": "https://www.heraldscotland.com/news/national/uk-today/26038857.energy-bills-drop-millions-benefit-new-uk-reform/",
+    "publishedAt": "20260421T113000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "FR",
+      "IT",
+      "GB",
+      "FI"
+    ],
+    "topic_tags": [
+      "regulation"
     ],
     "summary": "",
     "relevance_score": 4.0
@@ -815,6 +777,24 @@
     ],
     "topic_tags": [
       "renewables"
+    ],
+    "summary": "",
+    "relevance_score": 4.0
+  },
+  {
+    "id": "a31114b320aaca10",
+    "headline": "Energy bills to drop ? Millions to benefit from new united kingdom reform",
+    "url": "https://www.echo-news.co.uk/news/26045319.energy-bills-drop-millions-benefit-new-uk-reform/",
+    "publishedAt": "20260422T190000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "FR",
+      "IT",
+      "GB",
+      "FI"
+    ],
+    "topic_tags": [
+      "regulation"
     ],
     "summary": "",
     "relevance_score": 4.0
@@ -1263,55 +1243,83 @@
     "relevance_score": 4.0
   },
   {
-    "id": "f15549b9f7cc2f2d",
-    "headline": "Burning wood for power worse for climate than gas equivalent , report finds",
-    "url": "https://www.theguardian.com/environment/2026/apr/20/burning-wood-power-worse-climate-than-gas-new-report",
-    "publishedAt": "20260420T094500Z",
+    "id": "c059dfdfdc2e7a53",
+    "headline": "Energy crisis : Simon Harris floats one - off payments for heat pumps and efficient cars",
+    "url": "https://www.irishtimes.com/politics/2026/04/27/energy-crisis-harris-alludes-to-one-off-payments-for-heat-pumps-and-efficient-cars/",
+    "publishedAt": "20260427T070000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "FI",
+      "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 4.0
+  },
+  {
+    "id": "cf4fea1c32b7471d",
+    "headline": "Wind co - location : TotalEnergies takes FID on 1GW Kazakhstan project , Downing develops in Finland",
+    "url": "https://www.energy-storage.news/wind-co-location-totalenergies-takes-fid-on-1gw-kazakhstan-project-downing-develops-in-finland/",
+    "publishedAt": "20260427T110000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE",
+      "NL",
+      "FI",
+      "IE"
+    ],
+    "topic_tags": [
+      "renewables"
+    ],
+    "summary": "",
+    "relevance_score": 4.0
+  },
+  {
+    "id": "d7de063505574b04",
+    "headline": "Typical household  £3 , 400 poorer because of five years of energy crisis  ",
+    "url": "https://www.mirror.co.uk/money/uk-households-poorer-energy-crisis-37077650",
+    "publishedAt": "20260427T170000Z",
     "source": "gdelt",
     "country_tags": [
       "SE",
       "FI"
     ],
-    "topic_tags": [
-      "power",
-      "gas"
-    ],
+    "topic_tags": [],
     "summary": "",
-    "relevance_score": 3.5
+    "relevance_score": 4.0
   },
   {
-    "id": "722536c7410a8ec0",
-    "headline": "Golden Pass Texas Facility Ready For Inaugural LNG",
-    "url": "https://www.marinelink.com/news/golden-pass-texas-facility-ready-538269",
-    "publishedAt": "20260420T234500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "DE",
-      "IT"
-    ],
-    "topic_tags": [
-      "gas",
-      "LNG"
-    ],
-    "summary": "",
-    "relevance_score": 3.5
-  },
-  {
-    "id": "e910b906ea421d55",
-    "headline": "  Major  Indonesian natural gas find announced",
-    "url": "https://www.freemalaysiatoday.com/category/business/2026/04/21/major-indonesian-natural-gas-find-announced",
-    "publishedAt": "20260421T054500Z",
+    "id": "385021bf9e42faeb",
+    "headline": "Tánaiste seeking further measures for energy crisis :  More needs to be done  ",
+    "url": "https://www.irishmirror.ie/news/irish-news/politics/tanaiste-seeking-further-measures-energy-37075418",
+    "publishedAt": "20260427T173000Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
-      "NO",
-      "FI"
+      "SE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 4.0
+  },
+  {
+    "id": "1b92e33184f281a1",
+    "headline": "Spain electricity sector reviews system operating costs one year after blackout",
+    "url": "https://www.surinenglish.com/spain/spains-electricity-sector-reviews-systems-operating-costs-20260427185227-nt.html",
+    "publishedAt": "20260427T191500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT",
+      "SE",
+      "IE"
     ],
     "topic_tags": [
-      "gas"
+      "power"
     ],
     "summary": "",
-    "relevance_score": 3.5
+    "relevance_score": 4.0
   },
   {
     "id": "bdc2b38d97a3fca9",
@@ -1375,6 +1383,23 @@
       "FI"
     ],
     "topic_tags": [
+      "gas"
+    ],
+    "summary": "",
+    "relevance_score": 3.5
+  },
+  {
+    "id": "ad26dee404a391ef",
+    "headline": "Gas and electricity price shake - up set to combat Iran instability",
+    "url": "https://www.thetimes.com/business/energy/article/gas-electricity-prices-bills-iran-war-h576v88ff",
+    "publishedAt": "20260421T204500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT",
+      "SE"
+    ],
+    "topic_tags": [
+      "power",
       "gas"
     ],
     "summary": "",
@@ -1641,20 +1666,67 @@
     "relevance_score": 3.5
   },
   {
-    "id": "b02a8660be871a39",
-    "headline": "Industrial Decarbonization : Hyca Heat Hybrid Catalytic Process Heat System – Hydrogen Fuel News",
-    "url": "https://www.hydrogenfuelnews.com/industrial-decarbonization-hyca-heats-hybrid-catalytic-process-heat-system/8575635/",
-    "publishedAt": "20260420T123000Z",
+    "id": "9418f92dd1b409cc",
+    "headline": "Taroom Trough oil field touted as solution to fuel security but no one knows how much oil is there",
+    "url": "https://www.abc.net.au/news/2026-04-27/taroom-trough-oil-field-touted-as-solution-to-fuel-security/106603348",
+    "publishedAt": "20260427T123000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT",
+      "NO",
+      "SE",
+      "FI",
+      "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 3.5
+  },
+  {
+    "id": "d33be4a47464fce5",
+    "headline": "Strait of Hormuz blockade raises oil prices as nations discuss fossil fuel exit",
+    "url": "http://www.jpost.com/environment-and-climate-change/article-894322",
+    "publishedAt": "20260427T171500Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
-      "DE"
+      "DE",
+      "IT",
+      "SE"
     ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 3.5
+  },
+  {
+    "id": "ab23c47f1c224686",
+    "headline": "Renewable energy news : Enrich , NTPC , Solarigo , Grenergy",
+    "url": "https://greentechlead.com/energy-news/renewable-energy-news-enrich-ntpc-solarigo-grenergy-53250",
+    "publishedAt": "20260427T223000Z",
+    "source": "gdelt",
+    "country_tags": [],
     "topic_tags": [
-      "emissions"
+      "renewables"
     ],
     "summary": "",
-    "relevance_score": 3.0
+    "relevance_score": 3.5
+  },
+  {
+    "id": "62362a1d48c34b65",
+    "headline": "The Renewable Shield : Energy Lessons from the Iran War",
+    "url": "https://smallwarsjournal.com/2026/04/27/the-renewable-shield-energy-lessons-from-the-iran-war/",
+    "publishedAt": "20260428T010000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "FR",
+      "IE"
+    ],
+    "topic_tags": [
+      "renewables"
+    ],
+    "summary": "",
+    "relevance_score": 3.5
   },
   {
     "id": "d3d990e5ff499bd7",
@@ -1785,21 +1857,6 @@
       "power",
       "gas"
     ],
-    "summary": "",
-    "relevance_score": 3.0
-  },
-  {
-    "id": "cb0854c90afbbd99",
-    "headline": "What are EU countries doing to counter energy price rises ? ",
-    "url": "https://www.marketscreener.com/news/what-are-eu-countries-doing-to-counter-energy-price-rises-ce7f59d8d880f324",
-    "publishedAt": "20260422T083000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "SE",
-      "IE"
-    ],
-    "topic_tags": [],
     "summary": "",
     "relevance_score": 3.0
   },
@@ -1989,36 +2046,6 @@
     "topic_tags": [
       "emissions"
     ],
-    "summary": "",
-    "relevance_score": 3.0
-  },
-  {
-    "id": "3e2be4a183cda2c8",
-    "headline": "The Irish Independent View : Fuel crisis underlines our need to focus on green energy",
-    "url": "https://www.independent.ie/opinion/editorial/the-irish-independents-view-fuel-crisis-underlines-our-need-to-focus-on-green-energy/a786005254.html",
-    "publishedAt": "20260424T073000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "IE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 3.0
-  },
-  {
-    "id": "ee4eb36b20853d10",
-    "headline": "As the UN Global Climate Talks Lose Momentum , a Smaller Coalition Eyes a Fossil Fuel Exit",
-    "url": "https://insideclimatenews.org/news/24042026/colombia-fossil-fuel-exit-conference/",
-    "publishedAt": "20260424T093000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT",
-      "SE"
-    ],
-    "topic_tags": [],
     "summary": "",
     "relevance_score": 3.0
   },
@@ -2228,62 +2255,81 @@
     "relevance_score": 3.0
   },
   {
-    "id": "622d157ec6e412a9",
-    "headline": "Germany producer prices up 2 . 5 % due to higher energy prices",
-    "url": "https://aa.com.tr/en/economy/germanys-producer-prices-up-25-due-to-higher-energy-prices/3911800",
-    "publishedAt": "20260420T094500Z",
+    "id": "03731953ff237c4e",
+    "headline": "EXEED Debuts RX Concept at Brand Night , Marking a New Chapter in Its European Strategy as a Premium New Energy Technology Brand",
+    "url": "https://www.manilatimes.net/2026/04/27/tmt-newswire/plentisoft/exeed-debuts-rx-concept-at-brand-night-marking-a-new-chapter-in-its-european-strategy-as-a-premium-new-energy-technology-brand/2329034",
+    "publishedAt": "20260427T090000Z",
     "source": "gdelt",
     "country_tags": [
-      "ES",
-      "DE"
+      "DE",
+      "IT",
+      "NO"
     ],
     "topic_tags": [],
     "summary": "",
-    "relevance_score": 2.5
+    "relevance_score": 3.0
   },
   {
-    "id": "069f4230c4e73e6e",
-    "headline": "Baystreet . ca - Trading Desks Boom While Big Oil Output Stalls",
-    "url": "http://baystreet.ca/commodities/8660/Trading-Desks-Boom-While-Big-Oil-Output-Stalls",
-    "publishedAt": "20260420T124500Z",
+    "id": "5d81b4b364ce1e41",
+    "headline": "Building Food and Energy Resilience After Iran War | World Resources Institute",
+    "url": "https://www.wri.org/insights/food-energy-resilience-iran-war",
+    "publishedAt": "20260427T191500Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
-      "DE"
+      "IT",
+      "IE"
     ],
     "topic_tags": [],
     "summary": "",
-    "relevance_score": 2.5
+    "relevance_score": 3.0
   },
   {
-    "id": "81bf919051e9d26a",
-    "headline": "Türkiye among key contributors in record 2025 wind capacity additions",
-    "url": "https://www.dailysabah.com/business/energy/turkiye-among-key-contributors-in-record-2025-wind-capacity-additions",
-    "publishedAt": "20260420T140000Z",
+    "id": "234e153872e90dfb",
+    "headline": "U . S . to end two more offshore wind leases for fossil fuel investments",
+    "url": "https://www.yahoo.com/news/articles/u-end-two-more-offshore-201421679.html",
+    "publishedAt": "20260427T204500Z",
     "source": "gdelt",
     "country_tags": [
+      "ES",
+      "SE"
+    ],
+    "topic_tags": [
+      "renewables"
+    ],
+    "summary": "",
+    "relevance_score": 3.0
+  },
+  {
+    "id": "933d88c191d7bd22",
+    "headline": "Energy price rises will squeeze incomes but wont trigger recession , says Bank of Ireland – The Irish Times",
+    "url": "https://www.irishtimes.com/business/2026/04/28/energy-price-rises-will-squeeze-incomes-but-wont-trigger-recession-says-bank-of-ireland/",
+    "publishedAt": "20260428T024500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "SE",
+      "IE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 3.0
+  },
+  {
+    "id": "74a0fd4094477d51",
+    "headline": "Wind farm plans on Tipperary - Offaly border withdrawn days after submission",
+    "url": "https://www.independent.ie/farming/forestry-enviro/wind-farm-plans-on-tipperary-offaly-border-withdrawn-days-after-submission/a1765823420.html",
+    "publishedAt": "20260428T060000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "DE",
       "IT"
     ],
     "topic_tags": [
       "renewables"
     ],
     "summary": "",
-    "relevance_score": 2.5
-  },
-  {
-    "id": "a643e14cc47dd61f",
-    "headline": "Britain electricity is its  most British  in over 20 YEARS",
-    "url": "https://www.dailymail.com/sciencetech/article-15718767/Britain-electricity-British-20-YEARS.html",
-    "publishedAt": "20260421T024500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IT"
-    ],
-    "topic_tags": [
-      "power"
-    ],
-    "summary": "",
-    "relevance_score": 2.5
+    "relevance_score": 3.0
   },
   {
     "id": "9bca7e9e5e7a45f6",
@@ -2620,6 +2666,20 @@
     "relevance_score": 2.5
   },
   {
+    "id": "18a218e57c2c7c6c",
+    "headline": "UK departments at odds over energy demands of AI datacentres",
+    "url": "https://www.theguardian.com/technology/2026/apr/26/uk-departments-at-odds-over-energy-demands-of-ai-datacentres",
+    "publishedAt": "20260426T073000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "DE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
     "id": "1bf0fceb3f06fc89",
     "headline": "Green Hydrogen Engine Powers World - First 3 MW Data Center Backup",
     "url": "https://www.hydrogenfuelnews.com/green-hydrogen-engine-powers-world-first-3-mw-data-center-backup/8575698/",
@@ -2650,129 +2710,47 @@
     "relevance_score": 2.5
   },
   {
-    "id": "2283db0d81c61fd5",
-    "headline": "US - Iran war : Former Shell executive urges Australia to tax energy giants",
-    "url": "https://www.brisbanetimes.com.au/world/asia/never-waste-a-crisis-ex-shell-executive-says-it-s-time-for-australia-to-tax-windfall-profits-on-energy-20260418-p5zp1j.html",
-    "publishedAt": "20260420T070000Z",
+    "id": "20e3175e701adde3",
+    "headline": "Top Solar Stocks To Consider – April 24th",
+    "url": "https://www.dailypolitical.com/2026/04/27/top-solar-stocks-to-consider-april-24th.html",
+    "publishedAt": "20260427T093000Z",
     "source": "gdelt",
     "country_tags": [
-      "ES"
+      "DE"
     ],
-    "topic_tags": [],
+    "topic_tags": [
+      "renewables"
+    ],
     "summary": "",
-    "relevance_score": 2.0
+    "relevance_score": 2.5
   },
   {
-    "id": "039e50e550cca1aa",
-    "headline": "Germany Moves to Privatize Ex - Gazprom Unit SEFE",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Germany-Moves-to-Privatize-Ex-Gazprom-Unit-SEFE.html",
-    "publishedAt": "20260420T090000Z",
+    "id": "3c653f704ada6dc7",
+    "headline": "Origin Energy shares slump 10 % this week : Buy , sell or hold ? ",
+    "url": "https://www.fool.com.au/2026/04/28/origin-energy-shares-slump-10-this-week-buy-sell-or-hold/",
+    "publishedAt": "20260428T041500Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
-      "DE",
+      "SE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.5
+  },
+  {
+    "id": "d5c65e6989f45cd1",
+    "headline": "The Uncomfortable Truth About Global Energy Security - News Central Asia ( nCa ) ",
+    "url": "https://www.newscentralasia.net/2026/04/28/the-uncomfortable-truth-about-global-energy-security/",
+    "publishedAt": "20260428T063000Z",
+    "source": "gdelt",
+    "country_tags": [
       "IT",
       "SE"
     ],
     "topic_tags": [],
     "summary": "",
-    "relevance_score": 2.0
-  },
-  {
-    "id": "1721b890bb3f6c55",
-    "headline": "US - Iran war : Former Shell executive urges Australia to tax energy giants",
-    "url": "https://www.watoday.com.au/world/asia/never-waste-a-crisis-ex-shell-executive-says-it-s-time-for-australia-to-tax-windfall-profits-on-energy-20260418-p5zp1j.html",
-    "publishedAt": "20260420T093000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 2.0
-  },
-  {
-    "id": "c433f1d1aec2121a",
-    "headline": "Taoiseach under pressure as Fianna Fáil unity tested and international crises escalate – The Irish Times",
-    "url": "https://www.irishtimes.com/politics/2026/04/20/taoiseach-under-pressure-as-fianna-fail-unity-tested-and-international-crises-escalate/",
-    "publishedAt": "20260420T113000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "IT",
-      "SE",
-      "FI"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 2.0
-  },
-  {
-    "id": "5e9562dec33e5a55",
-    "headline": "World War 3 Drill : united kingdom Launches  Exercise Granite Resolve  To Guard North Sea From Russian Shadow",
-    "url": "https://www.ibtimes.co.uk/world-war-3-drill-uk-launches-exercise-granite-resolve-guard-north-sea-russian-shadow-1792645",
-    "publishedAt": "20260420T133000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "FR",
-      "IT",
-      "GB",
-      "NO",
-      "SE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 2.0
-  },
-  {
-    "id": "1fa16e53691e538c",
-    "headline": "BlackRock Energy and Resources Income Trust Plc",
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-04/68244670-blackrock-energy-and-resources-income-trust-plc-portfolio-update-008.htm",
-    "publishedAt": "20260420T143000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 2.0
-  },
-  {
-    "id": "dd38f1b1eb6e9a7a",
-    "headline": "TotalEnergies SE ( TTE ) Announces Signing of MoU With Türkiye Petrolleri Anonim Ortaklığı ( TPAO ) ",
-    "url": "https://www.insidermonkey.com/blog/totalenergies-se-tte-announces-signing-of-mou-with-turkiye-petrolleri-anonim-ortakligi-tpao-1742014/",
-    "publishedAt": "20260420T224500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT",
-      "NO",
-      "SE",
-      "IE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 2.0
-  },
-  {
-    "id": "28d1d8cc69df55b8",
-    "headline": "Princess Cruises Orders Three Voyager Class Ships from Fincantieri",
-    "url": "https://jp.ibtimes.com/princess-cruises-orders-three-voyager-class-ships-fincantieri-100606",
-    "publishedAt": "20260421T063000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE",
-      "FR",
-      "SE",
-      "FI",
-      "IE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 2.0
+    "relevance_score": 2.5
   },
   {
     "id": "168ae3b741a7dbb5",
@@ -3150,23 +3128,6 @@
     "relevance_score": 2.0
   },
   {
-    "id": "d3379be55b13aa8f",
-    "headline": "Bunnies  doing well  after rescue from North Sea drilling rig",
-    "url": "https://www.yorkpress.co.uk/news/national/26044616.bunnies-doing-well-rescue-north-sea-drilling-rig/",
-    "publishedAt": "20260422T153000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "FR",
-      "NO",
-      "SE",
-      "IE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 2.0
-  },
-  {
     "id": "90eec9750a058ac7",
     "headline": "Bunnies  doing well  after rescue from North Sea drilling rig",
     "url": "https://www.lancashiretelegraph.co.uk/news/national/26044616.bunnies-doing-well-rescue-north-sea-drilling-rig/",
@@ -3470,104 +3431,43 @@
     "relevance_score": 2.0
   },
   {
-    "id": "a524c129574ef885",
-    "headline": "UK World War 3 wargames as major  operation  to take place in North Sea",
-    "url": "https://www.dailystar.co.uk/news/latest-news/uks-world-war-3-wargames-37040206",
-    "publishedAt": "20260420T071500Z",
+    "id": "98fe6dca45ea98a8",
+    "headline": "Thousands of Scots seek help for  intolerable  energy bills",
+    "url": "https://www.heraldscotland.com/news/26054245.thousands-scots-seek-help-intolerable-energy-bills/",
+    "publishedAt": "20260427T070000Z",
     "source": "gdelt",
     "country_tags": [
-      "ES",
-      "NO",
       "SE"
     ],
     "topic_tags": [],
     "summary": "",
-    "relevance_score": 1.5
+    "relevance_score": 2.0
   },
   {
-    "id": "45d8476ff77d2f03",
-    "headline": "Oil Last Stand and the End of the American Empire ? ",
-    "url": "https://www.counterpunch.org/2026/04/20/oils-last-stand-and-the-end-of-the-american-empire/",
-    "publishedAt": "20260420T090000Z",
+    "id": "6ee8f1ff20f1790a",
+    "headline": "  Energy independence day  highlights Swiss reliance on imports",
+    "url": "https://www.swissinfo.ch/eng/global-trade/since-monday-switzerland-has-been-living-on-credit-for-its-energy-needs/91319979",
+    "publishedAt": "20260427T084500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "DE"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 2.0
+  },
+  {
+    "id": "47f382e9d7823ef2",
+    "headline": "B . C . court being asked to throw out approval of $12 - billion natural gas pipeline",
+    "url": "https://theprovince.com/business/bc-court-asked-throw-out-approval-12-billion-natural-gas-pipeline/wcm/522c3f0b-9a74-44b6-a687-ba245a15aa92",
+    "publishedAt": "20260428T033000Z",
     "source": "gdelt",
     "country_tags": [],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "28d943df7ab13e88",
-    "headline": "Energy bills update as six groups of people could get help by joining  register  ",
-    "url": "https://www.mirror.co.uk/money/energy-bills-update-six-groups-37041016",
-    "publishedAt": "20260420T100000Z",
-    "source": "gdelt",
-    "country_tags": [],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "7e80c1a077179edf",
-    "headline": "Here why gas prices could rise 9 % this summer",
-    "url": "https://www.newstalk.com/news/gas-2254340",
-    "publishedAt": "20260420T103000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "SE"
-    ],
     "topic_tags": [
       "gas"
     ],
     "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "592f64078a83593e",
-    "headline": "Worried about rising gas prices ? The Europe path doubles costs",
-    "url": "https://www.washingtonexaminer.com/op-eds/4532205/europe-high-gas-prices/",
-    "publishedAt": "20260420T150000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IE"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "c3529c3161a6b959",
-    "headline": "Canadian inflation surges on record gas price jump : The Daily Chase",
-    "url": "https://www.bnnbloomberg.ca/business/economics/2026/04/20/the-daily-chase-inflation-surges-on-record-gas-price-jump/",
-    "publishedAt": "20260420T150000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "SE"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "fe4a7d214d4ccc0b",
-    "headline": "Letters : Leo Varadkar should realise that the country would come to a halt if rural Ireland shut down",
-    "url": "https://www.independent.ie/opinion/letters/letters-leo-varadkar-should-realise-that-the-country-would-come-to-a-halt-if-rural-ireland-shut-down/a1831074434.html",
-    "publishedAt": "20260421T063000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "SE",
-      "DK",
-      "IE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.5
+    "relevance_score": 2.0
   },
   {
     "id": "1a53cae8f551a367",
@@ -3579,21 +3479,6 @@
       "ES",
       "DE",
       "IE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "3f23ba1522a11284",
-    "headline": "Equinor Expects Strong Trading Profits in Q1 Amid US - Iran War",
-    "url": "https://finance.yahoo.com/sectors/energy/articles/equinor-expects-strong-trading-profits-072203117.html",
-    "publishedAt": "20260421T183000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "IT",
-      "NO",
-      "FI"
     ],
     "topic_tags": [],
     "summary": "",
@@ -3994,37 +3879,6 @@
     "relevance_score": 1.5
   },
   {
-    "id": "9b8db88334aa909f",
-    "headline": "Trump Falklands threat shows clearly his reckless and rudderless US foreign policy",
-    "url": "https://www.lbc.co.uk/article/trump-falklands-opinion-5HjdYFH_2/",
-    "publishedAt": "20260425T083000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE"
-    ],
-    "topic_tags": [
-      "regulation"
-    ],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
-    "id": "ae698096dece0a82",
-    "headline": "The geopolitics of infrastructure - The Korea Times",
-    "url": "https://www.koreatimes.co.kr/opinion/columns/guestcolumns/20260426/the-geopolitics-of-infrastructure",
-    "publishedAt": "20260426T024500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "FR",
-      "IT"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.5
-  },
-  {
     "id": "8cb06e71ae4781c9",
     "headline": "Europe fuel prices before the Iran war and after the ceasefire : Where did they rise most ? ",
     "url": "https://www.euronews.com/business/2026/04/26/europe-fuel-prices-before-the-iran-war-and-after-the-ceasefire-where-did-they-rise-most",
@@ -4055,89 +3909,45 @@
     "relevance_score": 1.5
   },
   {
-    "id": "a38130a06f3f6b7b",
-    "headline": "Clarification of media article | Company Announcement",
-    "url": "https://www.investegate.co.uk/announcement/rns/reabold-resources--rbd/clarification-of-media-article/9527016",
-    "publishedAt": "20260420T070000Z",
+    "id": "ca739618b98fc263",
+    "headline": "From Australia to Vietnam , the Iran war is fuelling demand for EVs",
+    "url": "https://www.aljazeera.com/economy/2026/4/27/from-australia-to-vietnam-the-iran-war-is-fuelling-demand-for-evs",
+    "publishedAt": "20260427T080000Z",
     "source": "gdelt",
     "country_tags": [
-      "NO",
-      "FI"
+      "DE",
+      "FR",
+      "IE"
     ],
     "topic_tags": [],
     "summary": "",
-    "relevance_score": 1.0
+    "relevance_score": 1.5
   },
   {
-    "id": "ee569beccecb92d5",
-    "headline": "Dutch water authority emitted excess nitrogen for years without permit",
-    "url": "https://nltimes.nl/2026/04/20/dutch-water-authority-emitted-excess-nitrogen-years-without-permit",
-    "publishedAt": "20260420T210000Z",
+    "id": "c19ab0139ec88b2c",
+    "headline": "What do my heating , shower and tumble dryer cost to run , and how can I reduce energy costs ? ",
+    "url": "https://www.irishtimes.com/your-money/2026/04/27/what-do-my-heating-shower-and-tumble-dryer-cost-to-run-and-how-can-i-reduce-energy-costs/",
+    "publishedAt": "20260427T091500Z",
+    "source": "gdelt",
+    "country_tags": [],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.5
+  },
+  {
+    "id": "587f631fdfb6db9f",
+    "headline": "Venezuela Acting President visits Barbados",
+    "url": "https://trinidadexpress.com/news/venezuelas-acting-president-visits-barbados/article_7037edd4-fb2b-4362-af9f-f2bc5c5a8d04.html",
+    "publishedAt": "20260427T211500Z",
     "source": "gdelt",
     "country_tags": [
       "ES",
+      "DE",
       "IT"
     ],
     "topic_tags": [],
     "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "ae18164d79c4669e",
-    "headline": "Trump Iran War Hurts the Rest of the World More Than the United States",
-    "url": "https://foreignpolicy.com/2026/04/20/trump-iran-war-energy-prices-stocks-ai-asia-africa/?tpcc=recirc_trending062921",
-    "publishedAt": "20260420T234500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "d398228470ed4ee0",
-    "headline": "Because the price of gas can still increase",
-    "url": "https://www.thevermilion.com/because-the-price-of-gas-can-still-increase/article_17363/",
-    "publishedAt": "20260421T014500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "SE"
-    ],
-    "topic_tags": [
-      "gas"
-    ],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "07d7938e281705ba",
-    "headline": "Ed Miliband declares the end of the fossil fuel era",
-    "url": "https://www.newstatesman.com/politics/milibandism/2026/04/ed-miliband-declares-the-end-of-the-fossil-fuel-era",
-    "publishedAt": "20260421T014500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "DE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "c2e321c26084eb2f",
-    "headline": "ADOR celebrates Hyein birthday , NewJeans activity buzz grows",
-    "url": "https://www.allkpop.com/article/2026/04/ador-celebrates-hyeins-birthday-newjeans-activity-buzz-grows",
-    "publishedAt": "20260421T054500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IT"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.0
+    "relevance_score": 1.5
   },
   {
     "id": "64913627816a2c4d",
@@ -4205,20 +4015,6 @@
     "country_tags": [
       "ES",
       "DE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "0987f8f7fe11c5eb",
-    "headline": "International Chamber Of Shipping Releases Sixth",
-    "url": "https://www.marinelink.com/news/international-chamber-shipping-releases-538370",
-    "publishedAt": "20260422T203000Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "SE"
     ],
     "topic_tags": [],
     "summary": "",
@@ -4345,20 +4141,6 @@
     "country_tags": [
       "ES",
       "NO"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 1.0
-  },
-  {
-    "id": "52add5fb8139a85d",
-    "headline": "GLOBAL MARKET OVERVIEW TOMATOES",
-    "url": "https://www.freshplaza.com/north-america/article/9831916/global-market-overview-tomatoes/",
-    "publishedAt": "20260424T144500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "ES",
-      "IE"
     ],
     "topic_tags": [],
     "summary": "",
@@ -4533,17 +4315,130 @@
     "relevance_score": 1.0
   },
   {
-    "id": "028ef8c01a4acbad",
-    "headline": "Queen Máxima style shift : The Dutch royal look while meeting with the Trumps",
-    "url": "https://www.hola.com/us/beauty/20260420896805/queen-maxima-style-shift-meeting-trumps/",
-    "publishedAt": "20260421T020000Z",
+    "id": "d487350db07987f1",
+    "headline": "Readers sound off on fixation on Trump , super speeders and ads on the Moon",
+    "url": "https://www.nydailynews.com/2026/04/27/readers-sound-off-on-fixation-on-trump-super-speeders-and-ads-on-the-moon/",
+    "publishedAt": "20260427T083000Z",
     "source": "gdelt",
     "country_tags": [
+      "DE",
+      "FI"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "f7acfaaa10ee6c2c",
+    "headline": "Nations meet to discuss fossil fuel exit as Iran war drives up prices",
+    "url": "https://www.marketscreener.com/news/nations-meet-to-discuss-fossil-fuel-exit-as-iran-war-drives-up-prices-ce7f59dcd08ff52d",
+    "publishedAt": "20260427T140000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
       "IT"
     ],
     "topic_tags": [],
     "summary": "",
-    "relevance_score": 0.5
+    "relevance_score": 1.0
+  },
+  {
+    "id": "4d28e09ba8ca15b0",
+    "headline": "Nations meet to discuss fossil fuel exit as Iran war drives up prices",
+    "url": "https://www.yahoo.com/news/articles/nations-meet-discuss-fossil-fuel-132503544.html",
+    "publishedAt": "20260427T141500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "3d7ea8813343374d",
+    "headline": "Shell Makes Major Acquisition of ARC Resources",
+    "url": "https://arynews.tv/shell-makes-major-acquisition-of-arc-resources",
+    "publishedAt": "20260427T161500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "IT"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "f46be835087fd7e5",
+    "headline": "Euronews explains : Can a country ever be suspended from NATO ? ",
+    "url": "https://www.euronews.com/my-europe/2026/04/27/euronews-explains-can-a-country-ever-be-suspended-from-nato",
+    "publishedAt": "20260427T161500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "DE",
+      "FR"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "ede4f35e3d6de81d",
+    "headline": "Growth down , inflation up , but no recession",
+    "url": "https://www.rte.ie/news/ireland/2026/0428/1570527-boi-economy/",
+    "publishedAt": "20260428T014500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES",
+      "NO"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "168b6aa208a7ab7d",
+    "headline": "Nations to kick off world - first fossil fuel exit talks",
+    "url": "https://www.yahoo.com/news/articles/nations-kick-off-world-first-023900606.html",
+    "publishedAt": "20260428T031500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT",
+      "FI"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "e75984057b5f2870",
+    "headline": "Nations to kick off world - first fossil fuel exit talks",
+    "url": "https://www.straitstimes.com/world/nations-to-kick-off-world-first-fossil-fuel-exit-talks",
+    "publishedAt": "20260428T034500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT",
+      "FI"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
+  },
+  {
+    "id": "0375a54cea406186",
+    "headline": "Nations to kick off world - first fossil fuel exit talks",
+    "url": "https://www.ktbs.com/news/national/nations-to-kick-off-world-first-fossil-fuel-exit-talks/article_d063fa6e-a4b3-5e3d-bc57-aaa8cc0fb4f3.html",
+    "publishedAt": "20260428T053000Z",
+    "source": "gdelt",
+    "country_tags": [
+      "IT",
+      "FI"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 1.0
   },
   {
     "id": "ded9feeaa6a623c4",
@@ -4650,19 +4545,6 @@
     "relevance_score": 0.5
   },
   {
-    "id": "bf7f5e3f7f544b58",
-    "headline": "More Dutch crossing the border to fuel up in Belgium : ABN Amro",
-    "url": "https://nltimes.nl/2026/04/24/dutch-crossing-border-fuel-belgium-abn-amro",
-    "publishedAt": "20260424T214500Z",
-    "source": "gdelt",
-    "country_tags": [
-      "DE"
-    ],
-    "topic_tags": [],
-    "summary": "",
-    "relevance_score": 0.5
-  },
-  {
     "id": "5b5e12cc516868d0",
     "headline": "India resorts to LPG spot buying to bridge West Asia supply gap",
     "url": "https://timesofindia.indiatimes.com/business/india-business/india-resorts-to-lpg-spot-buying-to-bridge-west-asia-supply-gap/articleshow/130506135.cms",
@@ -4702,15 +4584,43 @@
     "relevance_score": 0.5
   },
   {
-    "id": "0e50c0367594bfef",
-    "headline": "Why Iran can outlast America in this war",
-    "url": "https://freerepublic.com/focus/f-bloggers/4375701/posts",
-    "publishedAt": "20260420T164500Z",
+    "id": "175c5a05de3ab916",
+    "headline": "Top Belfast and Dublin law firms in key merger",
+    "url": "https://www.irishnews.com/news/business/top-belfast-and-dublin-law-firms-in-key-merger-CGCRN4HNV5CVVDKTUTHXLWTQYQ/",
+    "publishedAt": "20260427T094500Z",
     "source": "gdelt",
-    "country_tags": [],
+    "country_tags": [
+      "FI"
+    ],
     "topic_tags": [],
     "summary": "",
-    "relevance_score": 0.0
+    "relevance_score": 0.5
+  },
+  {
+    "id": "ab39cfa654f16054",
+    "headline": "Prime Minister Carney Launches C$25 Billion Canada Strong Fund",
+    "url": "https://investingnews.com/carney-unveils-canada-strong-fund/",
+    "publishedAt": "20260427T224500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.5
+  },
+  {
+    "id": "02d05a775dbfffa2",
+    "headline": "NIPG tables formal K300 Million submission to National Government over Mining Wealth",
+    "url": "https://www.postcourier.com.pg/nipg-tables-formal-k300-million-submission-to-national-government-over-mining-wealth/",
+    "publishedAt": "20260428T024500Z",
+    "source": "gdelt",
+    "country_tags": [
+      "ES"
+    ],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.5
   },
   {
     "id": "7881f5f91996e82d",
@@ -4772,6 +4682,39 @@
     "headline": "AP News Summary at 6 : 07 a . m . EDT",
     "url": "https://www.woonsocketcall.com/news/national_and_world_news/ap-news-summary-at-5-32-a-m-edt/article_a5c9be0f-d7bb-53ee-8389-e1682e9631b4.html",
     "publishedAt": "20260423T103000Z",
+    "source": "gdelt",
+    "country_tags": [],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.0
+  },
+  {
+    "id": "9ca2ccdd48b2e79e",
+    "headline": "New platforms at Copenhagen Airport mean ten more trains an hour",
+    "url": "https://www.thelocal.se/20260427/new-platforms-at-copenhagen-airport-mean-ten-more-trains-an-hour",
+    "publishedAt": "20260427T140000Z",
+    "source": "gdelt",
+    "country_tags": [],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.0
+  },
+  {
+    "id": "805daa14a1f1035e",
+    "headline": "New platforms at Copenhagen Airport mean ten more trains an hour",
+    "url": "https://www.thelocal.dk/20260427/new-platforms-at-copenhagen-airport-mean-ten-more-trains-an-hour",
+    "publishedAt": "20260427T140000Z",
+    "source": "gdelt",
+    "country_tags": [],
+    "topic_tags": [],
+    "summary": "",
+    "relevance_score": 0.0
+  },
+  {
+    "id": "412bb44e25d873ad",
+    "headline": "ENI Q1 Earnings Call Highlights",
+    "url": "https://www.dailypolitical.com/2026/04/27/eni-q1-earnings-call-highlights.html",
+    "publishedAt": "20260427T203000Z",
     "source": "gdelt",
     "country_tags": [],
     "topic_tags": [],
