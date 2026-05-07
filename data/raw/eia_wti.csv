@@ -1258,3 +1258,8 @@ date,series_id,value,unit,source
 2026-04-23,wti,99.27,USD/bbl,eia
 2026-04-24,wti,98.42,USD/bbl,eia
 2026-04-27,wti,99.89,USD/bbl,eia
+2026-04-28,wti,103.45,USD/bbl,eia
+2026-04-29,wti,110.47,USD/bbl,eia
+2026-04-30,wti,108.64,USD/bbl,eia
+2026-05-01,wti,105.38,USD/bbl,eia
+2026-05-04,wti,109.76,USD/bbl,eia
